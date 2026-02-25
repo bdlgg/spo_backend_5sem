@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AR/CCpljXBI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\abdyk\\Desktop\\backend_spo\\backend_spo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abdyk\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.3\\microsoft.aspnetcore.openapi.10.0.3.nupkg.sha512",
+    "C:\\Users\\abdyk\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
