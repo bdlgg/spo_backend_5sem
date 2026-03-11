@@ -10,6 +10,7 @@ obj/
 *.sln.docstates
 
 .idea/
+.cursor/
 *.iml
 
 logs/
@@ -32,6 +33,11 @@ Desktop.ini
 *.secret.json
 *.env
 *.env.*
+/appsettings.Development.json
+
+*.db
+*.mdf
+*.sqlite*
 
 TestResults/
 coverage*/
