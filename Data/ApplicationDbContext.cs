@@ -11,7 +11,30 @@ namespace backend_spo.Data
         }
 
         public DbSet<Car> Cars { get; set; }
-
         public DbSet<Client> Clients { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Sale> Sales { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Supplier>()
+                .HasMany(s => s.Cars).WithOne(c => c.Supplier).HasForeignKey(c => c.SupplierId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Sales).WithOne(s => s.User).HasForeignKey(s => s.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<Client>()
+                .HasMany(c => c.Sales).WithOne(s => s.Client).HasForeignKey(s => s.ClientId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Car>()
+                .HasMany(c => c.Sales).WithOne(s => s.Car).HasForeignKey(s => s.CarId)
+                .OnDelete(DeleteBehavior.Restrict);
+        }
     }
 }

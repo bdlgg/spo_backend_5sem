@@ -11,5 +11,9 @@ namespace backend_spo.Entities
         public int Year { get; set; }
 
         public decimal Price { get; set; }
+        
+        public int SupplierId { get; set; }
+        public Supplier? Supplier { get; set; }
+        public ICollection<Sale> Sales { get; set; } = new List<Sale>();
     }
 }
