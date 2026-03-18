@@ -1,6 +1,17 @@
-namespace backend_spo.Data;
+using Microsoft.EntityFrameworkCore;
+using backend_spo.Entities;
 
-public class ApplicationDbContext
+namespace backend_spo.Data
 {
-    
+    public class ApplicationDbContext : DbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
+        }
+
+        public DbSet<Car> Cars { get; set; }
+
+        public DbSet<Client> Clients { get; set; }
+    }
 }

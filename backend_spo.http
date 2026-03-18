@@ -1,4 +1,4 @@
-@backend_spo_HostAddress = http://localhost:5007
+@backend_spo_HostAddress = http://localhost:5093
 
 GET {{backend_spo_HostAddress}}/weatherforecast/
 Accept: application/json
