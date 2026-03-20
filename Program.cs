@@ -3,10 +3,12 @@ using backend_spo.Data;
 using backend_spo.Services;
 using backend_spo.Interfaces;
 using backend_spo.Repositories;
+using backend_spo.Entities;
 using System.Text;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +18,29 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    var securityScheme = new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Введите токен",
+    };
+
+    options.AddSecurityDefinition("Bearer", securityScheme);
+
+    options.AddSecurityRequirement(_ => new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecuritySchemeReference("Bearer"),
+            new List<string>()
+        }
+    });
+});
+
 builder.Services.AddScoped<ICarRepository, CarRepository>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
 builder.Services.AddScoped<ISaleRepository, SaleRepository>();
@@ -27,6 +51,7 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]!);
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -41,16 +66,27 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             IssuerSigningKey = new SymmetricSecurityKey(key)
         };
     });
+
 builder.Services.AddAuthorization();
-
-
 
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
     dbContext.Database.Migrate();
+
+    if (!dbContext.Roles.Any())
+    {
+        dbContext.Roles.AddRange(
+            new Role { Name = "Админ", Description = "Администратор" },
+            new Role { Name = "Менеджер", Description = "Менеджер" },
+            new Role { Name = "Клиент", Description = "Клиент" }
+        );
+
+        dbContext.SaveChanges();
+    }
 }
 
 if (app.Environment.IsDevelopment())

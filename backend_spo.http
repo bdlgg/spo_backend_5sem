@@ -1,6 +1,59 @@
-@backend_spo_HostAddress = http://localhost:5093
+@host = http://localhost:5093
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjEiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiaXZhbkB0ZXN0LmNvbSIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2VtYWlsYWRkcmVzcyI6Iml2YW5AdGVzdC5jb20iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiLQmtC70LjQtdC90YIiLCJleHAiOjE3NzQwNDY4OTEsImlzcyI6ImJhY2tlbmRfc3BvIiwiYXVkIjoiYmFja2VuZF9zcG9fdXNlcnMifQ.-xmS1ZlTut9TL7dO4sXfXtIHbbJd3twpYWQdHLhA3SE
 
-GET {{backend_spo_HostAddress}}/weatherforecast/
-Accept: application/json
+### Логин
+POST {host}/api/Auth/login
+Content-Type: application/json
 
-###
+{
+  "email": "ivan@test.com",
+  "password": "123456"
+}
+
+### Проверка авторизации: чтение продаж
+GET {host}/api/Sales
+Authorization: Bearer {token}
+
+### Проверка чтения продажи по id
+GET {host}/api/Sales/1
+Authorization: Bearer {token}
+
+### Проверка продаж по клиенту
+GET {host}/api/Sales/client/1
+Authorization: Bearer {token}
+
+### Проверка продаж по пользователю
+GET {host}/api/Sales/user/1
+Authorization: Bearer {token}
+
+### Проверка роли: создание продажи
+POST {host}/api/Sales
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{
+  "carId": 1,
+  "clientId": 1,
+  "userId": 1,
+  "finalPrice": 2500000,
+  "status": "Completed"
+}
+
+### Проверка роли: обновление продажи
+PUT {host}/api/Sales/1
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "carId": 1,
+  "clientId": 1,
+  "userId": 1,
+  "saleDate": "2026-03-20T20:00:00Z",
+  "finalPrice": 2300000,
+  "status": "Updated"
+}
+
+### Проверка роли: удаление продажи
+DELETE {host}/api/Sales/1
+Authorization: Bearer {token}

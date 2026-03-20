@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using backend_spo.Data;
 using backend_spo.Entities;
+using Microsoft.AspNetCore.Authorization;
 
 namespace backend_spo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Админ,Менеджер")]
     public class CarsController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
