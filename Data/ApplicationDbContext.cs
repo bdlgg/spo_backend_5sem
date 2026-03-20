@@ -14,6 +14,7 @@ namespace backend_spo.Data
         public DbSet<Client> Clients { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Role>  Roles { get; set; }
         public DbSet<Sale> Sales { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -23,6 +24,11 @@ namespace backend_spo.Data
             modelBuilder.Entity<Supplier>()
                 .HasMany(s => s.Cars).WithOne(c => c.Supplier).HasForeignKey(c => c.SupplierId)
                 .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<Role>()
+                .HasMany(r => r.Users).WithOne(u => u.Role).HasForeignKey(r => r.RoleId)
+                .OnDelete(DeleteBehavior.Restrict);
+                
             
             modelBuilder.Entity<User>()
                 .HasMany(u => u.Sales).WithOne(s => s.User).HasForeignKey(s => s.UserId)
