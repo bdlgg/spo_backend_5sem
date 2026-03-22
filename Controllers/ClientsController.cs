@@ -1,36 +1,74 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using backend_spo.Data;
+using backend_spo.Interfaces;
 using backend_spo.Entities;
 using Microsoft.AspNetCore.Authorization;
 
 namespace backend_spo.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Админ,Менеджер")]
+    [Route("api/[controller]")]
+    [Authorize]
     public class ClientsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IClientService _clientService;
 
-        public ClientsController(ApplicationDbContext context)
+        public ClientsController(IClientService clientService)
         {
-            _context = context;
+            _clientService = clientService;
         }
-
+        
+        //get /api/clients
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Client>>> GetClients()
+        public async Task<ActionResult<IEnumerable<Client>>> GetAll()
         {
-            return await _context.Clients.ToListAsync();
+            var clients = await _clientService.GetAllAsync();
+            return Ok(clients);
         }
-
-        [HttpPost]
-        public async Task<ActionResult<Client>> CreateClient(Client client)
+        
+        // get /api/clients/{id}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Client>> GetById(int id)
         {
-            _context.Clients.Add(client);
-            await _context.SaveChangesAsync();
-
-            return client;
+            var client = await _clientService.GetByIdAsync(id);
+            if (client == null) return NotFound("Клиент не найден");
+            return Ok(client);
+        }
+        
+        //post /api/clients
+        [Authorize(Roles = "Админ,Менеджер")]
+        [HttpPost]
+        public async Task<ActionResult<Client>> Create([FromBody] Client client)
+        {
+            var createdClient = await _clientService.CreateAsync(client);
+            return CreatedAtAction(nameof(GetById), new {id = createdClient.Id}, createdClient);
+        }
+        
+        //put /api/clients/{id}
+        [Authorize(Roles = "Админ,Менеджер")]
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, [FromBody] Client client)
+        {
+            var result = await _clientService.UpdateAsync(id, client);
+            if (!result) return NotFound("Клиент не найден");
+            return NoContent();
+        }
+        
+        //delete /api/clients/{id}
+        [Authorize(Roles = "Админ")]
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var result = await _clientService.DeleteAsync(id);
+            if (!result) return NotFound("Клиент не найден");
+            return NoContent();
+        }
+        
+        //get /api/clients/search?firstName=..&lastName=..&phone=..
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<Client>>> Search(string? firstName, string? lastName, string? phone)
+        {
+            var clients = await _clientService.SearchAsync(firstName, lastName, phone);
+            return Ok(clients);
         }
     }
 }
