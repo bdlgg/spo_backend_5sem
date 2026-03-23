@@ -7,6 +7,7 @@ using backend_spo.Entities;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +18,31 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Swagger
+// Swagger (ВОТ ЕГО НЕ МЕНЯТЬ А ТО СНОВА КНОПКА ПРОПАДЕТ)
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "backend_spo API",
+        Version = "v1"
+    });
+
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Введите JWT токен"
+    });
+
+    options.AddSecurityRequirement(document => new OpenApiSecurityRequirement
+    {
+        [new OpenApiSecuritySchemeReference("Bearer", document)] = []
+    });
+});
 
 // Dependency injection
 builder.Services.AddScoped<ICarRepository, CarRepository>();
@@ -56,20 +79,10 @@ var app = builder.Build();
 // Seed Roles and migrate database
 using (var scope = app.Services.CreateScope())
 {
-    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    db.Database.Migrate();
 
-    dbContext.Database.Migrate();
-
-    if (!dbContext.Roles.Any())
-    {
-        dbContext.Roles.AddRange(
-            new Role { Name = "Админ", Description = "Администратор" },
-            new Role { Name = "Менеджер", Description = "Менеджер" },
-            new Role { Name = "Руководитель", Description = "Руководитель" },
-            new Role { Name = "Клиент", Description = "Клиент" }
-        );
-        dbContext.SaveChanges();
-    }
+    DbSeeder.Seed(db);
 }
 
 // Middleware

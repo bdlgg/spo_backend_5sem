@@ -11,8 +11,8 @@ using backend_spo.Data;
 namespace backend_spo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260318075001_AddSupplierUserSale")]
-    partial class AddSupplierUserSale
+    [Migration("20260323222134_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -77,6 +77,25 @@ namespace backend_spo.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("backend_spo.Entities.Role", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("backend_spo.Entities.Sale", b =>
                 {
                     b.Property<int>("Id")
@@ -89,10 +108,10 @@ namespace backend_spo.Migrations
                     b.Property<int>("ClientId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<DateTime>("CreatedAt")
+                    b.Property<decimal>("FinalPrice")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("FinalPrice")
+                    b.Property<DateTime>("SaleDate")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Status")
@@ -172,11 +191,12 @@ namespace backend_spo.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("RoleName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<int>("RoleId")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
 
                     b.ToTable("Users");
                 });
@@ -219,6 +239,17 @@ namespace backend_spo.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("backend_spo.Entities.User", b =>
+                {
+                    b.HasOne("backend_spo.Entities.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
             modelBuilder.Entity("backend_spo.Entities.Car", b =>
                 {
                     b.Navigation("Sales");
@@ -227,6 +258,11 @@ namespace backend_spo.Migrations
             modelBuilder.Entity("backend_spo.Entities.Client", b =>
                 {
                     b.Navigation("Sales");
+                });
+
+            modelBuilder.Entity("backend_spo.Entities.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("backend_spo.Entities.Supplier", b =>
