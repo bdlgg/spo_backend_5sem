@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using backend_spo.Interfaces;
 using backend_spo.Entities;
 using Microsoft.AspNetCore.Authorization;
+using backend_spo.DTOs;
 
 namespace backend_spo.Controllers
 {
@@ -19,35 +20,50 @@ namespace backend_spo.Controllers
         
         //get /api/clients
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Client>>> GetAll()
+        public async Task<ActionResult<IEnumerable<ClientResponseDto>>> GetAll()
         {
             var clients = await _clientService.GetAllAsync();
-            return Ok(clients);
+            var result = clients.Select(MapToDto);
+            return Ok(result);
         }
         
         // get /api/clients/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<Client>> GetById(int id)
+        public async Task<ActionResult<ClientResponseDto>> GetById(int id)
         {
             var client = await _clientService.GetByIdAsync(id);
             if (client == null) return NotFound("Клиент не найден");
-            return Ok(client);
+            return Ok(MapToDto(client));
         }
         
         //post /api/clients
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPost]
-        public async Task<ActionResult<Client>> Create([FromBody] Client client)
+        public async Task<ActionResult<ClientResponseDto>> Create([FromBody] CreateClientDto dto)
         {
+            var client = new Client
+            {
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                Phone = dto.Phone,
+                Email = dto.Email
+            };
             var createdClient = await _clientService.CreateAsync(client);
-            return CreatedAtAction(nameof(GetById), new {id = createdClient.Id}, createdClient);
+            return CreatedAtAction(nameof(GetById), new {id = createdClient.Id}, MapToDto(createdClient));
         }
         
         //put /api/clients/{id}
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Client client)
+        public async Task<IActionResult> Update(int id, [FromBody] CreateClientDto dto)
         {
+            var client = new Client
+            {
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                Phone = dto.Phone,
+                Email = dto.Email
+            };
             var result = await _clientService.UpdateAsync(id, client);
             if (!result) return NotFound("Клиент не найден");
             return NoContent();
@@ -65,10 +81,24 @@ namespace backend_spo.Controllers
         
         //get /api/clients/search?firstName=..&lastName=..&phone=..
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<Client>>> Search(string? firstName, string? lastName, string? phone)
+        public async Task<ActionResult<IEnumerable<ClientResponseDto>>> Search(string? firstName, string? lastName, string? phone)
         {
             var clients = await _clientService.SearchAsync(firstName, lastName, phone);
+            var result = clients.Select(MapToDto);
             return Ok(clients);
+        }
+        
+        //вспомогательный метод чтобы не прописывать везде преобразование Client => ClientResponseDto
+        private static ClientResponseDto MapToDto(Client client)
+        {
+            return new ClientResponseDto
+            {
+                Id = client.Id,
+                FirstName = client.FirstName,
+                LastName = client.LastName,
+                Phone = client.Phone,
+                Email = client.Email
+            };
         }
     }
 }

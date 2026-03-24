@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using backend_spo.Entities;
 using backend_spo.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using backend_spo.DTOs;
 
 
 namespace backend_spo.Controllers
@@ -20,38 +21,56 @@ namespace backend_spo.Controllers
         //get /api/cars
         [AllowAnonymous]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Car>>> GetAll()
+        public async Task<ActionResult<IEnumerable<CarResponseDto>>> GetAll()
         {
             var cars = await _carService.GetAllAsync();
-            return Ok(cars);
+            var result = cars.Select(MapToDto);
+            return Ok(result);
         }
 
         //get /api/cars/{id}
         [AllowAnonymous]
         [HttpGet("{id}")]
-        public async Task<ActionResult<Car>> GetById(int id)
+        public async Task<ActionResult<CarResponseDto>> GetById(int id)
         {
             var car = await _carService.GetByIdAsync(id);
 
             if (car == null) return NotFound("Машина не найдена");
 
-            return Ok(car);
+            return Ok(MapToDto(car));
         }
 
         //post /api/cars
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPost]
-        public async Task<ActionResult<Car>> Create([FromBody] Car car)
+        public async Task<ActionResult<CarResponseDto>> Create([FromBody] CreateCarDto dto)
         {
+            var car = new Car
+            {
+                Brand = dto.Brand,
+                Model = dto.Model,
+                Year = dto.Year,
+                Price = dto.Price,
+                SupplierId = dto.SupplierId
+            };
             var createdCar = await _carService.CreateAsync(car);
-            return CreatedAtAction(nameof(GetById), new {id = createdCar.Id}, createdCar);
+            var fullCar = await _carService.GetByIdAsync(createdCar.Id);
+            return CreatedAtAction(nameof(GetById), new {id = createdCar.Id}, MapToDto(fullCar!));
         }
         
         //put /api/cars/{id}
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Car car)
+        public async Task<IActionResult> Update(int id, [FromBody] CreateCarDto dto)
         {
+            var car = new Car
+            {
+                Brand = dto.Brand,
+                Model = dto.Model,
+                Year = dto.Year,
+                Price = dto.Price,
+                SupplierId = dto.SupplierId
+            };
             var result = await _carService.UpdateAsync(id, car);
             if (!result) return NotFound("Машина не найдена");
             return NoContent();
@@ -70,10 +89,25 @@ namespace backend_spo.Controllers
         //get /api/cars/search?brand=..&model=..&year=..
         [AllowAnonymous]
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<Car>>> Search(string? brand, string? model, int? year)
+        public async Task<ActionResult<IEnumerable<CarResponseDto>>> Search(string? brand, string? model, int? year)
         {
             var cars = await _carService.SearchAsync(brand, model, year);
-            return Ok(cars);
+            var result = cars.Select(MapToDto);
+            return Ok(result);
+        }
+
+        private static CarResponseDto MapToDto(Car car)
+        {
+            return new CarResponseDto
+            {
+                Id = car.Id,
+                Brand = car.Brand,
+                Model = car.Model,
+                Year = car.Year,
+                Price = car.Price,
+                SupplierId = car.SupplierId,
+                SupplierName = car.Supplier?.Name ?? string.Empty
+            };
         }
     }
 }

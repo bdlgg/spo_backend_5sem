@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using backend_spo.Entities;
 using backend_spo.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using backend_spo.DTOs;
 
 namespace backend_spo.Controllers
 {
@@ -19,44 +20,57 @@ namespace backend_spo.Controllers
         
         //get /api/sales
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Sale>>> GetAll()
+        public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetAll()
         {
             var sales = await _saleService.GetAllAsync();
-            return Ok(sales);
+            var result = sales.Select(MapToDto);
+            return Ok(result);
         }
         
         //get /api/sales/{id}
         [HttpGet("{id}")]
-        public async Task<ActionResult<Sale>> GetById(int id)
+        public async Task<ActionResult<SaleResponseDto>> GetById(int id)
         {
             var sale = await _saleService.GetByIdAsync(id);
             if (sale == null)
                 return NotFound(new { message = "Сделка не найдена" });
-            return Ok(sale);
+            return Ok(MapToDto(sale));
         }
 
         // post /api/sales
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Sale sale)
+        public async Task<ActionResult<SaleResponseDto>> Create([FromBody] CreateSaleDto dto)
         {
+            var sale = new Sale
+            {
+                CarId = dto.CarId,
+                ClientId = dto.ClientId,
+                UserId =  dto.UserId,
+                FinalPrice =  dto.FinalPrice,
+                Status =  dto.Status
+            };
             var (success, message, createdSale) = await _saleService.CreateAsync(sale);
 
-            if (!success)
-                return BadRequest(new { message = message });
+            if (!success || createdSale == null)
+                return BadRequest(new { message });
 
-            return Ok(new
-            {
-                message,
-                sale = createdSale
-            });
+            return Ok(MapToDto(createdSale));
         }
         
         //put /api/sales/{id}
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Sale sale)
+        public async Task<IActionResult> Update(int id, [FromBody] CreateSaleDto dto)
         {
+            var sale = new Sale
+            {
+                CarId = dto.CarId,
+                ClientId = dto.ClientId,
+                UserId =  dto.UserId,
+                FinalPrice =  dto.FinalPrice,
+                Status =  dto.Status
+            };
             var updated = await _saleService.UpdateAsync(id, sale);
             if (!updated)
                 return NotFound(new { message = "Сделка не найдена" });
@@ -76,18 +90,34 @@ namespace backend_spo.Controllers
         
         //get /api/sales/client/{clientId}
         [HttpGet("client/{clientId}")]
-        public async Task<ActionResult<IEnumerable<Sale>>> GetByClientId(int clientId)
+        public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetByClientId(int clientId)
         {
             var sales = await _saleService.GetByClientIdAsync(clientId);
-            return Ok(sales);
+            var result = sales.Select(MapToDto);
+            return Ok(result);
         }
         
         //get /api/sales/user/{userId}
         [HttpGet("user/{userId}")]
-        public async Task<ActionResult<IEnumerable<Sale>>> GetByUserId(int userId)
+        public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetByUserId(int userId)
         {
             var sales = await _saleService.GetByUserIdAsync(userId);
-            return Ok(sales);
+            var result = sales.Select(MapToDto);
+            return Ok(result);
+        }
+
+        private static SaleResponseDto MapToDto(Sale sale)
+        {
+            return new SaleResponseDto
+            {
+                Id = sale.Id,
+                CarId =  sale.CarId,
+                ClientId = sale.ClientId,
+                UserId =  sale.UserId,
+                SaleDate = sale.SaleDate,
+                FinalPrice =  sale.FinalPrice,
+                Status = sale.Status
+            };
         }
     }
 }
