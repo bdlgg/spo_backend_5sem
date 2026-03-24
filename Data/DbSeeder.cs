@@ -7,8 +7,6 @@ namespace backend_spo.Data
 	{
 		public static void Seed(ApplicationDbContext context)
 		{
-			context.Database.EnsureCreated();
-
 			SeedRoles(context);
 			SeedSuppliers(context);
 			SeedAdmin(context);
