@@ -57,6 +57,7 @@ builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<ISaleService, SaleService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // JWT authentication
 var jwtSettings = builder.Configuration.GetSection("Jwt");
