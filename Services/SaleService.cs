@@ -53,7 +53,6 @@ public class SaleService : ISaleService
         existingSale.CarId = sale.CarId;
         existingSale.ClientId = sale.ClientId;
         existingSale.UserId = sale.UserId;
-        existingSale.SaleDate = sale.SaleDate;
         existingSale.FinalPrice = sale.FinalPrice;
         existingSale.Status = sale.Status;
         await _saleRepository.UpdateAsync(existingSale);

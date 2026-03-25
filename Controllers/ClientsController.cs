@@ -85,7 +85,7 @@ namespace backend_spo.Controllers
         {
             var clients = await _clientService.SearchAsync(firstName, lastName, phone);
             var result = clients.Select(MapToDto);
-            return Ok(clients);
+            return Ok(result);
         }
         
         //вспомогательный метод чтобы не прописывать везде преобразование Client => ClientResponseDto
