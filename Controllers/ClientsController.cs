@@ -17,8 +17,9 @@ namespace backend_spo.Controllers
         {
             _clientService = clientService;
         }
-        
+
         //get /api/clients
+        [Authorize(Roles = "Админ,Менеджер")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ClientResponseDto>>> GetAll()
         {
@@ -26,8 +27,9 @@ namespace backend_spo.Controllers
             var result = clients.Select(MapToDto);
             return Ok(result);
         }
-        
+
         // get /api/clients/{id}
+        [Authorize(Roles = "Админ,Менеджер")]
         [HttpGet("{id}")]
         public async Task<ActionResult<ClientResponseDto>> GetById(int id)
         {
@@ -78,8 +80,9 @@ namespace backend_spo.Controllers
             if (!result) return NotFound("Клиент не найден");
             return NoContent();
         }
-        
+
         //get /api/clients/search?firstName=..&lastName=..&phone=..
+        [Authorize(Roles = "Админ,Менеджер")]
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<ClientResponseDto>>> Search(string? firstName, string? lastName, string? phone)
         {

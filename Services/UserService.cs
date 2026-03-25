@@ -6,9 +6,11 @@ namespace backend_spo.Services;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
-    public UserService(IUserRepository userRepository)
+    private readonly IAuditService _auditService;
+    public UserService(IUserRepository userRepository, IAuditService auditService)
     {
         _userRepository = userRepository;
+        _auditService = auditService;
     }
 
     public async Task<IEnumerable<User>> GetAllAsync()
@@ -30,6 +32,14 @@ public class UserService : IUserService
         user.RoleId = role.Id;
         user.Role = role;
         await _userRepository.UpdateAsync(user);
+        await _auditService.LogAsync(
+    null,
+    "USER_ROLE_UPDATE",
+    "User",
+    user.Id,
+    "Success",
+    $"Пользователю {user.Email} назначена роль {roleName}"
+);
         return (true, "Роль пользователя успешно обновлена");
     }
 
@@ -39,6 +49,14 @@ public class UserService : IUserService
         if (user == null) return (false, "Пользователь не найден");
         user.IsActive = isActive;
         await _userRepository.UpdateAsync(user);
+        await _auditService.LogAsync(
+    null,
+    "USER_STATUS_UPDATE",
+    "User",
+    user.Id,
+    "Success",
+    $"Пользователь {user.Email} {(isActive ? "разблокирован" : "заблокирован")}"
+);
         return isActive
             ? (true, "Пользователь успешно разблокирован")
             : (true, "Пользователь успешно заблокирован");

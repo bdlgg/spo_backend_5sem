@@ -6,7 +6,7 @@ public interface ISaleService
 {
     Task<IEnumerable<Sale>> GetAllAsync();
     Task<Sale?> GetByIdAsync(int id);
-    Task<(bool Success, string Message, Sale? sale)> CreateAsync(Sale sale);
+    Task<(bool Success, string Message, Sale? sale)> CreateAsync(Sale sale, int currentUserId);
     Task<bool> UpdateAsync(int id, Sale sale);
     Task<bool> DeleteAsync(int id);
     Task<IEnumerable<Sale>> GetByClientIdAsync(int clientId);

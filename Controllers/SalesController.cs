@@ -3,6 +3,7 @@ using backend_spo.Entities;
 using backend_spo.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using backend_spo.DTOs;
+using System.Security.Claims;
 
 namespace backend_spo.Controllers
 {
@@ -42,22 +43,26 @@ namespace backend_spo.Controllers
         [HttpPost]
         public async Task<ActionResult<SaleResponseDto>> Create([FromBody] CreateSaleDto dto)
         {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrWhiteSpace(userIdClaim) || !int.TryParse(userIdClaim, out var currentUserId))
+                return Unauthorized(new { message = "Не удалось определить текущего пользователя" });
+
             var sale = new Sale
             {
                 CarId = dto.CarId,
                 ClientId = dto.ClientId,
-                UserId =  dto.UserId,
-                FinalPrice =  dto.FinalPrice,
-                Status =  dto.Status
+                FinalPrice = dto.FinalPrice,
+                Status = dto.Status
             };
-            var (success, message, createdSale) = await _saleService.CreateAsync(sale);
+
+            var (success, message, createdSale) = await _saleService.CreateAsync(sale, currentUserId);
 
             if (!success || createdSale == null)
                 return BadRequest(new { message });
 
             return Ok(MapToDto(createdSale));
         }
-        
+
         //put /api/sales/{id}
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPut("{id}")]
@@ -67,13 +72,14 @@ namespace backend_spo.Controllers
             {
                 CarId = dto.CarId,
                 ClientId = dto.ClientId,
-                UserId =  dto.UserId,
-                FinalPrice =  dto.FinalPrice,
-                Status =  dto.Status
+                FinalPrice = dto.FinalPrice,
+                Status = dto.Status
             };
+
             var updated = await _saleService.UpdateAsync(id, sale);
             if (!updated)
                 return NotFound(new { message = "Сделка не найдена" });
+
             return Ok(new { message = "Сделка успешно обновлена" });
         }
 

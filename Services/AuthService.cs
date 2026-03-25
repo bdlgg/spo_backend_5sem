@@ -14,10 +14,14 @@ public class AuthService : IAuthService
 {
     private readonly ApplicationDbContext _context;
     private readonly IConfiguration _configuration;
-    public AuthService(ApplicationDbContext context, IConfiguration configuration)
+    private readonly IAuditService _auditService;
+    public AuthService( ApplicationDbContext context,
+    IConfiguration configuration,
+    IAuditService auditService)
     {
         _context = context;
         _configuration = configuration;
+        _auditService = auditService;
     }
 
     public async Task<(bool Success, string Message)> RegisterAsync(RegisterDto dto)
@@ -53,6 +57,16 @@ public class AuthService : IAuthService
         };
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
+
+        await _auditService.LogAsync(
+            user.Id,
+            "REGISTER",
+            "User",
+            user.Id,
+            "Success",
+            $"Регистрация пользователя {user.Email}"
+        );
+
         return (true, "Пользователь успешно зарегистрирован");
     }
 
@@ -68,20 +82,58 @@ public class AuthService : IAuthService
 
        var user = await _context.Users.Include(u => u.Role).FirstOrDefaultAsync(u => u.Email == dto.Email);
 
-       if (user == null)
-           return (false, "Пользователь не найден", null);
-       if (!user.IsActive)
-           return (false, "Пользователь заблокирован", null);
-       var isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
-       if (!isPasswordValid)
-           return (false, "Неверный пароль", null);
-       var token = GenerateJwtToken(user);
+        if (user == null)
+        {
+            await _auditService.LogAsync(
+                null,
+                "LOGIN",
+                "User",
+                null,
+                "Failed",
+                $"Неудачная попытка входа. Пользователь с email {dto.Email} не найден"
+            );
+            return (false, "Пользователь не найден", null);
+        }
+        if (!user.IsActive)
+        {
+            await _auditService.LogAsync(
+                user.Id,
+                "LOGIN",
+                "User",
+                user.Id,
+                "Failed",
+                $"Попытка входа заблокированного пользователя {user.Email}"
+            );
+            return (false, "Пользователь заблокирован", null);
+        }
+        var isPasswordValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
+        if (!isPasswordValid)
+        {
+            await _auditService.LogAsync(
+                user.Id,
+                "LOGIN",
+                "User",
+                user.Id,
+                "Failed",
+                $"Неверный пароль для пользователя {user.Email}"
+            );
+            return (false, "Неверный пароль", null);
+        }
+        var token = GenerateJwtToken(user);
        var response = new AuthResponseDto
        {
            Token = token,
            Email = user.Email,
            Role = user.Role?.Name ?? string.Empty
        };
+        await _auditService.LogAsync(
+    user.Id,
+    "LOGIN",
+    "User",
+    user.Id,
+    "Success",
+    $"Успешный вход пользователя {user.Email}"
+);
         return (true, "Успешный вход", response);
     }
 

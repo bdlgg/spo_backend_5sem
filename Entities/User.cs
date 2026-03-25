@@ -12,4 +12,5 @@ public class User
     public int RoleId { get; set; }
     public Role? Role { get; set; }
     public ICollection<Sale> Sales { get; set; } = new List<Sale>();
+    public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
 }

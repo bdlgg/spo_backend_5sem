@@ -51,7 +51,12 @@ namespace backend_spo.Controllers
                 Model = dto.Model,
                 Year = dto.Year,
                 Price = dto.Price,
-                SupplierId = dto.SupplierId
+                Vin = dto.Vin,
+                Color = dto.Color,
+                Type = dto.Type,
+                Status = dto.Status,
+                SupplierId = dto.SupplierId,
+                IsActive = true
             };
             var createdCar = await _carService.CreateAsync(car);
             var fullCar = await _carService.GetByIdAsync(createdCar.Id);
@@ -69,7 +74,12 @@ namespace backend_spo.Controllers
                 Model = dto.Model,
                 Year = dto.Year,
                 Price = dto.Price,
-                SupplierId = dto.SupplierId
+                Vin = dto.Vin,
+                Color = dto.Color,
+                Type = dto.Type,
+                Status = dto.Status,
+                SupplierId = dto.SupplierId,
+                IsActive = true
             };
             var result = await _carService.UpdateAsync(id, car);
             if (!result) return NotFound("Машина не найдена");
@@ -105,6 +115,11 @@ namespace backend_spo.Controllers
                 Model = car.Model,
                 Year = car.Year,
                 Price = car.Price,
+                Vin = car.Vin,
+                Color = car.Color,
+                Type = car.Type,
+                Status = car.Status,
+                IsActive = car.IsActive,
                 SupplierId = car.SupplierId,
                 SupplierName = car.Supplier?.Name ?? string.Empty
             };

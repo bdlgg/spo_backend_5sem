@@ -17,6 +17,44 @@ namespace backend_spo.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "10.0.5");
 
+            modelBuilder.Entity("backend_spo.Entities.AuditLog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ActionType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Details")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("EntityId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("EntityName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Result")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AuditLogs");
+                });
+
             modelBuilder.Entity("backend_spo.Entities.Car", b =>
                 {
                     b.Property<int>("Id")
@@ -27,6 +65,13 @@ namespace backend_spo.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("Model")
                         .IsRequired()
                         .HasColumnType("TEXT");
@@ -34,8 +79,20 @@ namespace backend_spo.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
                     b.Property<int>("SupplierId")
                         .HasColumnType("INTEGER");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Vin")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("Year")
                         .HasColumnType("INTEGER");
@@ -43,6 +100,9 @@ namespace backend_spo.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("SupplierId");
+
+                    b.HasIndex("Vin")
+                        .IsUnique();
 
                     b.ToTable("Cars");
                 });
@@ -193,9 +253,22 @@ namespace backend_spo.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
                     b.HasIndex("RoleId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("backend_spo.Entities.AuditLog", b =>
+                {
+                    b.HasOne("backend_spo.Entities.User", "User")
+                        .WithMany("AuditLogs")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("backend_spo.Entities.Car", b =>
@@ -269,6 +342,8 @@ namespace backend_spo.Migrations
 
             modelBuilder.Entity("backend_spo.Entities.User", b =>
                 {
+                    b.Navigation("AuditLogs");
+
                     b.Navigation("Sales");
                 });
 #pragma warning restore 612, 618
