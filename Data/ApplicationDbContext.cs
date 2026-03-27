@@ -17,6 +17,7 @@ namespace backend_spo.Data
         public DbSet<Role>  Roles { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
+        public DbSet<TestDrive> TestDrives { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -54,6 +55,24 @@ namespace backend_spo.Data
                 .WithOne(a => a.User)
                 .HasForeignKey(a => a.UserId)
                 .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<TestDrive>()
+    .HasOne(td => td.Car)
+    .WithMany()
+    .HasForeignKey(td => td.CarId)
+    .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<TestDrive>()
+                .HasOne(td => td.Client)
+                .WithMany()
+                .HasForeignKey(td => td.ClientId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<TestDrive>()
+                .HasOne(td => td.Manager)
+                .WithMany()
+                .HasForeignKey(td => td.ManagerId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
