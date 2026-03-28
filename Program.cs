@@ -57,6 +57,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 builder.Services.AddScoped<IAuditRepository, AuditRepository>();
 builder.Services.AddScoped<ITestDriveRepository, TestDriveRepository>();
+builder.Services.AddScoped<IServiceOrderRepository, ServiceOrderRepository>();
 
 builder.Services.AddScoped<ITestDriveService, TestDriveService>();
 builder.Services.AddScoped<IAuditService, AuditService>();
@@ -66,6 +67,7 @@ builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<ISaleService, SaleService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IServiceOrderService, ServiceOrderService>();
 
 
 // JWT authentication

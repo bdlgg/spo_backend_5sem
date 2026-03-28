@@ -7,7 +7,7 @@ public interface IServiceOrderRepository
     Task<ServiceOrder?> GetByIdAsync(int id);
     Task<IEnumerable<ServiceOrder>> GetByClientIdAsync(int clientId);
     Task<IEnumerable<ServiceOrder>> GetByManagerIdAsync(int managerId);
+    Task<IEnumerable<ServiceOrder>> GetByCarIdAsync(int carId);
     Task AddAsync(ServiceOrder serviceOrder);
     Task UpdateAsync(ServiceOrder serviceOrder);
-    Task DeleteAsync(ServiceOrder serviceOrder);
 }

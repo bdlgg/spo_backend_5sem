@@ -55,6 +55,17 @@ public class ServiceOrderRepository : IServiceOrderRepository
             .ToListAsync();
     }
 
+    public async Task<IEnumerable<ServiceOrder>> GetByCarIdAsync(int carId)
+    {
+        return await  _context.ServiceOrders
+            .Include(so => so.Client)
+            .Include(so => so.Car)
+            .Include(so => so.Manager)
+            .Where(so => so.CarId == carId)
+            .OrderByDescending(so => so.CreatedAt)
+            .ToListAsync();
+    }
+
     public async Task AddAsync(ServiceOrder serviceOrder)
     {
         _context.ServiceOrders.Add(serviceOrder);
@@ -64,12 +75,6 @@ public class ServiceOrderRepository : IServiceOrderRepository
     public async Task UpdateAsync(ServiceOrder serviceOrder)
     {
         _context.ServiceOrders.Update(serviceOrder);
-        await _context.SaveChangesAsync();
-    }
-
-    public async Task DeleteAsync(ServiceOrder serviceOrder)
-    {
-        _context.ServiceOrders.Remove(serviceOrder);
         await _context.SaveChangesAsync();
     }
 }

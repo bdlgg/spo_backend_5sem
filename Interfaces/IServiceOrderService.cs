@@ -8,6 +8,7 @@ public interface IServiceOrderService
     Task<ServiceOrder?> GetByIdAsync(int id);
     Task<IEnumerable<ServiceOrder>> GetByClientIdAsync(int clientId);
     Task<IEnumerable<ServiceOrder>> GetByManagerIdAsync(int managerId);
+    Task<IEnumerable<ServiceOrder>> GetByCarIdAsync(int carId);
     Task<(bool Success, string Message, ServiceOrder? serviceOrder)> CreateAsync(ServiceOrder serviceOrder, int currentUserId);
-    Task<(bool Success, string Message)> UpdateAsync(int id, string status, decimal? finalCost, int currentUserId);
+    Task<(bool Success, string Message)> UpdateStatusAsync(int id, string status, decimal? finalCost, int currentUserId);
 }
