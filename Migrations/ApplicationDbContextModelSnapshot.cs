@@ -189,6 +189,52 @@ namespace backend_spo.Migrations
                     b.ToTable("Sales");
                 });
 
+            modelBuilder.Entity("backend_spo.Entities.ServiceOrder", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime?>("CompletedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("TEXT");
+
+                    b.Property<decimal?>("FinalCost")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ManagerId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<decimal>("PlannedCost")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("WorkDescription")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarId");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("ManagerId");
+
+                    b.ToTable("ServiceOrders");
+                });
+
             modelBuilder.Entity("backend_spo.Entities.Supplier", b =>
                 {
                     b.Property<int>("Id")
@@ -351,6 +397,33 @@ namespace backend_spo.Migrations
                     b.Navigation("Client");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("backend_spo.Entities.ServiceOrder", b =>
+                {
+                    b.HasOne("backend_spo.Entities.Car", "Car")
+                        .WithMany()
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("backend_spo.Entities.Client", "Client")
+                        .WithMany()
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("backend_spo.Entities.User", "Manager")
+                        .WithMany()
+                        .HasForeignKey("ManagerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Car");
+
+                    b.Navigation("Client");
+
+                    b.Navigation("Manager");
                 });
 
             modelBuilder.Entity("backend_spo.Entities.TestDrive", b =>
