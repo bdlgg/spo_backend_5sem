@@ -18,6 +18,7 @@ namespace backend_spo.Data
         public DbSet<Sale> Sales { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
         public DbSet<TestDrive> TestDrives { get; set; }
+        public DbSet<ServiceOrder> ServiceOrders { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -57,10 +58,10 @@ namespace backend_spo.Data
                 .OnDelete(DeleteBehavior.SetNull);
 
             modelBuilder.Entity<TestDrive>()
-    .HasOne(td => td.Car)
-    .WithMany()
-    .HasForeignKey(td => td.CarId)
-    .OnDelete(DeleteBehavior.Restrict);
+                .HasOne(td => td.Car)
+                .WithMany()
+                .HasForeignKey(td => td.CarId)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<TestDrive>()
                 .HasOne(td => td.Client)
@@ -72,6 +73,24 @@ namespace backend_spo.Data
                 .HasOne(td => td.Manager)
                 .WithMany()
                 .HasForeignKey(td => td.ManagerId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<ServiceOrder>()
+                .HasOne(so => so.Client)
+                .WithMany()
+                .HasForeignKey(so => so.ClientId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<ServiceOrder>()
+                .HasOne(so => so.Car)
+                .WithMany()
+                .HasForeignKey(so => so.CarId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            modelBuilder.Entity<ServiceOrder>()
+                .HasOne(so => so.Manager)
+                .WithMany()
+                .HasForeignKey(so => so.ManagerId)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
