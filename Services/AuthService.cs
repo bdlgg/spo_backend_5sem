@@ -15,13 +15,16 @@ public class AuthService : IAuthService
     private readonly ApplicationDbContext _context;
     private readonly IConfiguration _configuration;
     private readonly IAuditService _auditService;
+    private readonly ITokenStoreService _tokenStoreService;
     public AuthService( ApplicationDbContext context,
     IConfiguration configuration,
-    IAuditService auditService)
+    IAuditService auditService,
+    ITokenStoreService tokenStoreService)
     {
         _context = context;
         _configuration = configuration;
         _auditService = auditService;
+        _tokenStoreService = tokenStoreService;
     }
 
     public async Task<(bool Success, string Message)> RegisterAsync(RegisterDto dto)
@@ -120,21 +123,40 @@ public class AuthService : IAuthService
             return (false, "Неверный пароль", null);
         }
         var token = GenerateJwtToken(user);
-       var response = new AuthResponseDto
-       {
-           Token = token,
-           Email = user.Email,
-           Role = user.Role?.Name ?? string.Empty
-       };
+        var expireMinutes = int.Parse(_configuration["Jwt:ExpireInMinutes"]!);
+        await _tokenStoreService.SaveTokenAsync(user.Id, token, TimeSpan.FromMinutes(expireMinutes));
+        var response = new AuthResponseDto 
+        { 
+            Token = token, 
+            Email = user.Email, 
+            Role = user.Role?.Name ?? string.Empty 
+        }; 
         await _auditService.LogAsync(
-    user.Id,
-    "LOGIN",
-    "User",
-    user.Id,
-    "Success",
-    $"Успешный вход пользователя {user.Email}"
-);
+            user.Id, 
+            "LOGIN", 
+            "User", 
+            user.Id, 
+            "Success", 
+            $"Успешный вход пользователя {user.Email}" 
+            );
         return (true, "Успешный вход", response);
+    }
+
+    public async Task<(bool Success, string Message)> LogoutAsync(string token, int? currentUserId)
+    {
+        if (string.IsNullOrWhiteSpace(token))
+            return (false, "Токен не найден");
+        await _tokenStoreService.RemoveTokenAsync(token);
+
+        await _auditService.LogAsync(
+            currentUserId,
+            "LOGOUT",
+            "User",
+            currentUserId,
+            "Success",
+            "Пользователь вышел из системы"
+        );
+        return (true, "Выход выполнен успешно");
     }
 
     private string GenerateJwtToken(User user)

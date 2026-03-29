@@ -3,12 +3,12 @@ using backend_spo.Data;
 using backend_spo.Services;
 using backend_spo.Interfaces;
 using backend_spo.Repositories;
-using backend_spo.Entities;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
 using System.Text.Json.Serialization;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -70,6 +70,12 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IServiceOrderService, ServiceOrderService>();
 builder.Services.AddScoped<IReportService, ReportService>();
 builder.Services.AddScoped<IConversionPredictionService, ConversionPredictionService>();
+builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
+{
+    var configuration = builder.Configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(configuration!);
+});
+builder.Services.AddScoped<ITokenStoreService, RedisTokenStoreService>();
 
 
 // JWT authentication
@@ -88,6 +94,25 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = jwtSettings["Issuer"],
             ValidAudience = jwtSettings["Audience"],
             IssuerSigningKey = new SymmetricSecurityKey(key)
+        };
+
+        options.Events = new JwtBearerEvents
+        {
+            OnTokenValidated = async context =>
+            {
+                var tokenStore = context.HttpContext.RequestServices.GetRequiredService<ITokenStoreService>();
+                var authHeader = context.Request.Headers.Authorization.ToString();
+                if (string.IsNullOrWhiteSpace(authHeader) || !authHeader.StartsWith("Bearer "))
+                {
+                    context.Fail("Токен не найден");
+                    return;
+                }
+
+                var token = authHeader["Bearer ".Length..].Trim();
+                var isActive = await tokenStore.IsTokenActiveAsync(token);
+                if (!isActive)
+                    context.Fail("Токен неактивен или отозван");
+            }
         };
     });
 
@@ -111,7 +136,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();

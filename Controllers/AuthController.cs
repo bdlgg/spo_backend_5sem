@@ -1,5 +1,7 @@
+using System.Security.Claims;
 using backend_spo.DTOs;
 using backend_spo.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend_spo.Controllers;
@@ -30,5 +32,23 @@ public class AuthController : ControllerBase
         if (!result.Success)
             return BadRequest(new { message = result.Message });
         return Ok(result.Response);
+    }
+
+    [Authorize]
+    [HttpPost("logout")]
+    public async Task<IActionResult> Logout()
+    {
+        var authHeader = Request.Headers.Authorization.ToString();
+        if (string.IsNullOrWhiteSpace(authHeader) || !authHeader.StartsWith("Bearer "))
+            return BadRequest(new { message = "Токен не найден в заголовке Authorization" });
+        var token = authHeader["Bearer ".Length..].Trim();
+        var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        int? currentUserId = null;
+        if (!string.IsNullOrWhiteSpace(userIdClaim) && int.TryParse(userIdClaim, out var parsedUserId))
+            currentUserId = parsedUserId;
+        var result = await _authService.LogoutAsync(token, currentUserId);
+        if (!result.Success)
+            return BadRequest(new { message = result.Message });
+        return Ok(new { message = result.Message });
     }
 }

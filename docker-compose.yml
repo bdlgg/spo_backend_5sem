@@ -1,0 +1,35 @@
+﻿version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: backend_spo
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_URLS: "http://+:8080"
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ConnectionStrings__DefaultConnection: "Data Source=/data/autosalon.db"
+      ConnectionStrings__Redis: "redis:6379"
+      Jwt__Key: "ed42df78af6cac57c0696f0d0f79bd2583ac9dbc578d971549b866caf05b6752"
+      Jwt__Issuer: "backend_spo"
+      Jwt__Audience: "backend_spo_users"
+      Jwt__ExpireInMinutes: "120"
+    volumes:
+      - sqlite_data:/data
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7
+    container_name: backend_spo_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  sqlite_data:
+  redis_data:
