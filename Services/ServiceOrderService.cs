@@ -85,6 +85,7 @@ public class ServiceOrderService : IServiceOrderService
         serviceOrder.FinalCost = null;
         serviceOrder.CompletedAt = null;
         await _serviceOrderRepository.AddAsync(serviceOrder);
+        var createdOrder = await _serviceOrderRepository.GetByIdAsync(serviceOrder.Id);
         await _auditService.LogAsync(
             currentUserId,
             "SERVICE_ORDER_CREATE",
@@ -93,7 +94,7 @@ public class ServiceOrderService : IServiceOrderService
             "Success",
             $"Создан заказ-наряд Id={serviceOrder.Id} для клиента Id={serviceOrder.ClientId}, автомобиля Id={serviceOrder.CarId}"
         );
-        return (true, "Заказ-наряд успешно создан", serviceOrder);
+        return (true, "Заказ-наряд успешно создан", createdOrder);
     }
 
     public async Task<(bool Success, string Message)> UpdateStatusAsync(int id, string status, decimal? finalCost, int currentUserId)
@@ -107,14 +108,14 @@ public class ServiceOrderService : IServiceOrderService
         var allowedStatuses = new[] { "Accepted", "InProgress", "Completed", "Cancelled" };
         if (!allowedStatuses.Contains(normalizedStatus))
             return (false, "Недопустимый статус, возможные статусы: Completed, InProgress, Cancelled, Accepted(возврат невозможен)");
-        if (serviceOrder.Status == "Accepted")
+        if (serviceOrder.Status == "Completed")
             return (false, "Завершенный заказ-наряд нельзя изменить");
         if (serviceOrder.Status == "Cancelled")
             return (false, "Отмененный заказ-наряд нельзя изменить");
         switch (normalizedStatus)
         {
             case "Completed":
-                if (serviceOrder.Status == "Accepted")
+                if (serviceOrder.Status != "InProgress")
                     return (false, "Нельзя завершить заказ-наряд без статуса InProgress");
                 if (!finalCost.HasValue || finalCost.Value <= 0)
                     return (false, "Для завершения заказ-наряда нужно указать итоговую стоимость больше нуля");
