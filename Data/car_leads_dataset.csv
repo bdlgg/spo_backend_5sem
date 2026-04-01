@@ -1,0 +1,1201 @@
+LeadId,CreatedAt,SourceChannel,CarBrand,CarModel,CarCategory,PriceAtLead,IsNewCar,ClientCity,ContactCount,HadTestDrive,InterestedInCredit,InterestedInTradeIn,LeadStatusBeforeFinal,DaysToDecision,ManagerId,ClientAgeGroup,PreferredTransmission,PreferredFuelType,MileageRange,VisitToSalon,NumberOfViewedCars,DiscountOffered,InitialBudget,MonthlyIncomeRange,IsConverted
+LEAD00001,2023-03-31,social_media,Volkswagen,Polo,Hatchback,4637000,1,Yekaterinburg,10,0,1,1,on_hold,140,MGR014,26-35,manual,gasoline,,1,1,0,5118453,>400000,1
+LEAD00002,2023-08-09,partner,Ford,EcoSport,SUV,826000,0,Novosibirsk,6,1,1,0,new,97,MGR003,46-55,robot,hybrid,150000+,1,5,0,1107741,50000-100000,0
+LEAD00003,2023-08-27,phone,Ford,EcoSport,SUV,3164000,0,Saint Petersburg,2,0,1,0,offer_sent,163,MGR006,18-25,manual,hybrid,0-30000,1,6,1,3243946,<50000,1
+LEAD00004,2023-08-23,avito,Hyundai,Tucson,SUV,3293000,1,Kazan,1,0,1,1,test_drive_done,165,MGR015,56+,manual,hybrid,,0,6,1,3616481,<50000,1
+LEAD00005,2023-05-22,email,Kia,Sportage,SUV,2376000,1,Rostov-on-Don,9,0,0,0,offer_sent,17,MGR013,46-55,variator,hybrid,,1,3,0,2618666,50000-100000,1
+LEAD00006,2023-10-28,partner,Lada,XRAY,SUV,1366000,1,Moscow,7,1,1,0,on_hold,77,MGR021,18-25,robot,hybrid,,0,3,0,1277579,<50000,0
+LEAD00007,2023-01-20,partner,Hyundai,Tucson,SUV,2931000,1,Novosibirsk,2,0,0,0,new,22,MGR024,56+,automatic,hybrid,,1,1,1,3325916,200000-400000,0
+LEAD00008,2024-03-09,email,Volkswagen,Tiguan,SUV,1325000,0,Samara,4,0,0,0,test_drive_done,133,MGR015,56+,manual,hybrid,60001-100000,0,7,0,1806446,>400000,1
+LEAD00009,2023-03-14,website,Hyundai,Solaris,Sedan,2784000,1,Rostov-on-Don,12,0,1,0,on_hold,125,MGR007,56+,manual,diesel,,0,2,0,2876004,<50000,0
+LEAD00010,2024-03-17,partner,Ford,Kuga,SUV,2595000,1,Samara,6,0,1,0,new,64,MGR007,46-55,manual,gasoline,,0,2,1,2750784,<50000,1
+LEAD00011,2024-07-17,phone,Lada,Granta,Sedan,1232000,1,Kazan,2,1,0,0,test_drive_done,55,MGR013,46-55,manual,gasoline,,0,4,1,1541231,200000-400000,0
+LEAD00012,2024-05-13,avito,Kia,Sorento,SUV,654000,0,Kazan,3,1,1,1,offer_sent,123,MGR017,46-55,robot,electric,0-30000,0,1,0,513942,>400000,0
+LEAD00013,2024-02-18,offline,Renault,Duster,SUV,716000,0,Saint Petersburg,2,0,0,0,offer_sent,81,MGR009,26-35,automatic,gasoline,150000+,1,2,0,1128024,50000-100000,1
+LEAD00014,2023-01-10,avito,BMW,5 Series,Sedan,5675000,1,Novosibirsk,8,0,0,1,new,63,MGR012,36-45,variator,hybrid,,1,5,1,5840962,<50000,1
+LEAD00015,2023-04-29,website,Lada,XRAY,SUV,1341000,1,Omsk,2,0,1,1,negotiation,130,MGR016,36-45,automatic,diesel,,1,6,1,1806046,100000-200000,1
+LEAD00016,2023-09-26,avito,Toyota,Camry,Sedan,6996000,1,Kazan,3,0,0,0,offer_sent,10,MGR012,18-25,automatic,hybrid,,1,2,0,6952294,50000-100000,0
+LEAD00017,2023-09-13,website,Kia,Sorento,SUV,1822000,1,Kazan,11,1,0,0,in_progress,46,MGR014,36-45,automatic,hybrid,,1,3,0,1870237,50000-100000,1
+LEAD00018,2023-02-09,partner,BMW,X3,SUV,8987000,1,Yekaterinburg,8,1,0,0,in_progress,103,MGR011,36-45,manual,gasoline,,1,4,1,9479094,200000-400000,1
+LEAD00019,2023-09-25,email,Volkswagen,Passat,Sedan,3038000,1,Omsk,3,0,0,1,test_drive_done,156,MGR017,46-55,robot,gasoline,,0,6,0,3166914,<50000,1
+LEAD00020,2023-03-13,website,Ford,Explorer,SUV,2643000,1,Chelyabinsk,11,0,0,0,test_drive_done,84,MGR013,18-25,manual,hybrid,,1,5,0,3142287,200000-400000,0
+LEAD00021,2023-01-01,avito,Renault,Duster,SUV,1396000,1,Chelyabinsk,5,1,1,0,offer_sent,122,MGR024,26-35,robot,electric,,0,8,0,1420082,>400000,1
+LEAD00022,2023-08-19,email,Volkswagen,Passat,Sedan,3711000,1,Rostov-on-Don,4,1,1,0,offer_sent,50,MGR023,36-45,automatic,diesel,,0,2,0,4171356,100000-200000,0
+LEAD00023,2024-06-14,phone,Lada,Niva,SUV,1049000,1,Moscow,8,1,1,0,offer_sent,82,MGR025,18-25,variator,diesel,,1,8,0,1435075,50000-100000,0
+LEAD00024,2023-10-11,avito,Ford,Kuga,SUV,3844000,1,Novosibirsk,9,0,1,0,offer_sent,21,MGR005,46-55,variator,hybrid,,0,4,1,3979239,50000-100000,1
+LEAD00025,2024-04-22,phone,Mercedes-Benz,E-Class,Sedan,9786000,1,Saint Petersburg,7,1,0,0,test_drive_done,123,MGR001,46-55,variator,hybrid,,0,1,0,10189655,>400000,0
+LEAD00026,2023-10-07,partner,Skoda,Karoq,SUV,2497000,0,Chelyabinsk,7,0,1,0,offer_sent,7,MGR013,56+,manual,electric,150000+,0,3,0,2430827,50000-100000,0
+LEAD00027,2023-12-02,phone,Toyota,Camry,Sedan,5311000,1,Samara,4,0,1,0,test_drive_done,5,MGR024,26-35,automatic,hybrid,,1,7,1,5196884,200000-400000,1
+LEAD00028,2023-06-06,website,BMW,5 Series,Sedan,8825000,1,Moscow,4,1,0,0,offer_sent,156,MGR024,18-25,manual,diesel,,1,5,0,8800939,<50000,0
+LEAD00029,2023-03-19,offline,Kia,Cerato,Sedan,1742000,1,Moscow,10,0,0,1,new,89,MGR018,36-45,variator,electric,,0,2,0,2135423,50000-100000,0
+LEAD00030,2024-03-19,email,BMW,3 Series,Sedan,7644000,1,Nizhniy Novgorod,6,0,0,0,test_drive_done,120,MGR014,18-25,variator,electric,,1,5,0,8008315,<50000,0
+LEAD00031,2024-04-20,partner,Ford,EcoSport,SUV,2920000,1,Yekaterinburg,10,0,1,1,negotiation,88,MGR009,18-25,robot,electric,,0,3,0,3092060,50000-100000,0
+LEAD00032,2023-09-04,phone,Skoda,Octavia,Sedan,2558000,1,Saint Petersburg,12,0,0,0,negotiation,170,MGR019,26-35,variator,electric,,1,5,1,2613123,>400000,1
+LEAD00033,2023-11-10,email,Renault,Kaptur,SUV,1635000,1,Omsk,5,1,0,0,negotiation,151,MGR025,36-45,robot,electric,,0,3,1,1942719,100000-200000,1
+LEAD00034,2023-01-15,phone,Skoda,Octavia,Sedan,2455000,0,Kazan,12,0,1,0,new,147,MGR010,26-35,robot,diesel,0-30000,0,3,0,2769723,100000-200000,0
+LEAD00035,2024-05-18,website,Lada,XRAY,SUV,588000,0,Kazan,2,0,0,1,offer_sent,107,MGR020,46-55,automatic,gasoline,0-30000,0,5,1,648247,200000-400000,0
+LEAD00036,2024-08-05,avito,Ford,Explorer,SUV,2940000,0,Samara,10,1,0,1,in_progress,45,MGR018,46-55,robot,electric,30001-60000,0,4,1,2825131,100000-200000,1
+LEAD00037,2023-10-23,email,Toyota,Land Cruiser,SUV,5490000,1,Rostov-on-Don,12,1,0,1,offer_sent,170,MGR007,46-55,robot,gasoline,,1,5,0,5945420,50000-100000,1
+LEAD00038,2023-11-11,phone,Renault,Duster,SUV,1863000,1,Kazan,10,0,0,1,offer_sent,139,MGR016,26-35,automatic,gasoline,,1,5,0,1948470,50000-100000,1
+LEAD00039,2023-08-23,email,Ford,Focus,Hatchback,3369000,1,Nizhniy Novgorod,11,0,0,0,test_drive_done,133,MGR021,56+,robot,gasoline,,0,5,0,3352700,<50000,0
+LEAD00040,2023-12-08,avito,Skoda,Kodiaq,SUV,2698000,1,Samara,6,0,0,0,offer_sent,10,MGR015,18-25,variator,hybrid,,0,5,0,2917904,200000-400000,1
+LEAD00041,2023-02-25,partner,Skoda,Rapid,Sedan,1737000,1,Chelyabinsk,4,0,0,0,in_progress,74,MGR015,56+,automatic,electric,,1,1,1,2112898,200000-400000,0
+LEAD00042,2023-01-15,email,Lada,Vesta,Sedan,829000,1,Rostov-on-Don,9,0,1,0,test_drive_done,75,MGR017,26-35,manual,hybrid,,1,2,0,790450,>400000,0
+LEAD00043,2024-06-04,phone,Mercedes-Benz,GLE,SUV,7868000,1,Samara,12,0,0,1,negotiation,1,MGR010,56+,manual,electric,,0,7,1,8200401,50000-100000,0
+LEAD00044,2024-07-10,avito,Ford,Kuga,SUV,1408000,0,Omsk,7,0,1,1,negotiation,122,MGR023,46-55,robot,hybrid,0-30000,0,7,1,1638728,>400000,0
+LEAD00045,2023-12-06,partner,Mercedes-Benz,GLE,SUV,9436000,1,Novosibirsk,2,0,1,0,in_progress,20,MGR016,46-55,automatic,diesel,,1,3,0,9922587,>400000,0
+LEAD00046,2024-05-14,email,Skoda,Rapid,Sedan,2776000,1,Chelyabinsk,9,1,1,0,new,163,MGR023,18-25,robot,electric,,0,4,0,3031052,100000-200000,0
+LEAD00047,2024-01-19,website,Lada,Granta,Sedan,1106000,1,Moscow,7,1,0,0,test_drive_done,159,MGR022,36-45,automatic,hybrid,,0,3,1,1545098,100000-200000,1
+LEAD00048,2023-10-22,avito,Ford,Explorer,SUV,2551000,1,Kazan,11,0,1,0,on_hold,65,MGR015,46-55,robot,gasoline,,0,5,0,2795920,200000-400000,0
+LEAD00049,2023-01-23,website,Hyundai,Santa Fe,SUV,3379000,1,Yekaterinburg,11,0,1,0,negotiation,59,MGR020,46-55,robot,hybrid,,0,1,0,3699856,100000-200000,0
+LEAD00050,2023-02-04,email,Hyundai,Tucson,SUV,2426000,1,Novosibirsk,10,0,1,0,offer_sent,94,MGR017,18-25,automatic,hybrid,,1,7,1,2364579,200000-400000,1
+LEAD00051,2023-03-19,partner,Skoda,Kodiaq,SUV,1276000,0,Samara,3,0,1,0,new,102,MGR001,36-45,robot,gasoline,60001-100000,0,7,0,1660384,200000-400000,0
+LEAD00052,2023-08-28,email,Volkswagen,Touareg,SUV,2309000,0,Kazan,8,1,0,0,on_hold,78,MGR021,56+,variator,hybrid,100001-150000,0,4,0,2775269,<50000,0
+LEAD00053,2024-07-04,website,Kia,Rio,Sedan,2587000,0,Kazan,3,0,1,0,on_hold,26,MGR016,46-55,automatic,gasoline,100001-150000,0,7,0,2549029,50000-100000,0
+LEAD00054,2023-04-12,social_media,Skoda,Octavia,Sedan,2163000,0,Yekaterinburg,11,0,0,0,new,170,MGR007,46-55,variator,diesel,100001-150000,1,5,1,2091093,100000-200000,0
+LEAD00055,2024-07-21,partner,Ford,Focus,Hatchback,1807000,1,Nizhniy Novgorod,4,0,0,1,in_progress,139,MGR009,26-35,manual,diesel,,0,1,1,1758716,<50000,0
+LEAD00056,2023-09-29,website,Volkswagen,Polo,Hatchback,1339000,0,Nizhniy Novgorod,1,1,1,1,new,116,MGR017,26-35,robot,gasoline,150000+,1,8,0,1677169,50000-100000,1
+LEAD00057,2024-02-16,offline,Ford,Focus,Hatchback,4298000,1,Kazan,7,0,0,0,new,33,MGR009,46-55,automatic,gasoline,,1,2,1,4253539,200000-400000,0
+LEAD00058,2023-04-28,offline,Ford,EcoSport,SUV,3160000,1,Omsk,11,0,0,0,negotiation,117,MGR013,36-45,variator,electric,,1,8,0,3393914,<50000,1
+LEAD00059,2023-04-04,social_media,Volkswagen,Passat,Sedan,3348000,1,Kazan,2,1,1,0,offer_sent,85,MGR022,36-45,manual,electric,,0,1,0,3736866,<50000,1
+LEAD00060,2024-06-03,social_media,BMW,X3,SUV,3921000,1,Rostov-on-Don,4,1,0,0,offer_sent,58,MGR014,36-45,robot,gasoline,,1,6,1,4013099,>400000,0
+LEAD00061,2023-12-14,email,Ford,Focus,Hatchback,4094000,1,Kazan,6,1,0,0,new,136,MGR007,18-25,manual,hybrid,,1,3,0,3926146,100000-200000,1
+LEAD00062,2023-06-11,social_media,Lada,XRAY,SUV,961000,1,Kazan,10,1,1,0,offer_sent,30,MGR012,36-45,automatic,gasoline,,1,8,0,987040,50000-100000,1
+LEAD00063,2023-02-26,email,Skoda,Karoq,SUV,1829000,0,Kazan,1,1,0,0,on_hold,111,MGR006,18-25,manual,electric,100001-150000,0,5,1,1637105,>400000,1
+LEAD00064,2023-01-20,offline,Renault,Duster,SUV,1712000,1,Nizhniy Novgorod,8,0,0,0,new,84,MGR006,18-25,variator,gasoline,,0,7,1,1936707,200000-400000,0
+LEAD00065,2024-02-15,social_media,Ford,Kuga,SUV,4424000,1,Saint Petersburg,9,1,0,0,new,136,MGR017,46-55,automatic,diesel,,1,3,1,4887984,200000-400000,1
+LEAD00066,2023-07-22,partner,BMW,X5,SUV,8787000,1,Novosibirsk,3,0,0,0,offer_sent,115,MGR022,26-35,automatic,diesel,,1,8,0,9178119,100000-200000,0
+LEAD00067,2023-11-07,social_media,Ford,EcoSport,SUV,4169000,1,Novosibirsk,5,0,1,1,new,166,MGR003,46-55,automatic,electric,,1,1,1,4270022,200000-400000,0
+LEAD00068,2024-05-02,offline,Renault,Arkana,Crossover,1547000,0,Omsk,9,1,1,1,on_hold,45,MGR002,18-25,variator,diesel,150000+,0,6,0,1435425,100000-200000,1
+LEAD00069,2024-02-01,offline,Lada,Niva,SUV,1336000,1,Rostov-on-Don,7,0,0,1,offer_sent,174,MGR013,26-35,robot,hybrid,,0,6,1,1235096,100000-200000,1
+LEAD00070,2023-05-13,website,Ford,Explorer,SUV,2165000,0,Rostov-on-Don,10,0,1,0,on_hold,172,MGR014,26-35,robot,hybrid,0-30000,0,6,0,2516963,200000-400000,0
+LEAD00071,2023-05-21,phone,Toyota,Corolla,Sedan,3430000,0,Yekaterinburg,3,1,0,1,offer_sent,97,MGR005,36-45,variator,diesel,30001-60000,0,1,0,3878052,50000-100000,1
+LEAD00072,2023-10-19,website,Ford,Explorer,SUV,3392000,1,Chelyabinsk,12,0,1,1,negotiation,174,MGR019,36-45,manual,electric,,0,8,0,3395440,>400000,0
+LEAD00073,2023-05-22,offline,Lada,XRAY,SUV,1191000,1,Omsk,5,1,0,0,negotiation,116,MGR017,46-55,manual,diesel,,0,2,1,1159099,>400000,1
+LEAD00074,2024-02-10,partner,Mercedes-Benz,C-Class,Sedan,3818000,0,Samara,9,0,1,1,in_progress,36,MGR002,36-45,automatic,electric,60001-100000,1,6,0,4299533,<50000,1
+LEAD00075,2023-08-09,avito,Lada,Granta,Sedan,1280000,1,Rostov-on-Don,3,0,0,0,new,62,MGR014,18-25,automatic,gasoline,,1,5,1,1207767,100000-200000,0
+LEAD00076,2023-10-26,website,Ford,Kuga,SUV,1057000,0,Samara,7,1,1,0,offer_sent,140,MGR017,56+,automatic,diesel,0-30000,1,2,0,1235120,50000-100000,0
+LEAD00077,2023-01-17,partner,Renault,Logan,Sedan,1399000,0,Samara,6,0,1,0,negotiation,165,MGR006,18-25,variator,hybrid,150000+,0,6,1,1568412,100000-200000,0
+LEAD00078,2023-07-26,partner,Lada,Niva,SUV,986000,1,Novosibirsk,1,0,0,0,test_drive_done,65,MGR002,18-25,variator,gasoline,,1,7,0,1355408,100000-200000,0
+LEAD00079,2024-03-23,partner,Hyundai,Creta,SUV,2862000,1,Moscow,7,0,0,0,offer_sent,69,MGR003,36-45,robot,gasoline,,0,8,0,3047191,100000-200000,0
+LEAD00080,2023-03-23,partner,Volkswagen,Touareg,SUV,4067000,1,Novosibirsk,6,0,1,0,on_hold,91,MGR020,56+,robot,hybrid,,1,8,1,3911412,<50000,0
+LEAD00081,2024-03-24,email,Skoda,Octavia,Sedan,903000,0,Chelyabinsk,1,1,1,0,negotiation,114,MGR025,36-45,manual,gasoline,60001-100000,1,1,0,1174778,50000-100000,1
+LEAD00082,2024-05-26,social_media,Kia,Cerato,Sedan,2930000,1,Kazan,9,0,0,1,negotiation,178,MGR016,26-35,automatic,gasoline,,1,8,1,3371599,50000-100000,1
+LEAD00083,2024-07-17,phone,Kia,Rio,Sedan,3151000,1,Samara,9,1,1,1,in_progress,32,MGR007,18-25,robot,hybrid,,0,3,0,3484469,<50000,0
+LEAD00084,2023-05-13,social_media,Hyundai,Santa Fe,SUV,1507000,1,Omsk,10,0,1,0,offer_sent,19,MGR005,56+,robot,electric,,0,8,0,1736322,>400000,0
+LEAD00085,2024-03-19,email,Volkswagen,Touareg,SUV,3508000,1,Omsk,9,0,1,1,negotiation,133,MGR010,36-45,manual,diesel,,1,3,1,3544422,50000-100000,0
+LEAD00086,2023-06-22,offline,Skoda,Kodiaq,SUV,2800000,1,Kazan,10,0,1,0,new,8,MGR003,26-35,robot,gasoline,,0,6,0,3190996,>400000,1
+LEAD00087,2023-10-24,partner,Ford,EcoSport,SUV,1663000,0,Rostov-on-Don,11,0,0,0,test_drive_done,107,MGR016,46-55,automatic,electric,30001-60000,0,5,0,1525823,>400000,0
+LEAD00088,2024-06-11,partner,BMW,5 Series,Sedan,6060000,1,Nizhniy Novgorod,9,1,1,1,test_drive_done,158,MGR014,36-45,variator,diesel,,1,3,1,6164309,100000-200000,1
+LEAD00089,2024-04-23,offline,Kia,Cerato,Sedan,2562000,0,Nizhniy Novgorod,8,0,0,1,negotiation,13,MGR002,26-35,manual,electric,150000+,1,8,0,2587595,>400000,1
+LEAD00090,2024-01-10,offline,Ford,Kuga,SUV,2770000,1,Moscow,7,0,1,0,test_drive_done,141,MGR009,18-25,variator,diesel,,1,5,1,3098750,100000-200000,0
+LEAD00091,2023-07-23,website,Ford,Focus,Hatchback,2127000,1,Chelyabinsk,10,0,0,1,test_drive_done,39,MGR020,36-45,robot,hybrid,,1,6,0,2471559,50000-100000,0
+LEAD00092,2024-06-05,phone,Kia,Cerato,Sedan,2604000,1,Chelyabinsk,9,0,0,0,offer_sent,79,MGR024,56+,robot,hybrid,,1,6,0,2840774,>400000,0
+LEAD00093,2024-05-06,email,Toyota,Land Cruiser,SUV,3075000,0,Rostov-on-Don,3,0,0,0,new,113,MGR011,56+,manual,gasoline,30001-60000,1,4,1,2990233,>400000,0
+LEAD00094,2023-08-01,offline,Mercedes-Benz,E-Class,Sedan,7361000,1,Rostov-on-Don,9,1,0,0,negotiation,140,MGR012,46-55,automatic,diesel,,1,3,0,7720024,>400000,1
+LEAD00095,2023-10-23,phone,Skoda,Karoq,SUV,1143000,0,Kazan,12,1,0,0,test_drive_done,102,MGR012,56+,robot,diesel,150000+,1,5,1,1544334,100000-200000,0
+LEAD00096,2023-08-08,social_media,Kia,Cerato,Sedan,1472000,1,Saint Petersburg,4,0,1,0,in_progress,63,MGR002,36-45,variator,hybrid,,1,2,0,1887336,200000-400000,0
+LEAD00097,2023-04-13,phone,Renault,Duster,SUV,1853000,1,Moscow,11,0,1,0,test_drive_done,167,MGR007,18-25,variator,hybrid,,0,7,0,2151807,200000-400000,0
+LEAD00098,2024-03-03,email,Skoda,Rapid,Sedan,2084000,1,Moscow,3,0,1,0,new,3,MGR010,18-25,manual,gasoline,,0,3,0,2187528,50000-100000,0
+LEAD00099,2024-04-24,avito,Volkswagen,Passat,Sedan,2765000,1,Omsk,5,1,1,1,on_hold,87,MGR010,56+,variator,diesel,,1,5,0,2579768,>400000,1
+LEAD00100,2023-04-08,partner,Hyundai,Tucson,SUV,3060000,1,Chelyabinsk,3,0,1,0,negotiation,78,MGR019,56+,robot,gasoline,,1,7,1,3139963,200000-400000,0
+LEAD00101,2023-06-13,email,Toyota,Corolla,Sedan,4745000,1,Yekaterinburg,7,0,0,0,negotiation,158,MGR008,18-25,automatic,electric,,0,2,0,4854369,100000-200000,1
+LEAD00102,2023-08-12,avito,Kia,Sorento,SUV,1927000,1,Rostov-on-Don,4,0,0,0,new,16,MGR018,36-45,variator,electric,,1,6,1,2318573,>400000,0
+LEAD00103,2024-05-15,social_media,Hyundai,Tucson,SUV,2073000,1,Omsk,2,0,1,1,offer_sent,119,MGR022,46-55,automatic,diesel,,1,7,0,1933541,>400000,0
+LEAD00104,2023-12-19,partner,Toyota,Land Cruiser,SUV,3884000,1,Moscow,12,1,0,0,in_progress,35,MGR025,26-35,automatic,gasoline,,1,8,1,4112728,200000-400000,1
+LEAD00105,2023-05-02,avito,Mercedes-Benz,GLC,SUV,5133000,0,Chelyabinsk,3,0,1,1,on_hold,140,MGR014,46-55,automatic,diesel,100001-150000,0,1,0,5245856,100000-200000,0
+LEAD00106,2024-03-05,social_media,Hyundai,Tucson,SUV,3286000,1,Novosibirsk,10,0,0,1,offer_sent,173,MGR023,36-45,manual,gasoline,,1,2,0,3554127,<50000,0
+LEAD00107,2024-05-30,avito,Hyundai,Solaris,Sedan,3047000,1,Yekaterinburg,5,1,0,0,on_hold,134,MGR008,56+,manual,gasoline,,0,6,1,2997219,50000-100000,0
+LEAD00108,2024-01-26,offline,Skoda,Octavia,Sedan,1890000,0,Novosibirsk,9,1,1,1,on_hold,37,MGR015,46-55,variator,gasoline,60001-100000,1,8,1,1926290,100000-200000,0
+LEAD00109,2023-09-19,avito,Renault,Arkana,Crossover,2191000,1,Omsk,4,1,1,0,on_hold,155,MGR020,56+,manual,electric,,1,4,1,2386489,50000-100000,1
+LEAD00110,2023-12-07,partner,Volkswagen,Tiguan,SUV,4895000,1,Rostov-on-Don,5,0,1,0,in_progress,179,MGR020,56+,manual,electric,,0,2,0,5197184,50000-100000,0
+LEAD00111,2023-09-25,social_media,Mercedes-Benz,E-Class,Sedan,8522000,1,Kazan,6,0,0,1,in_progress,95,MGR011,46-55,variator,hybrid,,0,8,0,8657788,100000-200000,0
+LEAD00112,2023-07-20,website,Ford,Explorer,SUV,2197000,1,Kazan,6,1,0,1,on_hold,165,MGR024,56+,variator,hybrid,,0,6,1,2509356,50000-100000,0
+LEAD00113,2023-02-04,phone,Kia,Cerato,Sedan,996000,0,Omsk,2,0,0,0,in_progress,130,MGR015,46-55,manual,gasoline,0-30000,1,4,1,954366,>400000,1
+LEAD00114,2024-06-26,website,Ford,Kuga,SUV,2798000,0,Moscow,12,1,0,1,new,135,MGR005,56+,variator,gasoline,0-30000,0,7,0,2785974,<50000,1
+LEAD00115,2024-08-01,social_media,Ford,EcoSport,SUV,3051000,1,Chelyabinsk,4,0,1,0,test_drive_done,142,MGR016,18-25,robot,electric,,0,1,1,3248687,200000-400000,1
+LEAD00116,2023-08-05,avito,Toyota,RAV4,SUV,1577000,0,Chelyabinsk,12,0,1,1,in_progress,81,MGR001,36-45,automatic,gasoline,0-30000,1,5,0,1967882,50000-100000,0
+LEAD00117,2023-12-06,website,Ford,Explorer,SUV,2431000,0,Kazan,7,0,1,0,new,88,MGR020,26-35,manual,electric,30001-60000,0,6,1,2689320,>400000,0
+LEAD00118,2024-07-20,website,Ford,Kuga,SUV,2936000,1,Kazan,7,0,0,0,new,69,MGR005,46-55,variator,diesel,,1,5,0,2813077,100000-200000,0
+LEAD00119,2024-01-04,social_media,Kia,Sorento,SUV,1298000,0,Saint Petersburg,5,1,1,0,offer_sent,24,MGR020,18-25,automatic,hybrid,60001-100000,0,7,1,1191972,200000-400000,1
+LEAD00120,2024-06-17,social_media,BMW,X3,SUV,3601000,1,Chelyabinsk,3,0,1,1,negotiation,108,MGR010,46-55,automatic,diesel,,1,3,1,3856791,>400000,1
+LEAD00121,2023-05-19,phone,Volkswagen,Passat,Sedan,1830000,0,Samara,5,1,1,0,in_progress,77,MGR011,56+,manual,electric,150000+,1,6,0,2081533,<50000,1
+LEAD00122,2023-09-06,phone,Hyundai,Santa Fe,SUV,1986000,0,Chelyabinsk,6,0,0,0,on_hold,141,MGR001,36-45,robot,electric,30001-60000,1,4,0,2358133,>400000,0
+LEAD00123,2023-11-07,partner,Lada,Granta,Sedan,1248000,1,Kazan,4,1,1,0,offer_sent,103,MGR018,18-25,variator,electric,,1,8,0,1550514,50000-100000,1
+LEAD00124,2023-12-30,email,Mercedes-Benz,C-Class,Sedan,6945000,1,Omsk,3,0,1,0,test_drive_done,28,MGR001,56+,automatic,gasoline,,0,7,0,7092704,50000-100000,1
+LEAD00125,2024-05-09,social_media,Hyundai,Tucson,SUV,3225000,1,Chelyabinsk,2,1,0,1,test_drive_done,53,MGR017,46-55,manual,hybrid,,0,3,1,3384731,<50000,1
+LEAD00126,2023-04-28,email,Lada,Vesta,Sedan,1248000,1,Samara,1,0,0,0,in_progress,85,MGR018,36-45,automatic,hybrid,,1,4,0,1626719,<50000,0
+LEAD00127,2023-07-22,email,Lada,Granta,Sedan,814000,0,Novosibirsk,8,0,1,0,negotiation,84,MGR007,26-35,variator,electric,30001-60000,1,2,0,1176968,<50000,1
+LEAD00128,2023-04-27,email,Skoda,Karoq,SUV,1830000,0,Nizhniy Novgorod,6,0,1,1,on_hold,35,MGR011,56+,variator,electric,0-30000,0,5,0,2248836,>400000,1
+LEAD00129,2023-05-22,social_media,Skoda,Octavia,Sedan,1874000,1,Novosibirsk,10,0,1,0,negotiation,36,MGR006,56+,variator,electric,,0,3,0,2187426,>400000,1
+LEAD00130,2024-06-01,website,Lada,Vesta,Sedan,1167000,1,Samara,11,0,0,0,new,57,MGR010,26-35,manual,electric,,0,8,1,1559862,>400000,1
+LEAD00131,2023-04-27,partner,Hyundai,Creta,SUV,2088000,1,Samara,5,0,0,0,offer_sent,56,MGR014,56+,variator,gasoline,,0,1,0,2350806,>400000,1
+LEAD00132,2023-08-31,avito,Hyundai,Creta,SUV,1532000,1,Kazan,4,0,0,0,in_progress,53,MGR002,36-45,automatic,electric,,0,7,1,1477998,<50000,0
+LEAD00133,2023-10-01,offline,Renault,Kaptur,SUV,1811000,1,Novosibirsk,9,0,0,1,on_hold,33,MGR023,36-45,robot,hybrid,,0,7,0,1901794,>400000,0
+LEAD00134,2023-10-03,partner,Hyundai,Tucson,SUV,2719000,1,Yekaterinburg,11,0,1,0,on_hold,95,MGR015,46-55,variator,diesel,,0,2,0,2810740,>400000,0
+LEAD00135,2024-03-15,email,BMW,3 Series,Sedan,2513000,0,Samara,4,0,1,1,on_hold,13,MGR002,36-45,automatic,electric,60001-100000,1,3,0,2821913,50000-100000,1
+LEAD00136,2023-07-27,partner,Lada,Vesta,Sedan,927000,1,Novosibirsk,12,0,0,0,negotiation,22,MGR012,46-55,variator,gasoline,,0,5,1,1104943,200000-400000,0
+LEAD00137,2023-01-02,email,Kia,Rio,Sedan,2923000,1,Kazan,4,0,1,1,new,109,MGR023,26-35,variator,gasoline,,0,1,1,3083263,<50000,1
+LEAD00138,2023-05-21,website,Volkswagen,Tiguan,SUV,3169000,1,Saint Petersburg,7,0,0,1,new,157,MGR021,18-25,robot,hybrid,,0,3,1,3559653,100000-200000,1
+LEAD00139,2023-04-13,email,BMW,5 Series,Sedan,8645000,1,Novosibirsk,3,0,0,0,negotiation,166,MGR003,46-55,variator,diesel,,0,6,0,8704822,<50000,0
+LEAD00140,2023-02-25,partner,Ford,EcoSport,SUV,909000,0,Kazan,4,0,1,0,test_drive_done,146,MGR014,26-35,manual,electric,30001-60000,0,1,0,1040845,100000-200000,1
+LEAD00141,2023-08-09,partner,Kia,Sorento,SUV,2604000,0,Saint Petersburg,1,0,0,0,on_hold,138,MGR018,18-25,automatic,gasoline,0-30000,1,7,0,2825818,100000-200000,0
+LEAD00142,2024-08-23,website,Skoda,Octavia,Sedan,2134000,1,Omsk,11,0,0,0,new,63,MGR003,26-35,manual,hybrid,,1,7,0,2184229,200000-400000,0
+LEAD00143,2023-05-21,offline,Volkswagen,Touareg,SUV,4107000,1,Moscow,12,1,0,0,on_hold,69,MGR024,36-45,manual,gasoline,,1,5,1,4040096,<50000,0
+LEAD00144,2024-04-11,social_media,Toyota,Corolla,Sedan,5317000,1,Omsk,9,0,0,0,on_hold,30,MGR008,18-25,robot,gasoline,,1,5,0,5718790,200000-400000,0
+LEAD00145,2023-07-03,phone,Toyota,Camry,Sedan,1900000,1,Moscow,1,0,0,0,negotiation,20,MGR019,46-55,robot,electric,,1,6,1,2035476,50000-100000,1
+LEAD00146,2023-10-17,phone,Renault,Logan,Sedan,1383000,1,Omsk,5,1,0,1,test_drive_done,95,MGR019,18-25,variator,gasoline,,1,5,0,1437367,200000-400000,0
+LEAD00147,2023-12-10,website,Hyundai,Tucson,SUV,2016000,1,Chelyabinsk,1,0,1,0,test_drive_done,126,MGR002,18-25,manual,hybrid,,1,4,0,2065736,<50000,0
+LEAD00148,2023-03-28,website,Kia,Cerato,Sedan,1681000,1,Yekaterinburg,10,1,1,0,in_progress,75,MGR009,56+,variator,hybrid,,1,1,0,1618057,200000-400000,0
+LEAD00149,2024-08-21,avito,Mercedes-Benz,GLC,SUV,6605000,1,Kazan,2,1,1,0,test_drive_done,79,MGR015,26-35,automatic,diesel,,1,6,0,6622722,50000-100000,1
+LEAD00150,2023-06-01,partner,Volkswagen,Polo,Hatchback,2245000,1,Kazan,2,0,0,0,new,104,MGR015,56+,automatic,diesel,,1,5,1,2227313,100000-200000,0
+LEAD00151,2023-08-16,avito,Renault,Duster,SUV,793000,0,Saint Petersburg,3,1,1,0,new,17,MGR007,26-35,automatic,gasoline,0-30000,0,2,0,864393,<50000,0
+LEAD00152,2023-06-22,partner,Lada,Granta,Sedan,894000,1,Nizhniy Novgorod,10,0,0,0,in_progress,71,MGR009,18-25,automatic,electric,,1,7,1,919146,<50000,1
+LEAD00153,2023-03-31,email,Kia,Rio,Sedan,2306000,1,Kazan,5,0,1,0,new,98,MGR023,46-55,variator,electric,,0,4,0,2676065,<50000,0
+LEAD00154,2023-01-27,offline,Renault,Arkana,Crossover,1552000,1,Omsk,6,0,1,0,in_progress,41,MGR004,36-45,variator,hybrid,,1,8,0,1964356,50000-100000,1
+LEAD00155,2023-06-30,partner,Hyundai,Creta,SUV,929000,0,Yekaterinburg,4,0,0,0,offer_sent,37,MGR019,56+,variator,hybrid,150000+,0,1,0,1097765,50000-100000,0
+LEAD00156,2023-08-13,avito,Lada,XRAY,SUV,979000,1,Moscow,1,0,1,0,negotiation,16,MGR001,18-25,automatic,diesel,,1,3,1,965080,>400000,1
+LEAD00157,2023-04-14,partner,Kia,Rio,Sedan,3455000,1,Nizhniy Novgorod,6,1,1,1,on_hold,144,MGR023,18-25,robot,electric,,0,8,0,3437664,>400000,0
+LEAD00158,2023-05-11,email,Ford,EcoSport,SUV,1714000,0,Rostov-on-Don,3,0,0,0,in_progress,164,MGR019,26-35,variator,hybrid,150000+,1,1,1,1847674,100000-200000,1
+LEAD00159,2023-04-01,email,Lada,Granta,Sedan,1139000,1,Saint Petersburg,12,0,0,0,negotiation,66,MGR004,26-35,robot,hybrid,,1,4,1,1010087,50000-100000,0
+LEAD00160,2023-12-26,email,Toyota,Land Cruiser,SUV,4489000,0,Chelyabinsk,9,0,0,0,negotiation,6,MGR011,26-35,variator,electric,0-30000,0,4,1,4366289,200000-400000,1
+LEAD00161,2024-05-09,phone,Volkswagen,Polo,Hatchback,3000000,1,Chelyabinsk,12,1,0,1,in_progress,49,MGR014,26-35,automatic,gasoline,,0,3,1,3147177,100000-200000,1
+LEAD00162,2024-08-08,social_media,Renault,Kaptur,SUV,1876000,1,Kazan,9,0,1,0,offer_sent,123,MGR007,26-35,automatic,gasoline,,1,5,0,2331455,200000-400000,1
+LEAD00163,2024-05-15,website,Hyundai,Tucson,SUV,2595000,1,Samara,11,1,0,0,new,68,MGR015,18-25,robot,electric,,1,7,1,2862429,200000-400000,1
+LEAD00164,2024-02-28,website,Hyundai,Creta,SUV,3711000,1,Novosibirsk,10,1,1,0,test_drive_done,77,MGR003,18-25,automatic,hybrid,,1,8,0,3758088,>400000,1
+LEAD00165,2023-05-10,partner,Toyota,RAV4,SUV,2785000,1,Samara,1,0,0,0,negotiation,18,MGR003,26-35,manual,diesel,,0,3,0,2855413,50000-100000,0
+LEAD00166,2023-06-03,offline,Mercedes-Benz,GLC,SUV,4262000,0,Samara,3,0,0,0,offer_sent,89,MGR014,18-25,variator,gasoline,60001-100000,1,2,0,4167896,200000-400000,1
+LEAD00167,2024-02-10,phone,Lada,Niva,SUV,838000,1,Kazan,6,0,1,0,negotiation,72,MGR016,46-55,manual,electric,,1,6,1,955776,<50000,0
+LEAD00168,2023-04-02,social_media,Volkswagen,Tiguan,SUV,2150000,1,Samara,4,0,0,0,in_progress,17,MGR010,36-45,robot,electric,,1,6,0,2490299,>400000,0
+LEAD00169,2023-09-13,offline,Mercedes-Benz,E-Class,Sedan,8294000,1,Moscow,1,0,0,0,new,175,MGR001,26-35,manual,diesel,,1,8,0,8760275,<50000,0
+LEAD00170,2023-09-22,partner,Lada,Niva,SUV,981000,1,Samara,12,0,1,1,in_progress,174,MGR007,56+,robot,hybrid,,1,4,0,1459827,50000-100000,1
+LEAD00171,2023-09-16,website,Mercedes-Benz,C-Class,Sedan,9588000,1,Samara,10,0,1,0,test_drive_done,65,MGR007,26-35,manual,gasoline,,0,7,0,9753648,50000-100000,1
+LEAD00172,2023-04-21,website,Renault,Arkana,Crossover,1798000,1,Moscow,8,1,0,0,negotiation,49,MGR005,56+,robot,hybrid,,0,5,0,2281112,100000-200000,1
+LEAD00173,2023-09-23,email,Hyundai,Solaris,Sedan,3055000,1,Nizhniy Novgorod,7,0,0,0,on_hold,137,MGR021,26-35,automatic,electric,,0,4,1,3088164,100000-200000,0
+LEAD00174,2023-05-12,partner,BMW,X5,SUV,4892000,1,Omsk,12,1,0,0,negotiation,58,MGR024,26-35,robot,gasoline,,1,6,0,4925049,200000-400000,0
+LEAD00175,2023-02-24,social_media,Mercedes-Benz,GLC,SUV,7044000,1,Rostov-on-Don,11,0,0,1,offer_sent,77,MGR014,36-45,variator,gasoline,,0,2,0,7244209,200000-400000,1
+LEAD00176,2023-07-04,social_media,Kia,Sportage,SUV,2120000,1,Chelyabinsk,2,0,0,1,in_progress,148,MGR025,56+,variator,diesel,,0,1,0,2139553,100000-200000,1
+LEAD00177,2023-01-05,avito,Volkswagen,Tiguan,SUV,4116000,1,Chelyabinsk,1,0,0,0,on_hold,64,MGR008,46-55,variator,electric,,0,4,1,3920324,200000-400000,0
+LEAD00178,2023-02-16,website,BMW,X5,SUV,4556000,1,Chelyabinsk,5,0,1,0,negotiation,126,MGR012,56+,robot,diesel,,1,7,0,4496288,<50000,0
+LEAD00179,2024-05-31,phone,Kia,Sorento,SUV,689000,0,Yekaterinburg,3,1,0,0,offer_sent,13,MGR022,26-35,manual,gasoline,0-30000,1,5,0,1142404,>400000,1
+LEAD00180,2023-06-06,avito,Toyota,Camry,Sedan,2748000,1,Samara,4,0,0,0,test_drive_done,27,MGR017,46-55,automatic,hybrid,,0,5,0,2691826,200000-400000,0
+LEAD00181,2024-06-19,partner,Volkswagen,Passat,Sedan,2066000,1,Saint Petersburg,4,0,1,1,negotiation,61,MGR001,46-55,manual,diesel,,1,4,0,2370012,100000-200000,1
+LEAD00182,2023-09-20,email,Volkswagen,Polo,Hatchback,3951000,1,Samara,11,1,0,1,negotiation,93,MGR022,26-35,automatic,gasoline,,1,2,0,3792360,<50000,1
+LEAD00183,2023-10-02,website,Volkswagen,Polo,Hatchback,987000,0,Novosibirsk,12,1,0,1,test_drive_done,167,MGR006,26-35,robot,hybrid,100001-150000,1,8,1,1191452,200000-400000,1
+LEAD00184,2024-01-24,avito,Toyota,RAV4,SUV,1749000,0,Rostov-on-Don,6,0,0,0,test_drive_done,113,MGR002,46-55,variator,diesel,0-30000,0,3,0,2060833,>400000,1
+LEAD00185,2024-06-19,partner,BMW,3 Series,Sedan,7799000,1,Rostov-on-Don,12,0,1,0,test_drive_done,39,MGR018,56+,manual,hybrid,,1,6,0,8271561,>400000,0
+LEAD00186,2023-03-18,email,Ford,Focus,Hatchback,1647000,1,Novosibirsk,8,1,1,1,new,118,MGR015,56+,variator,electric,,1,7,0,1693415,50000-100000,0
+LEAD00187,2024-02-18,avito,Lada,Vesta,Sedan,910000,0,Nizhniy Novgorod,7,1,0,0,on_hold,172,MGR015,18-25,variator,gasoline,30001-60000,0,5,0,1299648,<50000,0
+LEAD00188,2023-04-27,partner,BMW,3 Series,Sedan,5326000,1,Samara,2,0,1,0,on_hold,28,MGR002,36-45,variator,hybrid,,0,5,0,5518052,200000-400000,0
+LEAD00189,2024-02-07,website,Lada,Granta,Sedan,1219000,1,Kazan,4,0,0,0,on_hold,151,MGR004,56+,manual,diesel,,1,7,1,1683000,<50000,0
+LEAD00190,2024-05-09,phone,Lada,Niva,SUV,1316000,1,Samara,9,0,0,0,offer_sent,156,MGR011,18-25,automatic,electric,,1,3,1,1805461,>400000,1
+LEAD00191,2024-04-08,email,Mercedes-Benz,GLE,SUV,8988000,1,Yekaterinburg,3,1,0,0,on_hold,56,MGR007,36-45,variator,hybrid,,1,6,0,9368472,100000-200000,1
+LEAD00192,2024-07-29,phone,Skoda,Rapid,Sedan,2127000,0,Novosibirsk,8,0,0,0,offer_sent,28,MGR001,56+,robot,gasoline,0-30000,0,5,0,2369904,100000-200000,1
+LEAD00193,2023-10-30,social_media,Toyota,Camry,Sedan,2537000,0,Novosibirsk,4,0,1,0,in_progress,131,MGR023,36-45,robot,diesel,100001-150000,1,4,0,2925534,<50000,1
+LEAD00194,2023-07-27,avito,Toyota,Land Cruiser,SUV,4974000,1,Nizhniy Novgorod,10,0,0,0,on_hold,155,MGR007,56+,automatic,gasoline,,1,6,0,5347167,100000-200000,0
+LEAD00195,2023-02-11,phone,Hyundai,Creta,SUV,3238000,1,Saint Petersburg,7,1,1,1,new,40,MGR011,26-35,manual,gasoline,,0,1,1,3200325,200000-400000,1
+LEAD00196,2024-06-22,partner,Ford,EcoSport,SUV,3609000,1,Rostov-on-Don,4,0,0,0,in_progress,170,MGR011,56+,robot,gasoline,,1,7,1,3640942,100000-200000,1
+LEAD00197,2024-04-01,offline,Skoda,Kodiaq,SUV,2291000,0,Omsk,4,0,0,0,negotiation,139,MGR024,46-55,automatic,gasoline,100001-150000,0,6,1,2209881,100000-200000,1
+LEAD00198,2024-06-10,avito,Renault,Kaptur,SUV,1641000,0,Samara,2,0,1,0,on_hold,109,MGR004,18-25,robot,diesel,30001-60000,1,1,0,1662020,100000-200000,0
+LEAD00199,2023-02-25,website,Mercedes-Benz,C-Class,Sedan,3259000,0,Samara,3,0,0,0,test_drive_done,81,MGR001,36-45,automatic,gasoline,100001-150000,1,5,0,3532039,<50000,1
+LEAD00200,2024-05-29,email,Volkswagen,Polo,Hatchback,3427000,0,Rostov-on-Don,2,1,0,0,test_drive_done,41,MGR018,18-25,automatic,gasoline,0-30000,1,8,1,3919818,100000-200000,1
+LEAD00201,2023-02-12,phone,Mercedes-Benz,GLC,SUV,9194000,1,Kazan,1,0,1,0,in_progress,106,MGR021,36-45,automatic,diesel,,1,4,0,9354554,<50000,0
+LEAD00202,2024-08-03,phone,Kia,Sportage,SUV,2053000,1,Rostov-on-Don,1,0,0,0,negotiation,26,MGR007,36-45,manual,gasoline,,1,2,1,1923634,50000-100000,0
+LEAD00203,2023-11-22,phone,Lada,XRAY,SUV,1165000,1,Yekaterinburg,8,0,0,0,in_progress,2,MGR011,18-25,robot,gasoline,,0,6,0,1414112,50000-100000,1
+LEAD00204,2024-04-01,partner,Hyundai,Santa Fe,SUV,1833000,0,Nizhniy Novgorod,6,0,0,1,in_progress,68,MGR024,26-35,robot,electric,150000+,0,2,0,1779802,200000-400000,0
+LEAD00205,2024-07-18,partner,Volkswagen,Polo,Hatchback,1676000,1,Omsk,5,0,0,0,on_hold,75,MGR005,18-25,variator,diesel,,0,6,1,2094241,<50000,0
+LEAD00206,2023-05-24,social_media,Renault,Logan,Sedan,1606000,1,Omsk,8,1,0,0,negotiation,11,MGR008,18-25,manual,diesel,,0,3,0,1912990,>400000,0
+LEAD00207,2024-04-25,social_media,Hyundai,Solaris,Sedan,2482000,1,Yekaterinburg,8,0,1,0,offer_sent,140,MGR019,18-25,manual,hybrid,,1,5,0,2558106,200000-400000,1
+LEAD00208,2024-06-12,email,Mercedes-Benz,GLC,SUV,8814000,1,Saint Petersburg,7,0,0,0,test_drive_done,43,MGR008,56+,robot,electric,,1,1,0,8759718,50000-100000,1
+LEAD00209,2023-12-05,phone,Skoda,Kodiaq,SUV,1807000,1,Novosibirsk,12,1,0,0,in_progress,147,MGR019,36-45,automatic,diesel,,0,7,1,1652240,200000-400000,1
+LEAD00210,2024-06-13,offline,Renault,Logan,Sedan,2112000,1,Novosibirsk,7,0,0,1,test_drive_done,156,MGR016,18-25,manual,hybrid,,0,5,0,2139114,50000-100000,0
+LEAD00211,2023-12-17,offline,Kia,Sportage,SUV,2982000,1,Novosibirsk,8,0,1,0,on_hold,108,MGR005,56+,manual,hybrid,,1,1,1,3310859,50000-100000,0
+LEAD00212,2023-05-14,partner,Kia,Sorento,SUV,1459000,1,Omsk,10,0,1,0,new,179,MGR017,56+,automatic,gasoline,,0,7,0,1647368,200000-400000,0
+LEAD00213,2024-05-03,offline,Lada,Niva,SUV,1158000,1,Rostov-on-Don,4,0,1,0,offer_sent,134,MGR004,18-25,variator,diesel,,1,5,1,965459,100000-200000,1
+LEAD00214,2024-03-12,partner,Mercedes-Benz,E-Class,Sedan,9634000,1,Nizhniy Novgorod,11,0,1,0,in_progress,106,MGR018,46-55,robot,gasoline,,0,5,0,9850760,50000-100000,0
+LEAD00215,2023-12-19,offline,Lada,Granta,Sedan,1179000,1,Omsk,12,0,1,0,new,55,MGR017,46-55,robot,hybrid,,1,4,0,1148654,>400000,1
+LEAD00216,2024-03-21,avito,BMW,3 Series,Sedan,4816000,1,Moscow,2,1,1,1,offer_sent,168,MGR017,18-25,manual,electric,,1,7,0,5036106,>400000,1
+LEAD00217,2023-10-20,email,Ford,Focus,Hatchback,2317000,1,Samara,4,1,0,0,in_progress,168,MGR001,46-55,automatic,diesel,,1,3,0,2494214,>400000,0
+LEAD00218,2023-04-03,social_media,Volkswagen,Passat,Sedan,2436000,0,Chelyabinsk,9,1,0,0,test_drive_done,148,MGR001,46-55,manual,gasoline,100001-150000,1,5,1,2439974,<50000,1
+LEAD00219,2023-09-21,website,Mercedes-Benz,C-Class,Sedan,8576000,1,Omsk,9,0,0,0,test_drive_done,175,MGR015,36-45,robot,gasoline,,0,8,0,8732160,>400000,0
+LEAD00220,2024-02-27,social_media,Toyota,Land Cruiser,SUV,1852000,0,Saint Petersburg,6,0,1,0,offer_sent,46,MGR016,46-55,manual,diesel,0-30000,1,2,1,2010605,100000-200000,1
+LEAD00221,2023-09-29,email,Hyundai,Creta,SUV,2148000,1,Yekaterinburg,4,1,0,0,on_hold,170,MGR016,46-55,manual,diesel,,1,2,1,2030300,50000-100000,0
+LEAD00222,2023-10-09,avito,Renault,Logan,Sedan,2068000,1,Nizhniy Novgorod,8,1,0,0,test_drive_done,139,MGR002,56+,robot,electric,,1,3,1,2311732,>400000,1
+LEAD00223,2023-08-04,website,Mercedes-Benz,E-Class,Sedan,7745000,1,Omsk,7,0,1,0,offer_sent,88,MGR012,46-55,robot,gasoline,,1,5,1,8039241,<50000,1
+LEAD00224,2023-07-04,email,Mercedes-Benz,E-Class,Sedan,7433000,1,Nizhniy Novgorod,10,1,0,1,test_drive_done,98,MGR007,36-45,variator,hybrid,,1,5,0,7815316,200000-400000,1
+LEAD00225,2023-11-04,phone,Kia,Sorento,SUV,1339000,1,Chelyabinsk,5,0,0,0,test_drive_done,162,MGR004,46-55,manual,hybrid,,0,1,1,1405642,200000-400000,1
+LEAD00226,2024-02-26,social_media,BMW,X5,SUV,6457000,1,Omsk,2,0,0,0,negotiation,84,MGR022,56+,robot,hybrid,,0,3,0,6555433,<50000,0
+LEAD00227,2024-03-07,offline,Lada,Vesta,Sedan,790000,0,Kazan,11,0,1,0,on_hold,69,MGR020,46-55,manual,diesel,60001-100000,1,6,1,922270,100000-200000,0
+LEAD00228,2023-07-08,partner,Skoda,Karoq,SUV,3099000,1,Nizhniy Novgorod,1,1,1,1,new,25,MGR003,56+,variator,electric,,0,2,1,3315332,50000-100000,0
+LEAD00229,2023-06-09,partner,Lada,Vesta,Sedan,426000,0,Chelyabinsk,2,0,0,0,offer_sent,44,MGR001,56+,automatic,gasoline,30001-60000,1,5,0,500000,100000-200000,1
+LEAD00230,2023-07-01,avito,BMW,X5,SUV,7400000,1,Omsk,10,0,0,0,offer_sent,59,MGR003,36-45,variator,diesel,,0,5,0,7705048,>400000,1
+LEAD00231,2023-10-21,phone,BMW,X3,SUV,3878000,0,Kazan,8,0,0,0,offer_sent,60,MGR001,18-25,automatic,diesel,60001-100000,0,5,1,4129344,100000-200000,1
+LEAD00232,2023-08-14,avito,Hyundai,Santa Fe,SUV,3696000,1,Chelyabinsk,5,1,0,0,negotiation,106,MGR007,26-35,manual,electric,,0,5,1,4053783,200000-400000,0
+LEAD00233,2024-05-18,website,Kia,Sportage,SUV,2486000,1,Samara,4,1,1,0,on_hold,113,MGR024,56+,variator,hybrid,,1,2,1,2417113,>400000,1
+LEAD00234,2024-01-16,avito,Volkswagen,Tiguan,SUV,1660000,1,Yekaterinburg,8,0,1,1,new,140,MGR016,36-45,variator,hybrid,,0,3,1,1871484,200000-400000,1
+LEAD00235,2023-02-04,website,Skoda,Karoq,SUV,3196000,1,Saint Petersburg,4,0,0,0,negotiation,41,MGR021,26-35,variator,electric,,0,8,1,3323270,50000-100000,0
+LEAD00236,2023-04-26,avito,Renault,Logan,Sedan,1118000,0,Kazan,4,0,1,1,new,149,MGR023,26-35,robot,gasoline,0-30000,1,2,1,1172897,50000-100000,0
+LEAD00237,2023-12-13,partner,Ford,Explorer,SUV,3121000,1,Saint Petersburg,11,1,1,1,negotiation,143,MGR021,26-35,manual,electric,,1,2,1,3164977,<50000,1
+LEAD00238,2024-05-11,email,Lada,Granta,Sedan,821000,1,Chelyabinsk,12,0,1,0,on_hold,120,MGR009,36-45,manual,hybrid,,1,3,0,960403,<50000,0
+LEAD00239,2024-01-11,offline,Ford,Explorer,SUV,1882000,1,Novosibirsk,8,1,0,0,offer_sent,62,MGR011,46-55,robot,hybrid,,1,1,0,2063760,>400000,1
+LEAD00240,2024-02-24,offline,Renault,Arkana,Crossover,1394000,1,Samara,11,1,1,0,in_progress,28,MGR016,56+,manual,hybrid,,1,3,1,1226792,100000-200000,1
+LEAD00241,2023-08-15,offline,Toyota,Land Cruiser,SUV,4913000,0,Rostov-on-Don,10,0,1,0,negotiation,143,MGR024,56+,robot,gasoline,0-30000,0,2,0,5382952,100000-200000,0
+LEAD00242,2023-03-21,partner,Mercedes-Benz,GLC,SUV,2477000,0,Rostov-on-Don,4,0,1,0,offer_sent,161,MGR006,36-45,automatic,gasoline,30001-60000,1,4,1,2965784,100000-200000,1
+LEAD00243,2023-06-20,partner,Renault,Arkana,Crossover,816000,0,Rostov-on-Don,3,0,0,0,negotiation,96,MGR014,36-45,variator,electric,150000+,1,8,0,946463,<50000,0
+LEAD00244,2023-09-18,phone,Mercedes-Benz,GLC,SUV,8984000,1,Rostov-on-Don,6,0,1,0,in_progress,78,MGR001,56+,manual,electric,,0,5,0,9326752,>400000,1
+LEAD00245,2024-04-16,website,Hyundai,Tucson,SUV,2689000,1,Kazan,6,1,1,0,offer_sent,103,MGR019,56+,manual,gasoline,,1,5,0,2585369,<50000,0
+LEAD00246,2024-08-13,phone,Volkswagen,Passat,Sedan,2776000,0,Samara,7,1,1,0,on_hold,168,MGR020,56+,automatic,hybrid,30001-60000,1,7,0,2702395,<50000,0
+LEAD00247,2023-08-15,offline,Mercedes-Benz,C-Class,Sedan,6496000,1,Moscow,3,1,0,0,test_drive_done,38,MGR005,36-45,manual,hybrid,,1,2,1,6599859,>400000,1
+LEAD00248,2023-05-19,avito,Lada,Vesta,Sedan,961000,0,Kazan,8,0,0,0,negotiation,176,MGR019,18-25,variator,electric,100001-150000,1,4,1,1040190,50000-100000,1
+LEAD00249,2023-06-23,social_media,Mercedes-Benz,GLE,SUV,4992000,0,Yekaterinburg,6,0,0,0,on_hold,96,MGR005,36-45,robot,gasoline,30001-60000,1,1,0,5036831,100000-200000,0
+LEAD00250,2023-04-24,phone,Volkswagen,Polo,Hatchback,1023000,0,Rostov-on-Don,5,0,1,1,test_drive_done,160,MGR024,26-35,robot,gasoline,150000+,1,4,0,1094222,100000-200000,0
+LEAD00251,2023-10-18,email,Toyota,Land Cruiser,SUV,6575000,1,Omsk,4,0,0,1,negotiation,170,MGR022,18-25,robot,diesel,,0,1,1,7067451,<50000,1
+LEAD00252,2024-05-11,partner,Volkswagen,Polo,Hatchback,2798000,1,Chelyabinsk,10,0,1,0,negotiation,86,MGR016,26-35,variator,gasoline,,1,1,1,3153132,100000-200000,1
+LEAD00253,2023-10-10,email,Kia,Rio,Sedan,1360000,0,Nizhniy Novgorod,1,0,0,0,in_progress,88,MGR013,36-45,robot,diesel,30001-60000,0,1,0,1453804,>400000,0
+LEAD00254,2023-06-06,email,Volkswagen,Touareg,SUV,3732000,1,Rostov-on-Don,7,0,0,0,offer_sent,176,MGR007,26-35,variator,diesel,,1,4,0,4141254,>400000,0
+LEAD00255,2024-07-24,partner,Skoda,Kodiaq,SUV,2380000,1,Novosibirsk,9,0,1,0,test_drive_done,78,MGR015,56+,manual,hybrid,,0,1,0,2614152,<50000,0
+LEAD00256,2023-10-01,phone,Skoda,Kodiaq,SUV,3095000,1,Saint Petersburg,10,0,1,1,in_progress,129,MGR020,26-35,manual,gasoline,,0,6,1,3394753,>400000,0
+LEAD00257,2023-02-03,avito,BMW,5 Series,Sedan,4924000,0,Samara,7,0,1,1,test_drive_done,158,MGR016,26-35,manual,diesel,30001-60000,1,4,0,4793348,50000-100000,0
+LEAD00258,2024-08-08,avito,Lada,Granta,Sedan,1237000,1,Moscow,10,0,0,0,in_progress,133,MGR018,56+,variator,hybrid,,1,2,0,1081476,200000-400000,0
+LEAD00259,2023-11-08,partner,Toyota,Land Cruiser,SUV,6028000,1,Moscow,5,0,1,0,test_drive_done,24,MGR024,26-35,robot,electric,,1,3,0,6505486,200000-400000,1
+LEAD00260,2023-07-26,avito,Kia,Sportage,SUV,2910000,1,Nizhniy Novgorod,8,1,1,0,new,30,MGR023,46-55,automatic,diesel,,0,3,0,2839545,200000-400000,1
+LEAD00261,2024-01-25,email,BMW,3 Series,Sedan,7791000,1,Chelyabinsk,1,0,0,0,in_progress,14,MGR014,56+,manual,electric,,0,3,1,7742631,>400000,0
+LEAD00262,2023-09-17,phone,Lada,XRAY,SUV,1041000,0,Saint Petersburg,1,0,0,0,test_drive_done,105,MGR015,26-35,manual,gasoline,100001-150000,1,8,1,1458466,>400000,1
+LEAD00263,2023-06-01,offline,Ford,Focus,Hatchback,2602000,1,Kazan,1,0,1,0,new,28,MGR014,56+,manual,gasoline,,0,5,1,2493962,50000-100000,0
+LEAD00264,2023-11-27,avito,Kia,Cerato,Sedan,2026000,1,Rostov-on-Don,6,0,0,0,new,178,MGR009,36-45,automatic,gasoline,,0,2,1,1967081,100000-200000,0
+LEAD00265,2023-10-22,offline,Mercedes-Benz,E-Class,Sedan,3712000,0,Moscow,7,0,1,0,test_drive_done,134,MGR024,18-25,automatic,electric,150000+,0,6,0,4156129,>400000,0
+LEAD00266,2024-04-21,phone,Lada,Granta,Sedan,1024000,0,Kazan,11,0,0,1,offer_sent,164,MGR007,26-35,automatic,gasoline,60001-100000,0,7,0,1174006,<50000,1
+LEAD00267,2023-04-27,partner,Hyundai,Creta,SUV,2442000,1,Saint Petersburg,11,1,1,0,on_hold,123,MGR016,36-45,robot,hybrid,,0,3,1,2596352,<50000,0
+LEAD00268,2023-02-27,email,Kia,Sorento,SUV,1936000,1,Samara,9,1,0,0,negotiation,17,MGR005,56+,robot,electric,,1,4,0,2083832,200000-400000,1
+LEAD00269,2023-04-30,email,Toyota,Corolla,Sedan,4873000,1,Omsk,5,0,1,1,test_drive_done,78,MGR007,26-35,variator,diesel,,1,8,0,5062633,>400000,1
+LEAD00270,2023-01-26,partner,Kia,Rio,Sedan,2832000,1,Moscow,8,0,1,0,new,133,MGR022,26-35,automatic,electric,,1,5,0,2782255,>400000,0
+LEAD00271,2023-03-31,avito,Hyundai,Solaris,Sedan,2581000,0,Omsk,6,0,1,0,negotiation,52,MGR007,18-25,automatic,hybrid,30001-60000,0,5,1,2708305,<50000,1
+LEAD00272,2023-04-28,email,Renault,Kaptur,SUV,1503000,0,Saint Petersburg,1,0,0,1,in_progress,44,MGR003,36-45,manual,diesel,150000+,1,6,1,1600027,100000-200000,1
+LEAD00273,2023-02-25,phone,BMW,X3,SUV,2165000,0,Moscow,2,0,1,0,in_progress,172,MGR018,46-55,automatic,gasoline,60001-100000,0,8,0,2292617,200000-400000,1
+LEAD00274,2024-04-26,partner,Lada,Granta,Sedan,495000,0,Samara,4,0,1,0,negotiation,117,MGR016,18-25,variator,hybrid,60001-100000,1,6,1,992492,200000-400000,1
+LEAD00275,2024-08-11,avito,Lada,Vesta,Sedan,1159000,1,Samara,3,0,1,0,test_drive_done,103,MGR019,26-35,robot,hybrid,,1,2,0,1517624,>400000,1
+LEAD00276,2024-03-17,phone,Ford,Explorer,SUV,3844000,1,Samara,7,0,1,0,test_drive_done,30,MGR019,46-55,automatic,hybrid,,1,2,0,4246080,50000-100000,1
+LEAD00277,2024-01-24,phone,BMW,3 Series,Sedan,5397000,0,Kazan,6,0,0,1,test_drive_done,137,MGR010,46-55,automatic,gasoline,30001-60000,0,1,0,5889984,>400000,1
+LEAD00278,2023-04-02,phone,Ford,Kuga,SUV,2401000,1,Nizhniy Novgorod,10,1,0,0,new,1,MGR023,36-45,robot,electric,,1,5,1,2776547,100000-200000,1
+LEAD00279,2024-01-27,partner,BMW,3 Series,Sedan,5811000,1,Moscow,7,0,0,0,test_drive_done,40,MGR010,26-35,variator,electric,,1,4,0,5988789,100000-200000,0
+LEAD00280,2023-03-28,website,Kia,Sportage,SUV,673000,0,Moscow,3,0,1,0,test_drive_done,142,MGR015,26-35,variator,electric,150000+,0,7,0,949467,50000-100000,0
+LEAD00281,2023-10-03,offline,Hyundai,Tucson,SUV,2439000,0,Moscow,7,0,0,1,test_drive_done,177,MGR003,56+,variator,diesel,150000+,1,8,0,2357661,>400000,1
+LEAD00282,2023-03-21,offline,Renault,Kaptur,SUV,1676000,1,Saint Petersburg,11,0,0,0,test_drive_done,117,MGR017,56+,automatic,diesel,,1,6,0,1487307,200000-400000,0
+LEAD00283,2023-11-08,social_media,Ford,EcoSport,SUV,3324000,1,Kazan,12,0,1,0,on_hold,160,MGR001,36-45,manual,gasoline,,0,1,0,3429925,>400000,0
+LEAD00284,2023-09-21,website,Volkswagen,Tiguan,SUV,3670000,1,Kazan,1,0,0,0,negotiation,180,MGR008,36-45,manual,hybrid,,0,8,1,3653919,100000-200000,0
+LEAD00285,2024-01-28,website,Renault,Logan,Sedan,1551000,1,Novosibirsk,4,0,0,1,new,14,MGR006,56+,manual,electric,,0,6,1,1628238,200000-400000,0
+LEAD00286,2023-09-26,email,Lada,XRAY,SUV,1287000,1,Omsk,3,0,1,1,on_hold,11,MGR004,26-35,variator,electric,,0,7,0,1643011,200000-400000,0
+LEAD00287,2023-09-19,email,BMW,X3,SUV,8501000,1,Kazan,11,0,1,0,negotiation,141,MGR001,36-45,robot,hybrid,,1,4,0,8489656,<50000,0
+LEAD00288,2023-10-18,website,Volkswagen,Polo,Hatchback,3284000,1,Omsk,5,1,1,1,new,31,MGR003,18-25,variator,hybrid,,0,4,0,3753078,50000-100000,0
+LEAD00289,2024-04-09,website,Kia,Sorento,SUV,2056000,1,Novosibirsk,5,0,0,0,negotiation,16,MGR013,36-45,robot,electric,,0,5,1,1933591,<50000,1
+LEAD00290,2024-02-07,phone,Toyota,Corolla,Sedan,3968000,1,Samara,3,0,1,0,new,9,MGR003,18-25,variator,diesel,,1,2,0,4039577,>400000,1
+LEAD00291,2023-06-05,avito,Skoda,Karoq,SUV,1538000,1,Novosibirsk,12,1,1,1,on_hold,18,MGR018,18-25,automatic,electric,,0,8,0,1761533,100000-200000,1
+LEAD00292,2023-02-26,offline,Mercedes-Benz,GLE,SUV,4992000,1,Omsk,11,0,0,0,negotiation,166,MGR007,36-45,robot,hybrid,,0,6,1,5273966,200000-400000,1
+LEAD00293,2024-03-24,social_media,Toyota,Land Cruiser,SUV,2464000,0,Chelyabinsk,12,1,1,1,on_hold,79,MGR016,18-25,robot,electric,150000+,0,4,0,2330052,<50000,0
+LEAD00294,2023-08-05,social_media,Lada,Vesta,Sedan,837000,1,Moscow,11,0,1,0,new,10,MGR024,36-45,automatic,electric,,0,3,0,881303,<50000,1
+LEAD00295,2023-11-11,website,Toyota,Land Cruiser,SUV,6865000,1,Yekaterinburg,2,0,1,0,offer_sent,57,MGR003,26-35,automatic,diesel,,0,2,1,7288879,<50000,0
+LEAD00296,2023-02-16,avito,Mercedes-Benz,GLC,SUV,9557000,1,Nizhniy Novgorod,10,1,1,1,in_progress,113,MGR008,18-25,manual,hybrid,,0,3,0,9937290,50000-100000,0
+LEAD00297,2023-03-24,partner,Toyota,RAV4,SUV,1718000,0,Rostov-on-Don,1,1,0,0,in_progress,37,MGR021,46-55,manual,gasoline,30001-60000,0,5,0,2017135,200000-400000,1
+LEAD00298,2023-04-01,phone,Lada,Niva,SUV,1044000,1,Rostov-on-Don,11,0,1,0,new,159,MGR012,18-25,manual,electric,,0,4,1,1399953,>400000,0
+LEAD00299,2023-06-02,partner,Renault,Duster,SUV,1675000,1,Yekaterinburg,11,0,0,0,negotiation,54,MGR014,36-45,automatic,diesel,,1,1,1,1856884,<50000,1
+LEAD00300,2024-05-11,website,Ford,Kuga,SUV,1777000,1,Moscow,9,1,0,0,in_progress,29,MGR011,56+,manual,diesel,,0,6,0,1918505,<50000,1
+LEAD00301,2024-03-22,avito,Hyundai,Santa Fe,SUV,2219000,1,Yekaterinburg,3,1,0,1,negotiation,70,MGR007,18-25,variator,electric,,1,8,0,2681722,<50000,1
+LEAD00302,2023-12-18,phone,Toyota,Camry,Sedan,4098000,1,Saint Petersburg,4,0,0,0,in_progress,23,MGR014,46-55,variator,electric,,0,3,0,4477606,50000-100000,0
+LEAD00303,2023-09-11,partner,Lada,Granta,Sedan,1284000,1,Samara,6,0,1,0,new,121,MGR024,36-45,automatic,electric,,0,1,0,1130372,50000-100000,0
+LEAD00304,2023-03-27,avito,Toyota,Land Cruiser,SUV,6150000,1,Samara,9,0,0,0,new,5,MGR016,18-25,variator,electric,,1,6,1,6629099,50000-100000,0
+LEAD00305,2024-02-20,offline,Kia,Sorento,SUV,2407000,0,Rostov-on-Don,3,0,1,0,new,76,MGR014,18-25,variator,electric,150000+,0,2,1,2556077,50000-100000,0
+LEAD00306,2024-01-28,offline,Ford,Explorer,SUV,1131000,0,Nizhniy Novgorod,6,0,1,0,negotiation,62,MGR018,18-25,robot,gasoline,30001-60000,0,2,0,1145656,<50000,1
+LEAD00307,2023-03-06,social_media,Lada,Granta,Sedan,1030000,1,Nizhniy Novgorod,6,1,0,0,on_hold,178,MGR003,36-45,variator,hybrid,,1,5,0,1216028,<50000,1
+LEAD00308,2023-10-10,avito,Lada,Vesta,Sedan,882000,1,Novosibirsk,2,0,0,0,in_progress,122,MGR012,36-45,automatic,gasoline,,1,1,1,1249735,50000-100000,0
+LEAD00309,2023-12-18,website,Toyota,Corolla,Sedan,2448000,0,Moscow,11,0,1,0,negotiation,44,MGR009,26-35,robot,electric,30001-60000,0,8,0,2842806,>400000,1
+LEAD00310,2023-06-14,phone,BMW,X5,SUV,3887000,1,Nizhniy Novgorod,12,0,1,1,new,82,MGR019,36-45,variator,diesel,,0,3,1,3809596,>400000,1
+LEAD00311,2024-01-17,phone,Skoda,Rapid,Sedan,1877000,1,Omsk,8,0,1,0,test_drive_done,82,MGR005,18-25,robot,hybrid,,0,7,0,1829446,50000-100000,1
+LEAD00312,2024-03-28,email,Renault,Kaptur,SUV,1862000,1,Kazan,6,0,0,0,offer_sent,57,MGR015,46-55,robot,diesel,,1,2,1,2083139,>400000,1
+LEAD00313,2023-01-24,email,BMW,3 Series,Sedan,8481000,1,Yekaterinburg,2,0,1,0,offer_sent,155,MGR017,56+,manual,hybrid,,1,7,1,8614193,50000-100000,0
+LEAD00314,2023-10-19,email,BMW,X3,SUV,2961000,0,Chelyabinsk,6,0,0,0,negotiation,42,MGR024,36-45,variator,hybrid,100001-150000,1,8,0,3196798,<50000,0
+LEAD00315,2023-11-07,partner,Mercedes-Benz,GLE,SUV,3143000,0,Rostov-on-Don,8,0,0,0,test_drive_done,45,MGR018,56+,automatic,diesel,60001-100000,0,7,1,3372350,50000-100000,1
+LEAD00316,2024-08-22,phone,Ford,Explorer,SUV,2416000,1,Chelyabinsk,5,0,0,1,on_hold,121,MGR004,36-45,variator,gasoline,,0,3,1,2887670,100000-200000,0
+LEAD00317,2023-03-10,avito,Skoda,Karoq,SUV,1867000,1,Yekaterinburg,10,0,0,0,negotiation,132,MGR024,18-25,automatic,hybrid,,0,8,0,1792392,200000-400000,0
+LEAD00318,2023-06-17,website,Skoda,Kodiaq,SUV,2691000,1,Novosibirsk,1,1,1,0,new,132,MGR007,36-45,variator,diesel,,1,5,1,3160983,100000-200000,0
+LEAD00319,2023-04-09,offline,Kia,Rio,Sedan,1984000,1,Nizhniy Novgorod,9,0,0,1,negotiation,42,MGR004,36-45,robot,hybrid,,1,6,0,2216007,100000-200000,1
+LEAD00320,2023-03-20,phone,Renault,Duster,SUV,2051000,1,Omsk,2,0,0,0,offer_sent,134,MGR025,56+,automatic,electric,,1,6,1,2314405,200000-400000,0
+LEAD00321,2023-11-11,email,Kia,Cerato,Sedan,1417000,1,Saint Petersburg,3,1,0,0,test_drive_done,11,MGR007,26-35,manual,diesel,,0,2,1,1724778,50000-100000,1
+LEAD00322,2023-04-09,website,Renault,Logan,Sedan,1680000,1,Kazan,2,0,1,0,on_hold,72,MGR019,18-25,automatic,hybrid,,1,6,1,1632627,<50000,1
+LEAD00323,2023-10-16,offline,Kia,Sportage,SUV,3368000,1,Saint Petersburg,3,0,0,0,negotiation,179,MGR019,18-25,automatic,diesel,,1,4,0,3665775,50000-100000,1
+LEAD00324,2023-11-18,avito,Volkswagen,Tiguan,SUV,3053000,1,Chelyabinsk,2,0,0,0,new,84,MGR016,26-35,manual,electric,,1,5,0,2895581,<50000,1
+LEAD00325,2024-03-14,email,Skoda,Karoq,SUV,1979000,0,Kazan,4,0,0,0,test_drive_done,113,MGR017,46-55,manual,electric,0-30000,0,6,1,2294530,100000-200000,0
+LEAD00326,2024-01-08,avito,Volkswagen,Polo,Hatchback,1387000,0,Chelyabinsk,4,1,0,0,offer_sent,70,MGR025,56+,automatic,diesel,150000+,1,7,0,1479047,<50000,0
+LEAD00327,2024-04-10,email,Mercedes-Benz,GLC,SUV,7897000,1,Rostov-on-Don,2,1,0,1,new,128,MGR022,46-55,variator,hybrid,,0,1,1,7752419,50000-100000,1
+LEAD00328,2024-05-19,phone,Kia,Sorento,SUV,2639000,1,Kazan,8,1,0,0,offer_sent,5,MGR025,56+,automatic,gasoline,,1,6,0,3005785,>400000,1
+LEAD00329,2023-02-03,avito,Mercedes-Benz,C-Class,Sedan,7142000,1,Nizhniy Novgorod,3,0,0,0,on_hold,100,MGR016,46-55,variator,electric,,0,8,0,7269637,<50000,0
+LEAD00330,2023-06-10,offline,Ford,Kuga,SUV,4303000,1,Omsk,9,1,1,0,negotiation,16,MGR001,56+,variator,electric,,1,6,0,4401254,>400000,1
+LEAD00331,2024-03-14,partner,Kia,Cerato,Sedan,2728000,1,Rostov-on-Don,6,0,1,1,new,177,MGR003,18-25,robot,electric,,1,4,0,3149314,<50000,0
+LEAD00332,2024-08-04,website,Volkswagen,Passat,Sedan,1495000,0,Omsk,9,0,1,0,offer_sent,26,MGR016,36-45,automatic,electric,60001-100000,0,6,1,1704260,200000-400000,1
+LEAD00333,2023-07-26,offline,Hyundai,Creta,SUV,3434000,1,Nizhniy Novgorod,8,0,0,1,negotiation,147,MGR013,26-35,robot,hybrid,,0,4,1,3283840,200000-400000,0
+LEAD00334,2024-06-27,website,Ford,Focus,Hatchback,3968000,1,Rostov-on-Don,8,0,1,1,negotiation,52,MGR014,36-45,robot,gasoline,,0,5,0,4334176,>400000,1
+LEAD00335,2024-05-26,partner,Ford,Kuga,SUV,4350000,1,Omsk,4,0,0,0,new,134,MGR007,26-35,automatic,diesel,,1,7,0,4807203,>400000,0
+LEAD00336,2023-07-28,email,Kia,Sportage,SUV,1916000,1,Kazan,7,1,1,1,in_progress,50,MGR001,46-55,variator,hybrid,,0,4,0,1835074,<50000,1
+LEAD00337,2023-10-07,offline,Skoda,Karoq,SUV,1744000,0,Chelyabinsk,3,1,0,1,new,22,MGR011,46-55,automatic,diesel,0-30000,0,1,0,2053442,50000-100000,0
+LEAD00338,2024-08-07,email,Volkswagen,Touareg,SUV,3088000,1,Saint Petersburg,12,0,1,0,in_progress,154,MGR004,46-55,manual,diesel,,0,5,0,2982632,<50000,0
+LEAD00339,2023-04-20,email,BMW,X5,SUV,8286000,1,Chelyabinsk,3,1,1,0,on_hold,29,MGR011,26-35,variator,diesel,,0,1,0,8478906,50000-100000,0
+LEAD00340,2023-01-22,partner,Lada,Granta,Sedan,1084000,1,Novosibirsk,11,0,0,0,negotiation,142,MGR013,36-45,variator,hybrid,,0,1,0,1135318,100000-200000,1
+LEAD00341,2023-09-19,partner,BMW,3 Series,Sedan,7881000,1,Yekaterinburg,5,1,0,1,negotiation,165,MGR014,46-55,variator,gasoline,,1,3,0,8343021,200000-400000,0
+LEAD00342,2023-04-13,partner,Skoda,Octavia,Sedan,3185000,1,Samara,3,0,0,0,new,165,MGR021,46-55,variator,hybrid,,0,6,0,3013679,200000-400000,0
+LEAD00343,2023-06-11,avito,Lada,Granta,Sedan,803000,1,Yekaterinburg,4,0,0,0,test_drive_done,123,MGR024,36-45,robot,gasoline,,0,7,0,937914,<50000,1
+LEAD00344,2024-01-22,phone,Kia,Cerato,Sedan,2454000,1,Saint Petersburg,10,1,0,0,in_progress,68,MGR023,46-55,robot,diesel,,0,4,0,2738887,200000-400000,0
+LEAD00345,2023-06-24,avito,Toyota,Land Cruiser,SUV,6862000,1,Rostov-on-Don,10,1,0,0,new,58,MGR023,36-45,manual,gasoline,,0,8,0,7180152,100000-200000,1
+LEAD00346,2023-08-09,avito,Skoda,Rapid,Sedan,3028000,1,Chelyabinsk,5,0,1,1,in_progress,159,MGR015,26-35,variator,diesel,,0,1,1,3102516,>400000,0
+LEAD00347,2024-01-28,website,BMW,X3,SUV,4202000,1,Samara,12,0,0,1,test_drive_done,91,MGR020,26-35,robot,electric,,0,1,1,4248249,50000-100000,0
+LEAD00348,2024-01-15,social_media,Ford,Focus,Hatchback,1621000,1,Omsk,3,0,0,0,in_progress,23,MGR011,56+,variator,hybrid,,1,8,0,1911822,200000-400000,0
+LEAD00349,2024-01-05,website,Mercedes-Benz,E-Class,Sedan,6133000,1,Nizhniy Novgorod,7,1,0,0,in_progress,81,MGR024,18-25,manual,electric,,0,5,0,6389943,100000-200000,0
+LEAD00350,2024-04-26,phone,Kia,Sorento,SUV,1517000,1,Novosibirsk,5,1,1,1,on_hold,144,MGR016,18-25,manual,diesel,,0,8,1,1690838,<50000,1
+LEAD00351,2024-06-04,social_media,Volkswagen,Tiguan,SUV,2106000,1,Saint Petersburg,5,0,0,1,in_progress,107,MGR003,26-35,robot,diesel,,0,1,0,2504514,50000-100000,1
+LEAD00352,2023-04-19,website,Lada,Vesta,Sedan,736000,0,Kazan,6,1,1,0,on_hold,2,MGR011,18-25,variator,hybrid,150000+,0,8,0,818400,>400000,0
+LEAD00353,2023-11-27,email,Ford,Kuga,SUV,2930000,1,Rostov-on-Don,1,0,0,0,new,6,MGR007,26-35,manual,gasoline,,1,5,1,3148295,100000-200000,1
+LEAD00354,2023-11-14,partner,Mercedes-Benz,GLC,SUV,9301000,1,Novosibirsk,11,0,1,1,test_drive_done,69,MGR019,18-25,robot,electric,,1,4,0,9507941,200000-400000,1
+LEAD00355,2023-02-11,social_media,Volkswagen,Touareg,SUV,4921000,1,Rostov-on-Don,9,1,1,1,on_hold,166,MGR017,26-35,variator,electric,,0,3,0,5273891,<50000,1
+LEAD00356,2023-09-12,partner,Lada,Niva,SUV,881000,1,Samara,9,0,0,0,new,119,MGR022,36-45,manual,diesel,,0,2,0,1114082,100000-200000,0
+LEAD00357,2023-07-03,offline,Skoda,Rapid,Sedan,2021000,1,Saint Petersburg,3,0,1,0,on_hold,116,MGR020,56+,automatic,gasoline,,0,6,0,2298100,200000-400000,0
+LEAD00358,2024-07-01,phone,BMW,5 Series,Sedan,5229000,1,Saint Petersburg,1,1,1,1,on_hold,125,MGR010,56+,robot,gasoline,,1,7,0,5660124,200000-400000,0
+LEAD00359,2023-07-15,partner,Ford,EcoSport,SUV,2417000,0,Kazan,2,0,0,1,test_drive_done,161,MGR018,18-25,manual,diesel,30001-60000,1,8,0,2898301,<50000,1
+LEAD00360,2024-03-31,avito,Skoda,Karoq,SUV,1803000,1,Chelyabinsk,8,0,0,0,new,162,MGR023,18-25,automatic,diesel,,1,7,1,1611256,50000-100000,0
+LEAD00361,2024-05-12,offline,Mercedes-Benz,GLE,SUV,8740000,1,Omsk,9,0,0,0,offer_sent,5,MGR014,36-45,automatic,electric,,0,8,1,8603653,200000-400000,1
+LEAD00362,2023-12-22,email,Renault,Logan,Sedan,1474000,1,Chelyabinsk,8,0,1,1,in_progress,151,MGR022,46-55,automatic,electric,,1,6,0,1806294,>400000,1
+LEAD00363,2023-08-01,social_media,Ford,Kuga,SUV,2137000,1,Chelyabinsk,5,0,1,0,test_drive_done,127,MGR010,46-55,robot,electric,,1,3,0,2042805,50000-100000,1
+LEAD00364,2023-02-02,social_media,Renault,Logan,Sedan,1218000,1,Kazan,2,1,1,1,negotiation,12,MGR025,36-45,manual,diesel,,0,8,1,1374855,>400000,0
+LEAD00365,2024-04-13,email,Skoda,Kodiaq,SUV,2497000,0,Omsk,2,0,0,0,new,43,MGR021,56+,automatic,gasoline,150000+,0,2,0,2341008,200000-400000,0
+LEAD00366,2024-01-08,email,Hyundai,Creta,SUV,2043000,1,Kazan,6,0,1,1,negotiation,74,MGR017,46-55,variator,gasoline,,0,1,1,2339672,50000-100000,1
+LEAD00367,2024-03-07,partner,Skoda,Rapid,Sedan,2214000,0,Chelyabinsk,4,1,1,0,new,133,MGR003,36-45,manual,diesel,30001-60000,0,6,0,2478077,>400000,1
+LEAD00368,2023-03-01,avito,BMW,X3,SUV,3096000,0,Moscow,11,0,0,0,on_hold,81,MGR012,46-55,automatic,diesel,60001-100000,0,7,0,3476502,>400000,1
+LEAD00369,2023-07-22,avito,Skoda,Kodiaq,SUV,2934000,1,Samara,5,1,0,0,negotiation,55,MGR003,26-35,variator,hybrid,,0,3,0,3301059,200000-400000,1
+LEAD00370,2023-11-08,email,Skoda,Rapid,Sedan,3050000,1,Novosibirsk,12,0,0,0,new,13,MGR025,18-25,automatic,hybrid,,0,5,0,3221692,50000-100000,0
+LEAD00371,2024-08-02,offline,Volkswagen,Touareg,SUV,2820000,1,Moscow,12,0,0,0,on_hold,147,MGR022,46-55,robot,diesel,,0,6,1,3319318,>400000,1
+LEAD00372,2023-04-11,social_media,Mercedes-Benz,E-Class,Sedan,4862000,1,Omsk,3,0,0,1,new,95,MGR022,56+,manual,hybrid,,1,3,0,5129836,200000-400000,0
+LEAD00373,2023-06-16,offline,Ford,Kuga,SUV,2680000,1,Samara,3,0,0,0,test_drive_done,9,MGR024,46-55,variator,electric,,0,2,0,2957555,200000-400000,1
+LEAD00374,2024-08-08,website,Renault,Kaptur,SUV,2143000,1,Rostov-on-Don,5,1,1,0,in_progress,37,MGR019,46-55,automatic,gasoline,,0,5,1,1972336,100000-200000,1
+LEAD00375,2023-02-15,phone,Skoda,Rapid,Sedan,1941000,1,Samara,7,0,1,0,in_progress,36,MGR017,18-25,automatic,hybrid,,1,7,0,2376132,<50000,0
+LEAD00376,2024-02-09,partner,Lada,Niva,SUV,952000,1,Nizhniy Novgorod,6,0,0,0,offer_sent,162,MGR025,18-25,variator,electric,,0,2,0,778008,50000-100000,0
+LEAD00377,2024-05-29,phone,Renault,Logan,Sedan,774000,0,Rostov-on-Don,1,1,0,1,new,137,MGR020,56+,automatic,diesel,100001-150000,1,4,1,1181705,200000-400000,1
+LEAD00378,2023-01-25,partner,Ford,Focus,Hatchback,3613000,1,Moscow,9,1,1,1,negotiation,23,MGR005,36-45,variator,diesel,,1,3,1,3604542,200000-400000,1
+LEAD00379,2024-02-04,offline,Mercedes-Benz,E-Class,Sedan,2482000,0,Nizhniy Novgorod,2,1,1,0,offer_sent,61,MGR016,26-35,automatic,gasoline,150000+,1,2,1,2533262,100000-200000,1
+LEAD00380,2024-02-21,website,Renault,Arkana,Crossover,2172000,1,Kazan,2,0,1,1,on_hold,26,MGR008,18-25,robot,electric,,0,5,0,2586646,>400000,0
+LEAD00381,2024-07-07,avito,Kia,Cerato,Sedan,2966000,1,Saint Petersburg,3,0,0,0,offer_sent,75,MGR021,56+,manual,diesel,,0,8,1,3253222,100000-200000,0
+LEAD00382,2024-08-22,social_media,Toyota,Camry,Sedan,5750000,1,Rostov-on-Don,9,1,1,0,in_progress,143,MGR009,36-45,variator,hybrid,,1,2,1,5678950,50000-100000,0
+LEAD00383,2023-12-16,email,Hyundai,Creta,SUV,2803000,1,Kazan,4,0,0,1,new,173,MGR006,46-55,robot,diesel,,0,1,0,2607487,100000-200000,0
+LEAD00384,2023-12-28,website,Lada,Niva,SUV,951000,0,Saint Petersburg,7,0,1,1,test_drive_done,3,MGR008,56+,automatic,electric,30001-60000,0,1,1,1139477,<50000,0
+LEAD00385,2024-01-07,website,Skoda,Rapid,Sedan,1142000,0,Rostov-on-Don,1,1,0,0,new,72,MGR019,36-45,manual,diesel,100001-150000,1,4,0,1611448,200000-400000,0
+LEAD00386,2023-05-12,email,Kia,Sportage,SUV,2001000,0,Rostov-on-Don,12,1,1,0,offer_sent,65,MGR022,56+,manual,gasoline,150000+,1,5,1,1825240,>400000,1
+LEAD00387,2023-05-05,email,Lada,Vesta,Sedan,1237000,1,Moscow,11,0,0,0,offer_sent,115,MGR011,36-45,variator,electric,,1,4,1,1477467,100000-200000,1
+LEAD00388,2023-07-21,offline,Hyundai,Creta,SUV,1735000,1,Moscow,3,1,1,0,on_hold,86,MGR009,26-35,variator,gasoline,,1,7,0,2156313,50000-100000,1
+LEAD00389,2024-03-25,partner,Lada,Granta,Sedan,748000,0,Moscow,2,0,0,1,new,114,MGR002,36-45,manual,gasoline,30001-60000,1,1,1,616187,>400000,0
+LEAD00390,2024-02-16,email,Mercedes-Benz,C-Class,Sedan,2834000,0,Moscow,2,0,1,0,offer_sent,159,MGR004,56+,automatic,hybrid,100001-150000,0,1,0,3120758,200000-400000,0
+LEAD00391,2023-03-11,social_media,Toyota,Land Cruiser,SUV,5137000,0,Rostov-on-Don,10,0,1,0,test_drive_done,48,MGR008,26-35,automatic,gasoline,150000+,0,5,1,5441783,<50000,1
+LEAD00392,2024-07-08,social_media,Toyota,Camry,Sedan,2845000,1,Rostov-on-Don,3,1,1,0,on_hold,38,MGR002,46-55,robot,hybrid,,1,1,0,3334624,>400000,1
+LEAD00393,2023-07-13,social_media,Renault,Logan,Sedan,1632000,1,Yekaterinburg,11,0,0,0,negotiation,42,MGR004,26-35,manual,gasoline,,0,6,0,1871033,100000-200000,0
+LEAD00394,2024-05-07,website,Toyota,Land Cruiser,SUV,2697000,0,Yekaterinburg,12,0,0,0,new,19,MGR012,26-35,variator,diesel,60001-100000,1,7,1,2504052,50000-100000,1
+LEAD00395,2023-07-23,avito,Volkswagen,Tiguan,SUV,2790000,1,Yekaterinburg,4,1,1,1,in_progress,68,MGR004,56+,robot,gasoline,,1,4,1,2612536,<50000,1
+LEAD00396,2023-09-03,partner,Kia,Sorento,SUV,1991000,0,Saint Petersburg,6,0,0,0,in_progress,34,MGR007,36-45,manual,hybrid,0-30000,0,7,0,1859553,200000-400000,1
+LEAD00397,2023-10-29,offline,Mercedes-Benz,GLC,SUV,4604000,0,Chelyabinsk,3,1,1,0,on_hold,158,MGR003,26-35,automatic,diesel,100001-150000,0,8,1,4489362,>400000,1
+LEAD00398,2024-05-09,offline,Mercedes-Benz,GLC,SUV,8084000,1,Samara,12,0,1,0,test_drive_done,61,MGR013,26-35,robot,hybrid,,0,1,1,8096861,>400000,1
+LEAD00399,2023-10-30,phone,Mercedes-Benz,GLE,SUV,6680000,0,Nizhniy Novgorod,8,0,1,1,test_drive_done,95,MGR016,36-45,automatic,diesel,100001-150000,1,6,0,6970262,<50000,1
+LEAD00400,2023-10-29,avito,Mercedes-Benz,C-Class,Sedan,3471000,0,Yekaterinburg,9,0,0,0,offer_sent,52,MGR011,36-45,automatic,hybrid,0-30000,0,2,1,3648735,<50000,1
+LEAD00401,2023-11-03,email,BMW,X5,SUV,5979000,1,Kazan,5,0,0,0,in_progress,102,MGR008,26-35,manual,hybrid,,1,1,0,6316549,<50000,1
+LEAD00402,2023-03-29,offline,Hyundai,Santa Fe,SUV,1657000,0,Rostov-on-Don,6,0,1,0,negotiation,36,MGR019,56+,variator,electric,0-30000,1,8,0,2042573,100000-200000,0
+LEAD00403,2024-02-18,partner,Skoda,Octavia,Sedan,2523000,1,Nizhniy Novgorod,12,0,1,1,offer_sent,162,MGR020,36-45,manual,electric,,0,3,1,2669292,200000-400000,0
+LEAD00404,2023-04-22,phone,Ford,Kuga,SUV,2361000,0,Chelyabinsk,6,0,1,0,on_hold,155,MGR016,18-25,variator,diesel,0-30000,1,2,0,2347264,200000-400000,1
+LEAD00405,2023-02-28,social_media,Hyundai,Solaris,Sedan,2980000,1,Yekaterinburg,6,0,1,0,offer_sent,108,MGR016,26-35,robot,gasoline,,1,3,0,2915410,200000-400000,0
+LEAD00406,2024-08-11,partner,Mercedes-Benz,E-Class,Sedan,3064000,0,Yekaterinburg,5,0,0,0,test_drive_done,155,MGR008,36-45,variator,electric,0-30000,1,1,0,3331383,50000-100000,0
+LEAD00407,2023-12-22,avito,Ford,Kuga,SUV,3484000,1,Rostov-on-Don,12,0,0,0,offer_sent,111,MGR015,18-25,automatic,hybrid,,0,3,0,3472301,200000-400000,0
+LEAD00408,2023-10-26,email,Kia,Rio,Sedan,2911000,1,Moscow,11,0,0,0,new,95,MGR003,26-35,manual,hybrid,,1,8,0,3290677,>400000,0
+LEAD00409,2023-01-28,avito,Renault,Kaptur,SUV,1439000,0,Novosibirsk,2,0,0,0,new,65,MGR004,36-45,manual,gasoline,0-30000,1,7,0,1654943,200000-400000,0
+LEAD00410,2023-05-24,avito,Kia,Cerato,Sedan,3201000,1,Samara,8,0,0,1,offer_sent,101,MGR006,18-25,automatic,diesel,,1,2,1,3131182,200000-400000,1
+LEAD00411,2023-08-10,avito,Toyota,Corolla,Sedan,3057000,1,Nizhniy Novgorod,8,0,0,0,test_drive_done,14,MGR020,26-35,manual,gasoline,,0,2,1,3180301,>400000,1
+LEAD00412,2023-01-29,social_media,Mercedes-Benz,E-Class,Sedan,4045000,0,Yekaterinburg,1,1,1,0,on_hold,43,MGR002,26-35,automatic,gasoline,30001-60000,1,2,0,4541368,200000-400000,1
+LEAD00413,2023-05-04,offline,Volkswagen,Passat,Sedan,2121000,0,Yekaterinburg,4,1,1,1,in_progress,17,MGR022,56+,manual,electric,100001-150000,1,6,1,2144103,200000-400000,1
+LEAD00414,2024-07-03,website,Ford,EcoSport,SUV,1779000,1,Yekaterinburg,10,1,0,0,negotiation,45,MGR021,46-55,robot,electric,,0,7,0,1718388,<50000,0
+LEAD00415,2023-08-27,social_media,BMW,X3,SUV,4053000,1,Moscow,9,0,0,1,in_progress,159,MGR003,56+,variator,electric,,0,2,1,4302312,>400000,1
+LEAD00416,2024-03-30,phone,BMW,X3,SUV,5929000,1,Novosibirsk,12,0,1,0,on_hold,74,MGR025,46-55,manual,gasoline,,0,1,0,6164047,50000-100000,1
+LEAD00417,2024-01-26,phone,BMW,X5,SUV,5484000,1,Omsk,9,1,1,1,on_hold,37,MGR007,18-25,manual,diesel,,0,2,0,5338638,>400000,1
+LEAD00418,2023-07-22,offline,Kia,Sportage,SUV,2267000,1,Saint Petersburg,4,0,0,0,new,93,MGR013,46-55,variator,hybrid,,0,4,1,2571544,50000-100000,0
+LEAD00419,2024-01-26,offline,Lada,Niva,SUV,1232000,1,Rostov-on-Don,7,0,0,0,negotiation,98,MGR015,46-55,manual,electric,,0,3,0,1216234,<50000,1
+LEAD00420,2023-07-20,offline,Skoda,Karoq,SUV,1901000,0,Samara,3,0,1,0,on_hold,96,MGR013,18-25,robot,diesel,100001-150000,0,6,0,2137019,200000-400000,0
+LEAD00421,2023-09-19,website,Ford,Focus,Hatchback,2474000,0,Saint Petersburg,12,1,0,0,in_progress,123,MGR002,46-55,manual,diesel,30001-60000,1,1,0,2718638,200000-400000,0
+LEAD00422,2024-08-15,social_media,BMW,3 Series,Sedan,2961000,0,Rostov-on-Don,11,0,1,0,offer_sent,49,MGR014,46-55,manual,hybrid,0-30000,0,7,1,3375633,50000-100000,1
+LEAD00423,2023-04-02,social_media,Mercedes-Benz,GLC,SUV,9667000,1,Omsk,2,0,0,0,on_hold,79,MGR001,56+,variator,hybrid,,1,4,0,9884302,200000-400000,0
+LEAD00424,2023-06-24,website,Lada,Vesta,Sedan,899000,1,Chelyabinsk,3,0,0,1,in_progress,52,MGR002,56+,variator,hybrid,,1,2,0,921899,200000-400000,0
+LEAD00425,2023-03-29,avito,Hyundai,Creta,SUV,3074000,1,Rostov-on-Don,7,1,1,1,new,16,MGR009,18-25,manual,gasoline,,1,8,0,2979706,100000-200000,0
+LEAD00426,2024-04-29,phone,Toyota,Camry,Sedan,2593000,1,Omsk,6,0,1,0,on_hold,103,MGR013,18-25,variator,hybrid,,1,6,0,2771756,200000-400000,0
+LEAD00427,2023-05-06,website,BMW,X5,SUV,4320000,1,Samara,9,1,0,0,in_progress,1,MGR021,46-55,manual,gasoline,,1,8,0,4812299,>400000,0
+LEAD00428,2024-05-11,partner,BMW,3 Series,Sedan,4700000,0,Moscow,7,0,0,0,negotiation,156,MGR007,36-45,variator,diesel,100001-150000,0,8,0,4605335,>400000,0
+LEAD00429,2023-04-29,avito,Renault,Logan,Sedan,1330000,1,Saint Petersburg,8,0,1,1,in_progress,84,MGR013,36-45,variator,diesel,,0,2,1,1160641,200000-400000,0
+LEAD00430,2023-08-18,email,Hyundai,Creta,SUV,3350000,1,Saint Petersburg,10,0,0,0,test_drive_done,60,MGR008,26-35,variator,gasoline,,1,7,0,3739194,100000-200000,1
+LEAD00431,2024-01-12,website,Skoda,Octavia,Sedan,1728000,1,Nizhniy Novgorod,3,0,0,0,test_drive_done,109,MGR011,56+,manual,gasoline,,1,1,0,1727080,>400000,0
+LEAD00432,2023-10-31,avito,Kia,Sportage,SUV,868000,0,Moscow,4,0,1,0,on_hold,32,MGR009,56+,variator,hybrid,150000+,1,1,0,991896,50000-100000,0
+LEAD00433,2023-12-08,partner,Ford,Kuga,SUV,4184000,1,Yekaterinburg,3,0,1,0,test_drive_done,101,MGR010,46-55,robot,electric,,0,1,0,4171716,<50000,0
+LEAD00434,2023-03-15,social_media,Kia,Rio,Sedan,2906000,1,Chelyabinsk,9,0,1,0,offer_sent,14,MGR023,46-55,robot,electric,,0,7,1,3045128,200000-400000,1
+LEAD00435,2023-07-20,email,Kia,Sportage,SUV,3109000,1,Samara,12,0,1,0,on_hold,44,MGR002,36-45,manual,diesel,,1,3,1,3356858,50000-100000,1
+LEAD00436,2023-09-08,website,Lada,Granta,Sedan,853000,1,Omsk,1,1,1,0,on_hold,172,MGR022,36-45,variator,diesel,,0,3,0,1046605,200000-400000,1
+LEAD00437,2023-03-26,email,Lada,Niva,SUV,1081000,1,Samara,2,0,0,0,offer_sent,47,MGR013,36-45,automatic,gasoline,,1,8,1,980146,<50000,1
+LEAD00438,2023-01-21,phone,Mercedes-Benz,GLC,SUV,6681000,0,Saint Petersburg,7,0,0,0,in_progress,154,MGR023,36-45,automatic,diesel,0-30000,1,2,0,6698541,200000-400000,1
+LEAD00439,2023-03-31,social_media,Renault,Arkana,Crossover,2019000,1,Saint Petersburg,9,1,0,1,in_progress,109,MGR022,18-25,manual,diesel,,1,5,1,2389873,50000-100000,1
+LEAD00440,2024-05-17,offline,Skoda,Octavia,Sedan,3437000,1,Kazan,12,1,0,0,new,61,MGR002,56+,variator,diesel,,0,4,0,3931804,>400000,1
+LEAD00441,2023-05-12,phone,Skoda,Kodiaq,SUV,3460000,1,Rostov-on-Don,12,0,1,1,negotiation,174,MGR014,56+,manual,hybrid,,1,3,0,3347298,100000-200000,0
+LEAD00442,2023-06-07,email,Kia,Sportage,SUV,794000,0,Kazan,6,0,1,1,on_hold,141,MGR014,26-35,robot,diesel,0-30000,0,2,1,1151286,200000-400000,1
+LEAD00443,2023-04-11,partner,Volkswagen,Passat,Sedan,2966000,1,Kazan,7,0,1,0,offer_sent,126,MGR004,26-35,manual,hybrid,,0,2,1,3087440,<50000,0
+LEAD00444,2024-02-03,social_media,Ford,EcoSport,SUV,3859000,1,Rostov-on-Don,3,1,0,0,negotiation,3,MGR022,18-25,automatic,diesel,,1,7,0,3792769,100000-200000,1
+LEAD00445,2024-03-04,avito,Kia,Sportage,SUV,942000,0,Rostov-on-Don,12,0,1,0,on_hold,59,MGR010,36-45,automatic,hybrid,150000+,1,5,1,1190544,50000-100000,0
+LEAD00446,2023-04-06,partner,Volkswagen,Passat,Sedan,2465000,0,Nizhniy Novgorod,3,0,1,1,on_hold,35,MGR016,18-25,automatic,gasoline,150000+,0,1,0,2709579,50000-100000,0
+LEAD00447,2023-12-20,website,Renault,Logan,Sedan,1430000,0,Rostov-on-Don,4,0,0,0,in_progress,45,MGR003,26-35,automatic,electric,150000+,0,1,0,1406718,>400000,0
+LEAD00448,2023-04-26,website,Kia,Cerato,Sedan,2600000,0,Chelyabinsk,6,0,1,0,negotiation,55,MGR001,46-55,variator,diesel,60001-100000,0,2,1,2906592,100000-200000,0
+LEAD00449,2023-12-31,social_media,Ford,Kuga,SUV,2490000,1,Omsk,1,0,1,0,new,111,MGR016,18-25,variator,electric,,1,3,0,2299294,<50000,1
+LEAD00450,2024-04-26,website,Renault,Duster,SUV,1620000,1,Samara,7,0,1,0,on_hold,113,MGR006,18-25,manual,hybrid,,1,5,1,1879876,50000-100000,1
+LEAD00451,2023-05-17,partner,Mercedes-Benz,C-Class,Sedan,4942000,0,Yekaterinburg,7,0,1,1,test_drive_done,126,MGR018,18-25,manual,hybrid,0-30000,0,8,0,5020711,<50000,0
+LEAD00452,2023-05-10,offline,Kia,Cerato,Sedan,2937000,1,Chelyabinsk,3,1,1,0,on_hold,3,MGR014,26-35,automatic,gasoline,,1,6,0,3363090,<50000,1
+LEAD00453,2023-10-15,partner,Skoda,Karoq,SUV,1669000,1,Chelyabinsk,2,0,0,1,on_hold,129,MGR020,26-35,manual,diesel,,0,4,0,1577071,50000-100000,0
+LEAD00454,2023-05-30,website,Ford,Explorer,SUV,1739000,0,Novosibirsk,7,1,1,0,negotiation,110,MGR016,46-55,automatic,hybrid,30001-60000,1,5,0,1781669,50000-100000,1
+LEAD00455,2023-09-10,website,Mercedes-Benz,C-Class,Sedan,6492000,1,Kazan,6,0,1,1,negotiation,156,MGR004,36-45,robot,hybrid,,0,6,1,6786988,200000-400000,1
+LEAD00456,2023-05-14,social_media,Skoda,Karoq,SUV,2244000,1,Kazan,6,0,0,0,in_progress,150,MGR013,18-25,automatic,gasoline,,0,6,1,2333351,>400000,1
+LEAD00457,2024-04-01,email,Volkswagen,Tiguan,SUV,4178000,1,Rostov-on-Don,2,1,0,0,new,33,MGR007,18-25,automatic,diesel,,0,4,0,4139137,50000-100000,0
+LEAD00458,2024-03-05,social_media,Skoda,Rapid,Sedan,3332000,1,Samara,9,0,0,1,new,178,MGR007,18-25,variator,gasoline,,0,3,1,3725677,200000-400000,0
+LEAD00459,2024-01-29,offline,Mercedes-Benz,GLE,SUV,9609000,1,Omsk,9,0,1,1,on_hold,3,MGR017,18-25,manual,electric,,1,3,0,10029875,>400000,1
+LEAD00460,2023-08-18,partner,Renault,Kaptur,SUV,1510000,1,Yekaterinburg,1,0,1,0,new,165,MGR008,36-45,robot,gasoline,,0,5,0,1593571,50000-100000,0
+LEAD00461,2024-07-16,email,Hyundai,Solaris,Sedan,1405000,1,Nizhniy Novgorod,5,0,1,0,negotiation,57,MGR024,56+,robot,hybrid,,1,1,0,1215913,<50000,0
+LEAD00462,2024-07-18,offline,Kia,Cerato,Sedan,1364000,1,Rostov-on-Don,4,0,1,1,on_hold,112,MGR012,18-25,variator,hybrid,,0,7,1,1406979,>400000,1
+LEAD00463,2024-05-17,phone,Lada,Vesta,Sedan,907000,0,Samara,12,1,1,0,in_progress,19,MGR014,26-35,manual,diesel,0-30000,0,7,0,903972,>400000,1
+LEAD00464,2023-01-22,offline,Mercedes-Benz,C-Class,Sedan,9933000,1,Novosibirsk,2,0,0,0,in_progress,161,MGR020,18-25,automatic,electric,,1,4,0,10013658,200000-400000,1
+LEAD00465,2024-03-30,partner,Toyota,Camry,Sedan,3672000,0,Saint Petersburg,3,1,1,1,new,27,MGR018,26-35,manual,electric,0-30000,1,5,0,3601054,>400000,1
+LEAD00466,2023-05-31,website,Renault,Arkana,Crossover,1345000,1,Yekaterinburg,6,0,1,0,in_progress,27,MGR010,18-25,manual,electric,,1,2,0,1260485,200000-400000,1
+LEAD00467,2024-06-27,social_media,Ford,EcoSport,SUV,2084000,1,Saint Petersburg,6,0,0,1,negotiation,27,MGR009,18-25,manual,diesel,,0,5,0,2184947,200000-400000,0
+LEAD00468,2024-02-04,partner,BMW,X5,SUV,2375000,0,Moscow,8,0,0,0,new,83,MGR005,26-35,manual,hybrid,30001-60000,1,7,0,2467003,50000-100000,1
+LEAD00469,2023-09-09,avito,Mercedes-Benz,GLC,SUV,6615000,1,Chelyabinsk,7,0,0,0,on_hold,108,MGR017,46-55,variator,hybrid,,1,4,1,7024184,50000-100000,0
+LEAD00470,2024-04-30,social_media,Hyundai,Solaris,Sedan,1663000,0,Moscow,3,0,1,0,test_drive_done,63,MGR007,26-35,automatic,hybrid,150000+,0,3,1,1614141,>400000,0
+LEAD00471,2023-02-25,email,Toyota,RAV4,SUV,2760000,1,Novosibirsk,12,1,0,0,in_progress,21,MGR008,46-55,automatic,electric,,0,3,1,2942986,100000-200000,1
+LEAD00472,2024-02-26,partner,Ford,Kuga,SUV,1413000,0,Novosibirsk,12,1,0,0,offer_sent,45,MGR017,46-55,manual,hybrid,0-30000,1,3,1,1886662,200000-400000,1
+LEAD00473,2023-06-10,avito,Mercedes-Benz,GLE,SUV,9569000,1,Omsk,5,0,0,0,in_progress,101,MGR006,36-45,robot,diesel,,1,4,0,9427716,200000-400000,0
+LEAD00474,2024-01-16,avito,Renault,Logan,Sedan,1559000,0,Nizhniy Novgorod,11,0,1,1,offer_sent,28,MGR003,46-55,variator,diesel,30001-60000,1,6,1,1654915,<50000,1
+LEAD00475,2024-08-06,offline,Toyota,Corolla,Sedan,3337000,1,Yekaterinburg,10,1,0,0,negotiation,73,MGR013,18-25,manual,hybrid,,1,2,0,3145890,<50000,1
+LEAD00476,2023-06-03,phone,BMW,X3,SUV,4665000,0,Saint Petersburg,1,0,1,0,on_hold,24,MGR023,36-45,variator,gasoline,0-30000,0,5,1,4950602,>400000,1
+LEAD00477,2023-12-14,offline,Hyundai,Tucson,SUV,2059000,1,Omsk,5,0,0,0,offer_sent,20,MGR005,56+,robot,electric,,0,7,1,2499037,50000-100000,1
+LEAD00478,2024-04-10,phone,Lada,Vesta,Sedan,815000,1,Kazan,6,1,1,1,on_hold,118,MGR009,56+,automatic,electric,,0,6,1,802890,<50000,0
+LEAD00479,2023-10-21,phone,Skoda,Karoq,SUV,2081000,0,Saint Petersburg,7,0,0,0,test_drive_done,68,MGR022,56+,variator,gasoline,150000+,1,6,1,2314265,100000-200000,1
+LEAD00480,2024-08-06,website,Toyota,RAV4,SUV,6394000,1,Novosibirsk,7,0,1,0,offer_sent,120,MGR004,18-25,robot,electric,,0,6,0,6867693,50000-100000,1
+LEAD00481,2023-12-17,avito,Volkswagen,Touareg,SUV,4746000,1,Yekaterinburg,10,0,0,0,in_progress,164,MGR007,46-55,robot,gasoline,,1,1,0,5038796,100000-200000,1
+LEAD00482,2023-08-05,partner,Toyota,Land Cruiser,SUV,2311000,1,Nizhniy Novgorod,1,0,0,1,test_drive_done,21,MGR010,46-55,variator,diesel,,0,2,1,2398210,<50000,0
+LEAD00483,2023-12-17,phone,Lada,Niva,SUV,1337000,1,Kazan,5,1,1,0,negotiation,178,MGR019,26-35,automatic,gasoline,,1,3,0,1595001,200000-400000,1
+LEAD00484,2023-01-15,email,Toyota,RAV4,SUV,2437000,1,Rostov-on-Don,3,0,0,0,test_drive_done,33,MGR021,56+,manual,hybrid,,1,7,1,2240855,100000-200000,1
+LEAD00485,2023-12-23,phone,Ford,Focus,Hatchback,1749000,1,Yekaterinburg,4,0,0,0,offer_sent,32,MGR023,46-55,manual,electric,,1,6,1,1870876,50000-100000,1
+LEAD00486,2023-06-30,social_media,Lada,Niva,SUV,820000,0,Nizhniy Novgorod,8,0,1,0,on_hold,73,MGR023,56+,variator,hybrid,100001-150000,1,7,1,1311646,<50000,0
+LEAD00487,2024-05-23,partner,Volkswagen,Polo,Hatchback,4901000,1,Saint Petersburg,12,0,0,1,in_progress,58,MGR025,18-25,automatic,electric,,1,1,0,5142073,<50000,1
+LEAD00488,2024-02-10,partner,Mercedes-Benz,C-Class,Sedan,5602000,1,Samara,1,0,0,0,on_hold,62,MGR001,18-25,robot,electric,,1,5,1,5836861,200000-400000,0
+LEAD00489,2024-08-08,website,Mercedes-Benz,C-Class,Sedan,2127000,0,Novosibirsk,7,1,0,1,in_progress,163,MGR013,36-45,robot,hybrid,100001-150000,0,1,0,2532923,50000-100000,0
+LEAD00490,2023-05-10,social_media,Kia,Sorento,SUV,2501000,0,Omsk,9,1,0,0,in_progress,24,MGR003,26-35,variator,diesel,60001-100000,0,5,0,2467779,<50000,1
+LEAD00491,2024-04-09,offline,Toyota,RAV4,SUV,2027000,1,Omsk,11,0,1,1,on_hold,97,MGR025,18-25,variator,gasoline,,0,5,1,2084167,50000-100000,1
+LEAD00492,2023-05-06,phone,Toyota,Corolla,Sedan,2479000,1,Moscow,2,1,1,1,test_drive_done,26,MGR016,56+,automatic,gasoline,,1,6,0,2497074,200000-400000,1
+LEAD00493,2024-04-06,email,Mercedes-Benz,C-Class,Sedan,7985000,1,Saint Petersburg,3,1,1,1,negotiation,124,MGR020,26-35,variator,electric,,0,1,1,8144462,100000-200000,0
+LEAD00494,2023-01-24,email,Toyota,RAV4,SUV,6074000,1,Kazan,9,0,1,0,in_progress,22,MGR024,18-25,manual,gasoline,,1,4,1,6019295,>400000,0
+LEAD00495,2024-05-22,avito,Kia,Cerato,Sedan,2420000,1,Yekaterinburg,7,0,1,1,offer_sent,151,MGR010,18-25,robot,hybrid,,1,5,0,2327892,200000-400000,1
+LEAD00496,2023-04-21,avito,Hyundai,Santa Fe,SUV,3175000,1,Chelyabinsk,10,0,1,0,offer_sent,65,MGR019,56+,robot,hybrid,,0,2,0,3010399,>400000,1
+LEAD00497,2024-01-02,website,Ford,EcoSport,SUV,3231000,1,Saint Petersburg,4,1,0,0,on_hold,85,MGR007,26-35,robot,electric,,0,2,1,3042430,50000-100000,1
+LEAD00498,2024-07-28,website,BMW,5 Series,Sedan,8100000,1,Chelyabinsk,5,0,0,0,negotiation,82,MGR007,36-45,manual,diesel,,0,7,0,8356346,<50000,1
+LEAD00499,2023-12-01,social_media,Lada,Niva,SUV,447000,0,Chelyabinsk,10,0,0,1,test_drive_done,10,MGR018,18-25,automatic,electric,30001-60000,0,1,0,545179,50000-100000,0
+LEAD00500,2023-11-21,website,Toyota,Corolla,Sedan,1033000,0,Samara,6,0,0,0,on_hold,32,MGR012,18-25,variator,hybrid,100001-150000,0,7,1,1309663,100000-200000,0
+LEAD00501,2023-08-20,website,Volkswagen,Polo,Hatchback,2517000,1,Moscow,3,1,0,0,negotiation,12,MGR004,26-35,automatic,hybrid,,0,1,0,2372040,200000-400000,1
+LEAD00502,2024-08-20,social_media,Skoda,Octavia,Sedan,2040000,1,Rostov-on-Don,8,1,1,1,offer_sent,136,MGR008,46-55,robot,diesel,,0,7,0,1968317,50000-100000,1
+LEAD00503,2023-03-26,partner,Lada,XRAY,SUV,1129000,1,Samara,6,0,0,0,test_drive_done,16,MGR007,26-35,automatic,hybrid,,0,4,0,1007794,100000-200000,1
+LEAD00504,2024-06-24,phone,Hyundai,Santa Fe,SUV,2277000,0,Samara,9,0,0,0,in_progress,94,MGR013,18-25,robot,diesel,30001-60000,1,3,0,2187793,>400000,0
+LEAD00505,2024-08-14,phone,Ford,Explorer,SUV,3239000,1,Saint Petersburg,11,1,1,1,negotiation,8,MGR016,36-45,variator,diesel,,1,1,0,3235114,100000-200000,1
+LEAD00506,2023-06-04,website,Lada,XRAY,SUV,1071000,1,Omsk,7,0,0,1,on_hold,109,MGR007,18-25,robot,electric,,1,2,1,1272103,50000-100000,1
+LEAD00507,2023-02-21,social_media,Mercedes-Benz,E-Class,Sedan,6866000,0,Omsk,11,1,1,1,negotiation,58,MGR020,56+,variator,electric,0-30000,0,5,1,7223980,<50000,1
+LEAD00508,2023-07-28,website,Mercedes-Benz,GLE,SUV,5218000,0,Yekaterinburg,6,0,0,1,on_hold,79,MGR023,36-45,variator,diesel,100001-150000,1,3,0,5670338,50000-100000,1
+LEAD00509,2024-03-14,phone,BMW,3 Series,Sedan,3115000,0,Nizhniy Novgorod,6,1,0,0,new,126,MGR008,46-55,manual,gasoline,150000+,1,1,0,3411846,200000-400000,1
+LEAD00510,2023-04-13,partner,Toyota,Camry,Sedan,3281000,0,Yekaterinburg,5,0,1,0,test_drive_done,4,MGR012,56+,manual,diesel,60001-100000,1,5,0,3346852,<50000,1
+LEAD00511,2023-05-26,social_media,BMW,X3,SUV,4423000,1,Omsk,6,0,1,0,in_progress,97,MGR021,18-25,manual,electric,,0,6,1,4316610,50000-100000,1
+LEAD00512,2024-03-03,offline,Skoda,Karoq,SUV,3462000,1,Novosibirsk,5,1,1,0,offer_sent,89,MGR010,36-45,robot,hybrid,,1,2,0,3739131,200000-400000,1
+LEAD00513,2024-05-13,avito,Toyota,Land Cruiser,SUV,2105000,0,Novosibirsk,5,1,1,0,test_drive_done,91,MGR022,56+,robot,diesel,0-30000,1,2,1,2225677,100000-200000,0
+LEAD00514,2023-05-27,social_media,Toyota,Corolla,Sedan,2028000,0,Kazan,12,1,0,1,test_drive_done,103,MGR004,56+,manual,gasoline,100001-150000,1,8,0,2088810,100000-200000,0
+LEAD00515,2023-05-19,offline,Skoda,Rapid,Sedan,1854000,1,Chelyabinsk,7,0,1,1,test_drive_done,25,MGR005,36-45,manual,diesel,,0,8,0,2048228,100000-200000,1
+LEAD00516,2023-01-29,social_media,BMW,X5,SUV,7336000,1,Chelyabinsk,9,1,0,1,offer_sent,96,MGR005,46-55,variator,electric,,1,5,0,7744512,200000-400000,1
+LEAD00517,2024-06-14,partner,Ford,EcoSport,SUV,1819000,1,Chelyabinsk,8,0,1,1,negotiation,145,MGR016,26-35,variator,gasoline,,0,2,1,1721130,200000-400000,0
+LEAD00518,2023-08-17,email,Toyota,Camry,Sedan,5084000,0,Moscow,11,0,1,0,new,18,MGR001,26-35,manual,electric,30001-60000,0,1,0,5537959,50000-100000,1
+LEAD00519,2023-02-26,phone,Volkswagen,Polo,Hatchback,1812000,0,Saint Petersburg,2,1,0,1,new,111,MGR005,46-55,automatic,electric,150000+,1,5,0,2072461,200000-400000,0
+LEAD00520,2023-10-24,phone,Kia,Sportage,SUV,2285000,1,Omsk,5,0,0,0,test_drive_done,107,MGR014,56+,manual,electric,,0,7,1,2197549,200000-400000,1
+LEAD00521,2024-03-31,offline,Skoda,Karoq,SUV,1746000,1,Chelyabinsk,1,0,1,1,negotiation,129,MGR017,18-25,robot,gasoline,,0,8,1,1712004,>400000,1
+LEAD00522,2023-05-24,website,Renault,Arkana,Crossover,1725000,1,Novosibirsk,5,0,0,0,offer_sent,169,MGR006,26-35,robot,hybrid,,1,8,1,2019668,200000-400000,0
+LEAD00523,2023-02-16,email,Renault,Kaptur,SUV,865000,0,Nizhniy Novgorod,1,0,1,1,new,45,MGR024,56+,robot,electric,30001-60000,1,8,1,907781,<50000,0
+LEAD00524,2024-01-19,offline,Mercedes-Benz,C-Class,Sedan,2507000,0,Kazan,10,0,1,1,offer_sent,52,MGR007,18-25,automatic,gasoline,150000+,1,8,1,2975357,200000-400000,1
+LEAD00525,2023-01-25,phone,Lada,XRAY,SUV,630000,0,Novosibirsk,11,0,1,1,offer_sent,19,MGR011,46-55,manual,gasoline,150000+,1,1,1,857847,>400000,1
+LEAD00526,2024-07-26,partner,Renault,Arkana,Crossover,1394000,1,Yekaterinburg,3,0,1,0,negotiation,26,MGR004,56+,variator,hybrid,,0,2,1,1736372,100000-200000,0
+LEAD00527,2023-06-11,phone,Toyota,Corolla,Sedan,1984000,1,Kazan,5,1,0,0,offer_sent,179,MGR004,36-45,variator,hybrid,,0,5,1,1843399,<50000,1
+LEAD00528,2023-05-23,social_media,Skoda,Octavia,Sedan,1566000,1,Chelyabinsk,4,0,0,0,offer_sent,157,MGR023,36-45,manual,hybrid,,0,1,1,1442453,<50000,0
+LEAD00529,2023-10-05,avito,Toyota,Corolla,Sedan,2379000,1,Rostov-on-Don,12,1,1,0,new,15,MGR001,56+,automatic,electric,,0,7,0,2417818,50000-100000,0
+LEAD00530,2024-03-16,offline,Hyundai,Santa Fe,SUV,774000,0,Samara,12,0,1,0,new,61,MGR008,18-25,variator,electric,100001-150000,0,6,1,933793,50000-100000,1
+LEAD00531,2023-02-28,email,Toyota,RAV4,SUV,4283000,0,Omsk,2,1,1,1,test_drive_done,123,MGR022,56+,automatic,gasoline,150000+,1,4,0,4219017,50000-100000,1
+LEAD00532,2023-11-06,offline,Volkswagen,Polo,Hatchback,1824000,0,Yekaterinburg,6,0,1,0,new,14,MGR012,46-55,robot,diesel,150000+,1,5,1,2191719,200000-400000,0
+LEAD00533,2023-08-04,website,Ford,Kuga,SUV,1945000,0,Yekaterinburg,2,0,0,1,new,128,MGR002,26-35,manual,hybrid,0-30000,0,8,0,2220804,>400000,0
+LEAD00534,2023-01-20,partner,Ford,Kuga,SUV,2830000,1,Saint Petersburg,7,0,1,1,negotiation,9,MGR018,18-25,robot,electric,,1,7,0,3322482,200000-400000,0
+LEAD00535,2024-03-20,partner,Toyota,Corolla,Sedan,3050000,0,Rostov-on-Don,7,0,0,0,test_drive_done,109,MGR019,26-35,automatic,hybrid,150000+,0,7,0,3151380,>400000,0
+LEAD00536,2023-10-08,avito,Renault,Kaptur,SUV,932000,0,Samara,2,0,0,1,on_hold,65,MGR021,26-35,manual,gasoline,60001-100000,0,1,0,1111264,100000-200000,0
+LEAD00537,2024-04-18,social_media,Ford,Focus,Hatchback,1309000,0,Rostov-on-Don,1,0,1,0,negotiation,157,MGR018,36-45,robot,diesel,0-30000,1,4,0,1716723,200000-400000,1
+LEAD00538,2023-06-28,social_media,Volkswagen,Touareg,SUV,2336000,1,Kazan,3,0,0,1,offer_sent,82,MGR002,36-45,variator,diesel,,0,3,0,2597697,50000-100000,0
+LEAD00539,2023-04-22,social_media,Hyundai,Solaris,Sedan,2461000,1,Moscow,2,0,1,1,new,165,MGR014,36-45,automatic,diesel,,1,6,0,2697175,100000-200000,0
+LEAD00540,2023-10-29,offline,Kia,Rio,Sedan,2637000,1,Nizhniy Novgorod,10,1,1,1,negotiation,131,MGR023,36-45,variator,hybrid,,1,1,1,2658752,200000-400000,1
+LEAD00541,2023-03-21,avito,Renault,Kaptur,SUV,1040000,0,Rostov-on-Don,4,0,0,0,offer_sent,121,MGR022,18-25,manual,electric,0-30000,0,2,0,1393392,<50000,0
+LEAD00542,2024-01-06,phone,Lada,XRAY,SUV,1075000,1,Rostov-on-Don,4,0,0,1,offer_sent,130,MGR003,36-45,manual,hybrid,,1,7,1,1244082,50000-100000,0
+LEAD00543,2024-08-21,partner,Lada,Granta,Sedan,1259000,1,Chelyabinsk,11,1,1,1,in_progress,148,MGR016,26-35,manual,diesel,,1,2,0,1588558,200000-400000,0
+LEAD00544,2024-04-26,website,Hyundai,Tucson,SUV,3259000,1,Novosibirsk,12,1,0,0,offer_sent,136,MGR013,18-25,variator,hybrid,,1,3,0,3197808,>400000,0
+LEAD00545,2023-12-11,email,BMW,5 Series,Sedan,6795000,1,Omsk,10,0,1,0,on_hold,116,MGR024,26-35,robot,gasoline,,1,6,0,7023736,100000-200000,0
+LEAD00546,2024-01-14,phone,Skoda,Karoq,SUV,2933000,1,Novosibirsk,11,0,1,0,in_progress,77,MGR016,56+,automatic,diesel,,1,5,0,2834605,<50000,1
+LEAD00547,2023-08-04,social_media,Ford,Kuga,SUV,2768000,1,Chelyabinsk,7,0,0,0,negotiation,125,MGR015,36-45,manual,diesel,,1,5,1,2869825,<50000,1
+LEAD00548,2023-07-31,offline,Kia,Cerato,Sedan,2362000,1,Saint Petersburg,9,0,0,1,negotiation,53,MGR010,26-35,robot,diesel,,0,4,1,2189029,<50000,0
+LEAD00549,2024-03-31,offline,Ford,Kuga,SUV,3422000,1,Novosibirsk,7,0,1,1,on_hold,57,MGR024,46-55,robot,gasoline,,1,2,0,3304907,<50000,1
+LEAD00550,2023-04-13,avito,Kia,Cerato,Sedan,1215000,0,Omsk,12,0,1,0,in_progress,36,MGR019,18-25,robot,gasoline,0-30000,0,1,0,1672756,200000-400000,1
+LEAD00551,2023-05-15,avito,Hyundai,Tucson,SUV,2486000,1,Novosibirsk,4,0,1,0,test_drive_done,143,MGR020,46-55,manual,electric,,0,4,1,2356528,100000-200000,1
+LEAD00552,2024-05-10,email,Kia,Rio,Sedan,1506000,0,Kazan,9,0,1,0,offer_sent,92,MGR018,56+,variator,diesel,100001-150000,1,5,0,1820034,100000-200000,0
+LEAD00553,2024-03-11,partner,Volkswagen,Tiguan,SUV,2060000,1,Kazan,2,1,0,0,test_drive_done,154,MGR014,46-55,variator,hybrid,,1,7,0,2367236,50000-100000,0
+LEAD00554,2023-11-22,offline,Toyota,Corolla,Sedan,3994000,1,Yekaterinburg,7,0,1,0,negotiation,163,MGR002,46-55,automatic,hybrid,,0,5,0,4023583,100000-200000,1
+LEAD00555,2024-07-06,phone,Mercedes-Benz,E-Class,Sedan,6689000,0,Omsk,1,0,1,0,on_hold,13,MGR017,26-35,automatic,hybrid,0-30000,0,6,0,7068751,50000-100000,1
+LEAD00556,2024-01-18,partner,Renault,Duster,SUV,1360000,1,Omsk,6,0,0,1,new,129,MGR013,46-55,manual,hybrid,,1,1,0,1712133,50000-100000,0
+LEAD00557,2023-05-07,social_media,Toyota,RAV4,SUV,4119000,1,Moscow,7,0,1,0,on_hold,107,MGR001,26-35,manual,gasoline,,1,2,1,4448016,100000-200000,1
+LEAD00558,2024-03-11,email,Renault,Duster,SUV,1297000,1,Rostov-on-Don,9,0,1,0,new,57,MGR014,46-55,manual,hybrid,,1,8,1,1547399,100000-200000,0
+LEAD00559,2024-01-17,offline,Lada,XRAY,SUV,946000,0,Yekaterinburg,9,0,1,0,new,165,MGR010,46-55,automatic,electric,150000+,1,4,0,1245967,200000-400000,1
+LEAD00560,2024-02-17,phone,Volkswagen,Polo,Hatchback,3897000,1,Yekaterinburg,10,0,0,0,test_drive_done,80,MGR024,46-55,manual,gasoline,,0,1,0,3961266,50000-100000,1
+LEAD00561,2023-08-03,email,Kia,Rio,Sedan,2616000,1,Rostov-on-Don,9,0,0,0,offer_sent,143,MGR024,56+,variator,gasoline,,0,6,0,2922458,100000-200000,0
+LEAD00562,2024-06-16,email,Volkswagen,Polo,Hatchback,3343000,1,Saint Petersburg,12,1,1,0,offer_sent,125,MGR005,46-55,manual,gasoline,,1,7,0,3799581,50000-100000,0
+LEAD00563,2024-06-19,website,Renault,Arkana,Crossover,1608000,1,Kazan,6,0,1,0,offer_sent,155,MGR009,18-25,variator,hybrid,,1,4,0,1797287,100000-200000,1
+LEAD00564,2023-07-03,phone,Hyundai,Creta,SUV,1954000,1,Omsk,3,0,0,1,test_drive_done,85,MGR004,46-55,automatic,hybrid,,0,4,0,2317852,200000-400000,1
+LEAD00565,2023-10-09,social_media,Lada,Granta,Sedan,868000,1,Omsk,5,0,0,0,offer_sent,165,MGR022,26-35,robot,gasoline,,1,7,0,1256368,50000-100000,1
+LEAD00566,2023-04-15,email,Ford,Explorer,SUV,2021000,1,Yekaterinburg,3,0,0,0,on_hold,122,MGR007,36-45,manual,hybrid,,1,5,0,2466804,>400000,0
+LEAD00567,2023-01-01,partner,Hyundai,Tucson,SUV,1774000,1,Rostov-on-Don,6,1,0,1,negotiation,129,MGR025,26-35,manual,diesel,,0,7,0,1916978,200000-400000,1
+LEAD00568,2023-11-21,partner,Renault,Arkana,Crossover,1586000,1,Chelyabinsk,9,1,0,1,offer_sent,114,MGR016,46-55,robot,hybrid,,1,5,0,1844482,>400000,0
+LEAD00569,2023-12-21,avito,Skoda,Octavia,Sedan,1892000,0,Nizhniy Novgorod,12,0,0,0,in_progress,114,MGR012,26-35,automatic,hybrid,0-30000,0,4,1,1879700,200000-400000,0
+LEAD00570,2023-10-09,website,Toyota,Corolla,Sedan,4490000,1,Nizhniy Novgorod,11,0,1,0,on_hold,121,MGR020,36-45,automatic,hybrid,,1,1,0,4321904,<50000,0
+LEAD00571,2023-06-06,email,Lada,Granta,Sedan,1284000,1,Omsk,12,0,0,1,on_hold,16,MGR011,18-25,automatic,hybrid,,1,2,1,1752444,<50000,1
+LEAD00572,2024-08-23,email,Renault,Kaptur,SUV,997000,0,Rostov-on-Don,12,0,0,0,on_hold,69,MGR003,18-25,robot,hybrid,30001-60000,1,1,1,1322887,50000-100000,1
+LEAD00573,2023-10-08,phone,Toyota,Corolla,Sedan,6785000,1,Omsk,9,0,1,0,in_progress,23,MGR006,46-55,manual,gasoline,,0,8,1,6679960,100000-200000,1
+LEAD00574,2023-07-15,phone,Toyota,RAV4,SUV,1885000,1,Nizhniy Novgorod,12,0,1,1,negotiation,106,MGR008,46-55,automatic,diesel,,0,3,1,2277487,100000-200000,0
+LEAD00575,2023-12-30,social_media,Skoda,Kodiaq,SUV,1112000,0,Kazan,10,0,0,0,in_progress,138,MGR019,46-55,robot,gasoline,100001-150000,0,3,1,1525650,200000-400000,1
+LEAD00576,2024-06-09,partner,Mercedes-Benz,GLC,SUV,7292000,0,Kazan,4,1,1,1,negotiation,96,MGR019,26-35,robot,hybrid,150000+,1,3,0,7581943,<50000,1
+LEAD00577,2024-05-01,email,Ford,Focus,Hatchback,2920000,1,Saint Petersburg,6,1,0,1,new,113,MGR020,36-45,automatic,diesel,,1,3,0,2915203,200000-400000,0
+LEAD00578,2024-02-15,avito,Ford,Kuga,SUV,2435000,0,Yekaterinburg,5,1,0,1,test_drive_done,152,MGR001,36-45,robot,hybrid,150000+,0,2,0,2517445,200000-400000,1
+LEAD00579,2023-04-03,phone,Kia,Cerato,Sedan,3446000,1,Rostov-on-Don,5,0,1,0,in_progress,45,MGR010,26-35,manual,hybrid,,1,8,1,3400655,<50000,1
+LEAD00580,2024-05-03,avito,Kia,Sportage,SUV,2132000,1,Saint Petersburg,3,1,1,0,on_hold,63,MGR025,26-35,manual,hybrid,,0,8,0,2417998,<50000,0
+LEAD00581,2024-02-08,partner,Mercedes-Benz,E-Class,Sedan,6607000,1,Novosibirsk,9,1,0,0,in_progress,95,MGR012,46-55,robot,hybrid,,0,4,0,6593814,200000-400000,1
+LEAD00582,2023-08-05,email,Toyota,Land Cruiser,SUV,1532000,0,Yekaterinburg,5,0,1,0,negotiation,108,MGR006,26-35,variator,diesel,0-30000,1,5,1,1836000,<50000,1
+LEAD00583,2023-06-14,partner,Renault,Logan,Sedan,1676000,1,Saint Petersburg,6,1,0,0,negotiation,109,MGR009,36-45,automatic,electric,,1,7,0,1533159,<50000,0
+LEAD00584,2024-03-10,social_media,Volkswagen,Touareg,SUV,3656000,1,Samara,9,0,0,1,on_hold,117,MGR014,36-45,robot,gasoline,,1,5,1,4100371,50000-100000,1
+LEAD00585,2024-01-14,partner,Skoda,Octavia,Sedan,1748000,1,Samara,5,0,0,0,test_drive_done,5,MGR015,46-55,robot,gasoline,,1,5,1,1922221,>400000,1
+LEAD00586,2023-03-28,email,Toyota,Camry,Sedan,4726000,1,Moscow,9,1,0,0,on_hold,159,MGR008,56+,variator,diesel,,1,5,1,5006280,50000-100000,0
+LEAD00587,2023-04-14,website,Renault,Arkana,Crossover,1241000,1,Nizhniy Novgorod,7,0,0,0,in_progress,66,MGR024,36-45,automatic,diesel,,0,5,0,1064470,>400000,0
+LEAD00588,2024-06-10,partner,Volkswagen,Touareg,SUV,2076000,1,Yekaterinburg,9,0,1,0,negotiation,177,MGR025,56+,robot,hybrid,,1,8,1,2334170,>400000,1
+LEAD00589,2023-08-01,avito,Renault,Logan,Sedan,1819000,1,Novosibirsk,1,0,0,1,new,84,MGR008,36-45,robot,gasoline,,1,6,1,1854745,200000-400000,1
+LEAD00590,2023-01-13,avito,Skoda,Karoq,SUV,2704000,1,Rostov-on-Don,6,1,1,0,on_hold,100,MGR009,36-45,variator,electric,,1,8,1,2682271,>400000,1
+LEAD00591,2024-01-14,avito,Ford,Focus,Hatchback,4186000,1,Omsk,5,1,1,0,test_drive_done,107,MGR025,36-45,automatic,diesel,,1,3,0,4578332,>400000,1
+LEAD00592,2024-02-10,avito,Skoda,Karoq,SUV,1980000,1,Omsk,4,1,1,1,in_progress,108,MGR020,26-35,variator,gasoline,,0,7,0,2149124,<50000,1
+LEAD00593,2024-05-21,email,BMW,3 Series,Sedan,8941000,1,Nizhniy Novgorod,8,1,0,1,negotiation,119,MGR021,56+,variator,diesel,,0,7,1,9299540,200000-400000,1
+LEAD00594,2023-08-18,email,Volkswagen,Touareg,SUV,3976000,1,Chelyabinsk,3,0,0,1,offer_sent,64,MGR006,46-55,variator,diesel,,0,7,0,4116808,<50000,0
+LEAD00595,2024-01-13,website,Lada,Vesta,Sedan,779000,0,Rostov-on-Don,12,0,1,0,in_progress,148,MGR015,46-55,manual,diesel,0-30000,0,6,1,646961,200000-400000,0
+LEAD00596,2023-09-08,partner,Ford,Kuga,SUV,2590000,1,Novosibirsk,8,0,1,0,test_drive_done,19,MGR014,46-55,automatic,hybrid,,0,7,0,2883050,50000-100000,0
+LEAD00597,2023-03-03,partner,Renault,Logan,Sedan,1932000,1,Rostov-on-Don,5,0,0,0,on_hold,167,MGR015,56+,automatic,electric,,1,7,0,2268409,200000-400000,0
+LEAD00598,2024-02-27,partner,Volkswagen,Polo,Hatchback,2197000,1,Kazan,11,1,0,0,test_drive_done,126,MGR025,56+,automatic,diesel,,1,2,1,2074667,100000-200000,1
+LEAD00599,2023-10-09,email,Skoda,Rapid,Sedan,2104000,1,Samara,10,1,1,0,negotiation,41,MGR019,36-45,variator,hybrid,,1,6,0,2209364,>400000,1
+LEAD00600,2023-08-22,phone,Lada,Niva,SUV,1101000,1,Novosibirsk,1,0,0,1,test_drive_done,123,MGR020,26-35,robot,electric,,1,6,0,1442922,100000-200000,0
+LEAD00601,2023-06-23,partner,BMW,5 Series,Sedan,8309000,1,Omsk,9,0,0,0,in_progress,58,MGR005,36-45,robot,electric,,0,2,1,8433333,200000-400000,1
+LEAD00602,2024-01-08,avito,Volkswagen,Tiguan,SUV,3060000,1,Samara,11,1,0,0,on_hold,138,MGR003,56+,automatic,diesel,,1,5,0,3420730,50000-100000,0
+LEAD00603,2023-08-22,offline,Toyota,Land Cruiser,SUV,6442000,1,Yekaterinburg,12,0,1,0,on_hold,17,MGR005,26-35,robot,diesel,,1,5,1,6441244,50000-100000,0
+LEAD00604,2024-07-03,phone,Toyota,RAV4,SUV,3664000,1,Rostov-on-Don,1,1,0,1,offer_sent,151,MGR007,56+,variator,electric,,1,2,0,3568727,<50000,1
+LEAD00605,2023-09-15,avito,Skoda,Octavia,Sedan,2691000,1,Saint Petersburg,7,0,0,1,negotiation,137,MGR008,46-55,manual,electric,,1,5,0,2805192,<50000,1
+LEAD00606,2024-06-05,avito,Renault,Kaptur,SUV,1840000,1,Saint Petersburg,8,0,1,0,negotiation,164,MGR022,26-35,variator,gasoline,,0,2,0,2104727,100000-200000,0
+LEAD00607,2024-06-27,partner,Kia,Sportage,SUV,1745000,1,Yekaterinburg,8,1,1,0,test_drive_done,44,MGR006,26-35,robot,hybrid,,0,3,1,1746225,100000-200000,1
+LEAD00608,2024-04-28,avito,Kia,Cerato,Sedan,3415000,1,Rostov-on-Don,5,0,1,0,offer_sent,101,MGR025,46-55,robot,diesel,,0,6,0,3660957,100000-200000,0
+LEAD00609,2023-08-02,social_media,Mercedes-Benz,C-Class,Sedan,7348000,1,Novosibirsk,11,0,1,0,on_hold,52,MGR007,46-55,robot,gasoline,,1,7,1,7735173,50000-100000,0
+LEAD00610,2024-04-26,website,Lada,XRAY,SUV,909000,1,Yekaterinburg,1,0,1,0,offer_sent,97,MGR002,26-35,robot,electric,,0,4,1,1345176,>400000,1
+LEAD00611,2023-03-17,social_media,BMW,X5,SUV,7906000,1,Samara,6,0,0,0,new,113,MGR008,36-45,automatic,electric,,0,5,0,8295128,50000-100000,0
+LEAD00612,2024-04-01,email,Renault,Kaptur,SUV,1196000,0,Moscow,12,0,1,0,offer_sent,6,MGR005,26-35,automatic,hybrid,60001-100000,1,6,1,1267608,100000-200000,1
+LEAD00613,2024-08-02,partner,Mercedes-Benz,GLE,SUV,7246000,1,Samara,7,0,0,0,on_hold,18,MGR024,18-25,automatic,hybrid,,1,8,1,7395964,<50000,1
+LEAD00614,2024-03-17,phone,Volkswagen,Polo,Hatchback,3778000,1,Omsk,5,0,0,0,offer_sent,87,MGR015,18-25,variator,diesel,,1,6,1,4257309,<50000,1
+LEAD00615,2023-08-19,offline,Mercedes-Benz,C-Class,Sedan,5288000,0,Kazan,6,0,1,1,offer_sent,91,MGR023,18-25,variator,gasoline,30001-60000,0,6,0,5773362,<50000,0
+LEAD00616,2024-06-30,phone,Kia,Sportage,SUV,2233000,0,Yekaterinburg,10,0,1,1,on_hold,54,MGR007,36-45,manual,gasoline,30001-60000,1,2,1,2363654,<50000,1
+LEAD00617,2024-01-20,phone,Mercedes-Benz,GLC,SUV,5908000,1,Nizhniy Novgorod,1,0,0,0,in_progress,98,MGR019,18-25,manual,electric,,1,8,0,5916286,<50000,0
+LEAD00618,2024-05-15,offline,Volkswagen,Tiguan,SUV,3675000,1,Omsk,12,0,0,0,test_drive_done,66,MGR017,18-25,manual,diesel,,1,2,0,3852338,<50000,1
+LEAD00619,2023-11-14,avito,Lada,Vesta,Sedan,407000,0,Chelyabinsk,2,0,0,0,new,71,MGR024,46-55,automatic,hybrid,100001-150000,0,2,0,615615,100000-200000,0
+LEAD00620,2023-06-09,partner,BMW,3 Series,Sedan,2902000,0,Yekaterinburg,3,0,0,1,test_drive_done,45,MGR006,26-35,automatic,diesel,30001-60000,0,5,1,3137029,>400000,0
+LEAD00621,2024-02-18,website,Kia,Sportage,SUV,2795000,1,Novosibirsk,11,0,0,0,new,37,MGR014,18-25,variator,diesel,,1,1,1,3088357,100000-200000,1
+LEAD00622,2023-03-09,website,Mercedes-Benz,E-Class,Sedan,5295000,1,Moscow,2,0,1,0,on_hold,1,MGR010,36-45,manual,gasoline,,0,8,1,5727575,200000-400000,0
+LEAD00623,2024-08-07,email,Skoda,Kodiaq,SUV,2161000,1,Omsk,4,1,0,0,negotiation,158,MGR004,36-45,automatic,electric,,1,2,0,2384455,200000-400000,1
+LEAD00624,2023-12-02,email,Skoda,Kodiaq,SUV,2995000,1,Kazan,7,0,1,0,in_progress,4,MGR005,36-45,variator,hybrid,,0,7,0,3002509,50000-100000,0
+LEAD00625,2023-07-12,social_media,Hyundai,Tucson,SUV,3025000,1,Moscow,11,0,0,0,test_drive_done,31,MGR024,56+,variator,electric,,0,8,0,3397396,100000-200000,1
+LEAD00626,2023-12-17,phone,Renault,Kaptur,SUV,1545000,1,Kazan,9,1,0,0,new,31,MGR018,36-45,variator,electric,,1,3,1,1824653,<50000,0
+LEAD00627,2024-06-07,avito,Kia,Cerato,Sedan,2557000,1,Chelyabinsk,4,1,0,0,offer_sent,136,MGR017,56+,automatic,diesel,,1,6,0,2516143,200000-400000,1
+LEAD00628,2023-06-19,email,Renault,Kaptur,SUV,1071000,0,Omsk,11,0,0,0,in_progress,72,MGR002,26-35,robot,diesel,100001-150000,0,3,0,1510280,<50000,0
+LEAD00629,2023-11-04,offline,Mercedes-Benz,GLC,SUV,7193000,1,Chelyabinsk,1,1,0,0,in_progress,37,MGR016,46-55,variator,hybrid,,1,2,1,7423309,50000-100000,0
+LEAD00630,2023-03-14,email,Hyundai,Santa Fe,SUV,2053000,1,Chelyabinsk,4,0,1,0,on_hold,71,MGR025,46-55,manual,diesel,,1,3,1,2002326,100000-200000,1
+LEAD00631,2023-05-08,website,Volkswagen,Passat,Sedan,3747000,1,Rostov-on-Don,9,0,1,1,test_drive_done,66,MGR004,46-55,manual,electric,,0,6,0,3589961,100000-200000,0
+LEAD00632,2024-01-07,partner,Mercedes-Benz,E-Class,Sedan,5991000,0,Kazan,4,0,0,0,on_hold,71,MGR009,26-35,automatic,gasoline,60001-100000,0,7,1,5901299,>400000,0
+LEAD00633,2024-05-12,partner,BMW,X3,SUV,8963000,1,Kazan,4,0,1,0,test_drive_done,156,MGR017,36-45,automatic,gasoline,,1,8,0,9356095,<50000,0
+LEAD00634,2024-01-05,website,Mercedes-Benz,C-Class,Sedan,8928000,1,Rostov-on-Don,10,0,0,0,test_drive_done,147,MGR017,18-25,automatic,gasoline,,1,1,1,9189630,50000-100000,1
+LEAD00635,2023-04-12,website,Mercedes-Benz,GLE,SUV,9481000,1,Yekaterinburg,5,0,0,0,negotiation,64,MGR009,56+,manual,gasoline,,0,5,1,9641762,100000-200000,1
+LEAD00636,2023-12-23,email,Toyota,Corolla,Sedan,5553000,1,Kazan,3,0,0,0,new,24,MGR021,26-35,manual,hybrid,,0,4,1,5673691,200000-400000,0
+LEAD00637,2023-12-12,phone,Ford,Kuga,SUV,4219000,1,Chelyabinsk,8,0,0,0,offer_sent,180,MGR021,26-35,robot,electric,,1,2,1,4344611,100000-200000,1
+LEAD00638,2024-02-19,offline,Renault,Duster,SUV,1607000,1,Saint Petersburg,5,1,1,0,offer_sent,146,MGR003,26-35,automatic,gasoline,,1,7,1,1715189,>400000,1
+LEAD00639,2023-08-18,phone,Hyundai,Santa Fe,SUV,1567000,1,Omsk,12,0,1,1,in_progress,6,MGR020,26-35,robot,gasoline,,0,4,1,1678210,200000-400000,1
+LEAD00640,2024-08-17,offline,Lada,Niva,SUV,1369000,1,Rostov-on-Don,7,0,0,0,test_drive_done,95,MGR012,26-35,variator,diesel,,0,6,0,1445359,>400000,0
+LEAD00641,2024-08-15,social_media,Hyundai,Creta,SUV,3613000,1,Saint Petersburg,3,1,0,0,in_progress,90,MGR023,26-35,robot,diesel,,0,6,1,4046435,>400000,0
+LEAD00642,2024-03-22,social_media,Renault,Duster,SUV,1676000,1,Rostov-on-Don,2,0,1,0,on_hold,38,MGR003,18-25,variator,electric,,0,1,0,1975779,200000-400000,0
+LEAD00643,2024-02-10,social_media,Volkswagen,Passat,Sedan,3933000,1,Moscow,4,0,1,0,test_drive_done,37,MGR025,56+,variator,electric,,1,4,0,4265629,50000-100000,1
+LEAD00644,2023-03-07,offline,Ford,EcoSport,SUV,1627000,1,Moscow,9,0,1,1,on_hold,127,MGR024,36-45,automatic,gasoline,,0,3,0,1457919,>400000,1
+LEAD00645,2023-12-18,offline,Volkswagen,Polo,Hatchback,3252000,1,Chelyabinsk,3,1,1,0,test_drive_done,52,MGR008,46-55,variator,electric,,0,8,1,3325159,50000-100000,1
+LEAD00646,2023-03-04,partner,Volkswagen,Passat,Sedan,2650000,0,Saint Petersburg,9,1,1,1,new,146,MGR019,56+,robot,gasoline,60001-100000,0,1,1,2853443,>400000,1
+LEAD00647,2023-04-10,email,Volkswagen,Tiguan,SUV,2372000,1,Rostov-on-Don,11,0,0,0,new,160,MGR002,46-55,manual,diesel,,0,3,0,2638727,100000-200000,0
+LEAD00648,2023-07-17,website,Volkswagen,Passat,Sedan,2793000,1,Nizhniy Novgorod,10,1,0,0,on_hold,142,MGR003,26-35,manual,gasoline,,1,7,0,2715034,200000-400000,1
+LEAD00649,2023-03-02,partner,BMW,5 Series,Sedan,3711000,0,Samara,8,0,0,0,offer_sent,145,MGR019,26-35,variator,gasoline,60001-100000,0,2,0,3606371,100000-200000,0
+LEAD00650,2023-07-22,offline,Renault,Arkana,Crossover,1975000,1,Yekaterinburg,5,0,1,0,offer_sent,124,MGR020,36-45,robot,diesel,,1,1,0,2112132,200000-400000,1
+LEAD00651,2024-08-07,offline,Lada,XRAY,SUV,856000,1,Moscow,9,1,1,1,offer_sent,14,MGR022,26-35,automatic,hybrid,,1,5,1,1024852,>400000,1
+LEAD00652,2023-08-15,social_media,Renault,Duster,SUV,1720000,1,Moscow,12,1,0,0,in_progress,177,MGR004,26-35,automatic,electric,,0,1,1,1920019,50000-100000,0
+LEAD00653,2023-06-09,phone,Toyota,RAV4,SUV,4509000,1,Chelyabinsk,3,0,0,1,on_hold,70,MGR014,26-35,robot,electric,,0,5,1,4994072,<50000,0
+LEAD00654,2023-02-12,social_media,Mercedes-Benz,GLE,SUV,5089000,0,Yekaterinburg,12,0,1,0,in_progress,138,MGR011,46-55,robot,gasoline,0-30000,1,2,1,5401267,200000-400000,1
+LEAD00655,2024-02-09,offline,Skoda,Karoq,SUV,2083000,1,Kazan,4,0,0,0,new,59,MGR002,36-45,robot,gasoline,,1,1,0,1997655,<50000,0
+LEAD00656,2024-03-28,phone,Kia,Rio,Sedan,1576000,1,Chelyabinsk,10,0,0,0,offer_sent,4,MGR005,56+,robot,electric,,0,4,0,1421883,50000-100000,1
+LEAD00657,2023-10-26,avito,Skoda,Kodiaq,SUV,2217000,1,Yekaterinburg,9,1,1,1,new,63,MGR020,18-25,variator,electric,,0,8,1,2478929,50000-100000,1
+LEAD00658,2024-06-14,offline,Renault,Duster,SUV,1346000,1,Nizhniy Novgorod,9,1,0,0,on_hold,60,MGR001,18-25,automatic,gasoline,,1,1,1,1254834,200000-400000,1
+LEAD00659,2024-07-12,partner,Ford,Focus,Hatchback,3187000,1,Rostov-on-Don,2,1,0,0,test_drive_done,116,MGR024,18-25,manual,gasoline,,0,7,1,3632974,>400000,1
+LEAD00660,2024-01-04,email,Lada,XRAY,SUV,1153000,1,Samara,4,1,0,1,on_hold,6,MGR014,46-55,manual,electric,,0,5,0,1338957,>400000,0
+LEAD00661,2023-08-02,avito,Kia,Rio,Sedan,3183000,1,Omsk,7,0,1,0,negotiation,171,MGR013,26-35,variator,diesel,,1,7,0,3337210,100000-200000,1
+LEAD00662,2024-07-15,phone,Renault,Duster,SUV,1103000,0,Yekaterinburg,7,0,1,0,new,52,MGR007,56+,manual,hybrid,100001-150000,1,8,1,1556887,200000-400000,1
+LEAD00663,2024-08-04,avito,Kia,Sorento,SUV,3419000,1,Novosibirsk,11,1,0,0,in_progress,106,MGR011,46-55,automatic,diesel,,0,7,0,3426418,200000-400000,0
+LEAD00664,2023-03-29,offline,Kia,Sorento,SUV,2595000,1,Rostov-on-Don,1,1,0,1,in_progress,39,MGR007,56+,automatic,gasoline,,0,6,0,2769023,<50000,1
+LEAD00665,2023-10-24,social_media,Volkswagen,Passat,Sedan,4152000,1,Rostov-on-Don,5,1,0,0,test_drive_done,41,MGR018,46-55,variator,hybrid,,1,7,1,4600322,50000-100000,1
+LEAD00666,2024-01-26,website,Lada,XRAY,SUV,1055000,1,Novosibirsk,8,0,1,1,offer_sent,47,MGR015,46-55,automatic,gasoline,,0,6,0,1468302,50000-100000,0
+LEAD00667,2023-11-04,website,Lada,XRAY,SUV,1147000,1,Nizhniy Novgorod,11,0,1,0,negotiation,22,MGR012,18-25,manual,diesel,,0,4,0,1283276,>400000,0
+LEAD00668,2023-01-25,phone,Lada,Vesta,Sedan,1227000,1,Nizhniy Novgorod,8,1,1,0,negotiation,11,MGR009,36-45,manual,hybrid,,0,5,0,1480980,>400000,1
+LEAD00669,2024-01-25,offline,Lada,Vesta,Sedan,1140000,1,Moscow,4,0,1,1,test_drive_done,105,MGR023,26-35,automatic,gasoline,,0,7,1,1477483,100000-200000,1
+LEAD00670,2023-03-28,phone,BMW,X5,SUV,8025000,1,Samara,11,0,0,0,in_progress,20,MGR006,36-45,robot,gasoline,,1,3,0,7937249,200000-400000,1
+LEAD00671,2023-03-14,partner,Kia,Sportage,SUV,1657000,1,Saint Petersburg,3,0,0,0,offer_sent,32,MGR002,18-25,automatic,hybrid,,0,6,0,1567973,>400000,0
+LEAD00672,2023-02-21,website,Hyundai,Solaris,Sedan,1460000,0,Saint Petersburg,12,1,1,0,on_hold,48,MGR016,18-25,variator,diesel,150000+,1,4,0,1779360,50000-100000,1
+LEAD00673,2023-09-27,phone,Ford,Focus,Hatchback,3412000,1,Omsk,3,0,0,1,in_progress,42,MGR013,18-25,automatic,diesel,,1,2,1,3549018,50000-100000,0
+LEAD00674,2023-12-20,avito,Ford,EcoSport,SUV,4063000,1,Omsk,12,1,1,0,new,17,MGR016,36-45,manual,electric,,0,5,0,3930793,100000-200000,1
+LEAD00675,2024-01-06,email,Toyota,Land Cruiser,SUV,2454000,1,Samara,12,0,0,1,negotiation,128,MGR010,18-25,automatic,hybrid,,1,6,0,2757787,>400000,0
+LEAD00676,2024-04-17,offline,BMW,5 Series,Sedan,3618000,0,Novosibirsk,6,0,0,0,test_drive_done,7,MGR005,18-25,robot,electric,100001-150000,1,8,0,3566984,200000-400000,0
+LEAD00677,2023-07-08,social_media,Mercedes-Benz,E-Class,Sedan,7272000,1,Moscow,4,1,1,1,negotiation,141,MGR009,46-55,manual,diesel,,1,1,0,7238006,>400000,1
+LEAD00678,2023-03-10,avito,Lada,Niva,SUV,1243000,1,Novosibirsk,6,0,0,1,test_drive_done,4,MGR010,46-55,automatic,hybrid,,1,8,0,1479569,<50000,1
+LEAD00679,2024-01-18,offline,BMW,X5,SUV,5264000,0,Saint Petersburg,12,0,1,0,negotiation,177,MGR008,56+,manual,hybrid,30001-60000,1,8,1,5322064,100000-200000,0
+LEAD00680,2023-11-26,offline,BMW,X3,SUV,4048000,0,Nizhniy Novgorod,11,0,0,0,negotiation,131,MGR004,56+,robot,diesel,0-30000,0,4,0,4340571,50000-100000,1
+LEAD00681,2024-02-03,offline,Kia,Cerato,Sedan,816000,0,Samara,4,0,1,1,negotiation,92,MGR020,46-55,robot,gasoline,0-30000,0,1,0,850181,200000-400000,1
+LEAD00682,2023-05-04,avito,Kia,Cerato,Sedan,2610000,1,Nizhniy Novgorod,5,0,0,1,test_drive_done,180,MGR001,56+,manual,diesel,,0,5,1,2804273,>400000,1
+LEAD00683,2023-06-01,website,Hyundai,Tucson,SUV,2612000,1,Moscow,8,0,0,0,negotiation,51,MGR023,46-55,automatic,hybrid,,0,2,0,2890091,200000-400000,0
+LEAD00684,2024-07-19,phone,Skoda,Kodiaq,SUV,2701000,1,Nizhniy Novgorod,8,0,1,0,in_progress,84,MGR020,18-25,automatic,gasoline,,0,7,0,2915751,100000-200000,0
+LEAD00685,2023-03-07,offline,Toyota,Corolla,Sedan,3554000,0,Rostov-on-Don,2,1,1,1,new,106,MGR011,18-25,automatic,diesel,60001-100000,0,2,0,3728426,200000-400000,0
+LEAD00686,2023-04-02,website,Lada,Niva,SUV,1358000,1,Omsk,4,0,1,0,new,14,MGR021,46-55,variator,diesel,,1,4,1,1742774,>400000,0
+LEAD00687,2023-11-24,website,Hyundai,Santa Fe,SUV,1573000,1,Yekaterinburg,6,0,0,0,offer_sent,18,MGR002,26-35,manual,diesel,,1,5,0,1808094,>400000,1
+LEAD00688,2024-01-12,offline,Toyota,RAV4,SUV,3680000,1,Samara,9,0,1,1,offer_sent,100,MGR006,18-25,robot,gasoline,,1,5,1,3872482,>400000,0
+LEAD00689,2024-04-07,phone,Ford,EcoSport,SUV,2170000,0,Nizhniy Novgorod,1,0,0,0,new,53,MGR007,36-45,variator,gasoline,100001-150000,0,4,1,2013683,100000-200000,0
+LEAD00690,2024-08-03,offline,Skoda,Kodiaq,SUV,3315000,1,Kazan,5,1,1,1,on_hold,84,MGR015,36-45,variator,gasoline,,0,6,1,3522446,50000-100000,0
+LEAD00691,2023-04-20,avito,Ford,Explorer,SUV,3613000,1,Omsk,1,0,0,0,on_hold,146,MGR006,56+,robot,diesel,,0,1,1,3812948,<50000,1
+LEAD00692,2023-01-23,phone,BMW,5 Series,Sedan,8790000,1,Chelyabinsk,5,0,0,0,on_hold,175,MGR001,36-45,automatic,hybrid,,1,4,1,9257638,200000-400000,0
+LEAD00693,2023-01-24,website,Lada,Granta,Sedan,814000,1,Saint Petersburg,12,0,1,0,new,128,MGR014,26-35,variator,hybrid,,1,7,0,645350,100000-200000,0
+LEAD00694,2023-07-27,offline,Mercedes-Benz,E-Class,Sedan,4108000,1,Moscow,5,1,1,0,new,145,MGR014,18-25,robot,hybrid,,1,8,0,4589765,200000-400000,0
+LEAD00695,2024-07-11,social_media,Lada,Granta,Sedan,848000,1,Nizhniy Novgorod,3,0,0,0,test_drive_done,45,MGR019,18-25,robot,electric,,1,6,0,1011633,200000-400000,1
+LEAD00696,2023-03-30,phone,Lada,XRAY,SUV,1099000,1,Samara,10,1,1,0,new,88,MGR017,56+,variator,hybrid,,0,8,0,1071256,200000-400000,0
+LEAD00697,2024-03-05,partner,Kia,Cerato,Sedan,1953000,1,Rostov-on-Don,2,0,0,0,in_progress,59,MGR022,26-35,manual,electric,,0,5,0,2449922,<50000,0
+LEAD00698,2024-08-13,social_media,BMW,X3,SUV,4457000,1,Nizhniy Novgorod,6,0,0,0,on_hold,1,MGR017,56+,variator,electric,,1,8,1,4454479,50000-100000,0
+LEAD00699,2024-07-08,email,Lada,Granta,Sedan,873000,1,Kazan,11,1,0,1,new,65,MGR015,26-35,variator,hybrid,,1,2,1,747801,50000-100000,0
+LEAD00700,2024-01-19,avito,Mercedes-Benz,GLC,SUV,9419000,1,Moscow,4,1,0,0,test_drive_done,82,MGR012,56+,robot,hybrid,,0,1,0,9252049,200000-400000,1
+LEAD00701,2024-01-25,partner,Lada,Niva,SUV,1351000,1,Saint Petersburg,1,0,0,1,new,117,MGR013,46-55,robot,electric,,1,2,1,1812964,<50000,0
+LEAD00702,2024-02-25,social_media,Hyundai,Santa Fe,SUV,1540000,1,Kazan,2,1,1,0,test_drive_done,71,MGR023,56+,variator,diesel,,0,8,1,1530036,>400000,1
+LEAD00703,2023-10-28,offline,Renault,Logan,Sedan,1459000,1,Saint Petersburg,3,1,0,0,in_progress,2,MGR013,56+,variator,diesel,,0,2,1,1768867,200000-400000,0
+LEAD00704,2024-03-31,social_media,Kia,Sorento,SUV,1479000,1,Novosibirsk,12,0,1,1,on_hold,111,MGR001,26-35,robot,electric,,1,1,0,1663487,50000-100000,0
+LEAD00705,2023-03-08,avito,BMW,3 Series,Sedan,6929000,1,Moscow,2,1,0,0,new,7,MGR006,36-45,variator,electric,,1,4,0,6873207,<50000,1
+LEAD00706,2023-07-09,email,Kia,Sportage,SUV,1563000,0,Omsk,10,0,0,1,negotiation,16,MGR017,36-45,robot,electric,0-30000,1,3,0,1772688,<50000,0
+LEAD00707,2024-05-06,offline,Volkswagen,Passat,Sedan,3998000,1,Moscow,4,1,1,0,offer_sent,19,MGR005,36-45,manual,hybrid,,1,7,0,4455488,50000-100000,1
+LEAD00708,2024-01-06,avito,Renault,Duster,SUV,739000,0,Omsk,4,0,1,0,on_hold,96,MGR013,18-25,manual,diesel,30001-60000,1,6,0,568009,200000-400000,0
+LEAD00709,2024-06-17,offline,Hyundai,Tucson,SUV,3363000,1,Omsk,5,0,1,0,on_hold,11,MGR012,46-55,manual,diesel,,1,2,0,3315634,>400000,1
+LEAD00710,2024-06-07,partner,Skoda,Karoq,SUV,2831000,1,Nizhniy Novgorod,8,0,0,0,on_hold,126,MGR011,36-45,robot,hybrid,,0,3,0,2726407,200000-400000,0
+LEAD00711,2023-11-28,email,Ford,Focus,Hatchback,1830000,0,Kazan,4,0,1,0,on_hold,169,MGR007,36-45,robot,diesel,100001-150000,0,7,1,2256797,100000-200000,0
+LEAD00712,2024-08-18,email,Kia,Cerato,Sedan,2078000,1,Nizhniy Novgorod,9,1,0,0,negotiation,47,MGR021,56+,robot,diesel,,0,4,0,2542214,200000-400000,0
+LEAD00713,2023-09-18,avito,BMW,5 Series,Sedan,6708000,1,Kazan,10,1,1,0,negotiation,127,MGR015,56+,variator,hybrid,,0,7,1,6706105,50000-100000,0
+LEAD00714,2024-05-16,offline,Renault,Kaptur,SUV,1723000,1,Chelyabinsk,10,1,1,0,new,18,MGR009,26-35,robot,gasoline,,1,2,1,1580149,200000-400000,1
+LEAD00715,2023-03-03,partner,Renault,Kaptur,SUV,1330000,1,Saint Petersburg,1,1,0,0,offer_sent,147,MGR025,46-55,manual,gasoline,,1,4,1,1778347,>400000,1
+LEAD00716,2024-01-28,phone,Renault,Kaptur,SUV,1084000,0,Moscow,4,0,1,1,in_progress,105,MGR008,56+,robot,diesel,0-30000,0,5,0,1014614,50000-100000,1
+LEAD00717,2024-03-21,phone,Ford,Explorer,SUV,1510000,0,Kazan,10,0,0,0,in_progress,99,MGR020,18-25,automatic,diesel,100001-150000,1,2,0,1775707,100000-200000,0
+LEAD00718,2024-05-26,email,Toyota,Corolla,Sedan,2580000,0,Samara,9,0,0,0,test_drive_done,54,MGR007,46-55,robot,hybrid,30001-60000,1,2,0,2776009,<50000,1
+LEAD00719,2024-07-30,email,Mercedes-Benz,GLC,SUV,6037000,1,Kazan,4,0,1,0,test_drive_done,112,MGR024,26-35,variator,electric,,1,6,1,5858489,<50000,1
+LEAD00720,2024-05-05,social_media,Mercedes-Benz,C-Class,Sedan,5582000,0,Nizhniy Novgorod,3,1,0,0,new,59,MGR003,26-35,robot,hybrid,60001-100000,0,4,0,5781973,100000-200000,0
+LEAD00721,2023-09-19,email,Kia,Rio,Sedan,1910000,0,Omsk,8,1,1,0,offer_sent,18,MGR008,18-25,robot,gasoline,30001-60000,0,3,1,2036734,>400000,0
+LEAD00722,2023-08-30,email,Ford,Focus,Hatchback,3945000,1,Novosibirsk,1,0,1,0,offer_sent,32,MGR025,36-45,variator,electric,,1,2,1,3932412,50000-100000,1
+LEAD00723,2023-10-06,offline,BMW,5 Series,Sedan,4751000,1,Novosibirsk,9,0,0,0,in_progress,62,MGR020,26-35,automatic,hybrid,,1,3,1,4714482,50000-100000,0
+LEAD00724,2023-02-13,phone,Ford,EcoSport,SUV,2694000,0,Samara,2,0,1,1,offer_sent,104,MGR017,26-35,automatic,diesel,150000+,1,8,0,2908205,50000-100000,1
+LEAD00725,2024-05-30,offline,Renault,Kaptur,SUV,2005000,1,Rostov-on-Don,8,1,1,1,test_drive_done,97,MGR010,46-55,robot,electric,,0,5,1,2237446,50000-100000,1
+LEAD00726,2023-05-24,partner,BMW,X3,SUV,3377000,0,Moscow,11,0,1,1,on_hold,120,MGR012,26-35,variator,diesel,100001-150000,0,8,1,3595632,200000-400000,0
+LEAD00727,2023-02-24,website,Lada,Granta,Sedan,1225000,1,Yekaterinburg,6,0,1,0,offer_sent,123,MGR002,26-35,automatic,hybrid,,1,5,1,1562459,100000-200000,0
+LEAD00728,2023-05-30,social_media,Lada,Vesta,Sedan,760000,0,Yekaterinburg,12,0,1,1,offer_sent,118,MGR012,36-45,manual,gasoline,60001-100000,1,6,1,983008,<50000,0
+LEAD00729,2024-03-19,partner,Skoda,Rapid,Sedan,1604000,1,Omsk,9,1,0,0,test_drive_done,85,MGR022,56+,automatic,electric,,0,2,0,1564778,200000-400000,0
+LEAD00730,2023-08-14,partner,Skoda,Kodiaq,SUV,1791000,1,Yekaterinburg,1,1,1,1,test_drive_done,141,MGR019,18-25,variator,hybrid,,1,4,0,1750012,200000-400000,1
+LEAD00731,2024-04-24,phone,Hyundai,Solaris,Sedan,1671000,1,Moscow,3,0,0,1,test_drive_done,67,MGR019,36-45,variator,gasoline,,1,6,0,1861192,50000-100000,1
+LEAD00732,2023-01-23,phone,BMW,X5,SUV,6064000,0,Rostov-on-Don,7,0,1,0,negotiation,28,MGR005,56+,robot,diesel,60001-100000,1,7,1,6484434,50000-100000,1
+LEAD00733,2024-03-05,phone,Hyundai,Tucson,SUV,3301000,1,Saint Petersburg,10,1,1,1,test_drive_done,104,MGR014,56+,robot,electric,,1,2,0,3160667,200000-400000,1
+LEAD00734,2024-02-10,social_media,Lada,Vesta,Sedan,1141000,1,Saint Petersburg,10,1,1,1,negotiation,152,MGR013,36-45,manual,electric,,1,3,1,1568029,200000-400000,0
+LEAD00735,2023-06-05,partner,Volkswagen,Polo,Hatchback,1937000,1,Moscow,1,1,1,1,on_hold,147,MGR003,26-35,variator,electric,,0,6,0,2111604,<50000,1
+LEAD00736,2023-06-24,website,Skoda,Rapid,Sedan,954000,0,Rostov-on-Don,7,0,0,1,new,119,MGR020,18-25,automatic,gasoline,30001-60000,1,2,0,1052262,50000-100000,0
+LEAD00737,2023-06-16,offline,Kia,Rio,Sedan,3333000,1,Yekaterinburg,12,0,1,0,negotiation,171,MGR011,36-45,automatic,electric,,1,7,0,3379546,100000-200000,1
+LEAD00738,2024-04-04,website,Lada,Granta,Sedan,558000,0,Saint Petersburg,3,1,1,0,new,165,MGR022,18-25,automatic,diesel,100001-150000,0,4,0,814481,<50000,0
+LEAD00739,2024-02-05,email,Renault,Kaptur,SUV,2159000,1,Yekaterinburg,4,1,1,0,test_drive_done,169,MGR013,46-55,automatic,hybrid,,0,7,1,2480789,50000-100000,0
+LEAD00740,2023-06-18,partner,BMW,X3,SUV,4588000,1,Nizhniy Novgorod,5,0,0,0,test_drive_done,72,MGR007,46-55,robot,diesel,,1,3,1,5021257,<50000,0
+LEAD00741,2023-04-18,email,Mercedes-Benz,C-Class,Sedan,4075000,1,Nizhniy Novgorod,8,0,0,1,offer_sent,157,MGR020,36-45,robot,hybrid,,1,5,0,4429418,<50000,1
+LEAD00742,2023-12-07,offline,Toyota,Land Cruiser,SUV,6641000,1,Kazan,1,0,0,0,offer_sent,60,MGR011,56+,variator,gasoline,,1,7,0,7079331,100000-200000,0
+LEAD00743,2023-01-05,social_media,Hyundai,Santa Fe,SUV,1784000,0,Moscow,9,1,1,0,offer_sent,140,MGR014,26-35,robot,electric,60001-100000,1,1,0,1663802,100000-200000,1
+LEAD00744,2024-02-03,offline,Skoda,Octavia,Sedan,2517000,1,Yekaterinburg,9,0,1,0,in_progress,123,MGR001,56+,robot,gasoline,,1,7,1,2995264,50000-100000,1
+LEAD00745,2023-06-17,social_media,Skoda,Kodiaq,SUV,2846000,1,Kazan,6,1,0,0,new,1,MGR008,46-55,manual,electric,,1,2,1,2809125,50000-100000,1
+LEAD00746,2023-05-06,partner,Skoda,Kodiaq,SUV,982000,0,Samara,8,0,1,1,negotiation,5,MGR020,36-45,automatic,electric,150000+,0,6,1,980495,>400000,0
+LEAD00747,2023-01-31,phone,Volkswagen,Polo,Hatchback,2264000,1,Nizhniy Novgorod,6,0,0,0,offer_sent,164,MGR016,26-35,manual,electric,,0,7,1,2263380,100000-200000,0
+LEAD00748,2024-01-13,partner,Volkswagen,Tiguan,SUV,4291000,1,Samara,4,0,1,1,on_hold,87,MGR014,56+,variator,electric,,0,1,0,4481633,100000-200000,0
+LEAD00749,2024-05-21,website,Toyota,Corolla,Sedan,4696000,0,Novosibirsk,9,0,0,0,in_progress,80,MGR018,18-25,automatic,diesel,60001-100000,0,1,0,5165075,200000-400000,0
+LEAD00750,2023-06-06,website,Skoda,Octavia,Sedan,3258000,1,Moscow,5,1,1,1,test_drive_done,6,MGR001,36-45,manual,hybrid,,1,2,0,3372384,200000-400000,0
+LEAD00751,2023-04-08,partner,BMW,5 Series,Sedan,4262000,1,Novosibirsk,5,0,1,1,negotiation,141,MGR025,56+,automatic,hybrid,,0,2,1,4351946,<50000,0
+LEAD00752,2024-03-06,email,Volkswagen,Passat,Sedan,3062000,0,Kazan,2,0,1,1,test_drive_done,93,MGR013,18-25,variator,gasoline,0-30000,1,1,1,3362146,100000-200000,0
+LEAD00753,2024-08-05,offline,Skoda,Kodiaq,SUV,2710000,1,Yekaterinburg,12,0,0,1,in_progress,105,MGR001,18-25,robot,diesel,,1,3,1,3044442,50000-100000,0
+LEAD00754,2024-02-02,offline,Skoda,Kodiaq,SUV,2508000,1,Yekaterinburg,4,0,1,1,negotiation,64,MGR020,18-25,variator,diesel,,0,7,0,2609636,>400000,0
+LEAD00755,2023-07-15,email,Volkswagen,Touareg,SUV,2644000,1,Rostov-on-Don,12,1,1,1,in_progress,11,MGR008,46-55,automatic,gasoline,,0,2,0,2704864,200000-400000,0
+LEAD00756,2023-04-24,phone,Toyota,Camry,Sedan,4133000,0,Yekaterinburg,12,1,1,1,test_drive_done,169,MGR017,36-45,automatic,gasoline,100001-150000,1,2,0,4273904,50000-100000,1
+LEAD00757,2024-05-15,phone,Lada,Granta,Sedan,949000,1,Chelyabinsk,5,0,1,0,negotiation,53,MGR014,36-45,manual,diesel,,1,1,0,1298749,200000-400000,1
+LEAD00758,2023-03-08,social_media,Skoda,Kodiaq,SUV,2080000,1,Novosibirsk,10,0,1,1,negotiation,42,MGR016,46-55,automatic,electric,,1,5,0,2289568,>400000,1
+LEAD00759,2023-10-02,phone,Kia,Rio,Sedan,2249000,0,Samara,12,0,1,1,offer_sent,28,MGR008,46-55,manual,diesel,0-30000,0,5,0,2070285,<50000,0
+LEAD00760,2023-01-04,email,Skoda,Kodiaq,SUV,2301000,0,Omsk,3,0,1,0,new,79,MGR024,56+,manual,electric,30001-60000,0,6,1,2303814,>400000,0
+LEAD00761,2024-04-28,phone,Skoda,Rapid,Sedan,2700000,1,Chelyabinsk,10,1,1,1,negotiation,127,MGR008,56+,robot,gasoline,,1,8,0,3058352,200000-400000,1
+LEAD00762,2023-02-14,website,Renault,Logan,Sedan,1906000,1,Saint Petersburg,4,0,0,0,on_hold,55,MGR007,56+,manual,diesel,,1,8,0,1937454,200000-400000,0
+LEAD00763,2023-04-06,offline,Toyota,Corolla,Sedan,1895000,1,Chelyabinsk,6,0,0,1,offer_sent,43,MGR022,18-25,robot,electric,,1,4,1,1985541,50000-100000,0
+LEAD00764,2024-08-19,partner,Toyota,Land Cruiser,SUV,2672000,0,Chelyabinsk,4,0,1,0,new,25,MGR021,36-45,automatic,gasoline,30001-60000,1,6,0,3055309,>400000,0
+LEAD00765,2023-08-03,partner,Skoda,Kodiaq,SUV,1852000,1,Novosibirsk,4,1,1,0,negotiation,161,MGR025,26-35,automatic,diesel,,1,3,1,1866081,50000-100000,0
+LEAD00766,2023-06-25,email,Skoda,Karoq,SUV,1815000,1,Saint Petersburg,6,1,1,0,new,40,MGR014,26-35,variator,electric,,1,2,0,1837072,<50000,1
+LEAD00767,2024-06-29,email,Hyundai,Tucson,SUV,1790000,0,Omsk,11,0,0,0,in_progress,6,MGR007,56+,robot,electric,150000+,0,8,1,1862869,50000-100000,0
+LEAD00768,2024-06-30,partner,Mercedes-Benz,GLE,SUV,2745000,0,Rostov-on-Don,2,0,1,0,in_progress,33,MGR008,18-25,manual,gasoline,150000+,0,3,1,2733526,50000-100000,0
+LEAD00769,2023-09-25,offline,Renault,Logan,Sedan,1447000,1,Omsk,6,0,0,1,on_hold,163,MGR003,18-25,robot,gasoline,,1,4,1,1478219,100000-200000,0
+LEAD00770,2023-10-10,avito,Ford,Kuga,SUV,1092000,0,Omsk,6,1,0,0,negotiation,43,MGR025,18-25,robot,electric,0-30000,0,1,0,923821,50000-100000,0
+LEAD00771,2024-01-16,email,Ford,Focus,Hatchback,1938000,1,Yekaterinburg,1,0,0,0,offer_sent,166,MGR010,46-55,automatic,electric,,0,6,1,1858751,>400000,0
+LEAD00772,2024-06-18,offline,Skoda,Kodiaq,SUV,924000,0,Novosibirsk,2,1,0,1,offer_sent,112,MGR015,56+,variator,hybrid,0-30000,0,1,1,1215650,200000-400000,1
+LEAD00773,2023-04-01,email,Ford,Focus,Hatchback,1611000,1,Kazan,6,0,1,1,negotiation,131,MGR008,26-35,variator,hybrid,,1,2,1,1567524,100000-200000,0
+LEAD00774,2023-02-10,social_media,BMW,3 Series,Sedan,6499000,1,Novosibirsk,11,0,1,1,offer_sent,163,MGR017,56+,variator,gasoline,,0,8,0,6316819,>400000,1
+LEAD00775,2023-05-08,partner,Volkswagen,Polo,Hatchback,1896000,0,Moscow,9,0,0,1,in_progress,133,MGR007,18-25,variator,hybrid,100001-150000,0,3,0,2192649,>400000,0
+LEAD00776,2023-10-30,social_media,Hyundai,Solaris,Sedan,3037000,1,Yekaterinburg,12,1,0,0,in_progress,108,MGR025,26-35,automatic,diesel,,0,7,1,2858715,200000-400000,0
+LEAD00777,2024-02-04,website,BMW,X3,SUV,5252000,1,Kazan,5,0,0,1,in_progress,104,MGR008,36-45,automatic,electric,,0,6,0,5096374,<50000,0
+LEAD00778,2024-04-26,email,BMW,X5,SUV,6202000,0,Novosibirsk,7,1,0,0,in_progress,143,MGR023,36-45,manual,gasoline,60001-100000,1,1,0,6116258,<50000,0
+LEAD00779,2023-10-24,email,Kia,Cerato,Sedan,1329000,0,Novosibirsk,11,0,0,1,offer_sent,66,MGR019,46-55,automatic,hybrid,30001-60000,1,4,1,1501311,<50000,1
+LEAD00780,2024-04-10,phone,Volkswagen,Touareg,SUV,4583000,1,Novosibirsk,9,0,0,1,on_hold,174,MGR007,18-25,automatic,gasoline,,1,4,1,4478859,>400000,0
+LEAD00781,2024-06-01,phone,Kia,Sorento,SUV,2623000,1,Moscow,8,0,1,0,new,3,MGR006,46-55,automatic,gasoline,,1,7,0,2972950,<50000,1
+LEAD00782,2024-06-20,website,Toyota,Camry,Sedan,6601000,1,Nizhniy Novgorod,1,1,1,0,new,107,MGR001,46-55,automatic,diesel,,0,5,0,7026026,>400000,0
+LEAD00783,2023-03-14,offline,Hyundai,Santa Fe,SUV,2906000,1,Nizhniy Novgorod,2,0,0,0,offer_sent,123,MGR011,26-35,automatic,gasoline,,1,5,1,3122286,100000-200000,0
+LEAD00784,2023-09-03,phone,Ford,Explorer,SUV,3268000,1,Novosibirsk,8,1,1,1,in_progress,134,MGR018,26-35,manual,diesel,,1,1,0,3376227,<50000,1
+LEAD00785,2024-03-21,website,Toyota,Corolla,Sedan,6964000,1,Nizhniy Novgorod,12,1,0,1,new,134,MGR007,26-35,variator,electric,,1,1,0,6966310,200000-400000,1
+LEAD00786,2023-04-13,avito,Mercedes-Benz,C-Class,Sedan,2223000,0,Novosibirsk,3,0,1,0,offer_sent,28,MGR016,46-55,automatic,hybrid,100001-150000,1,7,0,2215312,50000-100000,0
+LEAD00787,2023-02-11,email,Lada,Niva,SUV,1374000,1,Novosibirsk,2,1,0,1,negotiation,61,MGR016,56+,manual,hybrid,,1,8,0,1533251,100000-200000,0
+LEAD00788,2023-04-15,website,Renault,Duster,SUV,1617000,1,Yekaterinburg,11,0,0,1,on_hold,17,MGR010,26-35,robot,gasoline,,0,6,0,2026058,<50000,0
+LEAD00789,2024-08-09,social_media,Kia,Rio,Sedan,3155000,1,Rostov-on-Don,7,0,0,0,negotiation,38,MGR018,26-35,variator,electric,,0,8,1,3502579,>400000,0
+LEAD00790,2024-05-27,phone,Ford,Kuga,SUV,3129000,0,Novosibirsk,5,0,0,0,in_progress,111,MGR013,36-45,automatic,hybrid,60001-100000,0,4,1,3162861,<50000,0
+LEAD00791,2023-05-01,email,Toyota,Land Cruiser,SUV,6897000,1,Moscow,8,0,0,1,offer_sent,156,MGR008,56+,variator,diesel,,1,4,1,6936191,200000-400000,1
+LEAD00792,2023-12-19,phone,Ford,EcoSport,SUV,4263000,1,Omsk,7,0,1,1,in_progress,104,MGR019,26-35,automatic,hybrid,,0,7,1,4638932,<50000,0
+LEAD00793,2024-02-21,email,Renault,Duster,SUV,1644000,1,Kazan,11,1,0,1,in_progress,136,MGR011,18-25,variator,electric,,1,7,1,1596795,100000-200000,1
+LEAD00794,2023-11-15,partner,Volkswagen,Passat,Sedan,2386000,1,Kazan,9,1,0,0,new,2,MGR022,46-55,manual,diesel,,0,3,0,2420602,>400000,0
+LEAD00795,2023-03-25,website,Mercedes-Benz,GLE,SUV,7189000,1,Moscow,11,1,0,0,test_drive_done,136,MGR002,18-25,variator,diesel,,0,1,1,7058439,<50000,1
+LEAD00796,2024-02-22,email,Skoda,Octavia,Sedan,1350000,0,Rostov-on-Don,3,0,0,0,in_progress,164,MGR009,18-25,robot,gasoline,60001-100000,0,7,0,1202742,200000-400000,0
+LEAD00797,2023-05-24,offline,Lada,Niva,SUV,853000,0,Kazan,12,0,0,0,on_hold,161,MGR016,46-55,manual,gasoline,100001-150000,0,6,1,749541,200000-400000,0
+LEAD00798,2024-06-20,email,Toyota,RAV4,SUV,6431000,1,Rostov-on-Don,11,0,1,1,negotiation,92,MGR023,18-25,robot,gasoline,,1,4,1,6370110,200000-400000,0
+LEAD00799,2023-07-29,website,Hyundai,Creta,SUV,3043000,1,Samara,3,0,1,1,offer_sent,172,MGR011,56+,automatic,electric,,1,4,0,3092532,<50000,1
+LEAD00800,2023-10-31,website,Lada,XRAY,SUV,785000,0,Yekaterinburg,5,1,1,0,offer_sent,12,MGR004,26-35,variator,gasoline,60001-100000,0,6,1,999804,>400000,1
+LEAD00801,2024-07-01,avito,Skoda,Octavia,Sedan,1984000,1,Yekaterinburg,2,0,0,0,new,42,MGR021,36-45,automatic,electric,,1,3,0,1862830,200000-400000,1
+LEAD00802,2024-07-13,email,Lada,Granta,Sedan,904000,1,Yekaterinburg,6,0,0,0,offer_sent,63,MGR004,36-45,variator,diesel,,0,4,0,946880,>400000,0
+LEAD00803,2024-07-11,website,Kia,Cerato,Sedan,2972000,1,Nizhniy Novgorod,12,0,1,0,test_drive_done,61,MGR013,26-35,variator,gasoline,,1,8,0,3194218,200000-400000,1
+LEAD00804,2023-07-04,partner,Kia,Rio,Sedan,2795000,1,Moscow,4,0,1,1,offer_sent,115,MGR004,46-55,manual,gasoline,,0,6,1,2946326,50000-100000,0
+LEAD00805,2024-08-04,website,Mercedes-Benz,E-Class,Sedan,10000000,1,Omsk,7,0,0,0,offer_sent,139,MGR010,26-35,automatic,diesel,,0,5,1,10453721,100000-200000,0
+LEAD00806,2023-09-14,website,Toyota,RAV4,SUV,1939000,0,Nizhniy Novgorod,9,0,0,1,test_drive_done,161,MGR018,18-25,manual,electric,60001-100000,0,2,0,2036340,>400000,0
+LEAD00807,2024-05-04,social_media,Toyota,Land Cruiser,SUV,1650000,0,Novosibirsk,4,0,0,1,new,161,MGR022,26-35,variator,electric,150000+,0,8,1,1531780,200000-400000,0
+LEAD00808,2023-05-13,offline,Lada,Niva,SUV,793000,0,Novosibirsk,6,0,1,0,on_hold,48,MGR022,56+,variator,electric,100001-150000,1,6,0,593686,50000-100000,0
+LEAD00809,2023-12-06,email,Hyundai,Creta,SUV,1612000,1,Kazan,11,0,1,0,negotiation,69,MGR009,18-25,robot,electric,,1,3,0,1771275,200000-400000,1
+LEAD00810,2023-10-29,offline,Renault,Arkana,Crossover,1671000,1,Chelyabinsk,3,0,0,1,in_progress,140,MGR019,26-35,manual,hybrid,,1,5,0,1703990,>400000,0
+LEAD00811,2023-07-02,social_media,BMW,X3,SUV,3096000,0,Saint Petersburg,6,0,0,1,offer_sent,156,MGR022,36-45,manual,hybrid,60001-100000,0,4,0,3129067,200000-400000,1
+LEAD00812,2024-07-26,social_media,Hyundai,Solaris,Sedan,2302000,0,Nizhniy Novgorod,6,1,1,0,on_hold,160,MGR004,18-25,variator,hybrid,60001-100000,0,5,1,2305591,200000-400000,0
+LEAD00813,2023-07-23,partner,Renault,Logan,Sedan,2148000,1,Saint Petersburg,9,0,1,1,test_drive_done,79,MGR003,46-55,variator,diesel,,0,2,0,2168395,<50000,1
+LEAD00814,2024-01-10,partner,Lada,Vesta,Sedan,734000,0,Nizhniy Novgorod,10,0,0,0,negotiation,12,MGR001,26-35,automatic,diesel,100001-150000,0,2,1,980955,50000-100000,0
+LEAD00815,2023-07-01,partner,Skoda,Kodiaq,SUV,2177000,0,Saint Petersburg,8,0,0,0,test_drive_done,2,MGR009,36-45,automatic,gasoline,30001-60000,0,8,0,2611463,100000-200000,1
+LEAD00816,2023-11-29,phone,Hyundai,Creta,SUV,3047000,1,Novosibirsk,10,0,0,0,test_drive_done,87,MGR017,36-45,variator,electric,,1,5,0,2991933,<50000,1
+LEAD00817,2024-05-29,offline,Skoda,Rapid,Sedan,3000000,1,Chelyabinsk,3,1,0,1,in_progress,2,MGR002,36-45,robot,hybrid,,1,7,0,2826629,50000-100000,1
+LEAD00818,2023-04-29,phone,Skoda,Rapid,Sedan,2809000,1,Rostov-on-Don,6,0,1,1,on_hold,109,MGR018,26-35,automatic,diesel,,1,1,0,3273186,50000-100000,0
+LEAD00819,2024-05-17,social_media,Volkswagen,Passat,Sedan,2842000,1,Omsk,3,0,0,0,on_hold,75,MGR021,56+,variator,electric,,1,8,0,3104488,>400000,0
+LEAD00820,2023-03-13,partner,Toyota,RAV4,SUV,4800000,1,Omsk,9,1,0,0,new,33,MGR007,26-35,robot,hybrid,,0,2,0,4799673,50000-100000,0
+LEAD00821,2023-09-26,website,Toyota,Corolla,Sedan,1658000,0,Chelyabinsk,8,1,0,0,on_hold,23,MGR022,18-25,automatic,diesel,150000+,1,3,0,1881651,200000-400000,1
+LEAD00822,2023-05-19,avito,Kia,Cerato,Sedan,3266000,1,Nizhniy Novgorod,7,1,0,1,test_drive_done,169,MGR018,36-45,robot,hybrid,,1,2,0,3541606,200000-400000,1
+LEAD00823,2023-03-06,offline,Volkswagen,Touareg,SUV,1817000,1,Novosibirsk,8,0,1,0,negotiation,47,MGR006,46-55,automatic,electric,,0,3,0,1647688,50000-100000,1
+LEAD00824,2023-08-30,phone,Ford,Explorer,SUV,3287000,1,Saint Petersburg,9,0,1,1,in_progress,82,MGR018,46-55,robot,gasoline,,0,4,0,3653402,100000-200000,0
+LEAD00825,2023-10-24,avito,Skoda,Karoq,SUV,1750000,1,Samara,4,0,0,1,in_progress,115,MGR020,46-55,manual,diesel,,1,8,0,1672136,200000-400000,0
+LEAD00826,2023-02-26,phone,Ford,Kuga,SUV,811000,0,Rostov-on-Don,6,1,0,0,on_hold,84,MGR005,26-35,variator,gasoline,100001-150000,1,8,0,835643,50000-100000,1
+LEAD00827,2023-02-25,phone,Renault,Duster,SUV,1333000,1,Moscow,9,1,1,1,offer_sent,129,MGR017,18-25,manual,hybrid,,0,8,0,1621219,200000-400000,0
+LEAD00828,2024-07-01,email,Lada,XRAY,SUV,1015000,1,Nizhniy Novgorod,7,0,0,0,negotiation,61,MGR013,56+,robot,diesel,,0,1,1,1106640,50000-100000,0
+LEAD00829,2023-04-06,avito,Ford,EcoSport,SUV,1248000,0,Saint Petersburg,1,0,0,1,in_progress,123,MGR009,36-45,manual,diesel,60001-100000,0,6,0,1144967,>400000,0
+LEAD00830,2023-08-04,offline,Renault,Duster,SUV,1258000,1,Yekaterinburg,11,0,1,0,new,54,MGR006,18-25,variator,electric,,1,1,0,1217160,<50000,1
+LEAD00831,2023-04-26,partner,Lada,Niva,SUV,1277000,1,Novosibirsk,7,0,1,1,on_hold,136,MGR025,18-25,automatic,gasoline,,1,1,0,1436597,<50000,0
+LEAD00832,2023-12-12,website,Hyundai,Tucson,SUV,2276000,1,Kazan,4,0,0,0,in_progress,73,MGR006,56+,manual,electric,,0,5,0,2184663,200000-400000,1
+LEAD00833,2024-08-13,offline,Skoda,Octavia,Sedan,3117000,1,Chelyabinsk,11,1,1,0,in_progress,180,MGR012,56+,manual,hybrid,,1,1,0,3537129,<50000,0
+LEAD00834,2024-05-23,partner,BMW,X3,SUV,4040000,1,Moscow,1,0,1,0,offer_sent,84,MGR018,26-35,robot,diesel,,1,4,0,4216455,>400000,1
+LEAD00835,2023-05-25,partner,Skoda,Kodiaq,SUV,1934000,1,Moscow,8,0,1,0,new,43,MGR020,36-45,automatic,diesel,,1,4,0,2025431,<50000,0
+LEAD00836,2023-05-10,avito,Lada,Vesta,Sedan,1241000,1,Rostov-on-Don,5,0,0,1,on_hold,2,MGR008,18-25,variator,diesel,,1,3,0,1703421,50000-100000,0
+LEAD00837,2024-07-31,website,Skoda,Octavia,Sedan,1261000,0,Saint Petersburg,11,0,1,0,negotiation,109,MGR006,18-25,robot,electric,60001-100000,0,6,0,1425938,200000-400000,0
+LEAD00838,2023-04-24,website,Skoda,Karoq,SUV,3223000,1,Novosibirsk,1,0,0,0,offer_sent,59,MGR004,36-45,variator,electric,,1,1,1,3455613,<50000,1
+LEAD00839,2023-04-10,phone,Skoda,Octavia,Sedan,2501000,1,Chelyabinsk,12,0,1,1,test_drive_done,22,MGR007,56+,automatic,gasoline,,1,2,0,2364755,>400000,1
+LEAD00840,2023-02-18,phone,Mercedes-Benz,GLE,SUV,4832000,1,Moscow,5,0,0,1,new,5,MGR019,46-55,manual,hybrid,,1,7,1,4838101,<50000,1
+LEAD00841,2023-07-29,avito,BMW,X5,SUV,7160000,1,Chelyabinsk,2,0,1,0,test_drive_done,66,MGR014,56+,robot,electric,,0,4,0,7124190,<50000,0
+LEAD00842,2023-01-20,social_media,Mercedes-Benz,E-Class,Sedan,4646000,1,Rostov-on-Don,1,1,1,0,new,30,MGR002,18-25,manual,diesel,,1,6,0,4472144,200000-400000,1
+LEAD00843,2024-07-19,social_media,Lada,Niva,SUV,927000,1,Moscow,2,0,0,0,in_progress,171,MGR023,18-25,robot,diesel,,0,5,0,1057350,>400000,1
+LEAD00844,2024-05-23,offline,Kia,Rio,Sedan,1173000,0,Rostov-on-Don,7,0,0,0,on_hold,31,MGR014,56+,automatic,hybrid,100001-150000,1,2,1,1591992,>400000,1
+LEAD00845,2023-10-21,avito,Renault,Kaptur,SUV,1304000,1,Chelyabinsk,1,0,0,1,on_hold,177,MGR017,18-25,manual,diesel,,0,6,0,1325181,200000-400000,0
+LEAD00846,2023-09-28,offline,Ford,EcoSport,SUV,3987000,1,Saint Petersburg,3,0,0,0,test_drive_done,139,MGR006,56+,variator,gasoline,,1,4,0,4327615,<50000,1
+LEAD00847,2024-01-14,email,Mercedes-Benz,C-Class,Sedan,5297000,1,Moscow,11,0,0,0,new,114,MGR001,36-45,automatic,gasoline,,1,8,0,5214395,50000-100000,0
+LEAD00848,2024-07-01,website,Renault,Kaptur,SUV,1640000,0,Saint Petersburg,3,1,1,0,negotiation,113,MGR001,56+,variator,hybrid,150000+,0,4,0,1901744,100000-200000,0
+LEAD00849,2023-04-06,offline,Toyota,Camry,Sedan,3925000,1,Moscow,3,0,1,1,in_progress,131,MGR016,46-55,variator,hybrid,,0,2,0,3813114,200000-400000,0
+LEAD00850,2024-08-15,offline,Ford,EcoSport,SUV,2277000,1,Chelyabinsk,11,0,1,0,negotiation,23,MGR019,56+,manual,electric,,1,6,1,2200641,200000-400000,1
+LEAD00851,2024-07-20,avito,BMW,X3,SUV,3860000,1,Omsk,9,1,0,0,on_hold,165,MGR013,26-35,manual,electric,,0,8,0,4350624,100000-200000,1
+LEAD00852,2024-03-15,partner,Toyota,Land Cruiser,SUV,3218000,0,Rostov-on-Don,1,1,0,1,in_progress,41,MGR012,46-55,variator,diesel,100001-150000,1,3,0,3125174,100000-200000,1
+LEAD00853,2024-07-01,offline,Hyundai,Santa Fe,SUV,2527000,1,Omsk,7,0,0,0,test_drive_done,39,MGR025,26-35,automatic,diesel,,0,3,0,2741385,100000-200000,0
+LEAD00854,2023-08-08,website,Ford,Focus,Hatchback,2540000,0,Rostov-on-Don,2,0,0,0,new,60,MGR007,18-25,automatic,hybrid,100001-150000,1,3,0,2554508,<50000,0
+LEAD00855,2024-06-07,phone,Mercedes-Benz,C-Class,Sedan,6799000,1,Yekaterinburg,2,0,0,0,negotiation,127,MGR005,18-25,robot,hybrid,,0,6,0,6890941,>400000,1
+LEAD00856,2024-08-03,social_media,Ford,Focus,Hatchback,3356000,1,Moscow,7,0,1,0,on_hold,67,MGR020,26-35,robot,hybrid,,1,2,0,3288935,<50000,0
+LEAD00857,2023-10-06,offline,Renault,Logan,Sedan,1759000,1,Moscow,2,0,1,0,in_progress,101,MGR021,46-55,variator,diesel,,1,4,0,2211788,<50000,0
+LEAD00858,2024-07-16,email,Skoda,Karoq,SUV,2762000,1,Omsk,8,1,0,0,negotiation,81,MGR022,56+,manual,electric,,0,2,1,3178931,>400000,1
+LEAD00859,2024-01-26,offline,Volkswagen,Tiguan,SUV,4558000,1,Novosibirsk,12,1,1,0,offer_sent,143,MGR013,18-25,variator,hybrid,,1,1,1,4982958,50000-100000,1
+LEAD00860,2023-02-27,email,BMW,5 Series,Sedan,6865000,1,Novosibirsk,7,0,1,0,offer_sent,149,MGR009,18-25,robot,hybrid,,0,5,0,6978223,100000-200000,1
+LEAD00861,2024-02-25,email,Skoda,Karoq,SUV,1518000,0,Kazan,1,1,1,1,test_drive_done,88,MGR018,56+,variator,electric,100001-150000,0,5,1,1699878,200000-400000,0
+LEAD00862,2023-05-14,partner,Ford,Kuga,SUV,2863000,1,Nizhniy Novgorod,4,0,1,0,test_drive_done,87,MGR023,26-35,manual,gasoline,,0,3,0,2856279,200000-400000,1
+LEAD00863,2023-01-10,social_media,Volkswagen,Touareg,SUV,4191000,1,Rostov-on-Don,12,0,1,0,test_drive_done,123,MGR023,56+,robot,diesel,,1,3,1,4464879,<50000,0
+LEAD00864,2023-04-17,partner,Skoda,Karoq,SUV,1775000,1,Nizhniy Novgorod,2,1,0,1,on_hold,100,MGR002,56+,automatic,electric,,1,5,0,2117186,<50000,1
+LEAD00865,2024-07-26,avito,Renault,Logan,Sedan,1310000,1,Rostov-on-Don,3,1,1,0,negotiation,115,MGR005,56+,variator,electric,,0,6,0,1124281,200000-400000,0
+LEAD00866,2023-02-24,email,Mercedes-Benz,GLC,SUV,5344000,1,Chelyabinsk,4,0,1,0,on_hold,99,MGR025,18-25,manual,gasoline,,1,4,0,5761340,50000-100000,0
+LEAD00867,2023-05-07,social_media,Lada,XRAY,SUV,972000,1,Kazan,11,0,0,0,new,9,MGR022,56+,manual,hybrid,,0,6,0,1053390,50000-100000,0
+LEAD00868,2023-03-20,social_media,Skoda,Rapid,Sedan,2836000,1,Kazan,2,1,1,0,on_hold,126,MGR022,46-55,robot,diesel,,0,5,0,3280640,50000-100000,0
+LEAD00869,2024-05-16,partner,Volkswagen,Touareg,SUV,2595000,0,Chelyabinsk,3,1,0,0,on_hold,4,MGR021,26-35,manual,hybrid,60001-100000,1,3,0,2892793,50000-100000,0
+LEAD00870,2024-01-31,partner,Volkswagen,Touareg,SUV,1811000,0,Moscow,10,0,0,0,in_progress,79,MGR001,36-45,robot,diesel,60001-100000,1,3,1,1851582,<50000,1
+LEAD00871,2023-03-10,partner,Volkswagen,Polo,Hatchback,4529000,1,Chelyabinsk,7,1,1,1,new,137,MGR007,46-55,variator,hybrid,,0,6,1,4777263,>400000,0
+LEAD00872,2023-11-25,offline,BMW,3 Series,Sedan,7392000,1,Rostov-on-Don,4,0,1,0,offer_sent,146,MGR019,26-35,variator,gasoline,,0,5,0,7596746,<50000,1
+LEAD00873,2023-05-17,offline,Ford,Explorer,SUV,4428000,1,Moscow,8,1,0,0,on_hold,154,MGR018,36-45,robot,electric,,1,4,1,4321891,>400000,0
+LEAD00874,2024-06-17,social_media,Mercedes-Benz,GLC,SUV,5433000,1,Novosibirsk,4,1,0,1,offer_sent,54,MGR006,26-35,manual,electric,,1,8,1,5397748,50000-100000,1
+LEAD00875,2023-02-15,offline,Renault,Logan,Sedan,1928000,1,Omsk,2,1,1,0,new,12,MGR001,26-35,manual,diesel,,1,7,0,2125832,<50000,1
+LEAD00876,2024-01-17,website,Ford,Kuga,SUV,3182000,1,Moscow,7,0,1,0,in_progress,165,MGR003,56+,automatic,hybrid,,1,5,0,3663444,50000-100000,0
+LEAD00877,2024-02-23,avito,Toyota,Land Cruiser,SUV,4063000,1,Omsk,10,1,0,1,in_progress,1,MGR012,26-35,manual,hybrid,,1,1,0,4286915,100000-200000,0
+LEAD00878,2023-01-21,email,Skoda,Rapid,Sedan,3450000,1,Rostov-on-Don,12,1,1,0,on_hold,101,MGR012,46-55,variator,gasoline,,1,5,1,3263675,100000-200000,1
+LEAD00879,2023-11-28,partner,Volkswagen,Polo,Hatchback,4483000,1,Yekaterinburg,2,0,0,0,new,95,MGR025,36-45,automatic,electric,,1,8,1,4928058,>400000,0
+LEAD00880,2024-08-04,offline,Hyundai,Santa Fe,SUV,3119000,1,Yekaterinburg,10,0,1,0,offer_sent,134,MGR021,36-45,manual,electric,,0,4,0,3504136,>400000,0
+LEAD00881,2024-04-09,social_media,Lada,Niva,SUV,874000,1,Moscow,2,0,0,1,in_progress,111,MGR023,36-45,variator,diesel,,0,3,1,765200,100000-200000,0
+LEAD00882,2023-11-06,offline,BMW,X3,SUV,8669000,1,Rostov-on-Don,2,0,1,0,test_drive_done,93,MGR011,56+,manual,electric,,0,6,0,8545377,<50000,0
+LEAD00883,2024-01-30,avito,Volkswagen,Touareg,SUV,3593000,1,Kazan,10,1,1,0,on_hold,152,MGR013,18-25,manual,electric,,0,3,1,4031112,100000-200000,0
+LEAD00884,2023-03-18,phone,Mercedes-Benz,GLC,SUV,5450000,1,Novosibirsk,8,1,0,0,new,142,MGR012,56+,variator,hybrid,,0,6,1,5388297,>400000,0
+LEAD00885,2023-05-25,social_media,BMW,X3,SUV,2121000,0,Chelyabinsk,3,0,1,0,on_hold,103,MGR008,56+,manual,gasoline,0-30000,0,1,0,1973199,>400000,0
+LEAD00886,2024-04-26,website,BMW,X3,SUV,5753000,1,Samara,3,0,0,0,test_drive_done,134,MGR021,26-35,manual,diesel,,0,5,1,5646280,100000-200000,0
+LEAD00887,2024-03-05,email,Renault,Duster,SUV,1364000,1,Kazan,2,0,0,0,new,90,MGR018,46-55,manual,gasoline,,0,6,1,1233112,50000-100000,0
+LEAD00888,2023-03-30,offline,Toyota,Camry,Sedan,2751000,1,Nizhniy Novgorod,6,1,1,0,new,146,MGR005,18-25,manual,electric,,0,4,0,3012990,<50000,1
+LEAD00889,2024-05-10,partner,Toyota,Land Cruiser,SUV,2380000,1,Chelyabinsk,5,0,0,0,on_hold,76,MGR008,56+,robot,gasoline,,0,5,0,2523124,<50000,0
+LEAD00890,2023-05-15,offline,Kia,Sorento,SUV,2992000,1,Omsk,10,1,0,0,in_progress,122,MGR007,56+,manual,electric,,1,2,0,3331671,100000-200000,0
+LEAD00891,2023-06-07,partner,Renault,Logan,Sedan,1036000,0,Saint Petersburg,6,0,0,0,on_hold,93,MGR015,18-25,robot,hybrid,30001-60000,0,2,0,1147185,<50000,0
+LEAD00892,2024-03-21,avito,Hyundai,Creta,SUV,1320000,0,Omsk,1,0,1,0,in_progress,141,MGR010,18-25,variator,hybrid,150000+,1,5,0,1688267,>400000,0
+LEAD00893,2023-12-09,partner,BMW,5 Series,Sedan,4884000,0,Kazan,1,0,1,1,new,94,MGR013,46-55,manual,gasoline,60001-100000,1,6,0,5035863,100000-200000,1
+LEAD00894,2023-02-13,offline,Ford,Explorer,SUV,1639000,1,Moscow,8,0,1,1,new,26,MGR015,56+,robot,hybrid,,0,2,0,1543574,<50000,0
+LEAD00895,2024-02-03,email,Mercedes-Benz,C-Class,Sedan,8923000,1,Moscow,1,0,1,0,negotiation,179,MGR003,26-35,robot,hybrid,,1,6,0,9053434,200000-400000,0
+LEAD00896,2023-06-11,phone,Toyota,Camry,Sedan,2907000,1,Samara,7,0,0,1,negotiation,168,MGR022,36-45,robot,gasoline,,1,6,1,2898986,<50000,0
+LEAD00897,2024-05-19,offline,Skoda,Karoq,SUV,2797000,1,Nizhniy Novgorod,2,0,0,0,on_hold,94,MGR021,18-25,variator,hybrid,,1,1,0,3215541,<50000,1
+LEAD00898,2023-07-28,website,Hyundai,Solaris,Sedan,897000,0,Chelyabinsk,12,0,1,1,offer_sent,157,MGR023,36-45,manual,hybrid,0-30000,1,1,0,1146218,<50000,0
+LEAD00899,2023-06-28,offline,Skoda,Octavia,Sedan,1647000,1,Kazan,9,0,0,1,test_drive_done,19,MGR002,56+,automatic,diesel,,1,6,1,1825898,100000-200000,1
+LEAD00900,2024-02-01,avito,Lada,Vesta,Sedan,819000,1,Rostov-on-Don,12,0,1,0,on_hold,56,MGR022,46-55,automatic,gasoline,,0,8,0,750393,>400000,1
+LEAD00901,2024-05-17,email,Skoda,Rapid,Sedan,2689000,1,Nizhniy Novgorod,8,0,0,1,new,19,MGR016,26-35,automatic,gasoline,,1,4,1,2853840,200000-400000,1
+LEAD00902,2024-07-04,phone,Mercedes-Benz,GLC,SUV,6089000,1,Chelyabinsk,5,1,1,1,negotiation,85,MGR004,26-35,robot,gasoline,,0,3,1,6121073,200000-400000,1
+LEAD00903,2024-07-23,partner,Toyota,Camry,Sedan,5255000,1,Moscow,7,0,1,1,in_progress,35,MGR020,36-45,manual,gasoline,,0,2,1,5520643,>400000,0
+LEAD00904,2023-07-10,avito,Skoda,Rapid,Sedan,3461000,1,Nizhniy Novgorod,2,1,0,0,test_drive_done,172,MGR006,56+,variator,hybrid,,1,7,1,3512940,>400000,0
+LEAD00905,2024-04-19,social_media,Kia,Sorento,SUV,2815000,1,Omsk,1,0,1,0,on_hold,141,MGR001,26-35,automatic,hybrid,,1,6,0,2851610,200000-400000,1
+LEAD00906,2023-05-08,email,Mercedes-Benz,E-Class,Sedan,2810000,0,Rostov-on-Don,9,0,0,1,test_drive_done,55,MGR018,26-35,automatic,hybrid,150000+,1,2,0,2727508,>400000,1
+LEAD00907,2024-07-23,offline,Renault,Logan,Sedan,1240000,0,Samara,9,1,1,0,new,141,MGR013,46-55,manual,gasoline,30001-60000,1,4,0,1673207,200000-400000,0
+LEAD00908,2023-04-09,partner,Kia,Sorento,SUV,2006000,1,Omsk,9,1,0,0,negotiation,138,MGR005,36-45,robot,hybrid,,1,3,0,2450918,<50000,1
+LEAD00909,2023-10-13,website,Hyundai,Tucson,SUV,2036000,1,Kazan,11,1,1,0,offer_sent,155,MGR023,18-25,robot,hybrid,,1,2,1,2213384,200000-400000,1
+LEAD00910,2023-10-11,email,Toyota,RAV4,SUV,6938000,1,Moscow,12,0,1,1,on_hold,27,MGR008,26-35,automatic,diesel,,0,8,1,6871370,<50000,0
+LEAD00911,2023-09-17,offline,Hyundai,Solaris,Sedan,1935000,1,Saint Petersburg,7,1,0,0,test_drive_done,118,MGR012,46-55,robot,gasoline,,1,4,0,2196342,200000-400000,1
+LEAD00912,2023-04-02,offline,Ford,Focus,Hatchback,4103000,1,Yekaterinburg,7,0,0,0,new,41,MGR019,26-35,automatic,gasoline,,1,5,1,4540658,50000-100000,0
+LEAD00913,2024-02-01,partner,Renault,Duster,SUV,1322000,1,Moscow,7,1,0,0,offer_sent,15,MGR012,36-45,manual,hybrid,,1,2,0,1136671,<50000,1
+LEAD00914,2023-03-28,avito,BMW,X3,SUV,6721000,1,Moscow,10,0,1,0,negotiation,168,MGR002,46-55,manual,electric,,1,5,0,6788109,50000-100000,1
+LEAD00915,2024-03-02,email,Mercedes-Benz,GLE,SUV,5608000,1,Kazan,6,1,0,0,in_progress,112,MGR004,56+,manual,diesel,,1,3,0,5812058,>400000,1
+LEAD00916,2023-06-04,partner,Kia,Cerato,Sedan,2186000,1,Chelyabinsk,2,0,0,0,on_hold,159,MGR004,26-35,robot,hybrid,,0,8,0,2608978,100000-200000,0
+LEAD00917,2023-07-25,phone,Mercedes-Benz,E-Class,Sedan,9238000,1,Kazan,9,1,1,1,negotiation,171,MGR002,18-25,variator,hybrid,,0,5,0,9233726,50000-100000,1
+LEAD00918,2024-01-10,social_media,Hyundai,Tucson,SUV,1705000,0,Yekaterinburg,11,0,1,0,on_hold,69,MGR016,18-25,manual,gasoline,150000+,0,6,0,1914368,<50000,0
+LEAD00919,2024-03-23,email,Lada,Niva,SUV,1000000,0,Kazan,6,0,0,1,in_progress,72,MGR005,36-45,manual,hybrid,100001-150000,1,7,0,866670,50000-100000,1
+LEAD00920,2023-03-31,website,BMW,X5,SUV,6530000,1,Omsk,6,1,1,1,negotiation,115,MGR006,18-25,robot,hybrid,,0,6,0,6746363,>400000,1
+LEAD00921,2023-05-02,partner,Hyundai,Solaris,Sedan,2556000,0,Kazan,5,1,1,0,in_progress,41,MGR014,26-35,manual,hybrid,30001-60000,1,5,0,2967866,>400000,0
+LEAD00922,2024-04-13,social_media,Skoda,Rapid,Sedan,3314000,1,Yekaterinburg,4,1,0,0,negotiation,43,MGR005,18-25,variator,electric,,1,2,0,3670615,50000-100000,0
+LEAD00923,2023-08-03,avito,Volkswagen,Passat,Sedan,3048000,0,Saint Petersburg,6,0,0,0,new,29,MGR016,56+,robot,hybrid,100001-150000,1,8,1,3530084,50000-100000,1
+LEAD00924,2024-04-18,offline,Kia,Rio,Sedan,2066000,0,Chelyabinsk,8,1,1,0,new,166,MGR002,36-45,manual,diesel,60001-100000,1,4,0,1982890,200000-400000,0
+LEAD00925,2023-02-16,offline,BMW,5 Series,Sedan,7098000,1,Saint Petersburg,1,1,1,0,negotiation,119,MGR022,18-25,robot,hybrid,,1,3,1,7093358,>400000,0
+LEAD00926,2024-02-12,website,Hyundai,Solaris,Sedan,3142000,1,Rostov-on-Don,9,0,0,0,test_drive_done,160,MGR012,36-45,manual,gasoline,,1,1,1,3149739,50000-100000,1
+LEAD00927,2023-12-19,email,Kia,Sorento,SUV,2020000,1,Moscow,3,0,0,0,in_progress,39,MGR021,56+,manual,electric,,0,4,0,1975565,50000-100000,0
+LEAD00928,2024-01-08,offline,Lada,Granta,Sedan,994000,1,Rostov-on-Don,8,0,0,0,test_drive_done,110,MGR003,56+,manual,gasoline,,1,6,1,1031646,100000-200000,1
+LEAD00929,2023-07-11,website,Toyota,Land Cruiser,SUV,5053000,1,Moscow,7,0,0,1,test_drive_done,10,MGR004,56+,variator,gasoline,,1,3,0,5062613,>400000,1
+LEAD00930,2024-05-19,website,Volkswagen,Tiguan,SUV,3223000,1,Nizhniy Novgorod,11,0,0,0,in_progress,84,MGR015,56+,manual,diesel,,0,5,0,3524718,<50000,0
+LEAD00931,2023-10-27,phone,Kia,Sportage,SUV,2159000,1,Novosibirsk,5,0,1,0,on_hold,162,MGR006,26-35,manual,gasoline,,0,3,0,2656307,<50000,1
+LEAD00932,2023-02-20,avito,BMW,X3,SUV,2218000,0,Novosibirsk,7,1,0,0,offer_sent,15,MGR009,56+,robot,diesel,0-30000,1,4,1,2697219,100000-200000,1
+LEAD00933,2024-07-26,partner,Lada,XRAY,SUV,507000,0,Yekaterinburg,5,0,0,0,test_drive_done,170,MGR002,18-25,variator,hybrid,30001-60000,1,2,1,711086,50000-100000,1
+LEAD00934,2023-10-11,offline,Skoda,Karoq,SUV,1969000,1,Samara,8,1,1,0,on_hold,69,MGR003,36-45,variator,gasoline,,0,2,1,2217915,100000-200000,1
+LEAD00935,2023-08-05,social_media,BMW,X5,SUV,7008000,1,Moscow,10,1,0,0,new,65,MGR006,56+,automatic,electric,,1,8,0,6951747,>400000,1
+LEAD00936,2023-11-11,offline,Kia,Rio,Sedan,1591000,1,Samara,2,0,0,0,on_hold,117,MGR013,18-25,manual,gasoline,,1,7,0,1985049,50000-100000,1
+LEAD00937,2023-03-23,website,Renault,Arkana,Crossover,1420000,1,Novosibirsk,10,0,1,0,on_hold,148,MGR017,46-55,variator,electric,,1,1,0,1575591,50000-100000,0
+LEAD00938,2023-04-04,phone,Lada,Niva,SUV,760000,0,Yekaterinburg,11,0,1,1,new,41,MGR004,56+,robot,diesel,30001-60000,0,6,1,690746,<50000,0
+LEAD00939,2024-05-06,avito,BMW,3 Series,Sedan,6359000,1,Chelyabinsk,1,0,1,0,on_hold,112,MGR016,36-45,robot,electric,,0,7,1,6730217,100000-200000,0
+LEAD00940,2023-12-22,avito,Ford,Kuga,SUV,4029000,1,Kazan,7,0,1,0,on_hold,57,MGR016,18-25,variator,diesel,,1,7,1,4159023,200000-400000,1
+LEAD00941,2023-03-22,offline,Ford,Kuga,SUV,2715000,1,Chelyabinsk,2,0,0,0,new,178,MGR012,56+,manual,electric,,0,7,1,2730889,200000-400000,0
+LEAD00942,2023-07-31,social_media,Toyota,RAV4,SUV,4814000,1,Saint Petersburg,7,1,0,0,negotiation,106,MGR022,26-35,manual,electric,,0,6,0,4979618,200000-400000,1
+LEAD00943,2023-11-09,social_media,Skoda,Rapid,Sedan,3043000,1,Kazan,10,1,0,0,negotiation,149,MGR015,26-35,robot,hybrid,,1,4,0,3114034,<50000,1
+LEAD00944,2023-02-18,social_media,Ford,EcoSport,SUV,2479000,0,Moscow,10,1,1,0,offer_sent,70,MGR004,56+,manual,diesel,150000+,1,4,0,2838078,50000-100000,1
+LEAD00945,2024-05-05,offline,Volkswagen,Polo,Hatchback,4713000,1,Samara,1,0,1,0,negotiation,87,MGR016,26-35,automatic,diesel,,1,5,0,4945850,<50000,0
+LEAD00946,2024-03-19,phone,Kia,Sportage,SUV,1452000,1,Moscow,5,0,1,0,on_hold,92,MGR004,18-25,robot,hybrid,,1,1,0,1400305,>400000,1
+LEAD00947,2024-02-06,partner,Volkswagen,Tiguan,SUV,4605000,1,Samara,4,1,1,0,new,147,MGR020,36-45,variator,hybrid,,1,1,0,4856143,>400000,1
+LEAD00948,2024-02-11,social_media,Volkswagen,Passat,Sedan,3691000,0,Omsk,7,1,1,0,in_progress,105,MGR006,36-45,manual,hybrid,30001-60000,0,1,0,3802032,100000-200000,0
+LEAD00949,2023-09-29,phone,Kia,Rio,Sedan,2407000,0,Yekaterinburg,7,1,1,0,offer_sent,8,MGR002,36-45,variator,hybrid,100001-150000,0,7,0,2896997,50000-100000,1
+LEAD00950,2024-05-13,partner,BMW,5 Series,Sedan,8161000,1,Kazan,8,0,1,1,new,40,MGR008,46-55,automatic,diesel,,0,5,1,8295010,<50000,0
+LEAD00951,2023-12-13,phone,BMW,3 Series,Sedan,4838000,1,Omsk,3,0,1,0,offer_sent,40,MGR020,56+,robot,electric,,0,3,1,4777960,200000-400000,0
+LEAD00952,2023-01-11,phone,Toyota,RAV4,SUV,1933000,1,Nizhniy Novgorod,4,1,1,0,test_drive_done,94,MGR001,46-55,automatic,diesel,,1,2,0,2181555,50000-100000,1
+LEAD00953,2023-06-27,offline,Mercedes-Benz,E-Class,Sedan,7918000,1,Rostov-on-Don,5,0,1,1,negotiation,125,MGR006,36-45,robot,diesel,,0,4,0,8301143,<50000,1
+LEAD00954,2024-08-18,website,Hyundai,Creta,SUV,1239000,0,Novosibirsk,12,0,0,1,negotiation,14,MGR012,56+,robot,electric,30001-60000,1,3,0,1733070,<50000,1
+LEAD00955,2023-09-24,offline,Mercedes-Benz,GLC,SUV,9411000,1,Samara,7,1,0,0,on_hold,139,MGR008,18-25,variator,electric,,0,5,1,9588236,100000-200000,0
+LEAD00956,2023-11-21,email,Lada,Granta,Sedan,1280000,1,Novosibirsk,10,1,0,0,on_hold,66,MGR017,36-45,automatic,diesel,,1,7,0,1375433,50000-100000,0
+LEAD00957,2023-05-14,phone,Kia,Sportage,SUV,3288000,1,Yekaterinburg,2,1,1,0,on_hold,142,MGR014,46-55,automatic,diesel,,0,1,1,3451494,<50000,0
+LEAD00958,2023-08-19,website,Ford,Focus,Hatchback,4342000,1,Samara,10,1,1,0,on_hold,29,MGR016,18-25,variator,hybrid,,0,6,1,4475803,<50000,1
+LEAD00959,2023-06-17,avito,Kia,Sportage,SUV,3316000,1,Kazan,1,0,1,1,offer_sent,166,MGR013,26-35,manual,electric,,1,7,0,3389335,50000-100000,0
+LEAD00960,2023-11-06,email,Hyundai,Tucson,SUV,706000,0,Omsk,8,0,0,0,new,70,MGR015,26-35,manual,hybrid,60001-100000,0,8,0,1114290,100000-200000,1
+LEAD00961,2023-11-17,offline,Kia,Rio,Sedan,2832000,1,Chelyabinsk,4,0,1,1,on_hold,54,MGR006,56+,robot,gasoline,,0,3,1,3297490,>400000,0
+LEAD00962,2023-11-23,phone,Ford,EcoSport,SUV,3296000,1,Kazan,3,1,1,1,in_progress,155,MGR005,26-35,variator,electric,,1,7,1,3183781,200000-400000,1
+LEAD00963,2023-08-12,offline,BMW,5 Series,Sedan,4736000,1,Kazan,1,1,1,0,test_drive_done,172,MGR024,18-25,automatic,hybrid,,0,7,1,4792233,200000-400000,0
+LEAD00964,2023-03-19,email,Mercedes-Benz,E-Class,Sedan,9098000,1,Kazan,6,0,0,1,on_hold,28,MGR008,26-35,automatic,electric,,0,6,1,9112709,200000-400000,0
+LEAD00965,2023-07-01,offline,Toyota,Camry,Sedan,4033000,1,Omsk,3,1,0,0,on_hold,96,MGR018,26-35,manual,gasoline,,1,5,0,3951124,<50000,1
+LEAD00966,2023-04-23,avito,Mercedes-Benz,GLE,SUV,8389000,1,Chelyabinsk,9,1,0,1,new,100,MGR006,36-45,automatic,gasoline,,1,5,0,8190006,>400000,0
+LEAD00967,2023-12-02,email,Renault,Arkana,Crossover,1652000,1,Omsk,12,0,0,1,offer_sent,112,MGR024,46-55,manual,hybrid,,0,5,0,1576520,>400000,1
+LEAD00968,2023-07-17,offline,Skoda,Kodiaq,SUV,1728000,1,Novosibirsk,3,1,0,1,negotiation,125,MGR017,46-55,manual,diesel,,1,5,0,1646245,<50000,0
+LEAD00969,2023-10-12,avito,Ford,Focus,Hatchback,1968000,1,Rostov-on-Don,10,0,1,1,new,57,MGR014,46-55,manual,electric,,0,2,0,1788869,>400000,0
+LEAD00970,2023-12-11,website,Toyota,RAV4,SUV,1817000,1,Moscow,4,0,1,1,negotiation,63,MGR017,36-45,manual,diesel,,1,1,1,1805177,>400000,0
+LEAD00971,2023-03-05,social_media,Renault,Logan,Sedan,2157000,1,Omsk,1,0,0,0,in_progress,143,MGR007,26-35,variator,diesel,,0,7,0,2195171,>400000,0
+LEAD00972,2024-07-09,phone,Renault,Arkana,Crossover,1017000,0,Samara,7,1,1,1,in_progress,170,MGR017,46-55,automatic,hybrid,30001-60000,0,2,1,894998,<50000,0
+LEAD00973,2024-04-17,website,Hyundai,Tucson,SUV,1324000,0,Omsk,12,0,0,0,test_drive_done,25,MGR021,56+,manual,hybrid,100001-150000,1,1,0,1629705,50000-100000,1
+LEAD00974,2023-03-18,email,BMW,5 Series,Sedan,3551000,1,Omsk,10,1,0,0,test_drive_done,149,MGR018,56+,automatic,hybrid,,1,2,1,3973246,50000-100000,1
+LEAD00975,2024-01-21,email,Renault,Kaptur,SUV,1558000,1,Samara,6,0,0,0,in_progress,83,MGR015,26-35,automatic,diesel,,0,6,0,1456776,200000-400000,1
+LEAD00976,2024-03-31,social_media,Ford,Explorer,SUV,3006000,1,Yekaterinburg,12,1,1,0,offer_sent,106,MGR014,56+,robot,electric,,1,5,0,2955652,<50000,1
+LEAD00977,2024-07-29,avito,Skoda,Octavia,Sedan,3065000,1,Rostov-on-Don,1,0,0,0,offer_sent,73,MGR013,56+,variator,electric,,0,5,0,3512817,<50000,1
+LEAD00978,2023-09-06,offline,Renault,Duster,SUV,2021000,1,Omsk,5,0,0,0,offer_sent,137,MGR001,36-45,automatic,electric,,1,2,0,2128198,200000-400000,1
+LEAD00979,2023-05-02,phone,BMW,3 Series,Sedan,8455000,1,Omsk,1,1,1,0,new,140,MGR006,46-55,automatic,hybrid,,1,5,0,8319179,50000-100000,1
+LEAD00980,2024-05-09,website,Skoda,Rapid,Sedan,2565000,1,Yekaterinburg,5,0,0,1,offer_sent,89,MGR014,18-25,manual,gasoline,,0,8,1,2476134,100000-200000,0
+LEAD00981,2023-02-17,avito,Hyundai,Solaris,Sedan,2011000,1,Nizhniy Novgorod,11,1,1,0,negotiation,100,MGR010,18-25,automatic,gasoline,,1,6,0,1829127,50000-100000,1
+LEAD00982,2023-02-23,avito,Skoda,Kodiaq,SUV,2440000,0,Omsk,9,0,0,0,new,29,MGR021,36-45,variator,electric,0-30000,0,8,1,2913960,>400000,0
+LEAD00983,2023-09-16,website,Mercedes-Benz,GLC,SUV,9635000,1,Moscow,3,0,0,0,test_drive_done,96,MGR006,26-35,robot,hybrid,,1,6,0,10020761,100000-200000,1
+LEAD00984,2024-03-22,partner,Toyota,Land Cruiser,SUV,2961000,1,Novosibirsk,8,1,0,0,negotiation,61,MGR007,18-25,robot,hybrid,,1,3,1,2769298,>400000,0
+LEAD00985,2023-11-07,website,Skoda,Karoq,SUV,2374000,0,Kazan,9,1,0,0,offer_sent,58,MGR011,46-55,robot,electric,30001-60000,1,7,1,2275071,200000-400000,1
+LEAD00986,2023-02-27,social_media,Volkswagen,Tiguan,SUV,2777000,1,Nizhniy Novgorod,1,0,1,0,in_progress,164,MGR005,26-35,automatic,diesel,,0,2,0,3072243,>400000,0
+LEAD00987,2023-11-25,avito,Lada,Niva,SUV,960000,1,Kazan,12,0,0,1,in_progress,81,MGR004,56+,manual,hybrid,,0,5,1,1123096,>400000,1
+LEAD00988,2023-12-11,social_media,Renault,Kaptur,SUV,1700000,1,Rostov-on-Don,1,0,0,0,negotiation,121,MGR008,18-25,variator,gasoline,,0,5,0,1822181,<50000,0
+LEAD00989,2023-05-02,social_media,Hyundai,Creta,SUV,1978000,1,Samara,6,0,0,0,in_progress,10,MGR011,56+,robot,gasoline,,1,5,1,2410327,200000-400000,1
+LEAD00990,2023-03-12,phone,Renault,Logan,Sedan,1055000,0,Saint Petersburg,12,1,0,0,test_drive_done,130,MGR018,56+,manual,electric,150000+,0,3,0,894252,<50000,0
+LEAD00991,2023-10-20,partner,Renault,Logan,Sedan,1322000,0,Novosibirsk,9,0,1,1,on_hold,55,MGR011,46-55,variator,diesel,60001-100000,1,8,0,1550441,<50000,0
+LEAD00992,2023-07-12,offline,Lada,Vesta,Sedan,903000,1,Rostov-on-Don,5,1,1,1,test_drive_done,151,MGR003,18-25,robot,electric,,1,7,0,1324270,200000-400000,0
+LEAD00993,2023-09-26,phone,Hyundai,Tucson,SUV,3022000,1,Rostov-on-Don,6,1,0,0,offer_sent,142,MGR011,56+,robot,electric,,1,1,1,3380121,200000-400000,1
+LEAD00994,2024-02-24,phone,Ford,Focus,Hatchback,3776000,1,Nizhniy Novgorod,11,0,0,1,offer_sent,77,MGR020,26-35,automatic,gasoline,,1,5,0,4115596,>400000,0
+LEAD00995,2024-08-07,social_media,Ford,Kuga,SUV,3987000,1,Samara,6,0,1,0,test_drive_done,150,MGR015,26-35,robot,electric,,1,1,1,3861928,100000-200000,0
+LEAD00996,2024-04-18,social_media,Ford,Focus,Hatchback,2163000,1,Omsk,1,0,0,0,negotiation,53,MGR014,56+,manual,electric,,0,5,0,2066684,<50000,0
+LEAD00997,2024-06-24,website,Kia,Sorento,SUV,1721000,0,Saint Petersburg,9,1,1,0,new,71,MGR011,26-35,manual,gasoline,150000+,0,4,0,2036568,50000-100000,0
+LEAD00998,2023-06-01,avito,Toyota,RAV4,SUV,2663000,1,Samara,9,0,0,0,negotiation,130,MGR018,56+,automatic,hybrid,,1,6,1,3151907,100000-200000,0
+LEAD00999,2024-08-12,phone,Lada,Vesta,Sedan,726000,0,Novosibirsk,4,0,1,1,in_progress,166,MGR011,46-55,automatic,gasoline,60001-100000,0,3,0,1023350,<50000,1
+LEAD01000,2023-05-06,offline,Hyundai,Santa Fe,SUV,1573000,1,Moscow,1,1,1,1,negotiation,179,MGR017,56+,robot,gasoline,,1,8,1,1446063,>400000,1
+LEAD01001,2023-09-09,avito,Mercedes-Benz,GLE,SUV,5145000,1,Saint Petersburg,4,0,0,1,new,94,MGR021,26-35,robot,electric,,1,6,0,5396099,>400000,0
+LEAD01002,2024-05-14,email,Lada,Granta,Sedan,888000,1,Nizhniy Novgorod,10,1,1,0,new,169,MGR005,46-55,variator,diesel,,1,5,1,1331242,>400000,0
+LEAD01003,2024-02-24,phone,Hyundai,Santa Fe,SUV,2691000,0,Samara,1,1,1,1,new,27,MGR020,18-25,manual,electric,0-30000,1,5,1,2923232,200000-400000,0
+LEAD01004,2023-02-13,phone,Lada,XRAY,SUV,1049000,0,Nizhniy Novgorod,6,0,1,0,negotiation,37,MGR016,56+,robot,electric,0-30000,1,3,0,1073388,100000-200000,1
+LEAD01005,2023-04-29,partner,Mercedes-Benz,E-Class,Sedan,6170000,0,Saint Petersburg,9,0,1,0,test_drive_done,127,MGR013,36-45,robot,hybrid,0-30000,1,1,0,6573070,200000-400000,1
+LEAD01006,2023-11-24,phone,Ford,Focus,Hatchback,3933000,1,Novosibirsk,6,1,0,0,new,117,MGR009,56+,robot,electric,,0,8,1,4247808,100000-200000,0
+LEAD01007,2023-07-27,offline,Toyota,Land Cruiser,SUV,6328000,1,Saint Petersburg,5,0,0,0,test_drive_done,167,MGR024,18-25,variator,hybrid,,0,8,1,6620718,<50000,1
+LEAD01008,2023-09-15,phone,Renault,Duster,SUV,1079000,0,Chelyabinsk,2,1,1,1,new,48,MGR018,36-45,variator,electric,100001-150000,0,6,1,1546854,<50000,1
+LEAD01009,2023-08-27,partner,Kia,Cerato,Sedan,2383000,1,Novosibirsk,2,0,0,0,new,6,MGR002,18-25,robot,gasoline,,1,1,1,2476075,50000-100000,0
+LEAD01010,2024-07-18,offline,Lada,XRAY,SUV,902000,1,Yekaterinburg,11,1,0,0,offer_sent,120,MGR001,26-35,robot,hybrid,,1,3,1,992505,50000-100000,1
+LEAD01011,2023-07-01,email,Renault,Arkana,Crossover,1354000,1,Chelyabinsk,6,1,0,1,on_hold,55,MGR006,36-45,variator,diesel,,1,5,1,1831051,50000-100000,1
+LEAD01012,2023-08-09,phone,Volkswagen,Polo,Hatchback,945000,0,Kazan,1,0,1,0,new,153,MGR011,46-55,variator,gasoline,0-30000,0,3,1,903803,200000-400000,0
+LEAD01013,2024-07-10,email,Hyundai,Santa Fe,SUV,2396000,0,Novosibirsk,10,1,1,0,negotiation,145,MGR001,18-25,robot,diesel,30001-60000,1,1,1,2451218,200000-400000,1
+LEAD01014,2023-04-06,website,Lada,Granta,Sedan,1272000,1,Yekaterinburg,2,1,0,0,test_drive_done,127,MGR005,18-25,variator,diesel,,0,8,0,1758907,50000-100000,1
+LEAD01015,2024-08-06,partner,Toyota,Corolla,Sedan,4390000,1,Kazan,3,0,0,1,test_drive_done,14,MGR005,46-55,automatic,electric,,0,8,1,4446773,<50000,0
+LEAD01016,2024-02-11,partner,Skoda,Rapid,Sedan,2504000,0,Novosibirsk,1,1,1,0,offer_sent,70,MGR010,26-35,robot,diesel,0-30000,1,2,1,3000588,<50000,1
+LEAD01017,2023-12-28,avito,Lada,Niva,SUV,984000,1,Rostov-on-Don,6,1,0,0,on_hold,143,MGR001,18-25,manual,diesel,,1,8,0,1098685,200000-400000,0
+LEAD01018,2023-02-07,partner,Kia,Cerato,Sedan,2712000,1,Nizhniy Novgorod,3,1,0,1,offer_sent,104,MGR025,56+,robot,gasoline,,0,2,1,2962748,200000-400000,0
+LEAD01019,2024-04-19,avito,Ford,Kuga,SUV,1845000,0,Omsk,7,0,0,0,test_drive_done,169,MGR018,46-55,variator,diesel,30001-60000,1,8,1,2181002,50000-100000,0
+LEAD01020,2023-11-04,website,Ford,Focus,Hatchback,3942000,1,Samara,1,1,0,0,in_progress,51,MGR011,36-45,manual,gasoline,,1,4,1,4397703,200000-400000,0
+LEAD01021,2023-08-18,avito,Skoda,Rapid,Sedan,2544000,1,Kazan,10,0,1,1,in_progress,126,MGR022,46-55,automatic,diesel,,1,1,1,2518587,<50000,0
+LEAD01022,2023-01-22,social_media,Kia,Rio,Sedan,2771000,1,Moscow,1,0,1,0,new,157,MGR001,26-35,manual,gasoline,,0,7,0,3193585,<50000,1
+LEAD01023,2023-04-05,social_media,Renault,Logan,Sedan,848000,0,Saint Petersburg,7,0,0,1,on_hold,137,MGR025,46-55,automatic,gasoline,150000+,1,8,1,1126933,>400000,0
+LEAD01024,2024-03-11,website,Lada,Vesta,Sedan,797000,0,Omsk,8,0,1,1,new,25,MGR024,36-45,robot,gasoline,100001-150000,1,5,0,858138,>400000,0
+LEAD01025,2023-12-04,offline,Lada,Vesta,Sedan,498000,0,Saint Petersburg,9,1,0,0,new,93,MGR007,36-45,automatic,hybrid,0-30000,1,1,1,570393,100000-200000,1
+LEAD01026,2023-09-14,avito,Hyundai,Creta,SUV,3091000,1,Moscow,5,0,0,0,new,141,MGR005,46-55,robot,electric,,1,3,0,2991129,>400000,0
+LEAD01027,2024-04-02,email,Toyota,RAV4,SUV,1650000,0,Omsk,10,0,1,1,offer_sent,18,MGR016,26-35,manual,diesel,60001-100000,0,7,1,2006666,>400000,1
+LEAD01028,2023-08-16,phone,BMW,5 Series,Sedan,5580000,0,Nizhniy Novgorod,6,0,1,1,offer_sent,180,MGR011,26-35,variator,hybrid,30001-60000,1,2,0,5967216,50000-100000,1
+LEAD01029,2024-02-12,email,Volkswagen,Touareg,SUV,1884000,1,Novosibirsk,2,0,1,0,new,22,MGR005,36-45,robot,gasoline,,1,5,0,1708674,100000-200000,0
+LEAD01030,2024-08-04,website,Renault,Duster,SUV,1538000,0,Moscow,12,0,0,1,on_hold,96,MGR001,18-25,manual,diesel,150000+,1,1,0,1615339,50000-100000,0
+LEAD01031,2023-07-01,phone,Mercedes-Benz,GLE,SUV,6663000,1,Kazan,3,0,1,1,new,160,MGR003,36-45,variator,gasoline,,0,7,0,6489375,100000-200000,0
+LEAD01032,2023-08-29,email,Toyota,Corolla,Sedan,5889000,1,Yekaterinburg,6,0,1,0,new,174,MGR005,36-45,variator,diesel,,1,3,1,6022290,100000-200000,0
+LEAD01033,2024-02-14,website,Kia,Sorento,SUV,3155000,1,Omsk,3,0,1,1,offer_sent,114,MGR017,46-55,variator,electric,,0,8,0,3383626,100000-200000,0
+LEAD01034,2023-01-16,avito,Skoda,Rapid,Sedan,2469000,1,Saint Petersburg,1,0,0,0,in_progress,61,MGR011,26-35,automatic,diesel,,1,8,0,2421645,100000-200000,0
+LEAD01035,2023-03-30,social_media,Hyundai,Creta,SUV,1619000,1,Chelyabinsk,6,0,1,1,offer_sent,45,MGR001,46-55,manual,gasoline,,0,6,1,1688251,50000-100000,0
+LEAD01036,2024-07-13,partner,Skoda,Rapid,Sedan,2816000,1,Saint Petersburg,9,1,1,1,negotiation,174,MGR019,18-25,automatic,electric,,0,7,1,2852293,50000-100000,0
+LEAD01037,2023-01-24,website,Renault,Duster,SUV,1941000,1,Omsk,7,0,0,1,new,42,MGR012,56+,robot,electric,,0,2,0,1931573,>400000,0
+LEAD01038,2023-02-22,email,Skoda,Octavia,Sedan,2392000,0,Novosibirsk,5,0,0,0,test_drive_done,14,MGR002,26-35,automatic,gasoline,150000+,0,4,0,2297361,200000-400000,1
+LEAD01039,2023-10-10,offline,Toyota,RAV4,SUV,2660000,1,Samara,1,0,1,0,on_hold,26,MGR019,56+,automatic,gasoline,,1,2,1,2980494,<50000,0
+LEAD01040,2023-02-22,partner,Renault,Arkana,Crossover,1246000,1,Saint Petersburg,12,0,1,0,negotiation,3,MGR021,46-55,manual,hybrid,,0,8,0,1390621,>400000,1
+LEAD01041,2024-04-28,phone,Hyundai,Santa Fe,SUV,2795000,1,Nizhniy Novgorod,3,0,0,0,offer_sent,15,MGR023,56+,manual,gasoline,,1,1,0,3085714,<50000,1
+LEAD01042,2023-05-13,avito,Volkswagen,Touareg,SUV,1233000,0,Moscow,4,0,0,0,in_progress,125,MGR011,56+,automatic,electric,150000+,0,5,0,1159473,50000-100000,0
+LEAD01043,2023-01-16,offline,Toyota,Land Cruiser,SUV,5234000,1,Saint Petersburg,11,0,0,0,negotiation,172,MGR010,18-25,manual,hybrid,,1,1,1,5716970,>400000,1
+LEAD01044,2024-01-27,phone,Kia,Sportage,SUV,2918000,1,Novosibirsk,9,0,1,0,new,112,MGR020,18-25,variator,gasoline,,1,7,0,3091825,200000-400000,0
+LEAD01045,2023-05-29,website,Hyundai,Creta,SUV,1281000,0,Nizhniy Novgorod,7,1,0,1,negotiation,41,MGR010,18-25,automatic,electric,150000+,1,1,0,1761292,100000-200000,0
+LEAD01046,2023-01-25,phone,Volkswagen,Tiguan,SUV,3967000,1,Kazan,1,1,1,0,in_progress,12,MGR005,56+,robot,gasoline,,0,2,0,4098761,50000-100000,1
+LEAD01047,2023-09-08,email,Volkswagen,Touareg,SUV,3550000,1,Nizhniy Novgorod,4,0,0,0,new,31,MGR025,56+,variator,hybrid,,1,2,1,3691680,200000-400000,1
+LEAD01048,2024-04-28,partner,Lada,Niva,SUV,1065000,1,Novosibirsk,4,0,1,0,test_drive_done,127,MGR011,46-55,variator,gasoline,,0,3,0,945069,100000-200000,0
+LEAD01049,2023-09-23,social_media,Kia,Sportage,SUV,1862000,0,Rostov-on-Don,3,0,0,1,in_progress,76,MGR010,46-55,automatic,hybrid,0-30000,0,8,1,2063974,100000-200000,0
+LEAD01050,2023-03-08,partner,BMW,X5,SUV,6963000,1,Samara,8,1,1,1,on_hold,124,MGR018,46-55,manual,gasoline,,1,2,1,7039377,100000-200000,0
+LEAD01051,2024-06-26,phone,Hyundai,Santa Fe,SUV,950000,0,Saint Petersburg,1,0,0,1,on_hold,47,MGR013,46-55,robot,hybrid,100001-150000,1,5,0,1090071,50000-100000,1
+LEAD01052,2023-07-10,social_media,Ford,Explorer,SUV,2961000,1,Chelyabinsk,9,0,1,1,on_hold,97,MGR022,56+,variator,diesel,,1,5,1,3227951,200000-400000,1
+LEAD01053,2023-05-22,social_media,Lada,Vesta,Sedan,611000,0,Yekaterinburg,6,0,1,0,negotiation,133,MGR017,56+,variator,electric,0-30000,0,8,0,837180,200000-400000,0
+LEAD01054,2023-12-22,website,Ford,Explorer,SUV,1522000,0,Nizhniy Novgorod,1,0,0,0,offer_sent,116,MGR014,36-45,manual,hybrid,60001-100000,1,4,0,1409879,<50000,0
+LEAD01055,2024-05-27,email,Toyota,Corolla,Sedan,2471000,0,Nizhniy Novgorod,10,0,0,0,in_progress,135,MGR009,46-55,variator,gasoline,0-30000,1,7,0,2886195,200000-400000,1
+LEAD01056,2023-03-03,partner,Kia,Sorento,SUV,2160000,1,Chelyabinsk,12,1,0,1,on_hold,126,MGR014,26-35,variator,diesel,,1,2,0,2349013,50000-100000,0
+LEAD01057,2023-10-23,phone,Lada,Vesta,Sedan,833000,0,Moscow,5,0,1,0,new,54,MGR019,36-45,manual,hybrid,150000+,1,3,0,1078467,<50000,0
+LEAD01058,2023-07-08,phone,Kia,Sportage,SUV,1421000,1,Chelyabinsk,11,0,0,1,test_drive_done,5,MGR007,56+,automatic,gasoline,,1,1,0,1693464,100000-200000,0
+LEAD01059,2024-08-20,avito,Volkswagen,Touareg,SUV,2394000,1,Moscow,4,1,1,0,new,113,MGR006,36-45,automatic,gasoline,,1,5,1,2428751,100000-200000,0
+LEAD01060,2023-11-29,offline,Lada,Niva,SUV,1047000,1,Moscow,5,1,0,0,in_progress,155,MGR008,56+,manual,gasoline,,0,6,1,1479944,200000-400000,1
+LEAD01061,2023-12-23,offline,Kia,Sorento,SUV,1019000,0,Saint Petersburg,11,1,0,0,test_drive_done,166,MGR011,26-35,automatic,electric,100001-150000,1,3,0,1259172,50000-100000,0
+LEAD01062,2024-08-23,email,Lada,Granta,Sedan,966000,0,Kazan,6,1,0,0,negotiation,106,MGR001,36-45,manual,electric,100001-150000,1,5,0,1205034,100000-200000,1
+LEAD01063,2023-03-21,offline,Renault,Logan,Sedan,811000,0,Novosibirsk,6,0,0,0,new,150,MGR008,56+,automatic,diesel,150000+,1,1,1,1179552,50000-100000,1
+LEAD01064,2024-01-02,phone,Kia,Cerato,Sedan,2088000,1,Yekaterinburg,2,1,0,0,new,159,MGR024,26-35,automatic,diesel,,0,6,0,1950263,50000-100000,1
+LEAD01065,2023-07-18,partner,BMW,X5,SUV,6191000,1,Moscow,4,1,1,0,new,138,MGR001,26-35,variator,hybrid,,1,3,0,6129687,50000-100000,1
+LEAD01066,2023-02-28,phone,Renault,Duster,SUV,850000,0,Kazan,8,0,0,0,in_progress,128,MGR013,36-45,automatic,diesel,30001-60000,0,3,0,773631,>400000,1
+LEAD01067,2024-01-29,offline,Lada,Niva,SUV,1116000,1,Nizhniy Novgorod,3,0,0,0,offer_sent,34,MGR006,36-45,manual,gasoline,,0,8,1,1018539,<50000,1
+LEAD01068,2023-10-08,avito,Volkswagen,Tiguan,SUV,2009000,1,Nizhniy Novgorod,8,1,0,0,on_hold,7,MGR020,26-35,variator,diesel,,0,5,1,1957758,200000-400000,1
+LEAD01069,2023-05-21,website,Lada,Granta,Sedan,827000,1,Rostov-on-Don,5,1,1,1,new,82,MGR004,56+,manual,hybrid,,1,4,0,998852,100000-200000,1
+LEAD01070,2024-04-17,social_media,Kia,Rio,Sedan,1730000,1,Yekaterinburg,11,1,1,0,new,129,MGR018,18-25,variator,electric,,1,5,0,1690773,>400000,1
+LEAD01071,2024-07-09,offline,Skoda,Rapid,Sedan,2934000,1,Saint Petersburg,8,0,1,0,in_progress,151,MGR019,56+,manual,gasoline,,0,4,0,2979868,100000-200000,0
+LEAD01072,2024-07-09,social_media,Mercedes-Benz,GLC,SUV,4780000,1,Rostov-on-Don,11,1,1,1,in_progress,139,MGR006,18-25,manual,hybrid,,1,6,0,5136169,200000-400000,0
+LEAD01073,2024-05-08,phone,BMW,X3,SUV,7414000,1,Chelyabinsk,3,0,0,0,offer_sent,101,MGR006,26-35,automatic,hybrid,,0,6,0,7298046,200000-400000,0
+LEAD01074,2023-06-22,website,Kia,Sportage,SUV,2735000,1,Saint Petersburg,5,0,0,1,in_progress,42,MGR008,56+,manual,hybrid,,0,3,0,2630042,200000-400000,0
+LEAD01075,2024-03-03,offline,Volkswagen,Passat,Sedan,3133000,0,Novosibirsk,7,1,0,1,offer_sent,93,MGR014,56+,automatic,gasoline,0-30000,1,1,1,3292337,>400000,1
+LEAD01076,2023-03-28,email,Volkswagen,Touareg,SUV,2767000,1,Moscow,10,1,1,1,new,23,MGR019,18-25,manual,gasoline,,0,3,1,3053204,<50000,1
+LEAD01077,2023-11-25,website,Toyota,Camry,Sedan,5239000,1,Omsk,7,1,1,0,in_progress,101,MGR010,26-35,variator,electric,,1,1,0,5496102,<50000,1
+LEAD01078,2023-07-24,website,Renault,Kaptur,SUV,1210000,1,Rostov-on-Don,5,0,1,0,in_progress,106,MGR004,36-45,manual,electric,,1,4,0,1225572,50000-100000,1
+LEAD01079,2023-04-12,email,Ford,EcoSport,SUV,2759000,1,Saint Petersburg,7,1,0,1,test_drive_done,169,MGR013,46-55,robot,diesel,,0,4,0,3045457,50000-100000,1
+LEAD01080,2023-02-16,avito,Lada,Niva,SUV,432000,0,Yekaterinburg,5,0,0,0,new,127,MGR020,36-45,robot,diesel,0-30000,0,2,0,694820,>400000,0
+LEAD01081,2023-08-13,email,Hyundai,Tucson,SUV,1927000,0,Novosibirsk,8,1,0,1,in_progress,129,MGR013,18-25,manual,hybrid,60001-100000,1,4,1,2176210,>400000,1
+LEAD01082,2023-05-21,social_media,Lada,Vesta,Sedan,969000,1,Kazan,7,0,1,0,new,168,MGR001,56+,robot,diesel,,1,7,0,1048152,200000-400000,0
+LEAD01083,2023-04-04,offline,Toyota,Corolla,Sedan,3660000,1,Nizhniy Novgorod,7,0,1,0,test_drive_done,137,MGR003,36-45,variator,hybrid,,0,1,0,3691079,50000-100000,1
+LEAD01084,2024-06-01,avito,Mercedes-Benz,C-Class,Sedan,4496000,0,Chelyabinsk,9,1,1,1,test_drive_done,66,MGR014,18-25,robot,diesel,60001-100000,0,2,0,4769298,200000-400000,0
+LEAD01085,2023-03-31,phone,Kia,Sorento,SUV,2196000,0,Chelyabinsk,9,0,0,0,offer_sent,29,MGR001,56+,automatic,hybrid,30001-60000,1,1,1,2494469,100000-200000,0
+LEAD01086,2023-08-30,email,Skoda,Rapid,Sedan,1583000,1,Samara,6,0,0,1,negotiation,109,MGR019,56+,variator,gasoline,,0,4,0,1848784,100000-200000,0
+LEAD01087,2023-05-04,avito,Hyundai,Solaris,Sedan,3023000,1,Samara,9,0,1,1,negotiation,21,MGR020,26-35,automatic,electric,,1,8,0,3496576,200000-400000,1
+LEAD01088,2023-12-04,email,Renault,Arkana,Crossover,1720000,1,Omsk,11,0,0,0,on_hold,132,MGR023,46-55,robot,diesel,,0,7,1,1697377,>400000,0
+LEAD01089,2023-05-22,website,Renault,Arkana,Crossover,1418000,0,Nizhniy Novgorod,3,0,0,1,test_drive_done,175,MGR024,36-45,automatic,hybrid,150000+,0,7,0,1299526,>400000,0
+LEAD01090,2023-01-16,phone,Mercedes-Benz,GLE,SUV,5687000,1,Moscow,8,1,0,0,offer_sent,41,MGR016,18-25,variator,diesel,,0,2,0,6081175,>400000,1
+LEAD01091,2023-01-07,social_media,Kia,Sorento,SUV,2088000,0,Yekaterinburg,9,0,0,0,offer_sent,176,MGR022,26-35,variator,gasoline,150000+,1,5,1,2104265,200000-400000,1
+LEAD01092,2024-08-02,social_media,Volkswagen,Tiguan,SUV,2938000,1,Rostov-on-Don,10,0,1,0,test_drive_done,49,MGR001,18-25,automatic,hybrid,,0,2,0,3302771,100000-200000,1
+LEAD01093,2023-05-31,phone,Ford,Explorer,SUV,2712000,1,Omsk,12,0,0,0,test_drive_done,163,MGR013,56+,robot,diesel,,1,7,0,2517851,<50000,0
+LEAD01094,2023-09-16,website,Skoda,Kodiaq,SUV,2888000,1,Nizhniy Novgorod,10,0,0,0,test_drive_done,12,MGR004,56+,automatic,gasoline,,0,2,1,2897414,200000-400000,1
+LEAD01095,2023-02-01,email,Ford,Explorer,SUV,3288000,1,Kazan,9,0,1,0,in_progress,136,MGR006,18-25,variator,gasoline,,0,2,0,3509644,50000-100000,0
+LEAD01096,2024-04-13,partner,Mercedes-Benz,E-Class,Sedan,9335000,1,Kazan,3,0,0,0,on_hold,71,MGR003,36-45,robot,gasoline,,0,3,0,9624608,<50000,1
+LEAD01097,2024-04-28,offline,Renault,Logan,Sedan,1633000,1,Saint Petersburg,7,0,1,1,test_drive_done,15,MGR021,56+,variator,gasoline,,1,1,1,1558878,50000-100000,1
+LEAD01098,2024-01-26,email,Kia,Sorento,SUV,2097000,1,Kazan,11,0,0,0,in_progress,3,MGR024,36-45,robot,diesel,,1,8,0,1982168,100000-200000,0
+LEAD01099,2023-04-03,email,Kia,Cerato,Sedan,982000,0,Nizhniy Novgorod,3,0,1,1,in_progress,157,MGR013,26-35,variator,gasoline,0-30000,1,5,0,1206745,>400000,0
+LEAD01100,2023-11-12,partner,Lada,Vesta,Sedan,935000,1,Kazan,1,0,1,0,negotiation,72,MGR022,26-35,variator,hybrid,,1,2,0,1195970,50000-100000,1
+LEAD01101,2024-08-06,partner,Hyundai,Santa Fe,SUV,2514000,1,Omsk,8,0,1,0,in_progress,60,MGR014,56+,manual,gasoline,,0,7,0,2521183,100000-200000,1
+LEAD01102,2023-03-17,partner,Mercedes-Benz,GLE,SUV,6950000,0,Rostov-on-Don,3,0,1,0,in_progress,155,MGR017,56+,variator,hybrid,60001-100000,0,3,1,6802950,>400000,0
+LEAD01103,2023-03-16,offline,Kia,Sorento,SUV,1804000,0,Novosibirsk,8,0,0,0,on_hold,40,MGR019,18-25,variator,electric,150000+,1,6,1,2222668,200000-400000,0
+LEAD01104,2024-04-06,social_media,Ford,Explorer,SUV,1682000,0,Omsk,10,1,0,0,offer_sent,65,MGR020,46-55,variator,electric,0-30000,1,4,1,1663054,200000-400000,1
+LEAD01105,2024-02-17,offline,Volkswagen,Passat,Sedan,1619000,0,Omsk,1,1,0,1,on_hold,18,MGR010,26-35,automatic,diesel,150000+,1,8,0,1572924,50000-100000,0
+LEAD01106,2023-01-18,email,Hyundai,Solaris,Sedan,2564000,1,Rostov-on-Don,4,0,0,0,offer_sent,139,MGR014,18-25,manual,hybrid,,0,8,1,2984166,<50000,0
+LEAD01107,2023-06-04,email,Mercedes-Benz,GLC,SUV,5308000,1,Novosibirsk,1,0,1,0,offer_sent,27,MGR020,36-45,automatic,hybrid,,1,8,0,5556902,>400000,0
+LEAD01108,2023-05-15,offline,Renault,Arkana,Crossover,856000,0,Omsk,1,1,0,1,offer_sent,111,MGR019,18-25,robot,electric,0-30000,0,8,0,1084909,>400000,1
+LEAD01109,2023-09-21,partner,Lada,Granta,Sedan,1097000,1,Moscow,2,0,1,0,test_drive_done,25,MGR001,36-45,manual,hybrid,,0,8,0,1228086,200000-400000,1
+LEAD01110,2023-08-20,email,Lada,Niva,SUV,1001000,1,Novosibirsk,7,1,0,0,on_hold,150,MGR020,18-25,variator,hybrid,,0,3,0,1453228,<50000,0
+LEAD01111,2023-11-02,avito,Ford,Explorer,SUV,2912000,0,Yekaterinburg,12,1,1,0,negotiation,127,MGR014,26-35,variator,gasoline,0-30000,1,8,1,3350513,50000-100000,1
+LEAD01112,2024-02-28,phone,Renault,Arkana,Crossover,2086000,1,Yekaterinburg,6,1,0,1,negotiation,23,MGR016,36-45,automatic,gasoline,,1,1,0,2470437,200000-400000,1
+LEAD01113,2023-03-17,social_media,Kia,Cerato,Sedan,1621000,1,Nizhniy Novgorod,9,0,0,0,negotiation,116,MGR009,46-55,manual,hybrid,,1,2,0,1521072,<50000,1
+LEAD01114,2024-05-18,social_media,Ford,Kuga,SUV,4340000,1,Yekaterinburg,8,1,1,0,negotiation,31,MGR018,56+,automatic,electric,,0,1,0,4474425,<50000,1
+LEAD01115,2023-01-25,partner,Toyota,RAV4,SUV,6749000,1,Omsk,11,1,1,0,offer_sent,142,MGR013,26-35,manual,gasoline,,0,1,1,6938804,>400000,0
+LEAD01116,2023-11-26,avito,Skoda,Octavia,Sedan,2851000,1,Omsk,3,0,1,0,in_progress,61,MGR011,56+,automatic,diesel,,1,7,0,2867684,200000-400000,0
+LEAD01117,2024-05-30,phone,Kia,Sportage,SUV,1527000,1,Rostov-on-Don,9,0,0,0,offer_sent,44,MGR002,46-55,robot,hybrid,,1,8,0,1371627,<50000,0
+LEAD01118,2023-05-29,partner,Volkswagen,Polo,Hatchback,3015000,0,Kazan,7,0,1,0,in_progress,169,MGR004,26-35,automatic,gasoline,30001-60000,0,1,1,3233739,50000-100000,1
+LEAD01119,2024-04-26,avito,Mercedes-Benz,C-Class,Sedan,6418000,1,Novosibirsk,11,1,1,1,offer_sent,174,MGR022,26-35,automatic,hybrid,,0,5,0,6277459,50000-100000,0
+LEAD01120,2024-08-09,partner,Hyundai,Solaris,Sedan,3217000,1,Saint Petersburg,6,0,0,0,test_drive_done,47,MGR008,36-45,variator,gasoline,,0,7,0,3155695,>400000,1
+LEAD01121,2024-07-01,social_media,Ford,Kuga,SUV,811000,0,Yekaterinburg,5,1,1,0,test_drive_done,13,MGR011,18-25,manual,electric,150000+,0,1,1,1018121,<50000,0
+LEAD01122,2024-01-15,website,Toyota,Land Cruiser,SUV,2837000,0,Chelyabinsk,1,1,0,0,offer_sent,151,MGR004,46-55,manual,electric,150000+,0,7,1,2645403,<50000,1
+LEAD01123,2023-05-19,phone,Hyundai,Solaris,Sedan,1184000,0,Moscow,1,0,1,0,on_hold,153,MGR012,26-35,automatic,diesel,100001-150000,0,8,0,1580035,100000-200000,0
+LEAD01124,2024-04-19,website,Volkswagen,Tiguan,SUV,2407000,0,Moscow,6,0,0,0,in_progress,12,MGR011,56+,variator,gasoline,150000+,0,5,0,2867775,50000-100000,1
+LEAD01125,2023-01-17,social_media,Renault,Kaptur,SUV,1910000,1,Nizhniy Novgorod,11,0,0,0,negotiation,85,MGR013,26-35,automatic,gasoline,,1,6,0,2007159,>400000,0
+LEAD01126,2024-02-22,phone,Kia,Sportage,SUV,2819000,1,Saint Petersburg,7,1,0,0,new,115,MGR001,46-55,variator,gasoline,,0,3,1,3062607,100000-200000,1
+LEAD01127,2024-05-31,website,Kia,Sorento,SUV,2963000,1,Novosibirsk,6,1,1,1,new,109,MGR016,26-35,robot,gasoline,,1,8,1,3428644,100000-200000,0
+LEAD01128,2023-07-03,social_media,BMW,X3,SUV,3942000,1,Omsk,5,1,1,0,negotiation,94,MGR007,46-55,automatic,hybrid,,1,5,1,4135610,50000-100000,1
+LEAD01129,2024-08-12,website,BMW,X3,SUV,8280000,1,Nizhniy Novgorod,9,0,0,0,negotiation,100,MGR004,46-55,automatic,gasoline,,0,7,0,8530557,>400000,0
+LEAD01130,2024-04-24,social_media,Hyundai,Creta,SUV,3427000,1,Omsk,1,0,0,0,offer_sent,68,MGR008,46-55,variator,gasoline,,0,8,0,3320010,100000-200000,0
+LEAD01131,2023-08-11,website,Volkswagen,Tiguan,SUV,1471000,0,Rostov-on-Don,4,0,1,0,offer_sent,104,MGR010,36-45,variator,electric,30001-60000,0,4,0,1410734,50000-100000,1
+LEAD01132,2023-07-11,phone,Kia,Sportage,SUV,2619000,1,Novosibirsk,5,1,1,1,negotiation,167,MGR005,46-55,variator,electric,,0,3,1,2979901,>400000,1
+LEAD01133,2023-07-13,offline,Hyundai,Tucson,SUV,1488000,1,Saint Petersburg,4,0,1,1,offer_sent,152,MGR017,36-45,automatic,gasoline,,1,5,0,1362031,200000-400000,1
+LEAD01134,2023-12-17,avito,Ford,Focus,Hatchback,4355000,1,Nizhniy Novgorod,3,0,1,0,new,8,MGR001,36-45,automatic,hybrid,,1,2,1,4386879,100000-200000,0
+LEAD01135,2024-05-19,phone,Mercedes-Benz,GLC,SUV,6014000,1,Novosibirsk,8,0,1,0,negotiation,123,MGR001,26-35,variator,diesel,,1,1,0,6235327,50000-100000,0
+LEAD01136,2023-12-10,offline,Lada,Vesta,Sedan,1012000,1,Nizhniy Novgorod,10,1,0,0,on_hold,122,MGR023,18-25,manual,electric,,1,5,1,851419,<50000,1
+LEAD01137,2023-06-21,social_media,Toyota,RAV4,SUV,4963000,0,Moscow,7,0,1,0,in_progress,104,MGR007,46-55,variator,hybrid,0-30000,1,7,0,4777463,>400000,0
+LEAD01138,2024-05-12,avito,BMW,X3,SUV,5649000,1,Saint Petersburg,11,0,1,0,on_hold,72,MGR020,36-45,variator,hybrid,,0,8,0,6016996,100000-200000,0
+LEAD01139,2023-08-01,offline,Skoda,Karoq,SUV,1570000,1,Rostov-on-Don,3,0,0,0,negotiation,98,MGR004,36-45,robot,gasoline,,1,3,0,1989160,100000-200000,1
+LEAD01140,2023-01-17,social_media,Kia,Rio,Sedan,1727000,1,Rostov-on-Don,1,0,1,0,offer_sent,136,MGR023,36-45,robot,diesel,,0,3,1,1729488,100000-200000,0
+LEAD01141,2024-05-18,partner,Lada,XRAY,SUV,576000,0,Novosibirsk,2,0,0,0,on_hold,124,MGR002,36-45,variator,electric,150000+,0,3,1,927403,>400000,0
+LEAD01142,2023-09-19,avito,Renault,Kaptur,SUV,1269000,1,Omsk,10,0,1,0,offer_sent,110,MGR022,18-25,variator,gasoline,,0,5,1,1409333,50000-100000,1
+LEAD01143,2023-07-26,email,Skoda,Karoq,SUV,1894000,1,Omsk,7,0,1,0,test_drive_done,34,MGR001,26-35,automatic,electric,,0,3,0,2096853,50000-100000,1
+LEAD01144,2024-05-26,email,BMW,X5,SUV,6110000,1,Samara,11,0,0,0,new,45,MGR009,56+,variator,hybrid,,0,6,0,6279166,100000-200000,0
+LEAD01145,2024-02-29,website,Skoda,Octavia,Sedan,1514000,1,Chelyabinsk,9,0,1,1,new,40,MGR006,56+,variator,hybrid,,1,7,1,1654887,>400000,0
+LEAD01146,2023-05-28,partner,Skoda,Rapid,Sedan,890000,0,Omsk,4,1,1,0,on_hold,17,MGR015,56+,variator,hybrid,0-30000,1,4,0,1182780,<50000,1
+LEAD01147,2024-06-08,website,Hyundai,Santa Fe,SUV,1494000,0,Rostov-on-Don,11,0,1,0,new,156,MGR025,36-45,robot,diesel,30001-60000,1,1,0,1854646,50000-100000,0
+LEAD01148,2024-05-02,email,Volkswagen,Tiguan,SUV,2702000,1,Rostov-on-Don,10,0,0,0,negotiation,40,MGR018,18-25,variator,gasoline,,0,8,1,2787984,>400000,1
+LEAD01149,2023-02-13,offline,Hyundai,Creta,SUV,2294000,0,Kazan,8,1,0,0,negotiation,128,MGR021,56+,automatic,hybrid,150000+,0,5,0,2108848,100000-200000,0
+LEAD01150,2023-01-02,social_media,Hyundai,Creta,SUV,777000,0,Rostov-on-Don,3,0,1,1,offer_sent,154,MGR025,56+,automatic,diesel,60001-100000,0,1,0,671396,200000-400000,1
+LEAD01151,2023-02-11,partner,Renault,Kaptur,SUV,1825000,1,Moscow,4,1,0,0,negotiation,30,MGR022,46-55,manual,hybrid,,1,7,0,2264277,50000-100000,1
+LEAD01152,2024-06-18,email,Renault,Arkana,Crossover,1147000,0,Omsk,12,1,0,0,offer_sent,108,MGR006,26-35,manual,gasoline,0-30000,1,7,0,1236882,>400000,1
+LEAD01153,2024-04-15,website,Hyundai,Tucson,SUV,3158000,1,Nizhniy Novgorod,7,0,1,0,test_drive_done,104,MGR006,56+,variator,hybrid,,1,8,1,2960608,50000-100000,0
+LEAD01154,2023-05-31,website,Hyundai,Solaris,Sedan,2921000,1,Omsk,7,0,0,0,in_progress,35,MGR015,18-25,variator,diesel,,1,1,0,2881183,100000-200000,0
+LEAD01155,2023-08-22,avito,Hyundai,Santa Fe,SUV,1887000,1,Rostov-on-Don,8,0,0,1,on_hold,139,MGR021,56+,automatic,diesel,,0,7,1,1972980,50000-100000,0
+LEAD01156,2024-03-06,avito,Toyota,Corolla,Sedan,4717000,0,Rostov-on-Don,8,1,1,0,offer_sent,17,MGR012,36-45,robot,gasoline,100001-150000,0,1,0,4737338,200000-400000,1
+LEAD01157,2024-02-04,website,BMW,X3,SUV,8435000,1,Omsk,3,0,0,0,new,40,MGR001,56+,robot,hybrid,,0,8,0,8785632,>400000,0
+LEAD01158,2023-01-29,phone,Mercedes-Benz,C-Class,Sedan,3236000,0,Rostov-on-Don,11,0,0,0,offer_sent,165,MGR013,46-55,automatic,diesel,150000+,0,2,1,3630618,<50000,0
+LEAD01159,2023-02-07,email,Volkswagen,Tiguan,SUV,908000,0,Samara,2,1,0,1,in_progress,71,MGR023,18-25,variator,electric,30001-60000,0,3,1,1344166,>400000,0
+LEAD01160,2024-05-17,avito,Mercedes-Benz,GLC,SUV,8976000,1,Moscow,6,0,0,0,negotiation,91,MGR023,26-35,robot,gasoline,,0,4,0,8976287,200000-400000,0
+LEAD01161,2023-12-04,email,Lada,Niva,SUV,641000,0,Saint Petersburg,6,0,0,0,offer_sent,123,MGR020,26-35,manual,gasoline,0-30000,1,1,1,1115976,100000-200000,0
+LEAD01162,2023-03-20,social_media,Hyundai,Creta,SUV,2547000,1,Moscow,5,1,0,0,on_hold,83,MGR002,36-45,robot,diesel,,0,2,0,2584839,<50000,1
+LEAD01163,2024-03-24,social_media,Renault,Arkana,Crossover,1316000,1,Chelyabinsk,8,0,0,0,negotiation,92,MGR014,56+,automatic,gasoline,,1,5,0,1774047,>400000,0
+LEAD01164,2023-11-02,offline,Skoda,Karoq,SUV,1718000,0,Kazan,1,1,1,1,new,91,MGR019,18-25,manual,electric,30001-60000,1,4,0,2048612,200000-400000,0
+LEAD01165,2024-02-07,offline,BMW,X3,SUV,4812000,1,Novosibirsk,9,0,1,1,on_hold,170,MGR010,46-55,manual,gasoline,,0,2,1,4998178,>400000,0
+LEAD01166,2023-12-22,social_media,Hyundai,Tucson,SUV,1417000,0,Saint Petersburg,11,0,0,0,negotiation,99,MGR016,46-55,robot,gasoline,60001-100000,0,1,0,1434373,>400000,0
+LEAD01167,2023-10-02,social_media,Mercedes-Benz,E-Class,Sedan,3002000,0,Rostov-on-Don,12,0,0,1,new,132,MGR022,36-45,robot,gasoline,30001-60000,1,1,1,2971409,200000-400000,1
+LEAD01168,2024-05-06,partner,Ford,Focus,Hatchback,4244000,1,Kazan,7,0,1,0,negotiation,7,MGR024,18-25,manual,hybrid,,0,4,0,4515595,100000-200000,0
+LEAD01169,2024-03-10,avito,Ford,Explorer,SUV,3795000,1,Kazan,11,1,0,1,new,143,MGR007,26-35,manual,gasoline,,0,7,0,3791256,50000-100000,0
+LEAD01170,2023-01-02,offline,Lada,Niva,SUV,926000,1,Chelyabinsk,3,0,0,0,in_progress,175,MGR023,46-55,variator,electric,,1,1,1,860223,<50000,0
+LEAD01171,2024-01-02,phone,Skoda,Octavia,Sedan,1648000,1,Samara,10,0,1,0,negotiation,104,MGR004,46-55,manual,electric,,0,6,1,1767217,200000-400000,1
+LEAD01172,2024-01-05,phone,Toyota,RAV4,SUV,2630000,0,Nizhniy Novgorod,7,0,1,0,in_progress,98,MGR007,18-25,variator,hybrid,100001-150000,0,2,0,2688298,200000-400000,1
+LEAD01173,2024-05-12,avito,Ford,EcoSport,SUV,4233000,1,Rostov-on-Don,11,0,0,1,negotiation,1,MGR006,36-45,robot,diesel,,1,1,1,4607172,50000-100000,0
+LEAD01174,2024-02-13,email,BMW,X5,SUV,4020000,1,Yekaterinburg,8,1,0,0,in_progress,17,MGR009,36-45,robot,hybrid,,0,5,0,4072916,>400000,0
+LEAD01175,2023-07-22,email,Skoda,Karoq,SUV,2997000,1,Saint Petersburg,3,0,1,0,in_progress,17,MGR005,36-45,variator,hybrid,,0,8,0,3129204,>400000,0
+LEAD01176,2024-03-21,offline,Toyota,Corolla,Sedan,1914000,1,Nizhniy Novgorod,7,1,1,0,test_drive_done,63,MGR003,36-45,manual,electric,,0,1,1,2275946,200000-400000,1
+LEAD01177,2024-07-01,website,Ford,Focus,Hatchback,2129000,0,Saint Petersburg,7,1,1,0,offer_sent,172,MGR013,36-45,manual,electric,0-30000,1,2,0,2031045,200000-400000,1
+LEAD01178,2023-01-03,phone,BMW,X3,SUV,5967000,1,Nizhniy Novgorod,3,0,0,0,in_progress,51,MGR001,46-55,automatic,electric,,1,2,1,6043066,>400000,1
+LEAD01179,2023-01-20,website,Toyota,RAV4,SUV,2499000,0,Novosibirsk,11,1,0,1,test_drive_done,105,MGR016,56+,variator,hybrid,0-30000,0,2,1,2459854,100000-200000,1
+LEAD01180,2024-02-16,social_media,BMW,3 Series,Sedan,5597000,1,Rostov-on-Don,7,0,1,0,new,9,MGR011,56+,manual,gasoline,,1,3,0,5688373,<50000,1
+LEAD01181,2023-01-29,email,Ford,Explorer,SUV,1554000,0,Novosibirsk,2,0,0,0,negotiation,54,MGR008,18-25,robot,electric,150000+,0,2,0,1622462,50000-100000,0
+LEAD01182,2023-06-12,social_media,Hyundai,Tucson,SUV,2113000,1,Novosibirsk,4,0,1,0,negotiation,48,MGR017,56+,variator,gasoline,,1,5,1,2140098,50000-100000,1
+LEAD01183,2023-07-17,partner,Skoda,Karoq,SUV,2376000,1,Moscow,5,1,1,0,on_hold,172,MGR016,26-35,robot,electric,,0,4,0,2651861,200000-400000,0
+LEAD01184,2023-04-05,phone,Hyundai,Creta,SUV,2176000,0,Rostov-on-Don,6,0,0,0,test_drive_done,100,MGR006,46-55,manual,hybrid,60001-100000,1,6,0,2045558,200000-400000,1
+LEAD01185,2023-08-13,avito,Hyundai,Solaris,Sedan,3106000,1,Kazan,4,0,0,0,test_drive_done,112,MGR024,18-25,robot,electric,,1,8,0,3189949,100000-200000,1
+LEAD01186,2023-06-07,offline,Hyundai,Creta,SUV,1553000,0,Rostov-on-Don,5,1,0,0,new,41,MGR021,46-55,manual,hybrid,100001-150000,1,3,1,1708210,50000-100000,1
+LEAD01187,2024-02-25,offline,Mercedes-Benz,E-Class,Sedan,9122000,1,Yekaterinburg,9,1,0,1,on_hold,138,MGR005,36-45,robot,diesel,,0,7,0,9334401,100000-200000,1
+LEAD01188,2024-05-27,partner,Lada,Granta,Sedan,1359000,1,Saint Petersburg,2,1,0,0,new,128,MGR007,46-55,automatic,hybrid,,1,8,1,1415736,50000-100000,0
+LEAD01189,2024-03-09,email,Mercedes-Benz,C-Class,Sedan,7862000,1,Novosibirsk,8,0,0,1,in_progress,31,MGR005,18-25,automatic,hybrid,,0,7,0,8263715,>400000,0
+LEAD01190,2023-11-28,phone,Skoda,Karoq,SUV,3105000,1,Rostov-on-Don,11,1,1,0,negotiation,104,MGR007,36-45,variator,electric,,0,3,1,3215942,50000-100000,0
+LEAD01191,2024-02-09,phone,Hyundai,Solaris,Sedan,3284000,1,Rostov-on-Don,10,1,0,1,on_hold,75,MGR019,56+,robot,gasoline,,0,3,0,3485885,50000-100000,1
+LEAD01192,2023-08-14,email,Ford,Kuga,SUV,3449000,1,Moscow,10,1,1,0,offer_sent,155,MGR009,46-55,manual,diesel,,1,1,1,3507891,100000-200000,0
+LEAD01193,2024-03-05,phone,Toyota,Camry,Sedan,3394000,1,Yekaterinburg,8,0,1,0,offer_sent,177,MGR009,36-45,robot,diesel,,1,2,1,3784717,200000-400000,1
+LEAD01194,2024-07-11,avito,Toyota,Camry,Sedan,5356000,1,Rostov-on-Don,2,1,1,1,negotiation,168,MGR006,26-35,automatic,gasoline,,0,2,0,5205870,100000-200000,0
+LEAD01195,2023-02-03,offline,Toyota,RAV4,SUV,6138000,1,Chelyabinsk,12,0,0,0,negotiation,129,MGR024,46-55,automatic,electric,,1,3,1,6148315,>400000,0
+LEAD01196,2024-03-11,phone,Skoda,Rapid,Sedan,2568000,0,Moscow,1,0,0,0,new,21,MGR011,26-35,robot,diesel,100001-150000,1,2,1,2937948,<50000,0
+LEAD01197,2023-05-19,website,Volkswagen,Polo,Hatchback,2829000,0,Yekaterinburg,5,0,0,1,offer_sent,118,MGR021,26-35,automatic,hybrid,30001-60000,0,2,1,2754022,<50000,1
+LEAD01198,2024-06-06,email,Kia,Sorento,SUV,2562000,0,Saint Petersburg,6,0,1,0,on_hold,128,MGR010,56+,manual,electric,0-30000,0,4,0,2445562,200000-400000,0
+LEAD01199,2023-05-02,partner,Volkswagen,Touareg,SUV,1300000,0,Rostov-on-Don,6,1,1,0,offer_sent,170,MGR014,36-45,manual,diesel,100001-150000,1,6,1,1153895,50000-100000,0
+LEAD01200,2023-11-27,avito,Kia,Sorento,SUV,1572000,1,Omsk,3,0,0,0,test_drive_done,17,MGR023,36-45,robot,hybrid,,1,3,0,1668742,50000-100000,1

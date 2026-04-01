@@ -19,6 +19,7 @@ services:
       Jwt__ExpireInMinutes: "120"
     volumes:
       - sqlite_data:/data
+      - ./Data:/app/Data:ro
     depends_on:
       - redis
 
