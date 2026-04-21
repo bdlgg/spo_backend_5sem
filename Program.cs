@@ -11,6 +11,7 @@ using System.Text.Json.Serialization;
 using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
+const string FrontendCorsPolicy = "FrontendCorsPolicy";
 
 // Add services
 builder.Services.AddControllers()
@@ -22,6 +23,17 @@ builder.Services.AddControllers()
 // DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(FrontendCorsPolicy, policy =>
+    {
+        policy
+            .WithOrigins("http://localhost:3000")
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
 
 // Swagger (ВОТ ЕГО НЕ МЕНЯТЬ А ТО СНОВА КНОПКА ПРОПАДЕТ)
 builder.Services.AddEndpointsApiExplorer();
@@ -137,6 +149,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
+app.UseCors(FrontendCorsPolicy);
 
 app.UseAuthentication();
 app.UseAuthorization();
