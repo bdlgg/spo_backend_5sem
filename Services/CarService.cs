@@ -45,6 +45,7 @@ public class CarService : ICarService
         existingCar.Model = car.Model;
         existingCar.Year = car.Year;
         existingCar.Price = car.Price;
+        existingCar.ImageUrl = car.ImageUrl;
         existingCar.Vin = car.Vin;
         existingCar.Color = car.Color;
         existingCar.Type = car.Type;
@@ -78,6 +79,9 @@ public class CarService : ICarService
 
         if (string.IsNullOrWhiteSpace(car.Model))
             throw new ArgumentException("Модель автомобиля обязательна");
+
+        if (string.IsNullOrWhiteSpace(car.ImageUrl))
+            throw new ArgumentException("Фото автомобиля обязательно");
 
         if (string.IsNullOrWhiteSpace(car.Vin))
             throw new ArgumentException("VIN обязателен");

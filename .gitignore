@@ -35,7 +35,6 @@ Desktop.ini
 *.env.*
 /appsettings.Development.json
 
-*.db
 *.mdf
 *.sqlite*
 
