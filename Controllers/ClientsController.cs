@@ -100,7 +100,8 @@ namespace backend_spo.Controllers
                 FirstName = client.FirstName,
                 LastName = client.LastName,
                 Phone = client.Phone,
-                Email = client.Email
+                Email = client.Email,
+                UserId = client.UserId
             };
         }
     }

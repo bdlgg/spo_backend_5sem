@@ -152,7 +152,13 @@ namespace backend_spo.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Clients");
                 });
@@ -406,6 +412,16 @@ namespace backend_spo.Migrations
                     b.Navigation("Car");
                 });
 
+            modelBuilder.Entity("backend_spo.Entities.Client", b =>
+                {
+                    b.HasOne("backend_spo.Entities.User", "User")
+                        .WithOne("Client")
+                        .HasForeignKey("backend_spo.Entities.Client", "UserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("backend_spo.Entities.Sale", b =>
                 {
                     b.HasOne("backend_spo.Entities.Car", "Car")
@@ -523,6 +539,8 @@ namespace backend_spo.Migrations
             modelBuilder.Entity("backend_spo.Entities.User", b =>
                 {
                     b.Navigation("AuditLogs");
+
+                    b.Navigation("Client");
 
                     b.Navigation("Sales");
                 });

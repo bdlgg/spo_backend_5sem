@@ -60,6 +60,24 @@ public class AuthService : IAuthService
         };
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
+        var existingClient = await _context.Clients.FirstOrDefaultAsync(c => c.Email.ToLower() == dto.Email);
+        if (existingClient == null)
+        {
+            var client = new Client
+            {
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                Email = dto.Email,
+                Phone = string.Empty,
+                UserId = user.Id
+            };
+            _context.Clients.Add(client);
+        }
+        else if (existingClient.UserId == null)
+        {
+            existingClient.UserId = user.Id;
+        }
+        await _context.SaveChangesAsync();
 
         await _auditService.LogAsync(
             user.Id,

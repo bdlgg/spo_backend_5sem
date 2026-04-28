@@ -41,6 +41,16 @@ namespace backend_spo.Data
                 .HasMany(c => c.Sales).WithOne(s => s.Client).HasForeignKey(s => s.ClientId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            modelBuilder.Entity<Client>()
+                .HasOne(c => c.User)
+                .WithOne(u => u.Client)
+                .HasForeignKey<Client>(c => c.UserId)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<Client>()
+                .HasIndex(c => c.UserId)
+                .IsUnique();
+
             modelBuilder.Entity<Car>()
                 .HasMany(c => c.Sales).WithOne(s => s.Car).HasForeignKey(s => s.CarId)
                 .OnDelete(DeleteBehavior.Restrict);

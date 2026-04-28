@@ -11,6 +11,7 @@ public class User
     public DateTime CreatedAt {get; set;} = DateTime.UtcNow;
     public int RoleId { get; set; }
     public Role? Role { get; set; }
+    public Client? Client { get; set; }
     public ICollection<Sale> Sales { get; set; } = new List<Sale>();
     public ICollection<AuditLog> AuditLogs { get; set; } = new List<AuditLog>();
 }
