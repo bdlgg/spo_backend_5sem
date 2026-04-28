@@ -15,12 +15,19 @@ public class ClientRepository : IClientRepository
 
     public async Task<IEnumerable<Client>> GetAllAsync()
     {
-        return await _context.Clients.ToListAsync();
+        return await _context.Clients
+            .Include(c => c.User)
+            .ThenInclude(u => u.Role)
+            .Where(c => c.UserId == null || c.User!.Role!.Name == "Клиент")
+            .ToListAsync();
     }
 
     public async Task<Client?> GetByIdAsync(int id)
     {
-        return await _context.Clients.FirstOrDefaultAsync(c => c.Id == id);
+        return await _context.Clients
+            .Include(c => c.User)
+            .ThenInclude(u => u.Role)
+            .FirstOrDefaultAsync(c => c.Id == id && (c.UserId == null || c.User!.Role!.Name == "Клиент"));
     }
 
     public async Task AddAsync(Client client)
