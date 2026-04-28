@@ -21,6 +21,7 @@ services:
       - sqlite_data:/data
       - ml_models:/app/MLModels
       - ./Data:/app/Data:ro
+      - ./wwwroot:/app/wwwroot:ro
     depends_on:
       - redis
 
