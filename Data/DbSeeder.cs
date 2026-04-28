@@ -60,7 +60,7 @@ namespace backend_spo.Data
 					Name = "Polestar Spaces",
 					ContactPerson = "Андрей Морозов",
 					Phone = "+74950000010",
-					Email = "polestar@autosru.ru",
+					Email = "polestar@autos.ru",
 					Address = "Москва, Ленинградский проспект, 39"
 				},
 				new Supplier
@@ -68,7 +68,7 @@ namespace backend_spo.Data
 					Name = "Volvo Cars Showroom",
 					ContactPerson = "Ольга Беляева",
 					Phone = "+74950000011",
-					Email = "volvo@autosru.ru",
+					Email = "volvo@autos.ru",
 					Address = "Москва, Кутузовский проспект, 24"
 				},
 				new Supplier
@@ -76,7 +76,7 @@ namespace backend_spo.Data
 					Name = "Lucid Atelier",
 					ContactPerson = "Денис Соколов",
 					Phone = "+74950000012",
-					Email = "lucid@autosru.ru",
+					Email = "lucid@autos.ru",
 					Address = "Москва, Пресненская набережная, 12"
 				},
 				new Supplier
@@ -84,7 +84,7 @@ namespace backend_spo.Data
 					Name = "Lotus Studio",
 					ContactPerson = "Мария Петрова",
 					Phone = "+74950000013",
-					Email = "lotus@autosru.ru",
+					Email = "lotus@autos.ru",
 					Address = "Москва, Большая Якиманка, 18"
 				},
 				new Supplier
@@ -92,7 +92,7 @@ namespace backend_spo.Data
 					Name = "Concept & Heritage",
 					ContactPerson = "Иван Громов",
 					Phone = "+74950000014",
-					Email = "concept@autosru.ru",
+					Email = "concept@autos.ru",
 					Address = "Москва, Малая Дмитровка, 7"
 				}
 			};
@@ -103,7 +103,7 @@ namespace backend_spo.Data
 
 		private static void SeedAdmin(ApplicationDbContext context)
 		{
-			if (context.Users.Any(u => u.Email == "admin@autosalon.ru"))
+			if (context.Users.Any(u => u.Email == "admin@autos.ru"))
 				return;
 
 			var adminRole = context.Roles.FirstOrDefault(r => r.Name == "Админ");
@@ -114,7 +114,7 @@ namespace backend_spo.Data
 			{
 				FirstName = "Александр",
 				LastName = "Админов",
-				Email = "admin@autosalon.ru",
+				Email = "admin@autos.ru",
 				PasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin123!"),
 				IsActive = true,
 				CreatedAt = DateTime.UtcNow,
