@@ -51,13 +51,20 @@ namespace backend_spo.Controllers
                 Model = dto.Model,
                 Year = dto.Year,
                 Price = dto.Price,
-                ImageUrl =  dto.ImageUrl,
                 Vin = dto.Vin,
                 Color = dto.Color,
                 Type = dto.Type,
                 Status = dto.Status,
                 SupplierId = dto.SupplierId,
-                IsActive = true
+                IsActive = true,
+                Photos = dto.PhotoUrls
+                    .Where(url => !string.IsNullOrWhiteSpace(url))
+                    .Select((url, index) => new CarPhoto
+                    {
+                        Url = url.Trim(),
+                        SortOrder = index + 1
+                    })
+                    .ToList()
             };
             var createdCar = await _carService.CreateAsync(car);
             var fullCar = await _carService.GetByIdAsync(createdCar.Id);
@@ -80,7 +87,15 @@ namespace backend_spo.Controllers
                 Type = dto.Type,
                 Status = dto.Status,
                 SupplierId = dto.SupplierId,
-                IsActive = true
+                IsActive = true,
+                Photos = dto.PhotoUrls
+                    .Where(url => !string.IsNullOrWhiteSpace(url))
+                    .Select((url, index) => new CarPhoto 
+                    { 
+                        Url = url.Trim(), 
+                        SortOrder = index + 1 
+                    })
+                    .ToList()
             };
             var result = await _carService.UpdateAsync(id, car);
             if (!result) return NotFound("Машина не найдена");
@@ -116,14 +131,22 @@ namespace backend_spo.Controllers
                 Model = car.Model,
                 Year = car.Year,
                 Price = car.Price,
-                ImageUrl =  car.ImageUrl,
                 Vin = car.Vin,
                 Color = car.Color,
                 Type = car.Type,
                 Status = car.Status,
                 IsActive = car.IsActive,
                 SupplierId = car.SupplierId,
-                SupplierName = car.Supplier?.Name ?? string.Empty
+                SupplierName = car.Supplier?.Name ?? string.Empty,
+                Photos = car.Photos
+                    .OrderBy(p => p.SortOrder)
+                    .Select(p => new CarPhotoResponseDto
+                    {
+                        Id = p.Id,
+                        Url = p.Url,
+                        SortOrder = p.SortOrder
+                    })
+                    .ToList()
             };
         }
     }

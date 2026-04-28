@@ -14,9 +14,6 @@ namespace backend_spo.Entities
 
         public decimal Price { get; set; }
         
-        
-        public string ImageUrl {get; set;}  = string.Empty;
-
         public string Vin { get; set; } = string.Empty;
 
         public string Color { get; set; } = string.Empty;
@@ -32,5 +29,6 @@ namespace backend_spo.Entities
         public Supplier? Supplier { get; set; }
 
         public ICollection<Sale> Sales { get; set; } = new List<Sale>();
+        public ICollection<CarPhoto> Photos { get; set; } = new List<CarPhoto>();
     }
 }

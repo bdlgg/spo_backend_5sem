@@ -11,6 +11,7 @@ namespace backend_spo.Data
         }
 
         public DbSet<Car> Cars { get; set; }
+        public DbSet<CarPhoto> CarPhotos { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<User> Users { get; set; }
@@ -47,6 +48,16 @@ namespace backend_spo.Data
             modelBuilder.Entity<Car>()
                 .HasIndex(c => c.Vin)
                 .IsUnique();
+            
+            modelBuilder.Entity<CarPhoto>()
+                .HasOne(p => p.Car)
+                .WithMany(c => c.Photos)
+                .HasForeignKey(p => p.CarId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<CarPhoto>()
+                .Property(p => p.Url)
+                .IsRequired();
 
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)

@@ -9,8 +9,6 @@ namespace backend_spo.DTOs
         public int Year { get; set; }
 
         public decimal Price { get; set; }
-        
-        public string ImageUrl { get; set; } = string.Empty;
 
         public string Vin { get; set; } = string.Empty;
 
@@ -21,5 +19,7 @@ namespace backend_spo.DTOs
         public string Status { get; set; } = "Available";
 
         public int SupplierId { get; set; }
+
+        public List<string> PhotoUrls { get; set; } = new();
     }
 }

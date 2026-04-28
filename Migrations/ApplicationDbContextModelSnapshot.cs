@@ -69,10 +69,6 @@ namespace backend_spo.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<bool>("IsActive")
                         .HasColumnType("INTEGER");
 
@@ -109,6 +105,29 @@ namespace backend_spo.Migrations
                         .IsUnique();
 
                     b.ToTable("Cars");
+                });
+
+            modelBuilder.Entity("backend_spo.Entities.CarPhoto", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CarId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("SortOrder")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarId");
+
+                    b.ToTable("CarPhotos");
                 });
 
             modelBuilder.Entity("backend_spo.Entities.Client", b =>
@@ -376,6 +395,17 @@ namespace backend_spo.Migrations
                     b.Navigation("Supplier");
                 });
 
+            modelBuilder.Entity("backend_spo.Entities.CarPhoto", b =>
+                {
+                    b.HasOne("backend_spo.Entities.Car", "Car")
+                        .WithMany("Photos")
+                        .HasForeignKey("CarId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Car");
+                });
+
             modelBuilder.Entity("backend_spo.Entities.Sale", b =>
                 {
                     b.HasOne("backend_spo.Entities.Car", "Car")
@@ -470,6 +500,8 @@ namespace backend_spo.Migrations
 
             modelBuilder.Entity("backend_spo.Entities.Car", b =>
                 {
+                    b.Navigation("Photos");
+
                     b.Navigation("Sales");
                 });
 

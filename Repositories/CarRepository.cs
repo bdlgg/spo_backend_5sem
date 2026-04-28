@@ -17,12 +17,12 @@ public class CarRepository : ICarRepository
     public async Task<IEnumerable<Car>> GetAllAsync()
     {
         return await _context.Cars
-            .Include(c => c.Supplier).ToListAsync();
+            .Include(c => c.Supplier).Include(c => c.Photos).ToListAsync();
     }
 
     public async Task<Car?> GetByIdAsync(int id)
     {
-        return await _context.Cars.Include(c => c.Supplier).FirstOrDefaultAsync(c => c.Id == id);
+        return await _context.Cars.Include(c => c.Supplier).Include(c => c.Photos).FirstOrDefaultAsync(c => c.Id == id);
     }
 
     public async Task AddAsync(Car car)
@@ -45,7 +45,7 @@ public class CarRepository : ICarRepository
 
     public async Task<IEnumerable<Car>> SearchAsync(string? brand, string? model, int? year)
     {
-        var query = _context.Cars.Include(c => c.Supplier).AsQueryable();
+        var query = _context.Cars.Include(c => c.Supplier).Include(c => c.Photos).AsQueryable();
         if (!string.IsNullOrWhiteSpace(brand))
             query = query.Where(c => c.Brand.Contains(brand));
         if (!string.IsNullOrWhiteSpace(model))

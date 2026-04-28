@@ -12,8 +12,6 @@ namespace backend_spo.DTOs
 
         public decimal Price { get; set; }
         
-        public string ImageUrl { get; set; } = string.Empty;
-
         public string Vin { get; set; } = string.Empty;
 
         public string Color { get; set; } = string.Empty;
@@ -27,5 +25,7 @@ namespace backend_spo.DTOs
         public int SupplierId { get; set; }
 
         public string SupplierName { get; set; } = string.Empty;
+
+        public List<CarPhotoResponseDto> Photos { get; set; } = new();
     }
 }

@@ -45,13 +45,24 @@ public class CarService : ICarService
         existingCar.Model = car.Model;
         existingCar.Year = car.Year;
         existingCar.Price = car.Price;
-        existingCar.ImageUrl = car.ImageUrl;
         existingCar.Vin = car.Vin;
         existingCar.Color = car.Color;
         existingCar.Type = car.Type;
         existingCar.Status = car.Status;
         existingCar.IsActive = car.IsActive;
         existingCar.SupplierId = car.SupplierId;
+        existingCar.Photos.Clear();
+
+        foreach (var photo in car.Photos
+                     .Where(p => !string.IsNullOrWhiteSpace(p.Url))
+                     .OrderBy(p => p.SortOrder))
+        {
+            existingCar.Photos.Add(new CarPhoto
+            {
+                Url = photo.Url.Trim(),
+                SortOrder = photo.SortOrder
+            });
+        }
 
         await _carRepository.UpdateAsync(existingCar);
         return true;
@@ -79,10 +90,7 @@ public class CarService : ICarService
 
         if (string.IsNullOrWhiteSpace(car.Model))
             throw new ArgumentException("Модель автомобиля обязательна");
-
-        if (string.IsNullOrWhiteSpace(car.ImageUrl))
-            throw new ArgumentException("Фото автомобиля обязательно");
-
+        
         if (string.IsNullOrWhiteSpace(car.Vin))
             throw new ArgumentException("VIN обязателен");
 
