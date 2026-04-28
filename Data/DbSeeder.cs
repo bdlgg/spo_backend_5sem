@@ -10,7 +10,12 @@ namespace backend_spo.Data
 			SeedRoles(context);
 			SeedSuppliers(context);
 			SeedAdmin(context);
+			SeedManagers(context);
 			SeedCars(context);
+			SeedClients(context);
+			SeedTestDrives(context);
+			SeedSales(context);
+			SeedServiceOrders(context);
 
 			context.SaveChanges();
 		}
@@ -125,6 +130,41 @@ namespace backend_spo.Data
 			context.SaveChanges();
 		}
 
+		private static void SeedManagers(ApplicationDbContext context)
+		{
+			var managerRole = context.Roles.FirstOrDefault(r => r.Name == "Менеджер");
+			if (managerRole == null)
+				return;
+
+			var passwordHash = BCrypt.Net.BCrypt.HashPassword("Manager123!");
+
+			var managersToSeed = new[]
+			{
+				new { FirstName = "Артём", LastName = "Лебедев",  Email = "artem@autos.ru" },
+				new { FirstName = "Екатерина", LastName = "Орлова", Email = "ekaterina@autos.ru" },
+				new { FirstName = "Михаил", LastName = "Власов",  Email = "mikhail@autos.ru" }
+			};
+
+			foreach (var m in managersToSeed)
+			{
+				if (context.Users.Any(u => u.Email == m.Email))
+					continue;
+
+				context.Users.Add(new User
+				{
+					FirstName = m.FirstName,
+					LastName = m.LastName,
+					Email = m.Email,
+					PasswordHash = passwordHash,
+					IsActive = true,
+					CreatedAt = DateTime.UtcNow.AddDays(-90),
+					RoleId = managerRole.Id
+				});
+			}
+
+			context.SaveChanges();
+		}
+
 		private static void SeedCars(ApplicationDbContext context)
 		{
 			if (context.Cars.Any())
@@ -226,6 +266,253 @@ namespace backend_spo.Data
 				SupplierId = supplier.Id,
 				Photos = photos
 			};
+		}
+
+		private static void SeedClients(ApplicationDbContext context)
+		{
+			if (context.Clients.Any())
+				return;
+
+			var clients = new List<Client>
+			{
+				// «Горячие» — есть тест-драйвы и/или сделки
+				new Client { FirstName = "Дмитрий",  LastName = "Соколов",  Phone = "+79161234501", Email = "sokolov@example.com" },
+				new Client { FirstName = "Анна",     LastName = "Кузнецова", Phone = "+79161234502", Email = "anna.kuznetsova@example.com" },
+				new Client { FirstName = "Сергей",   LastName = "Иванов",   Phone = "+79161234503", Email = "ivanov.s@example.com" },
+				new Client { FirstName = "Ольга",    LastName = "Смирнова", Phone = "+79161234504", Email = "smirnova@example.com" },
+				new Client { FirstName = "Павел",    LastName = "Морозов",  Phone = "+79161234505", Email = "p.morozov@example.com" },
+
+				// «Тёплые» — есть тест-драйвы, но нет сделки
+				new Client { FirstName = "Игорь",    LastName = "Петров",   Phone = "+79161234506", Email = "petrov@example.com" },
+				new Client { FirstName = "Татьяна",  LastName = "Лебедева", Phone = "+79161234507", Email = "t.lebedeva@example.com" },
+				new Client { FirstName = "Андрей",   LastName = "Новиков",  Phone = "+79161234508", Email = "novikov@example.com" },
+				new Client { FirstName = "Наталья",  LastName = "Волкова",  Phone = "+79161234509", Email = "volkova@example.com" },
+
+				// «Холодные» — только в базе, без активности
+				new Client { FirstName = "Михаил",   LastName = "Алексеев", Phone = "+79161234510", Email = "alekseev@example.com" },
+				new Client { FirstName = "Юлия",     LastName = "Зайцева",  Phone = "+79161234511", Email = "zaytseva@example.com" },
+				new Client { FirstName = "Виктор",   LastName = "Романов",  Phone = "+79161234512", Email = "romanov@example.com" },
+			};
+
+			context.Clients.AddRange(clients);
+			context.SaveChanges();
+		}
+
+		private static void SeedTestDrives(ApplicationDbContext context)
+		{
+			if (context.TestDrives.Any())
+				return;
+
+			var clients = context.Clients.ToList();
+			var cars = context.Cars.ToList();
+			var managers = context.Users
+				.Where(u => u.Role!.Name == "Менеджер")
+				.ToList();
+
+			if (clients.Count == 0 || cars.Count == 0 || managers.Count == 0)
+				return;
+
+			Client C(string lastName) => clients.First(c => c.LastName == lastName);
+			Car V(string brand, string model) => cars.First(c => c.Brand == brand && c.Model == model);
+			User M(int idx) => managers[idx % managers.Count];
+
+			var now = DateTime.UtcNow;
+			var testDrives = new List<TestDrive>
+			{
+				// Соколов: горячий, 3 авто посмотрел, один завершён успешно
+				NewTestDrive(C("Соколов"), V("Polestar", "3"), M(0), now.AddDays(-45), "Completed", "Interested", "Готов к сделке"),
+				NewTestDrive(C("Соколов"), V("Polestar", "4"), M(0), now.AddDays(-30), "Completed", "Interested", "Сравнивает с Volvo EX90"),
+				NewTestDrive(C("Соколов"), V("Volvo", "EX90"), M(1), now.AddDays(-12), "Completed", "Interested", "Привёл супругу, понравилось"),
+
+				// Кузнецова: горячая, тест-драйв на Lotus Eletre, потом сделка
+				NewTestDrive(C("Кузнецова"), V("Lotus", "Eletre"), M(1), now.AddDays(-35), "Completed", "Interested", "Понравилась подвеска"),
+				NewTestDrive(C("Кузнецова"), V("Lucid", "Air Grand Touring"), M(2), now.AddDays(-20), "Completed", "Interested", "Проверила автопилот"),
+
+				// Иванов: горячий, два тест-драйва на Volvo
+				NewTestDrive(C("Иванов"), V("Volvo", "EX30"), M(2), now.AddDays(-60), "Completed", "Interested", "Брал жене на пробу"),
+				NewTestDrive(C("Иванов"), V("Volvo", "EX90"), M(0), now.AddDays(-50), "Completed", "Interested", "Решились на EX90"),
+
+				// Смирнова: горячая, недавний тест Lucid Sapphire
+				NewTestDrive(C("Смирнова"), V("Lucid", "Air Sapphire"), M(0), now.AddDays(-7), "Completed", "Interested", "Готова к brutto-сделке"),
+				NewTestDrive(C("Смирнова"), V("Lotus", "Emeya"), M(1), now.AddDays(-22), "Completed", "Interested", "Сравнивала по динамике"),
+
+				// Морозов: горячий, Polestar 6 запросил
+				NewTestDrive(C("Морозов"), V("Polestar", "6"), M(2), now.AddDays(-3), "Scheduled", "", "Записан на демо"),
+				NewTestDrive(C("Морозов"), V("Polestar", "5"), M(2), now.AddDays(-25), "Completed", "Interested", "Резерв 7 дней"),
+
+				// Тёплые — только тест-драйвы, без покупок
+				NewTestDrive(C("Петров"), V("Volvo", "ES90"), M(0), now.AddDays(-15), "Completed", "NeedConsultation", "Уточняет лизинг"),
+				NewTestDrive(C("Лебедева"), V("Polestar", "2"), M(1), now.AddDays(-10), "Completed", "NeedConsultation", "Сравнивает с Tesla Model 3"),
+				NewTestDrive(C("Лебедева"), V("Volvo", "C40 Recharge"), M(1), now.AddDays(-4), "Scheduled", "", "Просит привести на квартиру для теста"),
+				NewTestDrive(C("Новиков"), V("Lotus", "Eletre"), M(2), now.AddDays(-18), "Cancelled", "Rejected", "Передумал"),
+				NewTestDrive(C("Новиков"), V("Alpine", "A290"), M(2), now.AddDays(-2), "Scheduled", "", "Оставил заявку через сайт"),
+				NewTestDrive(C("Волкова"), V("Volvo", "EM90"), M(0), now.AddDays(-21), "Completed", "NeedConsultation", "Думает про второе авто в семью"),
+			};
+
+			context.TestDrives.AddRange(testDrives);
+			context.SaveChanges();
+		}
+
+		private static TestDrive NewTestDrive(
+			Client client,
+			Car car,
+			User manager,
+			DateTime scheduledAt,
+			string status,
+			string result,
+			string comment)
+		{
+			return new TestDrive
+			{
+				ClientId = client.Id,
+				CarId = car.Id,
+				ManagerId = manager.Id,
+				ScheduledAt = scheduledAt,
+				Status = status,
+				Result = result,
+				Comment = comment,
+				CreatedAt = scheduledAt.AddDays(-3),
+			};
+		}
+
+		private static void SeedSales(ApplicationDbContext context)
+		{
+			if (context.Sales.Any())
+				return;
+
+			var clients = context.Clients.ToList();
+			var cars = context.Cars.ToList();
+			var managers = context.Users
+				.Where(u => u.Role!.Name == "Менеджер")
+				.ToList();
+
+			if (clients.Count == 0 || cars.Count == 0 || managers.Count == 0)
+				return;
+
+			Client C(string lastName) => clients.First(c => c.LastName == lastName);
+			Car V(string brand, string model) => cars.First(c => c.Brand == brand && c.Model == model);
+			User M(int idx) => managers[idx % managers.Count];
+
+			var now = DateTime.UtcNow;
+			var sales = new List<Sale>
+			{
+				// Иванов купил Volvo EX30
+				new Sale
+				{
+					CarId = V("Volvo", "EX30").Id,
+					ClientId = C("Иванов").Id,
+					UserId = M(0).Id,
+					SaleDate = now.AddDays(-40),
+					FinalPrice = 4_100_000m,
+					Status = "Completed"
+				},
+				// Соколов взял Polestar 3
+				new Sale
+				{
+					CarId = V("Polestar", "3").Id,
+					ClientId = C("Соколов").Id,
+					UserId = M(1).Id,
+					SaleDate = now.AddDays(-25),
+					FinalPrice = 7_050_000m,
+					Status = "Completed"
+				},
+				// Кузнецова — Lotus Eletre
+				new Sale
+				{
+					CarId = V("Lotus", "Eletre").Id,
+					ClientId = C("Кузнецова").Id,
+					UserId = M(1).Id,
+					SaleDate = now.AddDays(-15),
+					FinalPrice = 12_700_000m,
+					Status = "Completed"
+				},
+				// Смирнова — Lotus Emeya, ещё не закрыта
+				new Sale
+				{
+					CarId = V("Lotus", "Emeya").Id,
+					ClientId = C("Смирнова").Id,
+					UserId = M(2).Id,
+					SaleDate = now.AddDays(-2),
+					FinalPrice = 14_000_000m,
+					Status = "Pending"
+				},
+				// Морозов — Polestar 5
+				new Sale
+				{
+					CarId = V("Polestar", "5").Id,
+					ClientId = C("Морозов").Id,
+					UserId = M(0).Id,
+					SaleDate = now.AddDays(-10),
+					FinalPrice = 9_500_000m,
+					Status = "Completed"
+				}
+			};
+
+			context.Sales.AddRange(sales);
+			context.SaveChanges();
+		}
+
+		private static void SeedServiceOrders(ApplicationDbContext context)
+		{
+			if (context.ServiceOrders.Any())
+				return;
+
+			var clients = context.Clients.ToList();
+			var cars = context.Cars.ToList();
+			var managers = context.Users
+				.Where(u => u.Role!.Name == "Менеджер")
+				.ToList();
+
+			if (clients.Count == 0 || cars.Count == 0 || managers.Count == 0)
+				return;
+
+			Client C(string lastName) => clients.First(c => c.LastName == lastName);
+			Car V(string brand, string model) => cars.First(c => c.Brand == brand && c.Model == model);
+			User M(int idx) => managers[idx % managers.Count];
+
+			var now = DateTime.UtcNow;
+			var orders = new List<ServiceOrder>
+			{
+				new ServiceOrder
+				{
+					ClientId = C("Иванов").Id,
+					CarId = V("Volvo", "EX30").Id,
+					ManagerId = M(0).Id,
+					WorkDescription = "Плановое ТО-1, замена воздушного фильтра",
+					PlannedCost = 35_000m,
+					FinalCost = 32_500m,
+					Status = "Completed",
+					CreatedAt = now.AddDays(-30),
+					CompletedAt = now.AddDays(-29)
+				},
+				new ServiceOrder
+				{
+					ClientId = C("Соколов").Id,
+					CarId = V("Polestar", "3").Id,
+					ManagerId = M(1).Id,
+					WorkDescription = "Диагностика подвески после удара",
+					PlannedCost = 18_000m,
+					FinalCost = null,
+					Status = "InProgress",
+					CreatedAt = now.AddDays(-2),
+					CompletedAt = null
+				},
+				new ServiceOrder
+				{
+					ClientId = C("Кузнецова").Id,
+					CarId = V("Lotus", "Eletre").Id,
+					ManagerId = M(2).Id,
+					WorkDescription = "Замена шин на летние",
+					PlannedCost = 22_000m,
+					FinalCost = null,
+					Status = "Accepted",
+					CreatedAt = now.AddDays(-1),
+					CompletedAt = null
+				}
+			};
+
+			context.ServiceOrders.AddRange(orders);
+			context.SaveChanges();
 		}
 	}
 }
