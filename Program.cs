@@ -150,6 +150,7 @@ if (app.Environment.IsDevelopment())
 
 //app.UseHttpsRedirection();
 app.UseCors(FrontendCorsPolicy);
+app.UseStaticFiles();
 
 app.UseAuthentication();
 app.UseAuthorization();
