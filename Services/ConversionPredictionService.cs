@@ -127,7 +127,7 @@ public class ConversionPredictionService : IConversionPredictionService
     {
         try
         {
-            EnsureModelLoaded();
+            await EnsureModelLoadedAsync();
         }
         catch (Exception ex)
         {
@@ -189,15 +189,32 @@ public class ConversionPredictionService : IConversionPredictionService
         _model = _mlContext.Model.Load(ModelPath, out _);
     }
 
-    private void EnsureModelLoaded()
+    private static readonly SemaphoreSlim _modelLoadLock = new(1, 1);
+
+    private async Task EnsureModelLoadedAsync()
     {
         if (_model is not null)
             return;
 
-        if (!File.Exists(ModelPath))
-            throw new InvalidOperationException("Модель еще не обучена. Сначала вызови POST /api/Prediction/train-conversion-model");
+        await _modelLoadLock.WaitAsync();
+        try
+        {
+            if (_model is not null)
+                return;
 
-        _model = _mlContext.Model.Load(ModelPath, out _);
+            if (File.Exists(ModelPath))
+            {
+                _model = _mlContext.Model.Load(ModelPath, out _);
+                return;
+            }
+
+            // Модель отсутствует — обучаем автоматически на первом запросе.
+            await TrainAsync();
+        }
+        finally
+        {
+            _modelLoadLock.Release();
+        }
     }
 
     private static ConversionModelInput MapCsvRowToModelInput(CarLeadCsvRow row)
