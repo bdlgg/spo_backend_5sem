@@ -107,6 +107,143 @@ public class ClientProfileController : ControllerBase
         return Ok(sales.Select(MapSaleToDto));
     }
 
+    [HttpPost("test-drives")]
+    public async Task<ActionResult<TestDriveResponseDto>> CreateMyTestDrive([FromBody] CreateMyTestDriveDto dto)
+    {
+        var client = await GetCurrentClientAsync();
+        if (client == null)
+            return NotFound(new { message = "Профиль клиента не найден" });
+
+        var car = await _context.Cars.FirstOrDefaultAsync(c => c.Id == dto.CarId);
+        if (car == null || !car.IsActive)
+            return BadRequest(new { message = "Автомобиль не найден или недоступен" });
+
+        if (dto.ScheduledAt < DateTime.UtcNow)
+            return BadRequest(new { message = "Дата тест-драйва не может быть в прошлом" });
+
+        var defaultManager = await _context.Users
+            .Include(u => u.Role)
+            .Where(u => u.Role != null && u.Role.Name == "Менеджер" && u.IsActive)
+            .OrderBy(u => u.Id)
+            .FirstOrDefaultAsync();
+        if (defaultManager == null)
+            return StatusCode(500, new { message = "В системе нет активных менеджеров" });
+
+        var testDrive = new TestDrive
+        {
+            CarId = dto.CarId,
+            ClientId = client.Id,
+            ManagerId = defaultManager.Id,
+            ScheduledAt = dto.ScheduledAt,
+            Status = "Scheduled",
+            Result = string.Empty,
+            Comment = (dto.Comment ?? string.Empty).Trim(),
+            CreatedAt = DateTime.UtcNow,
+        };
+
+        _context.TestDrives.Add(testDrive);
+        await _context.SaveChangesAsync();
+
+        var saved = await _context.TestDrives
+            .Include(t => t.Car)
+            .Include(t => t.Client)
+            .Include(t => t.Manager)
+            .FirstAsync(t => t.Id == testDrive.Id);
+
+        return Ok(MapTestDriveToDto(saved));
+    }
+
+    [HttpPost("service-orders")]
+    public async Task<ActionResult<ServiceOrderResponseDto>> CreateMyServiceOrder([FromBody] CreateMyServiceOrderDto dto)
+    {
+        var client = await GetCurrentClientAsync();
+        if (client == null)
+            return NotFound(new { message = "Профиль клиента не найден" });
+
+        var ownsCar = await _context.Sales.AnyAsync(s =>
+            s.ClientId == client.Id && s.CarId == dto.CarId && s.Status == "Completed");
+        if (!ownsCar)
+            return StatusCode(403, new { message = "Сервис доступен только для приобретённых у нас автомобилей" });
+
+        var workDescription = (dto.WorkDescription ?? string.Empty).Trim();
+        if (workDescription.Length < 10)
+            return BadRequest(new { message = "Опишите работу подробнее (минимум 10 символов)" });
+
+        var defaultManager = await _context.Users
+            .Include(u => u.Role)
+            .Where(u => u.Role != null && u.Role.Name == "Менеджер" && u.IsActive)
+            .OrderBy(u => u.Id)
+            .FirstOrDefaultAsync();
+        if (defaultManager == null)
+            return StatusCode(500, new { message = "В системе нет активных менеджеров" });
+
+        var order = new ServiceOrder
+        {
+            CarId = dto.CarId,
+            ClientId = client.Id,
+            ManagerId = defaultManager.Id,
+            WorkDescription = workDescription,
+            PlannedCost = 0m,
+            FinalCost = null,
+            Status = "Accepted",
+            CreatedAt = DateTime.UtcNow,
+            CompletedAt = null,
+        };
+
+        _context.ServiceOrders.Add(order);
+        await _context.SaveChangesAsync();
+
+        var saved = await _context.ServiceOrders
+            .Include(o => o.Car)
+            .Include(o => o.Client)
+            .Include(o => o.Manager)
+            .FirstAsync(o => o.Id == order.Id);
+
+        return Ok(MapServiceOrderToDto(saved));
+    }
+
+    [HttpPost("test-drives/{id:int}/cancel")]
+    public async Task<IActionResult> CancelMyTestDrive(int id)
+    {
+        var client = await GetCurrentClientAsync();
+        if (client == null)
+            return NotFound(new { message = "Профиль клиента не найден" });
+
+        var testDrive = await _context.TestDrives.FirstOrDefaultAsync(t => t.Id == id);
+        if (testDrive == null || testDrive.ClientId != client.Id)
+            return NotFound(new { message = "Тест-драйв не найден" });
+
+        if (testDrive.Status != "Scheduled")
+            return BadRequest(new { message = "Можно отменить только запланированный тест-драйв" });
+
+        testDrive.Status = "Cancelled";
+        testDrive.Result = "Отменено клиентом";
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    [HttpPost("service-orders/{id:int}/cancel")]
+    public async Task<IActionResult> CancelMyServiceOrder(int id)
+    {
+        var client = await GetCurrentClientAsync();
+        if (client == null)
+            return NotFound(new { message = "Профиль клиента не найден" });
+
+        var order = await _context.ServiceOrders.FirstOrDefaultAsync(o => o.Id == id);
+        if (order == null || order.ClientId != client.Id)
+            return NotFound(new { message = "Заявка не найдена" });
+
+        if (order.Status != "Accepted" && order.Status != "InProgress")
+            return BadRequest(new { message = "Можно отменить только активную заявку" });
+
+        order.Status = "Cancelled";
+        order.CompletedAt = DateTime.UtcNow;
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
     private async Task<Client?> GetCurrentClientAsync()
     {
         var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
