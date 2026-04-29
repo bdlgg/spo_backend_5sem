@@ -20,6 +20,7 @@ namespace backend_spo.Data
         public DbSet<AuditLog> AuditLogs { get; set; }
         public DbSet<TestDrive> TestDrives { get; set; }
         public DbSet<ServiceOrder> ServiceOrders { get; set; }
+        public DbSet<ContactRequest> ContactRequests { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
