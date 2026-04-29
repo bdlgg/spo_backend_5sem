@@ -8,7 +8,7 @@ namespace backend_spo.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+    [Authorize(Roles = "Админ,Руководитель,Менеджер")]
     public class ClientsController : ControllerBase
     {
         private readonly IClientService _clientService;
@@ -17,9 +17,7 @@ namespace backend_spo.Controllers
         {
             _clientService = clientService;
         }
-
-        //get /api/clients
-        [Authorize(Roles = "Админ,Менеджер")]
+        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ClientResponseDto>>> GetAll()
         {
@@ -27,9 +25,8 @@ namespace backend_spo.Controllers
             var result = clients.Select(MapToDto);
             return Ok(result);
         }
-
-        // get /api/clients/{id}
-        [Authorize(Roles = "Админ,Менеджер")]
+        
+        [Authorize(Roles = "Админ,Руководитель,Менеджер")]
         [HttpGet("{id}")]
         public async Task<ActionResult<ClientResponseDto>> GetById(int id)
         {
@@ -38,8 +35,6 @@ namespace backend_spo.Controllers
             return Ok(MapToDto(client));
         }
         
-        //post /api/clients
-        [Authorize(Roles = "Админ,Менеджер")]
         [HttpPost]
         public async Task<ActionResult<ClientResponseDto>> Create([FromBody] CreateClientDto dto)
         {
@@ -54,8 +49,6 @@ namespace backend_spo.Controllers
             return CreatedAtAction(nameof(GetById), new {id = createdClient.Id}, MapToDto(createdClient));
         }
         
-        //put /api/clients/{id}
-        [Authorize(Roles = "Админ,Менеджер")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] CreateClientDto dto)
         {
@@ -71,8 +64,6 @@ namespace backend_spo.Controllers
             return NoContent();
         }
         
-        //delete /api/clients/{id}
-        [Authorize(Roles = "Админ")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -80,9 +71,7 @@ namespace backend_spo.Controllers
             if (!result) return NotFound("Клиент не найден");
             return NoContent();
         }
-
-        //get /api/clients/search?firstName=..&lastName=..&phone=..
-        [Authorize(Roles = "Админ,Менеджер")]
+        
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<ClientResponseDto>>> Search(string? firstName, string? lastName, string? phone)
         {
@@ -91,7 +80,6 @@ namespace backend_spo.Controllers
             return Ok(result);
         }
         
-        //вспомогательный метод чтобы не прописывать везде преобразование Client => ClientResponseDto
         private static ClientResponseDto MapToDto(Client client)
         {
             return new ClientResponseDto

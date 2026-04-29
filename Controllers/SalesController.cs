@@ -19,7 +19,6 @@ namespace backend_spo.Controllers
             _saleService = saleService;
         }
         
-        //get /api/sales
         [HttpGet]
         public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetAll()
         {
@@ -28,7 +27,7 @@ namespace backend_spo.Controllers
             return Ok(result);
         }
         
-        //get /api/sales/{id}
+        
         [HttpGet("{id}")]
         public async Task<ActionResult<SaleResponseDto>> GetById(int id)
         {
@@ -38,8 +37,8 @@ namespace backend_spo.Controllers
             return Ok(MapToDto(sale));
         }
 
-        // post /api/sales
-        [Authorize(Roles = "Админ,Менеджер")]
+        
+        [Authorize(Roles = "Админ,Руководитель,Менеджер")]
         [HttpPost]
         public async Task<ActionResult<SaleResponseDto>> Create([FromBody] CreateSaleDto dto)
         {
@@ -64,7 +63,7 @@ namespace backend_spo.Controllers
         }
 
         //put /api/sales/{id}
-        [Authorize(Roles = "Админ,Менеджер")]
+        [Authorize(Roles = "Админ,Руководитель,Менеджер")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] CreateSaleDto dto)
         {
