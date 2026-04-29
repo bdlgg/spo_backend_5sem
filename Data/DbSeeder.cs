@@ -13,6 +13,7 @@ namespace backend_spo.Data
 			SeedManagers(context);
 			SeedCars(context);
 			SeedClients(context);
+			SeedClientUsers(context);
 			SeedTestDrives(context);
 			SeedSales(context);
 			SeedServiceOrders(context);
@@ -276,26 +277,70 @@ namespace backend_spo.Data
 			var clients = new List<Client>
 			{
 				// «Горячие» — есть тест-драйвы и/или сделки
-				new Client { FirstName = "Дмитрий",  LastName = "Соколов",  Phone = "+79161234501", Email = "sokolov@example.com" },
-				new Client { FirstName = "Анна",     LastName = "Кузнецова", Phone = "+79161234502", Email = "anna.kuznetsova@example.com" },
-				new Client { FirstName = "Сергей",   LastName = "Иванов",   Phone = "+79161234503", Email = "ivanov.s@example.com" },
-				new Client { FirstName = "Ольга",    LastName = "Смирнова", Phone = "+79161234504", Email = "smirnova@example.com" },
-				new Client { FirstName = "Павел",    LastName = "Морозов",  Phone = "+79161234505", Email = "p.morozov@example.com" },
+				new Client { FirstName = "Дмитрий",  LastName = "Соколов",  Phone = "+79161234501", Email = "sokolov@autos.ru" },
+				new Client { FirstName = "Анна",     LastName = "Кузнецова", Phone = "+79161234502", Email = "kuznetsova@autos.ru" },
+				new Client { FirstName = "Сергей",   LastName = "Иванов",   Phone = "+79161234503", Email = "ivanov@autos.ru" },
+				new Client { FirstName = "Ольга",    LastName = "Смирнова", Phone = "+79161234504", Email = "smirnova@autos.ru" },
+				new Client { FirstName = "Павел",    LastName = "Морозов",  Phone = "+79161234505", Email = "morozov@autos.ru" },
 
 				// «Тёплые» — есть тест-драйвы, но нет сделки
-				new Client { FirstName = "Игорь",    LastName = "Петров",   Phone = "+79161234506", Email = "petrov@example.com" },
-				new Client { FirstName = "Татьяна",  LastName = "Лебедева", Phone = "+79161234507", Email = "t.lebedeva@example.com" },
-				new Client { FirstName = "Андрей",   LastName = "Новиков",  Phone = "+79161234508", Email = "novikov@example.com" },
-				new Client { FirstName = "Наталья",  LastName = "Волкова",  Phone = "+79161234509", Email = "volkova@example.com" },
+				new Client { FirstName = "Игорь",    LastName = "Петров",   Phone = "+79161234506", Email = "petrov@autos.ru" },
+				new Client { FirstName = "Татьяна",  LastName = "Лебедева", Phone = "+79161234507", Email = "lebedeva@autos.ru" },
+				new Client { FirstName = "Андрей",   LastName = "Новиков",  Phone = "+79161234508", Email = "novikov@autos.ru" },
+				new Client { FirstName = "Наталья",  LastName = "Волкова",  Phone = "+79161234509", Email = "volkova@autos.ru" },
 
 				// «Холодные» — только в базе, без активности
-				new Client { FirstName = "Михаил",   LastName = "Алексеев", Phone = "+79161234510", Email = "alekseev@example.com" },
-				new Client { FirstName = "Юлия",     LastName = "Зайцева",  Phone = "+79161234511", Email = "zaytseva@example.com" },
-				new Client { FirstName = "Виктор",   LastName = "Романов",  Phone = "+79161234512", Email = "romanov@example.com" },
+				new Client { FirstName = "Михаил",   LastName = "Алексеев", Phone = "+79161234510", Email = "alekseev@autos.ru" },
+				new Client { FirstName = "Юлия",     LastName = "Зайцева",  Phone = "+79161234511", Email = "zaytseva@autos.ru" },
+				new Client { FirstName = "Виктор",   LastName = "Романов",  Phone = "+79161234512", Email = "romanov@autos.ru" },
 			};
 
 			context.Clients.AddRange(clients);
 			context.SaveChanges();
+		}
+
+		private static void SeedClientUsers(ApplicationDbContext context)
+		{
+			var clientRole = context.Roles.FirstOrDefault(r => r.Name == "Клиент");
+			if (clientRole == null)
+				return;
+
+			// Готовые тестовые аккаунты — по одному из каждой "температуры".
+			// Пароль один на всех, чтобы было удобно переключаться между ролями.
+			var seedUsers = new[]
+			{
+				new { FirstName = "Дмитрий", LastName = "Соколов",  Email = "sokolov@autos.ru" },
+				new { FirstName = "Игорь",   LastName = "Петров",   Email = "petrov@autos.ru" },
+				new { FirstName = "Михаил",  LastName = "Алексеев", Email = "alekseev@autos.ru" },
+			};
+
+			var passwordHash = BCrypt.Net.BCrypt.HashPassword("Client123!");
+
+			foreach (var seed in seedUsers)
+			{
+				if (context.Users.Any(u => u.Email == seed.Email))
+					continue;
+
+				var user = new User
+				{
+					FirstName = seed.FirstName,
+					LastName = seed.LastName,
+					Email = seed.Email,
+					PasswordHash = passwordHash,
+					IsActive = true,
+					CreatedAt = DateTime.UtcNow,
+					RoleId = clientRole.Id,
+				};
+				context.Users.Add(user);
+				context.SaveChanges();
+
+				var client = context.Clients.FirstOrDefault(c => c.Email == seed.Email);
+				if (client != null && client.UserId == null)
+				{
+					client.UserId = user.Id;
+					context.SaveChanges();
+				}
+			}
 		}
 
 		private static void SeedTestDrives(ApplicationDbContext context)
