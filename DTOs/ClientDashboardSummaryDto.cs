@@ -4,6 +4,8 @@ public class ClientDashboardSummaryDto
 {
     public int ClientId { get; set; }
     public string ClientFullName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public string Phone { get; set; } = string.Empty;
     public int TestDrivesCount { get; set; }
     public int ActiveTestDrivesCount { get; set; }
     public int ServiceOrdersCount { get; set; }

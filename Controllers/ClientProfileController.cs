@@ -43,6 +43,8 @@ public class ClientProfileController : ControllerBase
         {
             ClientId = client.Id,
             ClientFullName = $"{client.FirstName} {client.LastName}",
+            Email = client.Email,
+            Phone = client.Phone,
             TestDrivesCount = testDrives.Count,
             ActiveTestDrivesCount = testDrives.Count(td => td.Status == "Scheduled"),
             ServiceOrdersCount = serviceOrders.Count,
