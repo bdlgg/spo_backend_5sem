@@ -64,6 +64,30 @@ public class ContactRequestsController : ControllerBase
         return Ok(items.Select(MapToDto));
     }
 
+    private static readonly HashSet<string> AllowedStatuses = new()
+    {
+        "New", "InProgress", "Done", "Cancelled",
+    };
+
+    [HttpPatch("{id:int}/status")]
+    [Authorize(Roles = "Менеджер,Админ,Руководитель")]
+    public async Task<ActionResult<ContactRequestResponseDto>> UpdateStatus(
+        int id,
+        [FromBody] UpdateContactRequestStatusDto dto)
+    {
+        var status = (dto.Status ?? string.Empty).Trim();
+        if (!AllowedStatuses.Contains(status))
+            return BadRequest(new { message = "Недопустимый статус" });
+
+        var entity = await _context.ContactRequests.FirstOrDefaultAsync(r => r.Id == id);
+        if (entity == null)
+            return NotFound(new { message = "Обращение не найдено" });
+
+        entity.Status = status;
+        await _context.SaveChangesAsync();
+        return Ok(MapToDto(entity));
+    }
+
     private static ContactRequestResponseDto MapToDto(ContactRequest r) => new()
     {
         Id = r.Id,
