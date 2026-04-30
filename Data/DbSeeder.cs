@@ -10,6 +10,7 @@ namespace backend_spo.Data
 			SeedRoles(context);
 			SeedSuppliers(context);
 			SeedAdmin(context);
+			SeedLead(context);
 			SeedManagers(context);
 			SeedCars(context);
 			SeedClients(context);
@@ -128,6 +129,30 @@ namespace backend_spo.Data
 			};
 
 			context.Users.Add(admin);
+			context.SaveChanges();
+		}
+
+		private static void SeedLead(ApplicationDbContext context)
+		{
+			if (context.Users.Any(u => u.Email == "lead@autos.ru"))
+				return;
+
+			var leadRole = context.Roles.FirstOrDefault(r => r.Name == "Руководитель");
+			if (leadRole == null)
+				return;
+
+			var lead = new User
+			{
+				FirstName = "Елена",
+				LastName = "Руководящая",
+				Email = "lead@autos.ru",
+				PasswordHash = BCrypt.Net.BCrypt.HashPassword("Lead123!"),
+				IsActive = true,
+				CreatedAt = DateTime.UtcNow,
+				RoleId = leadRole.Id
+			};
+
+			context.Users.Add(lead);
 			context.SaveChanges();
 		}
 
