@@ -8,7 +8,7 @@ namespace backend_spo.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize(Roles = "Админ")]
+    [Authorize(Roles = "Админ,Руководитель")]
     public class AuditLogsController : ControllerBase
     {
         private readonly IAuditService _auditService;
