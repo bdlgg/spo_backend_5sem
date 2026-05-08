@@ -17,7 +17,7 @@ namespace backend_spo.Controllers
         {
             _clientService = clientService;
         }
-        
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<ClientResponseDto>>> GetAll()
         {
@@ -25,7 +25,7 @@ namespace backend_spo.Controllers
             var result = clients.Select(MapToDto);
             return Ok(result);
         }
-        
+
         [Authorize(Roles = "Админ,Руководитель,Менеджер")]
         [HttpGet("{id}")]
         public async Task<ActionResult<ClientResponseDto>> GetById(int id)
@@ -34,7 +34,7 @@ namespace backend_spo.Controllers
             if (client == null) return NotFound("Клиент не найден");
             return Ok(MapToDto(client));
         }
-        
+
         [HttpPost]
         public async Task<ActionResult<ClientResponseDto>> Create([FromBody] CreateClientDto dto)
         {
@@ -46,9 +46,9 @@ namespace backend_spo.Controllers
                 Email = dto.Email
             };
             var createdClient = await _clientService.CreateAsync(client);
-            return CreatedAtAction(nameof(GetById), new {id = createdClient.Id}, MapToDto(createdClient));
+            return CreatedAtAction(nameof(GetById), new { id = createdClient.Id }, MapToDto(createdClient));
         }
-        
+
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] CreateClientDto dto)
         {
@@ -63,7 +63,7 @@ namespace backend_spo.Controllers
             if (!result) return NotFound("Клиент не найден");
             return NoContent();
         }
-        
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -71,7 +71,7 @@ namespace backend_spo.Controllers
             if (!result) return NotFound("Клиент не найден");
             return NoContent();
         }
-        
+
         [HttpGet("search")]
         public async Task<ActionResult<IEnumerable<ClientResponseDto>>> Search(string? firstName, string? lastName, string? phone)
         {
@@ -79,7 +79,7 @@ namespace backend_spo.Controllers
             var result = clients.Select(MapToDto);
             return Ok(result);
         }
-        
+
         private static ClientResponseDto MapToDto(Client client)
         {
             return new ClientResponseDto

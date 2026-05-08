@@ -29,11 +29,11 @@ public class ReportService : IReportService
         var averageSaleAmount = completedSalesCount > 0 ? totalRevenue / completedSalesCount : 0;
         return new RevenueReportDto
         {
-            From =  from,
+            From = from,
             To = to,
-            TotalRevenue =  totalRevenue,
+            TotalRevenue = totalRevenue,
             CompletedSalesCount = completedSalesCount,
-            AverageSalesAmount =  averageSaleAmount
+            AverageSalesAmount = averageSaleAmount
         };
     }
 

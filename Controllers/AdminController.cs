@@ -12,7 +12,7 @@ namespace backend_spo.Controllers;
 public class AdminController : ControllerBase
 {
     private readonly IUserService _userService;
-    public  AdminController(IUserService userService)
+    public AdminController(IUserService userService)
     {
         _userService = userService;
     }
@@ -29,7 +29,7 @@ public class AdminController : ControllerBase
     public async Task<ActionResult<UserResponseDto>> GetUserById(int id)
     {
         var user = await _userService.GetByIdAsync(id);
-        if  (user == null) return NotFound(new { message = "Пользователь не найден" });
+        if (user == null) return NotFound(new { message = "Пользователь не найден" });
         return Ok(MapToDto(user));
     }
 
@@ -43,7 +43,7 @@ public class AdminController : ControllerBase
                 return NotFound(new { message = result.Message });
             return BadRequest(new { message = result.Message });
         }
-        return Ok(new  { message = result.Message });
+        return Ok(new { message = result.Message });
     }
 
     [HttpPatch("users/{id}/status")]
@@ -58,7 +58,7 @@ public class AdminController : ControllerBase
         }
         return Ok(new { message = result.Message });
     }
-    
+
     private static UserResponseDto MapToDto(User user)
     {
         return new UserResponseDto

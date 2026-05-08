@@ -12,5 +12,5 @@ public class Sale
     public DateTime SaleDate { get; set; } = DateTime.UtcNow;
     public decimal FinalPrice { get; set; }
     public string Status { get; set; } = string.Empty;
-    
+
 }

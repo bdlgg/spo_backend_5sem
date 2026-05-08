@@ -16,7 +16,7 @@ public class AuthService : IAuthService
     private readonly IConfiguration _configuration;
     private readonly IAuditService _auditService;
     private readonly ITokenStoreService _tokenStoreService;
-    public AuthService( ApplicationDbContext context,
+    public AuthService(ApplicationDbContext context,
     IConfiguration configuration,
     IAuditService auditService,
     ITokenStoreService tokenStoreService)
@@ -55,7 +55,7 @@ public class AuthService : IAuthService
             Email = dto.Email,
             PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password),
             RoleId = clientRole.Id,
-            IsActive =  true,
+            IsActive = true,
             CreatedAt = DateTime.UtcNow
         };
         _context.Users.Add(user);
@@ -93,15 +93,15 @@ public class AuthService : IAuthService
 
     public async Task<(bool Success, string Message, AuthResponseDto? Response)> LoginAsync(LoginDto dto)
     {
-       dto.Email = dto.Email?.Trim().ToLower() ?? string.Empty;
-       dto.Password = dto.Password?.Trim() ?? string.Empty;
+        dto.Email = dto.Email?.Trim().ToLower() ?? string.Empty;
+        dto.Password = dto.Password?.Trim() ?? string.Empty;
 
-       if (string.IsNullOrWhiteSpace(dto.Email))
-           return (false, "Email не может быть пустым", null);
-       if (string.IsNullOrWhiteSpace(dto.Password))
-           return (false, "Пароль не может быть пустым", null);
+        if (string.IsNullOrWhiteSpace(dto.Email))
+            return (false, "Email не может быть пустым", null);
+        if (string.IsNullOrWhiteSpace(dto.Password))
+            return (false, "Пароль не может быть пустым", null);
 
-       var user = await _context.Users.Include(u => u.Role).FirstOrDefaultAsync(u => u.Email == dto.Email);
+        var user = await _context.Users.Include(u => u.Role).FirstOrDefaultAsync(u => u.Email == dto.Email);
 
         if (user == null)
         {
@@ -143,19 +143,19 @@ public class AuthService : IAuthService
         var token = GenerateJwtToken(user);
         var expireMinutes = int.Parse(_configuration["Jwt:ExpireInMinutes"]!);
         await _tokenStoreService.SaveTokenAsync(user.Id, token, TimeSpan.FromMinutes(expireMinutes));
-        var response = new AuthResponseDto 
-        { 
-            Token = token, 
-            Email = user.Email, 
-            Role = user.Role?.Name ?? string.Empty 
-        }; 
+        var response = new AuthResponseDto
+        {
+            Token = token,
+            Email = user.Email,
+            Role = user.Role?.Name ?? string.Empty
+        };
         await _auditService.LogAsync(
-            user.Id, 
-            "LOGIN", 
-            "User", 
-            user.Id, 
-            "Success", 
-            $"Успешный вход пользователя {user.Email}" 
+            user.Id,
+            "LOGIN",
+            "User",
+            user.Id,
+            "Success",
+            $"Успешный вход пользователя {user.Email}"
             );
         return (true, "Успешный вход", response);
     }

@@ -68,9 +68,9 @@ namespace backend_spo.Controllers
             };
             var createdCar = await _carService.CreateAsync(car);
             var fullCar = await _carService.GetByIdAsync(createdCar.Id);
-            return CreatedAtAction(nameof(GetById), new {id = createdCar.Id}, MapToDto(fullCar!));
+            return CreatedAtAction(nameof(GetById), new { id = createdCar.Id }, MapToDto(fullCar!));
         }
-        
+
         //put /api/cars/{id}
         [Authorize(Roles = "Админ,Менеджер")]
         [HttpPut("{id}")]
@@ -90,10 +90,10 @@ namespace backend_spo.Controllers
                 IsActive = true,
                 Photos = dto.PhotoUrls
                     .Where(url => !string.IsNullOrWhiteSpace(url))
-                    .Select((url, index) => new CarPhoto 
-                    { 
-                        Url = url.Trim(), 
-                        SortOrder = index + 1 
+                    .Select((url, index) => new CarPhoto
+                    {
+                        Url = url.Trim(),
+                        SortOrder = index + 1
                     })
                     .ToList()
             };
@@ -101,7 +101,7 @@ namespace backend_spo.Controllers
             if (!result) return NotFound("Машина не найдена");
             return NoContent();
         }
-        
+
         // delete /api/cars/{id}
         [Authorize(Roles = "Админ")]
         [HttpDelete("{id}")]
@@ -111,7 +111,7 @@ namespace backend_spo.Controllers
             if (!result) return NotFound("Машина не найдена");
             return NoContent();
         }
-        
+
         //get /api/cars/search?brand=..&model=..&year=..
         [AllowAnonymous]
         [HttpGet("search")]

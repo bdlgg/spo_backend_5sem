@@ -32,5 +32,5 @@ public class ReportsController : ControllerBase
         var report = await _reportService.GetManagersPerformanceAsync(from, to);
         return Ok(report);
     }
-    
+
 }

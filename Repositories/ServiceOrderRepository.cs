@@ -57,7 +57,7 @@ public class ServiceOrderRepository : IServiceOrderRepository
 
     public async Task<IEnumerable<ServiceOrder>> GetByCarIdAsync(int carId)
     {
-        return await  _context.ServiceOrders
+        return await _context.ServiceOrders
             .Include(so => so.Client)
             .Include(so => so.Car)
             .Include(so => so.Manager)

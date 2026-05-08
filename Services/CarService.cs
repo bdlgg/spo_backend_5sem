@@ -90,7 +90,7 @@ public class CarService : ICarService
 
         if (string.IsNullOrWhiteSpace(car.Model))
             throw new ArgumentException("Модель автомобиля обязательна");
-        
+
         if (string.IsNullOrWhiteSpace(car.Vin))
             throw new ArgumentException("VIN обязателен");
 

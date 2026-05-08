@@ -8,7 +8,7 @@ namespace backend_spo.Repositories;
 public class CarRepository : ICarRepository
 {
     private readonly ApplicationDbContext _context;
-    
+
     public CarRepository(ApplicationDbContext context)
     {
         _context = context;

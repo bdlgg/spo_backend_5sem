@@ -10,6 +10,6 @@ public class ClientDashboardSummaryDto
     public int ActiveTestDrivesCount { get; set; }
     public int ServiceOrdersCount { get; set; }
     public int ActiveServiceOrdersCount { get; set; }
-    public int SalesCount  { get; set; }
-    public decimal TotalPurchasesAmount {  get; set; }
+    public int SalesCount { get; set; }
+    public decimal TotalPurchasesAmount { get; set; }
 }

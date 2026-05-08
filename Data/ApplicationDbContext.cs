@@ -15,7 +15,7 @@ namespace backend_spo.Data
         public DbSet<Client> Clients { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Role>  Roles { get; set; }
+        public DbSet<Role> Roles { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
         public DbSet<TestDrive> TestDrives { get; set; }
@@ -59,7 +59,7 @@ namespace backend_spo.Data
             modelBuilder.Entity<Car>()
                 .HasIndex(c => c.Vin)
                 .IsUnique();
-            
+
             modelBuilder.Entity<CarPhoto>()
                 .HasOne(p => p.Car)
                 .WithMany(c => c.Photos)
@@ -72,7 +72,7 @@ namespace backend_spo.Data
 
             modelBuilder.Entity<User>()
                 .HasIndex(u => u.Email)
-                .IsUnique(); 
+                .IsUnique();
             modelBuilder.Entity<User>()
                 .HasMany(u => u.AuditLogs)
                 .WithOne(a => a.User)
@@ -96,19 +96,19 @@ namespace backend_spo.Data
                 .WithMany()
                 .HasForeignKey(td => td.ManagerId)
                 .OnDelete(DeleteBehavior.Restrict);
-            
+
             modelBuilder.Entity<ServiceOrder>()
                 .HasOne(so => so.Client)
                 .WithMany()
                 .HasForeignKey(so => so.ClientId)
                 .OnDelete(DeleteBehavior.Restrict);
-            
+
             modelBuilder.Entity<ServiceOrder>()
                 .HasOne(so => so.Car)
                 .WithMany()
                 .HasForeignKey(so => so.CarId)
                 .OnDelete(DeleteBehavior.Restrict);
-            
+
             modelBuilder.Entity<ServiceOrder>()
                 .HasOne(so => so.Manager)
                 .WithMany()

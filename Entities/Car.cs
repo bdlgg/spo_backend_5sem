@@ -13,7 +13,7 @@ namespace backend_spo.Entities
         public int Year { get; set; }
 
         public decimal Price { get; set; }
-        
+
         public string Vin { get; set; } = string.Empty;
 
         public string Color { get; set; } = string.Empty;

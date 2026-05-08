@@ -41,7 +41,7 @@ public class ClientRepository : IClientRepository
         _context.Clients.Update(client);
         await _context.SaveChangesAsync();
     }
-    
+
     public async Task DeleteAsync(Client client)
     {
         _context.Clients.Remove(client);

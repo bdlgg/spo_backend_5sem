@@ -14,8 +14,8 @@ namespace backend_spo.Controllers;
 public class ClientProfileController : ControllerBase
 {
     private readonly ApplicationDbContext _context;
-    
-    public  ClientProfileController(ApplicationDbContext context)
+
+    public ClientProfileController(ApplicationDbContext context)
     {
         _context = context;
     }
@@ -26,16 +26,16 @@ public class ClientProfileController : ControllerBase
         var client = await GetCurrentClientAsync();
         if (client == null)
             return NotFound(new { message = "Профиль клиента не найден" });
-        
+
         var testDrives = await _context.TestDrives
             .Where(t => t.ClientId == client.Id)
             .ToListAsync();
-        
+
         var serviceOrders = await _context.ServiceOrders
             .Where(s => s.ClientId == client.Id)
             .ToListAsync();
-        
-        var sales = await  _context.Sales
+
+        var sales = await _context.Sales
             .Where(s => s.ClientId == client.Id)
             .ToListAsync();
 
@@ -69,7 +69,7 @@ public class ClientProfileController : ControllerBase
             .Where(td => td.ClientId == client.Id)
             .OrderByDescending(td => td.CreatedAt)
             .ToListAsync();
-        
+
         return Ok(testDrives.Select(MapTestDriveToDto));
     }
 
@@ -79,7 +79,7 @@ public class ClientProfileController : ControllerBase
         var client = await GetCurrentClientAsync();
         if (client == null)
             return NotFound(new { message = "Профиль клиента не найден" });
-        
+
         var serviceOrders = await _context.ServiceOrders
             .Include(so => so.Client)
             .Include(so => so.Car)
@@ -87,7 +87,7 @@ public class ClientProfileController : ControllerBase
             .Where(so => so.ClientId == client.Id)
             .OrderByDescending(so => so.CreatedAt)
             .ToListAsync();
-        
+
         return Ok(serviceOrders.Select(MapServiceOrderToDto));
     }
 
@@ -97,7 +97,7 @@ public class ClientProfileController : ControllerBase
         var client = await GetCurrentClientAsync();
         if (client == null)
             return NotFound(new { message = "Профиль клиента не найден" });
-        
+
         var sales = await _context.Sales
             .Include(s => s.Car)
             .Include(s => s.Client)
@@ -105,7 +105,7 @@ public class ClientProfileController : ControllerBase
             .Where(s => s.ClientId == client.Id)
             .OrderByDescending(s => s.SaleDate)
             .ToListAsync();
-        
+
         return Ok(sales.Select(MapSaleToDto));
     }
 

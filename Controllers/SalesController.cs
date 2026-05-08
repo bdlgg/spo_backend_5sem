@@ -18,7 +18,7 @@ namespace backend_spo.Controllers
         {
             _saleService = saleService;
         }
-        
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetAll()
         {
@@ -26,8 +26,8 @@ namespace backend_spo.Controllers
             var result = sales.Select(MapToDto);
             return Ok(result);
         }
-        
-        
+
+
         [HttpGet("{id}")]
         public async Task<ActionResult<SaleResponseDto>> GetById(int id)
         {
@@ -37,7 +37,7 @@ namespace backend_spo.Controllers
             return Ok(MapToDto(sale));
         }
 
-        
+
         [Authorize(Roles = "Админ,Руководитель,Менеджер")]
         [HttpPost]
         public async Task<ActionResult<SaleResponseDto>> Create([FromBody] CreateSaleDto dto)
@@ -92,7 +92,7 @@ namespace backend_spo.Controllers
                 return NotFound(new { message = "Сделка не найдена" });
             return Ok(new { message = "Сделка успешно удалена" });
         }
-        
+
         //get /api/sales/client/{clientId}
         [HttpGet("client/{clientId}")]
         public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetByClientId(int clientId)
@@ -101,7 +101,7 @@ namespace backend_spo.Controllers
             var result = sales.Select(MapToDto);
             return Ok(result);
         }
-        
+
         //get /api/sales/user/{userId}
         [HttpGet("user/{userId}")]
         public async Task<ActionResult<IEnumerable<SaleResponseDto>>> GetByUserId(int userId)
@@ -116,11 +116,11 @@ namespace backend_spo.Controllers
             return new SaleResponseDto
             {
                 Id = sale.Id,
-                CarId =  sale.CarId,
+                CarId = sale.CarId,
                 ClientId = sale.ClientId,
-                UserId =  sale.UserId,
+                UserId = sale.UserId,
                 SaleDate = sale.SaleDate,
-                FinalPrice =  sale.FinalPrice,
+                FinalPrice = sale.FinalPrice,
                 Status = sale.Status
             };
         }

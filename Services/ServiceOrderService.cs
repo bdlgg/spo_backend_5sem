@@ -121,7 +121,7 @@ public class ServiceOrderService : IServiceOrderService
                     return (false, "Для завершения заказ-наряда нужно указать итоговую стоимость больше нуля");
                 serviceOrder.Status = "Completed";
                 serviceOrder.FinalCost = finalCost.Value;
-                serviceOrder.CompletedAt =  DateTime.UtcNow;
+                serviceOrder.CompletedAt = DateTime.UtcNow;
                 break;
             case "InProgress":
                 if (serviceOrder.Status != "Accepted")

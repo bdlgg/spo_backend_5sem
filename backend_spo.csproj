@@ -22,5 +22,12 @@
 		<PackageReference Include="StackExchange.Redis" Version="2.12.8" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
 	</ItemGroup>
+	
+	<ItemGroup>
+		<Compile Remove="Tests/**/*.cs" />
+		<EmbeddedResource Remove="Tests/**" />
+		<None Remove="Tests/**" />
+		<Content Remove="Tests/**" />
+	</ItemGroup>
 
 </Project>

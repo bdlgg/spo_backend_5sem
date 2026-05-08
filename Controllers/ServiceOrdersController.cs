@@ -32,7 +32,7 @@ public class ServiceOrdersController : ControllerBase
     {
         var serviceOrder = await _serviceOrderService.GetByIdAsync(id);
         if (serviceOrder == null)
-            return NotFound(new { message = "Заказ-наряд не найден"});
+            return NotFound(new { message = "Заказ-наряд не найден" });
         return Ok(MapToDto(serviceOrder));
     }
 
