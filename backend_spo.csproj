@@ -5,7 +5,23 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Program.cs" />
+		<Compile Include="Controllers/**/*.cs" />
+		<Compile Include="Data/**/*.cs" />
+		<Compile Include="DTOs/**/*.cs" />
+		<Compile Include="Entities/**/*.cs" />
+		<Compile Include="Interfaces/**/*.cs" />
+		<Compile Include="Migrations/**/*.cs" />
+		<Compile Include="ML/**/*.cs" />
+		<Compile Include="Repositories/**/*.cs" />
+		<Compile Include="Services/**/*.cs" />
+		<Compile Include="Properties/**/*.cs" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="BCrypt.Net-Next" Version="4.1.0" />
@@ -21,13 +37,6 @@
 		<PackageReference Include="Microsoft.ML.FastTree" Version="5.0.0" />
 		<PackageReference Include="StackExchange.Redis" Version="2.12.8" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
-	</ItemGroup>
-	
-	<ItemGroup>
-		<Compile Remove="Tests/**/*.cs" />
-		<EmbeddedResource Remove="Tests/**" />
-		<None Remove="Tests/**" />
-		<Content Remove="Tests/**" />
 	</ItemGroup>
 
 </Project>
