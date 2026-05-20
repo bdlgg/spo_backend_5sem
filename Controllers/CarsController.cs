@@ -99,7 +99,8 @@ namespace backend_spo.Controllers
             };
             var result = await _carService.UpdateAsync(id, car);
             if (!result) return NotFound("Машина не найдена");
-            return NoContent();
+            var updatedCar = await _carService.GetByIdAsync(id);
+            return Ok(MapToDto(updatedCar!));
         }
 
         // delete /api/cars/{id}
