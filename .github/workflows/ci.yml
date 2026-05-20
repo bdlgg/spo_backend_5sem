@@ -10,7 +10,7 @@ on:
 
 jobs:
   backend:
-    name: Restore and build
+    name: Build and test
     runs-on: ubuntu-latest
 
     steps:
@@ -31,11 +31,18 @@ jobs:
             ${{ runner.os }}-nuget-
 
       - name: Restore dependencies
-        run: dotnet restore backend_spo.csproj
+        run: dotnet restore Tests/Tests.csproj
 
       - name: Build
-        run: dotnet build backend_spo.csproj --configuration Release --no-restore
+        run: dotnet build Tests/Tests.csproj --configuration Release --no-restore
 
-      # Тестовый проект ещё не создан (тикет #6).
-      # - name: Test
-      #   run: dotnet test --configuration Release --no-build --verbosity normal
+      - name: Test
+        run: dotnet test Tests/Tests.csproj --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: Tests/TestResults/test-results.trx
+          if-no-files-found: warn
