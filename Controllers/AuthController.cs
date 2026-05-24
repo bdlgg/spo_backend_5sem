@@ -29,8 +29,18 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Login(LoginDto dto)
     {
         var result = await _authService.LoginAsync(dto);
+
         if (!result.Success)
+        {
+            if (result.Message == "Пользователь не найден")
+                return NotFound(new { message = result.Message });
+
+            if (result.Message == "Неверный пароль")
+                return Unauthorized(new { message = result.Message });
+
             return BadRequest(new { message = result.Message });
+        }
+
         return Ok(result.Response);
     }
 
@@ -39,16 +49,23 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Logout()
     {
         var authHeader = Request.Headers.Authorization.ToString();
+
         if (string.IsNullOrWhiteSpace(authHeader) || !authHeader.StartsWith("Bearer "))
             return BadRequest(new { message = "Токен не найден в заголовке Authorization" });
+
         var token = authHeader["Bearer ".Length..].Trim();
+
         var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         int? currentUserId = null;
+
         if (!string.IsNullOrWhiteSpace(userIdClaim) && int.TryParse(userIdClaim, out var parsedUserId))
             currentUserId = parsedUserId;
+
         var result = await _authService.LogoutAsync(token, currentUserId);
+
         if (!result.Success)
             return BadRequest(new { message = result.Message });
-        return Ok(new { message = result.Message });
+
+        return NoContent();
     }
 }
