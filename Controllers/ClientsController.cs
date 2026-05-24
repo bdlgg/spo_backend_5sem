@@ -59,9 +59,15 @@ namespace backend_spo.Controllers
                 Phone = dto.Phone,
                 Email = dto.Email
             };
+
             var result = await _clientService.UpdateAsync(id, client);
-            if (!result) return NotFound("Клиент не найден");
-            return NoContent();
+
+            if (!result)
+                return NotFound("Клиент не найден");
+
+            var updatedClient = await _clientService.GetByIdAsync(id);
+
+            return Ok(MapToDto(updatedClient!));
         }
 
         [HttpDelete("{id}")]
@@ -73,12 +79,34 @@ namespace backend_spo.Controllers
         }
 
         [HttpGet("search")]
-        public async Task<ActionResult<IEnumerable<ClientResponseDto>>> Search(string? firstName, string? lastName, string? phone)
+        public async Task<ActionResult<IEnumerable<ClientResponseDto>>> Search(
+            string? query,
+            string? firstName,
+            string? lastName,
+            string? phone)
         {
+            if (!string.IsNullOrWhiteSpace(query))
+            {
+                var normalizedQuery = query.Trim();
+
+                var allClients = await _clientService.GetAllAsync();
+
+                var filteredClients = allClients.Where(client =>
+                    client.FirstName.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ||
+                    client.LastName.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ||
+                    client.Phone.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase) ||
+                    client.Email.Contains(normalizedQuery, StringComparison.OrdinalIgnoreCase)
+                );
+
+                return Ok(filteredClients.Select(MapToDto));
+            }
+
             var clients = await _clientService.SearchAsync(firstName, lastName, phone);
             var result = clients.Select(MapToDto);
+
             return Ok(result);
         }
+
 
         private static ClientResponseDto MapToDto(Client client)
         {
