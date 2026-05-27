@@ -47,9 +47,9 @@ public class CarRepository : ICarRepository
     {
         var query = _context.Cars.Include(c => c.Supplier).Include(c => c.Photos).AsQueryable();
         if (!string.IsNullOrWhiteSpace(brand))
-            query = query.Where(c => c.Brand.Contains(brand));
+            query = query.Where(c => EF.Functions.ILike(c.Brand, $"%{brand}%"));
         if (!string.IsNullOrWhiteSpace(model))
-            query = query.Where(c => c.Model.Contains(model));
+            query = query.Where(c => EF.Functions.ILike(c.Model, $"%{model}%"));
         if (year.HasValue)
             query = query.Where(c => c.Year == year.Value);
 

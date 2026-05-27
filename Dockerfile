@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["backend_spo.csproj", "./"]
-RUN dotnet restore "backend_spo.csproj"
+RUN dotnet restore "backend_spo.csproj" --disable-parallel --verbosity detailed
 COPY . .
 WORKDIR "/src/"
 RUN dotnet build "./backend_spo.csproj" -c $BUILD_CONFIGURATION -o /app/build

@@ -11,19 +11,31 @@ services:
     environment:
       ASPNETCORE_URLS: "http://+:8080"
       ASPNETCORE_ENVIRONMENT: "Development"
-      ConnectionStrings__DefaultConnection: "Data Source=/data/autosalon.db"
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=autosalon;Username=postgres;Password=1234567890"
       ConnectionStrings__Redis: "redis:6379"
       Jwt__Key: "ed42df78af6cac57c0696f0d0f79bd2583ac9dbc578d971549b866caf05b6752"
       Jwt__Issuer: "backend_spo"
       Jwt__Audience: "backend_spo_users"
       Jwt__ExpireInMinutes: "120"
     volumes:
-      - sqlite_data:/data
       - ml_models:/app/MLModels
       - ./Data:/app/Data:ro
       - ./wwwroot:/app/wwwroot:ro
     depends_on:
+      - postgres
       - redis
+    
+  postgres:
+    image: postgres:16
+    container_name: backend_spo_postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: autosalon
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234567890
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
   redis:
     image: redis:7
@@ -34,6 +46,6 @@ services:
       - redis_data:/data
 
 volumes:
-  sqlite_data:
+  postgres_data:
   redis_data:
   ml_models:  

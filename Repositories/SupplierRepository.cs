@@ -47,13 +47,13 @@ public class SupplierRepository : ISupplierRepository
         var query = _context.Suppliers.AsQueryable();
 
         if (!string.IsNullOrWhiteSpace(name))
-            query = query.Where(s => s.Name.Contains(name));
+            query = query.Where(s => EF.Functions.ILike(s.Name, $"%{name}%"));
 
         if (!string.IsNullOrWhiteSpace(contactPerson))
-            query = query.Where(s => s.ContactPerson.Contains(contactPerson));
+            query = query.Where(s => EF.Functions.ILike(s.ContactPerson, $"%{contactPerson}%"));
 
         if (!string.IsNullOrWhiteSpace(phone))
-            query = query.Where(s => s.Phone.Contains(phone));
+            query = query.Where(s => EF.Functions.ILike(s.Phone, $"%{phone}%"));
 
         return await query.ToListAsync();
     }
