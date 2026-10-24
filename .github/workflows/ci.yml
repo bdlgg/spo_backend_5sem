@@ -9,59 +9,58 @@ on:
       - main
 
 jobs:
-  jobs:
-    backend:
-      name: Build and test
-      runs-on: ubuntu-latest
+  backend:
+    name: Build and test
+    runs-on: ubuntu-latest
 
-      services:
-        postgres:
-          image: postgres:17
-          env:
-            POSTGRES_DB: spo_backend_test
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: postgres
-          ports:
-            - 5432:5432
-          options: >-
-            --health-cmd "pg_isready -U postgres -d spo_backend_test"
-            --health-interval 10s
-            --health-timeout 5s
-            --health-retries 5
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_DB: spo_backend_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres -d spo_backend_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
-      env:
-        TEST_DATABASE_CONNECTION: "Host=127.0.0.1;Port=5432;Database=spo_backend_test;Username=postgres;Password=postgres"
-    
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    env:
+      TEST_DATABASE_CONNECTION: "Host=127.0.0.1;Port=5432;Database=spo_backend_test;Username=postgres;Password=postgres"
 
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: 10.0.x
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-      - name: Cache NuGet packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
-          restore-keys: |
-            ${{ runner.os }}-nuget-
+    - name: Set up .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 10.0.x
 
-      - name: Restore dependencies
-        run: dotnet restore Tests/Tests.csproj
+    - name: Cache NuGet packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.nuget/packages
+        key: ${{ runner.os }}-nuget-${{ hashFiles('**/*.csproj') }}
+        restore-keys: |
+          ${{ runner.os }}-nuget-
 
-      - name: Build
-        run: dotnet build Tests/Tests.csproj --configuration Release --no-restore
+    - name: Restore dependencies
+      run: dotnet restore Tests/Tests.csproj
 
-      - name: Test
-        run: dotnet test Tests/Tests.csproj --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+    - name: Build
+      run: dotnet build Tests/Tests.csproj --configuration Release --no-restore
 
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: Tests/TestResults/test-results.trx
-          if-no-files-found: warn
+    - name: Test
+      run: dotnet test Tests/Tests.csproj --configuration Release --no-build --verbosity normal --logger "trx;LogFileName=test-results.trx"
+
+    - name: Upload test results
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-results
+        path: Tests/TestResults/test-results.trx
+        if-no-files-found: warn
