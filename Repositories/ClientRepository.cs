@@ -50,18 +50,25 @@ public class ClientRepository : IClientRepository
 
     public async Task<IEnumerable<Client>> SearchAsync(string? firstName, string? lastName, string? phone)
     {
+        var isInMemory = _context.Database.ProviderName == "Microsoft.EntityFrameworkCore.InMemory";
+        
         var query = _context.Clients
             .Include(c => c.User)
             .ThenInclude(u => u.Role)
-            .Where(c => c.UserId == null || c.User!.Role!.Name == "Клиент")
             .AsQueryable();
         
         if (!string.IsNullOrWhiteSpace(firstName))
-            query = query.Where(c => EF.Functions.ILike(c.FirstName, $"%{firstName}%"));
+            query = isInMemory 
+                ? query.Where(c => (c.FirstName ?? "").ToLower().Contains(firstName.ToLower()))
+                : query.Where(c => EF.Functions.ILike(c.FirstName, $"%{firstName}%"));
         if (!string.IsNullOrWhiteSpace(lastName))
-            query = query.Where(c => EF.Functions.ILike(c.LastName, $"%{lastName}%"));
+            query = isInMemory
+                ?  query.Where(c => (c.LastName ?? "").ToLower().Contains(lastName.ToLower()))
+                : query.Where(c => EF.Functions.ILike(c.LastName, $"%{lastName}%"));
         if (!string.IsNullOrWhiteSpace(phone))
-            query = query.Where(c => EF.Functions.ILike(c.Phone, $"%{phone}%"));
+            query = isInMemory
+                ?  query.Where(c => (c.Phone ?? "").ToLower().Contains(phone.ToLower()))
+                : query.Where(c => EF.Functions.ILike(c.Phone, $"%{phone}%"));
         return await query.ToListAsync();
     }
 }

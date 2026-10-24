@@ -45,15 +45,23 @@ public class SupplierRepository : ISupplierRepository
     public async Task<IEnumerable<Supplier>> SearchAsync(string? name, string? contactPerson, string? phone)
     {
         var query = _context.Suppliers.AsQueryable();
+        
+        var isInMemory = _context.Database.ProviderName == "Microsoft.EntityFrameworkCore.InMemory";
 
         if (!string.IsNullOrWhiteSpace(name))
-            query = query.Where(s => EF.Functions.ILike(s.Name, $"%{name}%"));
+            query = isInMemory 
+                ? query.Where(s => s.Name.ToLower().Contains(name.ToLower()))
+                : query.Where(s => EF.Functions.ILike(s.Name, $"%{name}%"));
 
         if (!string.IsNullOrWhiteSpace(contactPerson))
-            query = query.Where(s => EF.Functions.ILike(s.ContactPerson, $"%{contactPerson}%"));
+            query = isInMemory
+                ? query.Where(s => (s.ContactPerson ?? "").ToLower().Contains(contactPerson.ToLower()))
+                : query.Where(s => EF.Functions.ILike(s.ContactPerson, $"%{contactPerson}%"));
 
         if (!string.IsNullOrWhiteSpace(phone))
-            query = query.Where(s => EF.Functions.ILike(s.Phone, $"%{phone}%"));
+            query = isInMemory
+                ? query.Where(s => (s.Phone ?? "").ToLower().Contains(phone.ToLower()))
+                : query.Where(s => EF.Functions.ILike(s.Phone, $"%{phone}%"));
 
         return await query.ToListAsync();
     }

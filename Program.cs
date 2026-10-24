@@ -140,7 +140,10 @@ using (var scope = app.Services.CreateScope())
     else
         db.Database.EnsureCreated();
 
-    DbSeeder.Seed(db);
+    if (!app.Environment.IsEnvironment("Testing"))
+    {
+        DbSeeder.Seed(db);
+    }
 }
 
 // Middleware

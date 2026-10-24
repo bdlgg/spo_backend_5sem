@@ -15,6 +15,9 @@ public class ReportService : IReportService
 
     public async Task<RevenueReportDto> GetRevenueReportAsync(DateTime? from, DateTime? to)
     {
+        from = NormalizeUtc(from);
+        to = NormalizeUtc(to);
+        
         var salesQuery = _context.Sales
             .Include(s => s.User)
             .Where(s => s.Status == "Completed")
@@ -39,6 +42,9 @@ public class ReportService : IReportService
 
     public async Task<IEnumerable<ManagerPerformanceDto>> GetManagersPerformanceAsync(DateTime? from, DateTime? to)
     {
+        from = NormalizeUtc(from);
+        to = NormalizeUtc(to);
+        
         var salesQuery = _context.Sales
             .Include(s => s.User)
             .Where(s => s.Status == "Completed")
@@ -66,5 +72,20 @@ public class ReportService : IReportService
             .OrderByDescending(x => x.TotalRevenue)
             .ToList();
         return result;
+    }
+
+    private static DateTime? NormalizeUtc(DateTime? value)
+    {
+        if (!value.HasValue)
+            return null;
+
+        var date = value.Value;
+
+        return date.Kind switch
+        {
+            DateTimeKind.Utc => date,
+            DateTimeKind.Local => date.ToUniversalTime(),
+            _ => DateTime.SpecifyKind(date, DateTimeKind.Utc)
+        };
     }
 }

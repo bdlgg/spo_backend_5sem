@@ -45,11 +45,17 @@ public class CarRepository : ICarRepository
 
     public async Task<IEnumerable<Car>> SearchAsync(string? brand, string? model, int? year)
     {
+        var isInMemory = _context.Database.ProviderName == "Microsoft.EntityFrameworkCore.InMemory";
+        
         var query = _context.Cars.Include(c => c.Supplier).Include(c => c.Photos).AsQueryable();
         if (!string.IsNullOrWhiteSpace(brand))
-            query = query.Where(c => EF.Functions.ILike(c.Brand, $"%{brand}%"));
+            query = isInMemory
+                ?  query.Where(c => (c.Brand ?? "").ToLower().Contains(brand.ToLower()))
+                : query.Where(c => EF.Functions.ILike(c.Brand, $"%{brand}%"));
         if (!string.IsNullOrWhiteSpace(model))
-            query = query.Where(c => EF.Functions.ILike(c.Model, $"%{model}%"));
+            query = isInMemory 
+                ?  query.Where(c => (c.Model ?? "").ToLower().Contains(model.ToLower()))
+                : query.Where(c => EF.Functions.ILike(c.Model, $"%{model}%"));
         if (year.HasValue)
             query = query.Where(c => c.Year == year.Value);
 

@@ -2,18 +2,16 @@ using backend_spo.Data;
 using backend_spo.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Hosting;
 using StackExchange.Redis;
 
 namespace backend_spo.Tests.Infrastructure;
 
 public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 {
-    private readonly SqliteConnection _connection = new("DataSource=:memory:");
-
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.UseEnvironment("Testing");
@@ -27,25 +25,38 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
             services.RemoveAll<IConnectionMultiplexer>();
             services.RemoveAll<ITokenStoreService>();
 
-            _connection.Open();
+            var connectionString =
+                Environment.GetEnvironmentVariable("TEST_DATABASE_CONNECTION");
+
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                connectionString =
+                    "Host=localhost;Port=5432;Database=backend_spo_test;Username=postgres";
+            }
 
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseSqlite(_connection);
+                options.UseNpgsql(connectionString)
+                    .UseSnakeCaseNamingConvention();
             });
 
             services.AddScoped<ITokenStoreService, FakeTokenStoreService>();
-            
         });
     }
 
-    protected override void Dispose(bool disposing)
+    protected override IHost CreateHost(IHostBuilder builder)
     {
-        base.Dispose(disposing);
+        var host = base.CreateHost(builder);
 
-        if (disposing)
-        {
-            _connection.Dispose();
-        }
+        using var scope = host.Services.CreateScope();
+
+        var db = scope.ServiceProvider
+            .GetRequiredService<ApplicationDbContext>();
+
+        db.Database.Migrate();
+
+        TestDbSeeder.Seed(db);
+
+        return host;
     }
 }
