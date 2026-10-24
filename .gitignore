@@ -9,6 +9,7 @@ obj/
 *.userosscache
 *.sln.docstates
 
+/wwwroot
 .idea/
 .cursor/
 *.iml
